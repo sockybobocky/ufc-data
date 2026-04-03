@@ -1,20 +1,42 @@
-fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-Ghassen Jbalia,Ibrahima Mane,-200,-250,-200,-250,1
-Jason Ponet,Bruno Matos,+175,+650,175,650,1
-Sean Yadimarco,Keith Krikorian,+650,-1587,650,-1587,1
-Matt Masch,Joslyn Molina,+700,-2500,700,-2500,1
-Kate Sandmeyer,Christiano Troisi,+850,-110,850,-110,1
-Sergio Vilas,John Romero,-125,+140,-125,140,1
-Max Livingston,Brandon Smith,-188,-110,-188,-110,1
-Tyler Carroll,Ezra Outlaw,-125,,-125,,1
-Steve Joachim,Amanda Mazza,,-350,,-350,0
-Kelly Chan,Danny Maira,+250,-250,250,-250,1
-Peter Fazekas,Bella Miller,+175,+110,175,110,1
-Molli Zborowski,Alex Rogers,-150,+175,-150,175,1
-Joey Milano,Angelo Sullo,-250,-175,-250,-175,1
-Nick O'Brien,Alpha Yero Mansare,-125,+100,-125,100,1
-Malik Thompson,Austin Miller,-138,+140,-138,140,1
-Josh Hokit,Dominick Reyes,+128,-120,128,-120,4
-King Green,Alexander Volkov,-250,-158,-250,-138,1
-Waldo Cortes-Acosta,Joaquin Buckley,+124,+164,124,164,2
-Sean Brady,Bogdan Guskov,-215,-174,-200,-163,2
+event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
+Ares FC 39,Ghassen Jbalia,Ibrahima Mane,-200,-250,-200,-250,1
+Ares FC 39,Jason Ponet,Bruno Matos,+175,+650,175,650,1
+Ares FC 39,Noah Gugnon,Jimmy Vienot,-1408,-588▼,-1408,,1
+Ares FC 39,Mario Gagliardi,Mohamed Soumah,+400▲,+400,,400,1
+CFFC  BJJ 17,Sean Yadimarco,Keith Krikorian,+650,-1587,650,-1587,1
+CFFC  BJJ 17,Matt Masch,Joslyn Molina,+700,-2500,700,-2500,1
+CFFC  BJJ 17,Kate Sandmeyer,Christiano Troisi,+850,-110,850,-110,1
+CFFC  BJJ 17,Sergio Vilas,John Romero,-125,+140,-125,140,1
+CFFC  BJJ 17,Max Livingston,Brandon Smith,-188,-110,-188,-110,1
+CFFC  BJJ 17,Tyler Carroll,Ezra Outlaw,-125,,-125,,1
+CFFC  BJJ 17,Steve Joachim,Amanda Mazza,,-350,,-350,0
+CFFC  BJJ 17,Kelly Chan,Danny Maira,+250,-250,250,-250,1
+CFFC  BJJ 17,Peter Fazekas,Bella Miller,+175,+110,175,110,1
+CFFC  BJJ 17,Molli Zborowski,Alex Rogers,-150,+175,-150,175,1
+CFFC  BJJ 17,Joey Milano,Angelo Sullo,-250,-175,-250,-175,1
+LFA 230,Nick O'Brien,Alpha Yero Mansare,-125,+100,-125,100,1
+LFA 230,Malik Thompson,Austin Miller,-138,+140,-138,140,1
+UFC 327,Josh Hokit,Dominick Reyes,+128,-120,128,-120,4
+UFC 327,Johnny Walker,Azamat Murzakanov,-106,-194,102,,4
+UFC 327,Paulo Costa,Chris Padilla,+150,,,,4
+UFC 327,Francisco Prado,Aaron Pico,,-340,,,0
+UFC 327,Patricio Freire,Cub Swanson,+250,+126,,126,4
+UFC 327,Nate Landwehr,Esteban Ribovics,-162,+154,-140,,4
+UFC 327,Mateusz Gamrot,Kevin Holland,-200,+110,,,4
+UFC 327,Randy Brown,Lupita Godinez,-140,+130,,,4
+UFC 327,Tatiana Suarez,Kelvin Gastelum,-166,-235,,,4
+UFC 328,King Green,Alexander Volkov,-250,-158,-250,-138,1
+UFC 328,Waldo Cortes-Acosta,Joaquin Buckley,+124,+164,124,164,2
+UFC 328,Sean Brady,Bogdan Guskov,-215,-174,-200,-163,2
+UFC 328,Jan Blachowicz,Khamzat Chimaev,+136,-440,136,,2
+MVP 1,Ronda Rousey,Francis Ngannou,-500,-1400,-500,,3
+MVP 1,Philipe Lins,Mike Perry,+700,-225▲,,,3
+UFC Freedom Fights 250,Ciryl Gane,Aiemann Zahabi,-106▼,+280,,,5
+UFC Freedom Fights 250,Sean Omalley,Mauricio Ruffy,-390,-480▼,,,5
+UFC Freedom Fights 250,Michael Chandler,Bo Nickal,+330▲,-330▼,,,5
+UFC Freedom Fights 250,Kyle Daukaus,Diego Lopes,+240▲,-200▲,,,5
+UFC Freedom Fights 250,Steve Garcia,Ilia Topuria,+154▼,-620▲,,,5
+Future Events,Islam Makhachev,Joshua van,,+142▲,,,0
+Future Events,Khamzat Chimaev,Alex Pereira,,+122▼,,,0
+Future Events,Tony Ferguson,Brandon Moreno,+230,-134▲,230,,1
+Future Events,Charles Oliveira,Bryce Mitchell,,+136▲,,,0
