@@ -1,2 +1,2 @@
 # ufc-data
-Ufc w-l record
+Some UFC data for a predictor
