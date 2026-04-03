@@ -1,9 +1,10 @@
-name: Update UFC Records
+name: Update UFC Data
 
 on:
   schedule:
     - cron: '0 6 * * 1'   # Every Monday at 6am UTC
-  workflow_dispatch:        # Adds a manual "Run workflow" button
+    - cron: '0 6 * * 5'   # Every Friday at 6am UTC (before fight weekends)
+  workflow_dispatch:        # Manual "Run workflow" button
 
 jobs:
   scrape:
@@ -19,12 +20,12 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run scraper
-        run: python scrape_ufc_records.py
+        run: python scrape_ufc_data.py
 
-      - name: Commit updated CSV
+      - name: Commit updated CSVs
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add ufc_fighter_records.csv
-          git diff --cached --quiet || git commit -m "Update UFC records $(date +%Y-%m-%d)"
+          git add *.csv
+          git diff --cached --quiet || git commit -m "Update UFC data $(date +%Y-%m-%d)"
           git push
