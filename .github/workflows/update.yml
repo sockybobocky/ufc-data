@@ -1,0 +1,32 @@
+name: Update UFC Data
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Monday 6am UTC
+    - cron: '0 6 * * 5'   # Friday 6am UTC
+  workflow_dispatch:        # Manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper (update mode)
+        run: python scrape_ufc_data.py
+
+      - name: Commit updated CSVs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add *.csv scraper_state.json
+          git diff --cached --quiet || git commit -m "Update UFC data $(date +%Y-%m-%d)"
+          git push
