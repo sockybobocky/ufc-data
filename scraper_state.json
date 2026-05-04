@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-01T08:14:11.813179",
+  "last_run": "2026-05-04T08:42:16.420143",
   "scraped_events": [
     "http://www.ufcstats.com/event-details/f3eb664db7fb1df3",
     "http://www.ufcstats.com/event-details/9a70f67ad2187fa3",
@@ -772,6 +772,7 @@
     "http://www.ufcstats.com/event-details/a6a9ab5a824e8f66",
     "http://www.ufcstats.com/event-details/c3ac8d0da7b05772",
     "http://www.ufcstats.com/event-details/e60d773a0a42048a",
-    "http://www.ufcstats.com/event-details/872b018076f831b0"
+    "http://www.ufcstats.com/event-details/872b018076f831b0",
+    "http://www.ufcstats.com/event-details/9eedac48b497de5a"
   ]
 }
