@@ -1,34 +1,59 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-05-17T00:00:00Z,Alice Ardelean,Polyana Viana,-195,+170,-192,+170,6
+2026-05-16T01:00:00Z,Adam Livingston,Kyle Pufahl,,,,,0
+2026-05-16T01:00:00Z,Ben Woolliss,Petchtanong Petchfergus,+170,-200,+170,-162,2
+2026-05-16T01:35:00Z,Regivaldo Carvalho,Abbas Abasov,+325,-425,+325,-425,1
+2026-05-16T02:25:00Z,Ansar Khamzaev,Jordon Tague,-1000,+675,-1000,+675,1
+2026-05-16T02:50:00Z,Nathan Ghareeb,Vinicius Cenci,-160,+140,-160,+140,1
+2026-05-16T03:15:00Z,Erick Visconde,Gustavo Pintos,-310,+260,-310,+260,1
+2026-05-16T15:00:00Z,Dawid Jarowienko,Altin Zenuni,+225,-350,+225,-350,1
+2026-05-16T15:00:00Z,Ivana Petrovic,Danielle Misteli,-450,+275,-450,+275,1
+2026-05-16T15:00:00Z,Khalid Taha,Max Holzer,+250,-400,+250,-400,1
+2026-05-16T16:00:00Z,Aymard Guih,Marian Ziolkowski,+170,-250,+170,-250,1
+2026-05-16T16:00:00Z,Cedric Lushima,Michal Dreczkowski,+120,-160,+120,-160,1
+2026-05-16T16:00:00Z,Michal Michalski,Piotr Kuberski,+250,-400,+250,-400,1
+2026-05-16T16:00:00Z,Roman Szymanski,Valeriu Mircea,+125,-165,+125,-165,1
+2026-05-16T16:00:00Z,Sara Luzar Smajić,Wiktoria Czyżewska,+350,-600,+350,-600,1
+2026-05-16T21:00:00Z,Thomas Gantt,Artur Minev,-200,+170,-200,+173,5
+2026-05-16T22:00:00Z,Modestas Bukauskas,Christian Edwards,-340,+280,-320,+280,5
+2026-05-17T00:00:00Z,Alice Ardelean,Polyana Viana,-205,+175,-205,+175,6
 2026-05-17T00:00:00Z,Cody Brundage,Andre Petroski,+170,-200,+180,-200,6
-2026-05-17T00:00:00Z,Arnold Allen,Melquizael Costa,-195,+170,-185,+170,6
-2026-05-17T00:00:00Z,Timothy Cuamba,Benardo Sopaj,+130,-150,+134,-148,5
-2026-05-17T00:00:00Z,Daniel Barez,Luis Gurule,-110,-110,-110,-105,6
-2026-05-17T00:00:00Z,Dooho Choi,Daniel Santos,+127,-147,+127,-132,5
-2026-05-17T00:00:00Z,Francis Ngannou,Philipe Lins,-1500,+850,-1500,+850,1
-2026-05-17T00:00:00Z,Ronda Rousey,Gina Carano,-600,+425,-600,+425,1
-2026-05-17T00:00:00Z,Tuco Tokkos,Ivan Erslan,+170,-200,+170,-180,6
-2026-05-17T00:00:00Z,Ketlen Vieira,Jacqueline Cavalcanti,+135,-155,+150,-155,6
-2026-05-17T00:00:00Z,Malcolm Wellmaker,Juan Diaz,-260,+220,-240,+220,4
-2026-05-17T00:00:00Z,Junior dos Santos,Robelis Despaigne,+330,-400,+330,-400,1
-2026-05-17T00:00:00Z,Salahdine Parnasse,Kenneth Cross,-1400,+800,-1400,+800,1
-2026-05-17T00:00:00Z,Nikolay Veretennikov,Khaos Williams,+102,-122,+105,-120,5
-2026-05-17T00:00:00Z,Nate Diaz,Mike Perry,+155,-180,+155,-180,1
-2026-05-17T00:00:00Z,Modestas Bukauskas,Rodolfo Bellato,-130,+110,-130,+110,6
-2026-05-17T00:00:00Z,Shauna Bannon,Nicolle Caliari,+185,-220,+185,-186,6
-2026-05-17T00:00:00Z,Trey Ogden,Thomas Gantt,+205,-240,+215,-240,5
+2026-05-17T00:00:00Z,Arnold Allen,Melquizael Costa,-125,+105,-122,+112,6
+2026-05-17T00:00:00Z,Timothy Cuamba,Benardo Sopaj,+126,-146,+127,-142,6
+2026-05-17T00:00:00Z,Daniel Barez,Luis Gurule,+145,-170,+145,-148,6
+2026-05-17T00:00:00Z,Dooho Choi,Daniel Santos,+145,-170,+145,-162,6
+2026-05-17T00:00:00Z,Francis Ngannou,Philipe Lins,-1400,+800,-1400,+800,1
+2026-05-17T00:00:00Z,Ronda Rousey,Gina Carano,-650,+475,-650,+475,1
+2026-05-17T00:00:00Z,Tuco Tokkos,Ivan Erslan,+143,-163,+148,-163,6
+2026-05-17T00:00:00Z,Ketlen Vieira,Jacqueline Cavalcanti,+145,-170,+145,-158,6
+2026-05-17T00:00:00Z,Jason Jackson,Jeff Creighton,-450,+350,-450,+350,1
+2026-05-17T00:00:00Z,Malcolm Wellmaker,Juan Diaz,-274,+234,-274,+240,6
+2026-05-17T00:00:00Z,Junior dos Santos,Robelis Despaigne,+285,-350,+285,-350,1
+2026-05-17T00:00:00Z,Salahdine Parnasse,Kenneth Cross,-1800,+900,-1800,+900,1
+2026-05-17T00:00:00Z,Nikolay Veretennikov,Khaos Williams,-108,-112,-102,-112,4
+2026-05-17T00:00:00Z,Nate Diaz,Mike Perry,+165,-190,+165,-190,1
+2026-05-17T00:00:00Z,Shauna Bannon,Nicolle Caliari,+235,-275,+235,-265,6
+2026-05-30T08:00:00Z,Loma Lookboonmee,Jaqueline Amorim,+130,-150,+130,-148,2
+2026-05-30T08:00:00Z,Rei Tsuruya,Jesus Santos Aguilar,-330,+270,-330,+270,2
+2026-05-30T08:00:00Z,Meng Ding,José Henrique,-190,+165,-190,+165,2
+2026-05-30T10:00:00Z,Aori Qileng,Cody Haddon,+275,-325,+275,-325,2
+2026-05-30T10:00:00Z,Muslim Salikhov,Jake Matthews,+205,-240,+205,-240,2
+2026-05-30T11:00:00Z,Alex Perez,Su Mudaerji,-150,+130,-148,+130,2
+2026-05-30T11:00:00Z,Zhang Mingyang,Alonzo Menifield,-220,+185,-218,+185,2
+2026-05-30T11:00:00Z,Kai Asakura,Cameron Smotherman,-300,+250,-300,+250,2
+2026-05-30T11:00:00Z,Song Yadong,Deiveson Figueiredo,-410,+310,-410,+320,2
+2026-05-30T11:00:00Z,Sergey Pavlovich,Tallison Teixeira,-400,+330,-400,+330,2
 2026-06-02T02:00:00Z,Islam Makhachev,Ilia Topuria,-234,+199,-234,+199,1
 2026-06-14T02:00:00Z,Alex Pereira,Carlos Ulberg,-175,+150,-175,+150,1
 2026-06-14T02:00:00Z,Alex Pereira,Jiri Prochazka,-300,+250,-300,+250,1
 2026-06-14T02:00:00Z,Alex Pereira,Jon Jones,+210,-250,+210,-250,1
 2026-06-14T02:00:00Z,Magomed Ankalaev,Carlos Ulberg,-250,+210,-250,+210,1
-2026-06-14T07:00:00Z,Aiemann Zahabi,Sean O'Malley,+295,-375,+330,-375,5
-2026-06-14T07:00:00Z,Ciryl Gane,Alex Pereira,-105,-115,-105,-110,5
-2026-06-14T07:00:00Z,Justin Gaethje,Ilia Topuria,+525,-750,+550,-750,5
-2026-06-14T07:30:00Z,Michael Chandler,Mauricio Ruffy,+455,-625,+455,-550,5
-2026-06-14T22:50:00Z,Derrick Lewis,Josh Hokit,+270,-340,+275,-325,4
-2026-06-14T23:00:00Z,Kyle Daukaus,Bo Nickal,+250,-310,+260,-280,5
-2026-06-15T00:30:00Z,Steve Garcia Jr.,Diego Lopes,+154,-185,+160,-180,5
+2026-06-14T22:10:00Z,Diego Lopes,Steve Garcia Jr.,-185,+154,-185,+160,3
+2026-06-14T22:30:00Z,Bo Nickal,Kyle Daukaus,-298,+240,-280,+240,4
+2026-06-14T22:50:00Z,Derrick Lewis,Josh Hokit,+275,-345,+275,-305,4
+2026-06-14T23:15:00Z,Mauricio Ruffy,Michael Chandler,-600,+440,-590,+450,4
+2026-06-14T23:45:00Z,Sean O'Malley,Aiemann Zahabi,-395,+310,-395,+330,4
+2026-06-15T00:30:00Z,Alex Pereira,Ciryl Gane,-115,-105,-110,-105,4
+2026-06-15T01:15:00Z,Ilia Topuria,Justin Gaethje,-800,+550,-750,+550,4
 2026-06-27T14:00:00Z,Valentina Shevchenko,Natalia Silva,-250,+210,-250,+210,1
 2026-06-28T02:00:00Z,Alexandre Pantoja,Joshua Van,-175,+150,-175,+150,1
 2026-06-28T02:00:00Z,Tom Aspinall,Ciryl Gane,-205,+175,-205,+175,1
@@ -37,14 +62,14 @@ event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
 2026-06-28T02:00:00Z,Merab Dvalishvili,Petr Yan,+150,-175,+150,-175,1
 2026-07-12T03:00:00Z,Benoit Saint-Denis,Paddy Pimblett,-170,+142,-170,+142,1
 2026-08-02T03:10:00Z,Ilia Topuria,Arman Tsarukyan,-190,+165,-190,+165,1
-2026-12-27T03:00:00Z,Benoit Saint-Denis,Paddy Pimblett,-190,+165,-190,+165,1
+2026-12-27T03:00:00Z,Benoit Saint-Denis,Paddy Pimblett,-200,+170,-200,+170,1
 2026-12-27T03:00:00Z,Max Holloway,Conor McGregor,-330,+270,-330,+270,1
 2026-12-27T03:00:00Z,Manel Kape,Joshua Van,-155,+135,-155,+135,1
 2026-12-31T17:00:00Z,Conor McGregor,Jorge Masvidal,-145,+125,-145,+125,1
 2026-12-31T19:00:00Z,Michael Chandler,Conor McGregor,-120,+100,-120,+100,1
 2026-12-31T19:25:00Z,Islam Makhachev,Kamaru Usman,-310,+250,-310,+250,1
 2026-12-31T20:00:00Z,Tom Aspinall,Ciryl Gane,-192,+160,-192,+160,1
-2027-01-01T03:00:00Z,Khamzat Chimaev,Paulo Henrique Costa,-500,+385,-500,+385,1
-2027-01-01T03:00:00Z,Sean Strickland,Khamzat Chimaev,+160,-185,+160,-185,1
-2027-01-01T03:00:00Z,Sean Strickland,Nassourdine Imavov,-110,-110,-110,-110,1
+2027-01-01T03:00:00Z,Khamzat Chimaev,Paulo Henrique Costa,-500,+375,-500,+375,1
+2027-01-01T03:00:00Z,Sean Strickland,Khamzat Chimaev,+175,-205,+175,-205,1
+2027-01-01T03:00:00Z,Sean Strickland,Nassourdine Imavov,-106,-114,-106,-114,1
 2027-07-02T02:00:00Z,Islam Makhachev,Kamaru Usman,-330,+270,-330,+270,1
