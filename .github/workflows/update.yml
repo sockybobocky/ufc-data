@@ -2,14 +2,24 @@ name: Update UFC Data
 
 on:
   schedule:
-    - cron: '0 6 * * 1'   # Monday 6am UTC
-    - cron: '0 6 * * 5'   # Friday 6am UTC
-  workflow_dispatch:        # Manual trigger
+    - cron: '0 6 * * 1'     # Monday 6am UTC - weekly update
+    - cron: '0 6 * * 5'     # Friday 6am UTC - weekly update
+    - cron: '0 4 1 * *'     # 1st of every month 4am UTC - full scrape
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Scrape mode'
+        required: true
+        default: 'update'
+        type: choice
+        options:
+          - update
+          - full
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 
@@ -20,8 +30,19 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Run scraper (update mode)
-        run: python scrape_ufc_data.py
+      - name: Run scraper
+        run: |
+          # Determine mode: manual input, monthly schedule, or weekly update
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then
+            echo "Running FULL scrape (manual trigger)"
+            python scrape_ufc_data.py --full
+          elif [ "${{ github.event.schedule }}" = "0 4 1 * *" ]; then
+            echo "Running FULL scrape (monthly schedule)"
+            python scrape_ufc_data.py --full
+          else
+            echo "Running UPDATE scrape"
+            python scrape_ufc_data.py
+          fi
 
       - name: Commit updated CSVs
         run: |
