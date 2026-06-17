@@ -1,15 +1,124 @@
 EVENT,DATE,BOUT,FIGHTER_A,FIGHTER_B,WINNER,OUTCOME,WEIGHTCLASS,METHOD,ROUND,TIME,FIGHT_URL
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Jiri Prochazka vs. Carlos Ulberg,Jiri Prochazka,Carlos Ulberg,,,Light Heavyweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Joshua Van vs. Tatsuro Taira,Joshua Van,Tatsuro Taira,,,Flyweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Curtis Blaydes vs. Josh Hokit,Curtis Blaydes,Josh Hokit,,,Heavyweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Dominick Reyes vs. Johnny Walker,Dominick Reyes,Johnny Walker,,,Light Heavyweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Azamat Murzakanov vs. Paulo Costa,Azamat Murzakanov,Paulo Costa,,,Light Heavyweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Patricio Freire vs. Aaron Pico,Patricio Freire,Aaron Pico,,,Featherweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Cub Swanson vs. Nate Landwehr,Cub Swanson,Nate Landwehr,,,Featherweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Mateusz Gamrot vs. Esteban Ribovics,Mateusz Gamrot,Esteban Ribovics,,,Lightweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Kevin Holland vs. Randy Brown,Kevin Holland,Randy Brown,,,Welterweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Tatiana Suarez vs. Loopy Godinez,Tatiana Suarez,Loopy Godinez,,,Women's Strawweight,,,,
-UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Kelvin Gastelum vs. Vicente Luque,Kelvin Gastelum,Vicente Luque,,,Middleweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Manel Kape vs. Kyoji Horiguchi,Manel Kape,Kyoji Horiguchi,,,Flyweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Ion Cutelaba vs. Navajo Stirling,Ion Cutelaba,Navajo Stirling,,,Light Heavyweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Vinicius Oliveira vs. Andre Fili,Vinicius Oliveira,Andre Fili,,,Featherweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Hyder Amil vs. Christian Rodriguez,Hyder Amil,Christian Rodriguez,,,Featherweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Andre Lima vs. Kevin Borjas,Andre Lima,Kevin Borjas,,,Flyweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Melsik Baghdasaryan vs. Murtazali Magomedov,Melsik Baghdasaryan,Murtazali Magomedov,,,Featherweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Bia Mesquita vs. Melissa Mullins,Bia Mesquita,Melissa Mullins,,,Women's Bantamweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Allan Nascimento vs. Mitch Raposo,Allan Nascimento,Mitch Raposo,,,Flyweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Gaston Bolanos vs. Michael Aswell Jr.,Gaston Bolanos,Michael Aswell Jr.,,,Featherweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Karol Rosa vs. Luana Santos,Karol Rosa,Luana Santos,,,Women's Bantamweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Leon Shahbazyan vs. Levan Chokheli,Leon Shahbazyan,Levan Chokheli,,,Welterweight,,,,
+UFC Fight Night: Kape vs. Horiguchi,"June 20, 2026",Shane Collins vs. Otari Tanzilovi,Shane Collins,Otari Tanzilovi,,,Featherweight,,,,
+UFC Freedom 250,"June 14, 2026",Justin Gaethje vs. Ilia Topuria,Justin Gaethje,Ilia Topuria,Justin Gaethje,W/L,Lightweight,KO/TKO,4,5:00,http://www.ufcstats.com/fight-details/7208e40818401e88
+UFC Freedom 250,"June 14, 2026",Ciryl Gane vs. Alex Pereira,Ciryl Gane,Alex Pereira,Ciryl Gane,W/L,Heavyweight,,2,1:27,http://www.ufcstats.com/fight-details/5727d5be8c373346
+UFC Freedom 250,"June 14, 2026",Sean O'Malley vs. Aiemann Zahabi,Sean O'Malley,Aiemann Zahabi,Sean O'Malley,W/L,Bantamweight,,2,4:02,http://www.ufcstats.com/fight-details/60de0423ae6ed097
+UFC Freedom 250,"June 14, 2026",Josh Hokit vs. Derrick Lewis,Josh Hokit,Derrick Lewis,Josh Hokit,W/L,Heavyweight,,2,4:09,http://www.ufcstats.com/fight-details/30cdb851f6c63444
+UFC Freedom 250,"June 14, 2026",Mauricio Ruffy vs. Michael Chandler,Mauricio Ruffy,Michael Chandler,Mauricio Ruffy,W/L,Lightweight,,1,4:29,http://www.ufcstats.com/fight-details/9a9b30b3165b62e4
+UFC Freedom 250,"June 14, 2026",Bo Nickal vs. Kyle Daukaus,Bo Nickal,Kyle Daukaus,Bo Nickal,W/L,Middleweight,,1,4:34,http://www.ufcstats.com/fight-details/00e8d4b961a65d21
+UFC Freedom 250,"June 14, 2026",Diego Lopes vs. Steve Garcia,Diego Lopes,Steve Garcia,Diego Lopes,W/L,Featherweight,,2,2:42,http://www.ufcstats.com/fight-details/127ba4a1ccb3d4a6
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Gabriel Bonfim vs. Belal Muhammad,Gabriel Bonfim,Belal Muhammad,Gabriel Bonfim,W/L,Welterweight,,5,5:00,http://www.ufcstats.com/fight-details/5c69b019e6deee41
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Brendan Allen vs. Edmen Shahbazyan,Brendan Allen,Edmen Shahbazyan,Brendan Allen,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/419fff06f338f5c6
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Tom Nolan vs. Fares Ziam,Tom Nolan,Fares Ziam,Tom Nolan,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/58ffa2dac4f2e7d0
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Bryce Mitchell vs. Santiago Luna,Bryce Mitchell,Santiago Luna,Bryce Mitchell,W/L,Bantamweight,,3,4:52,http://www.ufcstats.com/fight-details/c47796e11a801e12
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Iwo Baraniewski vs. Junior Tafa,Iwo Baraniewski,Junior Tafa,Iwo Baraniewski,W/L,Light Heavyweight,,1,1:25,http://www.ufcstats.com/fight-details/bfe4950b3de83e9c
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Alessandro Costa vs. Matt Schnell,Alessandro Costa,Matt Schnell,Alessandro Costa,W/L,Catch Weight,,1,2:28,http://www.ufcstats.com/fight-details/5d2eedd05081ed23
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Marcus McGhee vs. John Yannis,Marcus McGhee,John Yannis,Marcus McGhee,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/90940d93d6e0998f
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Edgar Chairez vs. Bruno Silva,Edgar Chairez,Bruno Silva,Edgar Chairez,W/L,Flyweight,,1,4:13,http://www.ufcstats.com/fight-details/20d74ed23d3e9b3a
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Chelsea Chandler vs. Priscila Cachoeira,Chelsea Chandler,Priscila Cachoeira,Chelsea Chandler,W/L,Women's Bantamweight,,1,3:42,http://www.ufcstats.com/fight-details/98e77712f99956ff
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Joanderson Brito vs. Jordan Leavitt,Joanderson Brito,Jordan Leavitt,Joanderson Brito,W/L,Featherweight,,1,4:19,http://www.ufcstats.com/fight-details/44cfbb8c3c356c65
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Jeisla Chaves vs. Yuneisy Duben,Jeisla Chaves,Yuneisy Duben,Jeisla Chaves,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/a6b211d8dab5edec
+UFC Fight Night: Muhammad vs. Bonfim,"June 06, 2026",Ketlen Souza vs. Ariane Carnelossi,Ketlen Souza,Ariane Carnelossi,Ketlen Souza,W/L,Women's Strawweight,,1,1:34,http://www.ufcstats.com/fight-details/b0474597b2c60482
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Song Yadong vs. Deiveson Figueiredo,Song Yadong,Deiveson Figueiredo,Song Yadong,W/L,Bantamweight,,2,4:42,http://www.ufcstats.com/fight-details/423f32dd018ac218
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Alonzo Menifield vs. Zhang Mingyang,Alonzo Menifield,Zhang Mingyang,Alonzo Menifield,W/L,Light Heavyweight,,1,4:15,http://www.ufcstats.com/fight-details/a23d84f15207e459
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Sergei Pavlovich vs. Tallison Teixeira,Sergei Pavlovich,Tallison Teixeira,Sergei Pavlovich,W/L,Heavyweight,,1,0:39,http://www.ufcstats.com/fight-details/f74e4afdf6ae29d1
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Kai Asakura vs. Cameron Smotherman,Kai Asakura,Cameron Smotherman,Kai Asakura,W/L,Bantamweight,,1,1:50,http://www.ufcstats.com/fight-details/00959e29e4a10e26
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Jake Matthews vs. Carlston Harris,Jake Matthews,Carlston Harris,Jake Matthews,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/c1c9dfd0c0952f18
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Alex Perez vs. Sumudaerji,Alex Perez,Sumudaerji,,D/D,Flyweight,,2,1:45,http://www.ufcstats.com/fight-details/7e8749cbf32ef1f8
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Luis Felipe Dias vs. YiSak Lee,Luis Felipe Dias,YiSak Lee,Luis Felipe Dias,W/L,Middleweight,,1,3:40,http://www.ufcstats.com/fight-details/f6d09973de0f83e7
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Jose Souza vs. Ding Meng,Jose Souza,Ding Meng,Jose Souza,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/bc0b3c16246e0d1d
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Cody Haddon vs. Aoriqileng,Cody Haddon,Aoriqileng,Cody Haddon,W/L,Bantamweight,,2,2:11,http://www.ufcstats.com/fight-details/3bc0190fb17ba42f
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Rei Tsuruya vs. Luis Gurule,Rei Tsuruya,Luis Gurule,Rei Tsuruya,W/L,Bantamweight,,1,3:19,http://www.ufcstats.com/fight-details/224dce2c0b03e7eb
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Angela Hill vs. Xiong Jingnan,Angela Hill,Xiong Jingnan,Angela Hill,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/3f719885c9916e06
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Rodrigo Vera vs. Zhu Kangjie,Rodrigo Vera,Zhu Kangjie,Rodrigo Vera,W/L,Featherweight,,1,1:50,http://www.ufcstats.com/fight-details/34d5ec676fb5bce3
+UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Jaqueline Amorim vs. Loma Lookboonmee,Jaqueline Amorim,Loma Lookboonmee,Jaqueline Amorim,W/L,Women's Strawweight,,1,4:04,http://www.ufcstats.com/fight-details/370ff29489150560
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Arnold Allen vs. Melquizael Costa,Arnold Allen,Melquizael Costa,Arnold Allen,W/L,Featherweight,,5,5:00,http://www.ufcstats.com/fight-details/e4aa608124896794
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Dooho Choi vs. Daniel Santos,Dooho Choi,Daniel Santos,Dooho Choi,W/L,Featherweight,,2,4:29,http://www.ufcstats.com/fight-details/fc1266e2892ed111
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Juan Diaz vs. Malcolm Wellmaker,Juan Diaz,Malcolm Wellmaker,Juan Diaz,W/L,Bantamweight,,2,4:08,http://www.ufcstats.com/fight-details/ecb7ff543dd41bf8
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Modestas Bukauskas vs. Christian Edwards,Modestas Bukauskas,Christian Edwards,Modestas Bukauskas,W/L,Catch Weight,,3,5:00,http://www.ufcstats.com/fight-details/57bd683efc797fc1
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Benardo Sopaj vs. Timmy Cuamba,Benardo Sopaj,Timmy Cuamba,Benardo Sopaj,W/L,Bantamweight,,2,2:25,http://www.ufcstats.com/fight-details/a6ec8573a9d38c51
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Khaos Williams vs. Nikolay Veretennikov,Khaos Williams,Nikolay Veretennikov,Khaos Williams,W/L,Welterweight,,1,3:31,http://www.ufcstats.com/fight-details/ec32745308e2b055
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Ivan Erslan vs. Tuco Tokkos,Ivan Erslan,Tuco Tokkos,Ivan Erslan,W/L,Light Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/6242cda790f2085d
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Tommy Gantt vs. Artur Minev,Tommy Gantt,Artur Minev,Tommy Gantt,W/L,Lightweight,,2,2:51,http://www.ufcstats.com/fight-details/c9e0aa88afb81dab
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Ketlen Vieira vs. Jacqueline Cavalcanti,Ketlen Vieira,Jacqueline Cavalcanti,Ketlen Vieira,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/5f7111b982bcf6e3
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Cody Brundage vs. Andre Petroski,Cody Brundage,Andre Petroski,Cody Brundage,W/L,Middleweight,,2,0:44,http://www.ufcstats.com/fight-details/48cb604345f11766
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Alice Ardelean vs. Polyana Viana,Alice Ardelean,Polyana Viana,Alice Ardelean,W/L,Women's Strawweight,,2,4:36,http://www.ufcstats.com/fight-details/b98ead4eff6bf872
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Luis Gurule vs. Daniel Barez,Luis Gurule,Daniel Barez,Luis Gurule,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/b482d4452e4d0eee
+UFC Fight Night: Allen vs. Costa,"May 16, 2026",Nicolle Caliari vs. Shauna Bannon,Nicolle Caliari,Shauna Bannon,Nicolle Caliari,W/L,Women's Strawweight,,3,3:08,http://www.ufcstats.com/fight-details/39417b7d07c2fd83
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Sean Strickland vs. Khamzat Chimaev,Sean Strickland,Khamzat Chimaev,Sean Strickland,W/L,Middleweight,,5,5:00,http://www.ufcstats.com/fight-details/70f1621080b3435c
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Joshua Van vs. Tatsuro Taira,Joshua Van,Tatsuro Taira,Joshua Van,W/L,Flyweight,,5,1:32,http://www.ufcstats.com/fight-details/c85b530861145935
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Alexander Volkov vs. Waldo Cortes Acosta,Alexander Volkov,Waldo Cortes Acosta,Alexander Volkov,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/22ba4f1b0aafbf82
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Sean Brady vs. Joaquin Buckley,Sean Brady,Joaquin Buckley,Sean Brady,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/845b8653f9cf839c
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",King Green vs. Jeremy Stephens,King Green,Jeremy Stephens,King Green,W/L,Lightweight,,1,4:20,http://www.ufcstats.com/fight-details/1158a27a1a04b971
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Ateba Gautier vs. Ozzy Diaz,Ateba Gautier,Ozzy Diaz,Ateba Gautier,W/L,Middleweight,,2,1:10,http://www.ufcstats.com/fight-details/770c5302e32916ea
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Yaroslav Amosov vs. Joel Alvarez,Yaroslav Amosov,Joel Alvarez,Yaroslav Amosov,W/L,Welterweight,,2,1:13,http://www.ufcstats.com/fight-details/f88dc6e0c29cff1d
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Grant Dawson vs. Mateusz Rebecki,Grant Dawson,Mateusz Rebecki,Grant Dawson,W/L,Lightweight,,3,4:42,http://www.ufcstats.com/fight-details/ffcb47e17eebe6a6
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Jim Miller vs. Jared Gordon,Jim Miller,Jared Gordon,Jim Miller,W/L,Lightweight,,1,3:29,http://www.ufcstats.com/fight-details/e50857173607d631
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Roman Kopylov vs. Marco Tulio,Roman Kopylov,Marco Tulio,Roman Kopylov,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/9d35723a53749931
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Pat Sabatini vs. William Gomis,Pat Sabatini,William Gomis,Pat Sabatini,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/303018d7459323b4
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Baisangur Susurkaev vs. Djorden Santos,Baisangur Susurkaev,Djorden Santos,Baisangur Susurkaev,W/L,Middleweight,,3,4:12,http://www.ufcstats.com/fight-details/1f5d0b106385b2ac
+UFC 328: Chimaev vs. Strickland,"May 09, 2026",Jose Ochoa vs. Clayton Carpenter,Jose Ochoa,Clayton Carpenter,Jose Ochoa,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/e92d89cb2d69235e
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Carlos Prates vs. Jack Della Maddalena,Carlos Prates,Jack Della Maddalena,Carlos Prates,W/L,Welterweight,,3,3:17,http://www.ufcstats.com/fight-details/eb6d9fef6c374830
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Quillan Salkilld vs. Beneil Dariush,Quillan Salkilld,Beneil Dariush,Quillan Salkilld,W/L,Lightweight,,1,3:29,http://www.ufcstats.com/fight-details/5c7c38dece435cde
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Steve Erceg vs. Tim Elliott,Steve Erceg,Tim Elliott,Steve Erceg,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/afec383a96893ec5
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Marwan Rahiki vs. Ollie Schmid,Marwan Rahiki,Ollie Schmid,Marwan Rahiki,W/L,Featherweight,,1,2:47,http://www.ufcstats.com/fight-details/cfc884a249141cba
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Brando Pericic vs. Shamil Gaziev,Brando Pericic,Shamil Gaziev,Brando Pericic,W/L,Heavyweight,,2,3:44,http://www.ufcstats.com/fight-details/a564219e7a964aa6
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Louie Sutherland vs. Tai Tuivasa,Louie Sutherland,Tai Tuivasa,Louie Sutherland,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/2afaa97901d5587c
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Cam Rowston vs. Robert Bryczek,Cam Rowston,Robert Bryczek,Cam Rowston,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/46181797eb543a0b
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Junior Tafa vs. Kevin Christian,Junior Tafa,Kevin Christian,Junior Tafa,W/L,Light Heavyweight,,1,2:42,http://www.ufcstats.com/fight-details/1cb0711cd49dd95e
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Jacob Malkoun vs. Gerald Meerschaert,Jacob Malkoun,Gerald Meerschaert,Jacob Malkoun,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/edff38661bf2866b
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Colby Thicknesse vs. Vince Morales,Colby Thicknesse,Vince Morales,Colby Thicknesse,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/00bde62cac38e5e9
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Wes Schultz vs. Ben Johnston,Wes Schultz,Ben Johnston,Wes Schultz,W/L,Middleweight,,3,1:50,http://www.ufcstats.com/fight-details/827c64369b374989
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Jonathan Micallef vs. Themba Gorimbo,Jonathan Micallef,Themba Gorimbo,Jonathan Micallef,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/7ac4ae301ed699ab
+UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Kody Steele vs. Dom Mar Fan,Kody Steele,Dom Mar Fan,Kody Steele,W/L,Lightweight,,1,3:56,http://www.ufcstats.com/fight-details/610a640a0cd81ce5
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Aljamain Sterling vs. Youssef Zalal,Aljamain Sterling,Youssef Zalal,Aljamain Sterling,W/L,Featherweight,,5,5:00,http://www.ufcstats.com/fight-details/f524e42c36028de0
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Joselyne Edwards vs. Norma Dumont,Joselyne Edwards,Norma Dumont,Joselyne Edwards,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/cb745968bd16bf56
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Rafa Garcia vs. Alexander Hernandez,Rafa Garcia,Alexander Hernandez,Rafa Garcia,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/84951374e4cdc679
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Davey Grant vs. Adrian Luna Martinetti,Davey Grant,Adrian Luna Martinetti,Davey Grant,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/f5aff2f858311fbc
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Raoni Barcelos vs. Montel Jackson,Raoni Barcelos,Montel Jackson,Raoni Barcelos,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/348de8e364ecf041
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Ryan Spann vs. Marcus Buchecha,Ryan Spann,Marcus Buchecha,Ryan Spann,W/L,Heavyweight,,2,2:10,http://www.ufcstats.com/fight-details/7e551ddb1494a45f
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Eric McConico vs. Rodolfo Vieira,Eric McConico,Rodolfo Vieira,Eric McConico,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/67f24cf244134661
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Jackson McVey vs. Sedriques Dumas,Jackson McVey,Sedriques Dumas,Jackson McVey,W/L,Middleweight,,1,2:14,http://www.ufcstats.com/fight-details/ef1cd6371a3f18e0
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Michelle Montague vs. Mayra Bueno Silva,Michelle Montague,Mayra Bueno Silva,Michelle Montague,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/dcfd594b68ff5ae1
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Cody Durden vs. Jafel Filho,Cody Durden,Jafel Filho,Cody Durden,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/d421f3cd158fd055
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Francis Marshall vs. Lucas Brennan,Francis Marshall,Lucas Brennan,Francis Marshall,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/c7fb90f1355291e4
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Victor Valenzuela vs. Max Griffin,Victor Valenzuela,Max Griffin,Victor Valenzuela,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/2e7f8d0ad385876d
+UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Talita Alencar vs. Julia Polastri,Talita Alencar,Julia Polastri,Talita Alencar,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/0df4f4ac27cf2d26
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Mike Malott vs. Gilbert Burns,Mike Malott,Gilbert Burns,Mike Malott,W/L,Welterweight,,3,2:08,http://www.ufcstats.com/fight-details/32054bf2b36b0e47
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Charles Jourdain vs. Kyler Phillips,Charles Jourdain,Kyler Phillips,Charles Jourdain,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/b5299e5b946015e5
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Jai Herbert vs. Mandel Nallo,Jai Herbert,Mandel Nallo,Jai Herbert,W/L,Lightweight,,1,2:05,http://www.ufcstats.com/fight-details/e644218737c1a778
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Jasmine Jasudavicius vs. Karine Silva,Jasmine Jasudavicius,Karine Silva,Jasmine Jasudavicius,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/5a209522211d7530
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Gauge Young vs. Thiago Moises,Gauge Young,Thiago Moises,Gauge Young,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/a661c0bee7c8d5af
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Marcio Barbosa vs. Dennis Buzukja,Marcio Barbosa,Dennis Buzukja,Marcio Barbosa,W/L,Featherweight,,1,1:20,http://www.ufcstats.com/fight-details/678440bd8274a18e
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Robert Valentin vs. Julien Leblanc,Robert Valentin,Julien Leblanc,Robert Valentin,W/L,Middleweight,,1,2:22,http://www.ufcstats.com/fight-details/9fab4b0ad082f670
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Gokhan Saricam vs. Tanner Boser,Gokhan Saricam,Tanner Boser,Gokhan Saricam,W/L,Heavyweight,,2,4:43,http://www.ufcstats.com/fight-details/85c7a0f44aa3e10a
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",Melissa Croden vs. Daria Zhelezniakova,Melissa Croden,Daria Zhelezniakova,Melissa Croden,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/bae4de7ef8c0769e
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",JJ Aldrich vs. Jamey-Lyn Horth,JJ Aldrich,Jamey-Lyn Horth,JJ Aldrich,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/0b6c13ab8ad7f82b
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",John Castaneda vs. Mark Vologdin,John Castaneda,Mark Vologdin,,D/D,Catch Weight,,3,5:00,http://www.ufcstats.com/fight-details/552f7cdaf93e1055
+UFC Fight Night: Burns vs. Malott,"April 18, 2026",John Yannis vs. Jamie Siraj,John Yannis,Jamie Siraj,John Yannis,W/L,Bantamweight,,1,2:43,http://www.ufcstats.com/fight-details/32087c183dffcae0
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Carlos Ulberg vs. Jiri Prochazka,Carlos Ulberg,Jiri Prochazka,Carlos Ulberg,W/L,Light Heavyweight,,1,3:45,http://www.ufcstats.com/fight-details/a031f062b7ffefee
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Paulo Costa vs. Azamat Murzakanov,Paulo Costa,Azamat Murzakanov,Paulo Costa,W/L,Light Heavyweight,,3,1:23,http://www.ufcstats.com/fight-details/aade9d76ac6c6aef
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Josh Hokit vs. Curtis Blaydes,Josh Hokit,Curtis Blaydes,Josh Hokit,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/903552edaba48f4a
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Dominick Reyes vs. Johnny Walker,Dominick Reyes,Johnny Walker,Dominick Reyes,W/L,Light Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/c4d060cff018979a
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Cub Swanson vs. Nate Landwehr,Cub Swanson,Nate Landwehr,Cub Swanson,W/L,Featherweight,,1,4:06,http://www.ufcstats.com/fight-details/60949f33201415ca
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Aaron Pico vs. Patricio Pitbull,Aaron Pico,Patricio Pitbull,Aaron Pico,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/10ab34056720b6b4
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Kevin Holland vs. Randy Brown,Kevin Holland,Randy Brown,Kevin Holland,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/b4e16fb13153efdc
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Mateusz Gamrot vs. Esteban Ribovics,Mateusz Gamrot,Esteban Ribovics,Mateusz Gamrot,W/L,Lightweight,,2,4:19,http://www.ufcstats.com/fight-details/62b5ce408c150fa8
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Tatiana Suarez vs. Loopy Godinez,Tatiana Suarez,Loopy Godinez,Tatiana Suarez,W/L,Women's Strawweight,,2,2:29,http://www.ufcstats.com/fight-details/f506977877074aa6
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Chris Padilla vs. MarQuel Mederos,Chris Padilla,MarQuel Mederos,,D/D,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/81d20c833e9a76eb
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Vicente Luque vs. Kelvin Gastelum,Vicente Luque,Kelvin Gastelum,Vicente Luque,W/L,Middleweight,,1,4:08,http://www.ufcstats.com/fight-details/20868a67bea63129
+UFC 327: Prochazka vs. Ulberg,"April 11, 2026",Charles Radtke vs. Francisco Prado,Charles Radtke,Francisco Prado,Charles Radtke,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/5b49c3d36907c6df
 UFC Fight Night: Moicano vs. Duncan,"April 04, 2026",Renato Moicano vs. Chris Duncan,Renato Moicano,Chris Duncan,Renato Moicano,W/L,Lightweight,,2,3:14,http://www.ufcstats.com/fight-details/d69bd8e53ec858dc
 UFC Fight Night: Moicano vs. Duncan,"April 04, 2026",Virna Jandiroba vs. Tabatha Ricci,Virna Jandiroba,Tabatha Ricci,Virna Jandiroba,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/721642e7de112e9e
 UFC Fight Night: Moicano vs. Duncan,"April 04, 2026",Abdul Rakhman Yakhyaev vs. Brendson Ribeiro,Abdul Rakhman Yakhyaev,Brendson Ribeiro,Abdul Rakhman Yakhyaev,W/L,Light Heavyweight,,1,2:52,http://www.ufcstats.com/fight-details/ad487d1c6141d90a
@@ -374,7 +483,7 @@ UFC Fight Night: Whittaker vs. De Ridder,"July 26, 2025",Martin Buday vs. Marcus
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Max Holloway vs. Dustin Poirier,Max Holloway,Dustin Poirier,Max Holloway,W/L,Lightweight,,5,5:00,http://www.ufcstats.com/fight-details/d7507e2741fd4d05
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Paulo Costa vs. Roman Kopylov,Paulo Costa,Roman Kopylov,Paulo Costa,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/23c963be9de38205
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Daniel Rodriguez vs. Kevin Holland,Daniel Rodriguez,Kevin Holland,Daniel Rodriguez,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/5dde61734080ac4a
-UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Patricio Freire vs. Dan Ige,Patricio Freire,Dan Ige,Patricio Freire,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/acc961fd5cf5c62e
+UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Patricio Pitbull vs. Dan Ige,Patricio Pitbull,Dan Ige,Patricio Pitbull,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/acc961fd5cf5c62e
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Michael Johnson vs. Daniel Zellhuber,Michael Johnson,Daniel Zellhuber,Michael Johnson,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/a95b03e9b5a91e47
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Vinicius Oliveira vs. Kyler Phillips,Vinicius Oliveira,Kyler Phillips,Vinicius Oliveira,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/d2cb92fdf6a497e9
 UFC 318: Holloway vs. Poirier 3,"July 19, 2025",Brendan Allen vs. Marvin Vettori,Brendan Allen,Marvin Vettori,Brendan Allen,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/8e1feda9141602f1
@@ -506,7 +615,7 @@ UFC Fight Night: Machado Garry vs. Prates,"April 26, 2025",Timmy Cuamba vs. Robe
 UFC Fight Night: Machado Garry vs. Prates,"April 26, 2025",Joselyne Edwards vs. Chelsea Chandler,Joselyne Edwards,Chelsea Chandler,Joselyne Edwards,W/L,Women's Bantamweight,,1,2:31,http://www.ufcstats.com/fight-details/7fd6770fe2d4f258
 UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Alexander Volkanovski vs. Diego Lopes,Alexander Volkanovski,Diego Lopes,Alexander Volkanovski,W/L,Featherweight,,5,5:00,http://www.ufcstats.com/fight-details/e733f148060bef2a
 UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Paddy Pimblett vs. Michael Chandler,Paddy Pimblett,Michael Chandler,Paddy Pimblett,W/L,Lightweight,,3,3:07,http://www.ufcstats.com/fight-details/d05cb4c4135ce402
-UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Yair Rodriguez vs. Patricio Freire,Yair Rodriguez,Patricio Freire,Yair Rodriguez,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/d3be5a4e0ec273e2
+UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Yair Rodriguez vs. Patricio Pitbull,Yair Rodriguez,Patricio Pitbull,Yair Rodriguez,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/d3be5a4e0ec273e2
 UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Jean Silva vs. Bryce Mitchell,Jean Silva,Bryce Mitchell,Jean Silva,W/L,Featherweight,,2,3:52,http://www.ufcstats.com/fight-details/8c540eb4afe8c43e
 UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Dominick Reyes vs. Nikita Krylov,Dominick Reyes,Nikita Krylov,Dominick Reyes,W/L,Light Heavyweight,,1,2:24,http://www.ufcstats.com/fight-details/b2d731415bd367df
 UFC 314: Volkanovski vs. Lopes,"April 12, 2025",Dan Ige vs. Sean Woodson,Dan Ige,Sean Woodson,Dan Ige,W/L,Featherweight,,3,1:12,http://www.ufcstats.com/fight-details/fc43d60cbd6b0e6a
@@ -8635,78 +8744,3 @@ UFC 2: No Way Out,"March 11, 1994",Frank Hamaker vs. Thaddeus Luster,Frank Hamak
 UFC 2: No Way Out,"March 11, 1994",Johnny Rhodes vs. David Levicki,Johnny Rhodes,David Levicki,Johnny Rhodes,W/L,Open Weight,,1,12:13,http://www.ufcstats.com/fight-details/ccee020be2e8d9f6
 UFC 2: No Way Out,"March 11, 1994",Patrick Smith vs. Ray Wizard,Patrick Smith,Ray Wizard,Patrick Smith,W/L,Open Weight,,1,0:58,http://www.ufcstats.com/fight-details/4b9ae533ccb3fcdf
 UFC 2: No Way Out,"March 11, 1994",Scott Morris vs. Sean Daugherty,Scott Morris,Sean Daugherty,Scott Morris,W/L,Open Weight,,1,0:20,http://www.ufcstats.com/fight-details/4acab67848e78327
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Gilbert Burns vs. Mike Malott,Gilbert Burns,Mike Malott,,,Welterweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Kyler Phillips vs. Charles Jourdain,Kyler Phillips,Charles Jourdain,,,Bantamweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Mandel Nallo vs. Jai Herbert,Mandel Nallo,Jai Herbert,,,Lightweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Jasmine Jasudavicius vs. Karine Silva,Jasmine Jasudavicius,Karine Silva,,,Women's Flyweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Thiago Moises vs. Gauge Young,Thiago Moises,Gauge Young,,,Lightweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Dennis Buzukja vs. Marcio Barbosa,Dennis Buzukja,Marcio Barbosa,,,Featherweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Julien Leblanc vs. Robert Valentin,Julien Leblanc,Robert Valentin,,,Middleweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Tanner Boser vs. Gokhan Saricam,Tanner Boser,Gokhan Saricam,,,Heavyweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Melissa Croden vs. Daria Zhelezniakova,Melissa Croden,Daria Zhelezniakova,,,Women's Bantamweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Mitch Raposo vs. Allan Nascimento,Mitch Raposo,Allan Nascimento,,,Flyweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",JJ Aldrich vs. Jamey-Lyn Horth,JJ Aldrich,Jamey-Lyn Horth,,,Women's Flyweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",John Castaneda vs. Mark Vologdin,John Castaneda,Mark Vologdin,,,Bantamweight,,,,
-UFC Fight Night: Burns vs. Malott,"April 18, 2026",Jamie Siraj vs. John Yannis,Jamie Siraj,John Yannis,,,Bantamweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Aljamain Sterling vs. Youssef Zalal,Aljamain Sterling,Youssef Zalal,,,Featherweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Norma Dumont vs. Joselyne Edwards,Norma Dumont,Joselyne Edwards,,,Women's Bantamweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Rafa Garcia vs. Alexander Hernandez,Rafa Garcia,Alexander Hernandez,,,Lightweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Davey Grant vs. Juan Adrian Martinetti,Davey Grant,Juan Adrian Martinetti,,,Bantamweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Montel Jackson vs. Raoni Barcelos,Montel Jackson,Raoni Barcelos,,,Bantamweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Marcus Buchecha vs. Ryan Spann,Marcus Buchecha,Ryan Spann,,,Heavyweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Rodolfo Vieira vs. Eric McConico,Rodolfo Vieira,Eric McConico,,,Middleweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Jackson McVey vs. Sedriques Dumas,Jackson McVey,Sedriques Dumas,,,Middleweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Mayra Bueno Silva vs. Michelle Montague,Mayra Bueno Silva,Michelle Montague,,,Women's Bantamweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Jafel Filho vs. Lucas Rocha,Jafel Filho,Lucas Rocha,,,Flyweight,,,,
-UFC Fight Night: Sterling vs. Zalal,"April 25, 2026",Talita Alencar vs. Julia Polastri,Talita Alencar,Julia Polastri,,,Women's Strawweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Jack Della Maddalena vs. Carlos Prates,Jack Della Maddalena,Carlos Prates,,,Welterweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Beneil Dariush vs. Quillan Salkilld,Beneil Dariush,Quillan Salkilld,,,Lightweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Tim Elliott vs. Steve Erceg,Tim Elliott,Steve Erceg,,,Flyweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Shamil Gaziev vs. Brando Pericic,Shamil Gaziev,Brando Pericic,,,Heavyweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Tai Tuivasa vs. Louie Sutherland,Tai Tuivasa,Louie Sutherland,,,Heavyweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Cam Rowston vs. Robert Bryczek,Cam Rowston,Robert Bryczek,,,Middleweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Junior Tafa vs. Kevin Christian,Junior Tafa,Kevin Christian,,,Light Heavyweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Jacob Malkoun vs. Gerald Meerschaert,Jacob Malkoun,Gerald Meerschaert,,,Middleweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Colby Thicknesse vs. Vince Morales,Colby Thicknesse,Vince Morales,,,Bantamweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Ben Johnston vs. Wes Schultz,Ben Johnston,Wes Schultz,,,Middleweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Jonathan Micallef vs. Themba Gorimbo,Jonathan Micallef,Themba Gorimbo,,,Welterweight,,,,
-UFC Fight Night: Della Maddalena vs. Prates,"May 02, 2026",Dom Mar Fan vs. Kody Steele,Dom Mar Fan,Kody Steele,,,Lightweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Khamzat Chimaev vs. Sean Strickland,Khamzat Chimaev,Sean Strickland,,,Middleweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Joshua Van vs. Tatsuro Taira,Joshua Van,Tatsuro Taira,,,Flyweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Alexander Volkov vs. Waldo Cortes Acosta,Alexander Volkov,Waldo Cortes Acosta,,,Heavyweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Sean Brady vs. Joaquin Buckley,Sean Brady,Joaquin Buckley,,,Welterweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",King Green vs. Jeremy Stephens,King Green,Jeremy Stephens,,,Lightweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Ateba Gautier vs. Ozzy Diaz,Ateba Gautier,Ozzy Diaz,,,Middleweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Joel Alvarez vs. Yaroslav Amosov,Joel Alvarez,Yaroslav Amosov,,,Welterweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Grant Dawson vs. Mateusz Rebecki,Grant Dawson,Mateusz Rebecki,,,Lightweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Jim Miller vs. Jared Gordon,Jim Miller,Jared Gordon,,,Lightweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Roman Kopylov vs. Marco Tulio,Roman Kopylov,Marco Tulio,,,Middleweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Pat Sabatini vs. William Gomis,Pat Sabatini,William Gomis,,,Featherweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Baisangur Susurkaev vs. Djorden Santos,Baisangur Susurkaev,Djorden Santos,,,Middleweight,,,,
-UFC 328: Chimaev vs. Strickland,"May 09, 2026",Clayton Carpenter vs. Jose Ochoa,Clayton Carpenter,Jose Ochoa,,,Flyweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Arnold Allen vs. Melquizael Costa,Arnold Allen,Melquizael Costa,,,Featherweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Dooho Choi vs. Daniel Santos,Dooho Choi,Daniel Santos,,,Featherweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Malcolm Wellmaker vs. Juan Diaz,Malcolm Wellmaker,Juan Diaz,,,Bantamweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Modestas Bukauskas vs. Rodolfo Bellato,Modestas Bukauskas,Rodolfo Bellato,,,Light Heavyweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Timmy Cuamba vs. Benardo Sopaj,Timmy Cuamba,Benardo Sopaj,,,Bantamweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Jeremiah Wells vs. Nicolas Dalby,Jeremiah Wells,Nicolas Dalby,,,Welterweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Tuco Tokkos vs. Ivan Erslan,Tuco Tokkos,Ivan Erslan,,,Light Heavyweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Trey Ogden vs. Tommy Gantt,Trey Ogden,Tommy Gantt,,,Lightweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Ketlen Vieira vs. Jacqueline Cavalcanti,Ketlen Vieira,Jacqueline Cavalcanti,,,Women's Bantamweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Cody Brundage vs. Andre Petroski,Cody Brundage,Andre Petroski,,,Middleweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Alice Ardelean vs. Polyana Viana,Alice Ardelean,Polyana Viana,,,Women's Strawweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Daniel Barez vs. Luis Gurule,Daniel Barez,Luis Gurule,,,Flyweight,,,,
-UFC Fight Night: Allen vs. Costa,"May 16, 2026",Shauna Bannon vs. Nicolle Caliari,Shauna Bannon,Nicolle Caliari,,,Women's Strawweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Song Yadong vs. Deiveson Figueiredo,Song Yadong,Deiveson Figueiredo,,,Bantamweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Zhang Mingyang vs. Alonzo Menifield,Zhang Mingyang,Alonzo Menifield,,,Light Heavyweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Sergei Pavlovich vs. Tallison Teixeira,Sergei Pavlovich,Tallison Teixeira,,,Heavyweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Kai Asakura vs. Cameron Smotherman,Kai Asakura,Cameron Smotherman,,,Bantamweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Muslim Salikhov vs. Jake Matthews,Muslim Salikhov,Jake Matthews,,,Welterweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Alex Perez vs. Sumudaerji,Alex Perez,Sumudaerji,,,Flyweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Yi Sak Lee vs. Luis Felipe Dias,Yi Sak Lee,Luis Felipe Dias,,,Middleweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Ding Meng vs. Jose Henrique,Ding Meng,Jose Henrique,,,Welterweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Aoriqileng vs. Cody Haddon,Aoriqileng,Cody Haddon,,,Bantamweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Rei Tsuruya vs. Jesus Aguilar,Rei Tsuruya,Jesus Aguilar,,,Flyweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Angela Hill vs. Xiong Jingnan,Angela Hill,Xiong Jingnan,,,Women's Strawweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Zhu Kangjie vs. Ramon Taveras,Zhu Kangjie,Ramon Taveras,,,Featherweight,,,,
-UFC Fight Night: Song vs. Figueiredo,"May 30, 2026",Loma Lookboonmee vs. Jaqueline Amorim,Loma Lookboonmee,Jaqueline Amorim,,,Women's Strawweight,,,,

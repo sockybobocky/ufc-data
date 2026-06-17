@@ -1,4 +1,603 @@
 EVENT,BOUT,ROUND,FIGHTER,KD,SIG.STR.,SIG.STR. %,TOTAL STR.,TD,TD %,SUB.ATT,REV.,CTRL,HEAD,BODY,LEG,DISTANCE,CLINCH,GROUND
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,10,97 of 16291 of 192,59%47%,111 of 177119 of 228,1 of 30 of 5,33%0%,00,00,2:321:32,,,,,,
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,00,29 of 5832 of 68,50%47%,29 of 5835 of 71,0 of 00 of 3,---0%,00,00,0:000:00,,,,,,
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,10,44 of 6012 of 35,73%34%,52 of 6913 of 37,0 of 00 of 1,---0%,00,00,2:020:00,,,,,,
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,00,7 of 1522 of 36,46%61%,10 of 1831 of 46,0 of 10 of 0,0%---,00,00,0:050:47,,,,,,
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,00,17 of 2925 of 53,58%47%,20 of 3240 of 74,1 of 20 of 1,50%0%,00,00,0:250:45,,,,,,
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,,,,,,,,,,29 of 5832 of 68,50%47%,19 of 4830 of 65,7 of 72 of 2,3 of 30 of 1,25 of 5328 of 62
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,,,,,,,,,,44 of 6012 of 35,73%34%,19 of 3011 of 32,24 of 291 of 3,1 of 10 of 0,29 of 3911 of 32
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,,,,,,,,,,7 of 1522 of 36,46%61%,5 of 1219 of 32,2 of 32 of 3,0 of 01 of 1,3 of 1016 of 30
+UFC Freedom 250,Justin Gaethje vs. Ilia Topuria,Total,Ilia Topuria,,,,,,,,,,17 of 2925 of 53,58%47%,12 of 2219 of 46,4 of 63 of 4,1 of 13 of 3,11 of 2318 of 43
+UFC Freedom 250,Ciryl Gane vs. Alex Pereira,Total,Alex Pereira,01,12 of 3354 of 86,36%62%,12 of 3354 of 86,0 of 00 of 2,---0%,00,00,0:000:12,,,,,,
+UFC Freedom 250,Ciryl Gane vs. Alex Pereira,Total,Alex Pereira,00,11 of 2623 of 45,42%51%,11 of 2623 of 45,0 of 00 of 1,---0%,00,00,0:000:00,,,,,,
+UFC Freedom 250,Ciryl Gane vs. Alex Pereira,Total,Alex Pereira,01,1 of 731 of 41,14%75%,1 of 731 of 41,0 of 00 of 1,---0%,00,00,0:000:12,,,,,,
+UFC Freedom 250,Ciryl Gane vs. Alex Pereira,Total,Alex Pereira,,,,,,,,,,11 of 2623 of 45,42%51%,2 of 1310 of 32,1 of 34 of 4,8 of 109 of 9,11 of 2623 of 45
+UFC Freedom 250,Ciryl Gane vs. Alex Pereira,Total,Alex Pereira,,,,,,,,,,1 of 731 of 41,14%75%,1 of 729 of 39,0 of 00 of 0,0 of 02 of 2,1 of 713 of 21
+UFC Freedom 250,Sean O'Malley vs. Aiemann Zahabi,Total,Sean O'Malley,10,41 of 8132 of 56,50%57%,41 of 8132 of 56,0 of 00 of 0,------,00,00,0:020:00,,,,,,
+UFC Freedom 250,Sean O'Malley vs. Aiemann Zahabi,Total,Sean O'Malley,00,14 of 358 of 16,40%50%,14 of 358 of 16,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Freedom 250,Sean O'Malley vs. Aiemann Zahabi,Total,Sean O'Malley,10,27 of 4624 of 40,58%60%,27 of 4624 of 40,0 of 00 of 0,------,00,00,0:020:00,,,,,,
+UFC Freedom 250,Sean O'Malley vs. Aiemann Zahabi,Total,Sean O'Malley,,,,,,,,,,14 of 358 of 16,40%50%,7 of 223 of 10,6 of 120 of 0,1 of 15 of 6,14 of 358 of 16
+UFC Freedom 250,Sean O'Malley vs. Aiemann Zahabi,Total,Sean O'Malley,,,,,,,,,,27 of 4624 of 40,58%60%,25 of 443 of 15,1 of 10 of 0,1 of 121 of 25,27 of 4624 of 40
+UFC Freedom 250,Josh Hokit vs. Derrick Lewis,Total,Josh Hokit,10,86 of 1177 of 40,73%17%,105 of 1388 of 41,2 of 30 of 1,66%0%,10,00,4:040:00,,,,,,
+UFC Freedom 250,Josh Hokit vs. Derrick Lewis,Total,Josh Hokit,00,41 of 551 of 5,74%20%,54 of 691 of 5,2 of 20 of 0,100%---,10,00,3:010:00,,,,,,
+UFC Freedom 250,Josh Hokit vs. Derrick Lewis,Total,Josh Hokit,10,45 of 626 of 35,72%17%,51 of 697 of 36,0 of 10 of 1,0%0%,00,00,1:030:00,,,,,,
+UFC Freedom 250,Josh Hokit vs. Derrick Lewis,Total,Josh Hokit,,,,,,,,,,41 of 551 of 5,74%20%,32 of 441 of 4,4 of 60 of 0,5 of 50 of 1,11 of 181 of 5
+UFC Freedom 250,Josh Hokit vs. Derrick Lewis,Total,Josh Hokit,,,,,,,,,,45 of 626 of 35,72%17%,42 of 594 of 33,3 of 32 of 2,0 of 00 of 0,28 of 423 of 29
+UFC Freedom 250,Mauricio Ruffy vs. Michael Chandler,Total,Mauricio Ruffy,20,19 of 403 of 12,47%25%,20 of 413 of 12,0 of 00 of 3,---0%,00,00,0:130:00,,,,,,
+UFC Freedom 250,Mauricio Ruffy vs. Michael Chandler,Total,Mauricio Ruffy,20,19 of 403 of 12,47%25%,20 of 413 of 12,0 of 00 of 3,---0%,00,00,0:130:00,,,,,,
+UFC Freedom 250,Mauricio Ruffy vs. Michael Chandler,Total,Mauricio Ruffy,,,,,,,,,,19 of 403 of 12,47%25%,16 of 362 of 7,1 of 20 of 3,2 of 21 of 2,17 of 373 of 12
+UFC Freedom 250,Bo Nickal vs. Kyle Daukaus,Total,Bo Nickal,10,16 of 242 of 7,66%28%,44 of 5326 of 31,1 of 10 of 0,100%---,00,00,3:140:00,,,,,,
+UFC Freedom 250,Bo Nickal vs. Kyle Daukaus,Total,Bo Nickal,10,16 of 242 of 7,66%28%,44 of 5326 of 31,1 of 10 of 0,100%---,00,00,3:140:00,,,,,,
+UFC Freedom 250,Bo Nickal vs. Kyle Daukaus,Total,Bo Nickal,,,,,,,,,,16 of 242 of 7,66%28%,15 of 231 of 6,0 of 00 of 0,1 of 11 of 1,7 of 132 of 7
+UFC Freedom 250,Diego Lopes vs. Steve Garcia,Total,Diego Lopes,10,24 of 6647 of 104,36%45%,24 of 6647 of 104,0 of 10 of 0,0%---,00,00,0:050:00,,,,,,
+UFC Freedom 250,Diego Lopes vs. Steve Garcia,Total,Diego Lopes,00,6 of 3223 of 57,18%40%,6 of 3223 of 57,0 of 10 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Freedom 250,Diego Lopes vs. Steve Garcia,Total,Diego Lopes,10,18 of 3424 of 47,52%51%,18 of 3424 of 47,0 of 00 of 0,------,00,00,0:050:00,,,,,,
+UFC Freedom 250,Diego Lopes vs. Steve Garcia,Total,Diego Lopes,,,,,,,,,,6 of 3223 of 57,18%40%,4 of 2612 of 45,1 of 53 of 4,1 of 18 of 8,6 of 3223 of 57
+UFC Freedom 250,Diego Lopes vs. Steve Garcia,Total,Diego Lopes,,,,,,,,,,18 of 3424 of 47,52%51%,17 of 3121 of 44,1 of 30 of 0,0 of 03 of 3,11 of 2624 of 47
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,86 of 275128 of 260,31%49%,86 of 275128 of 261,0 of 20 of 1,0%0%,00,00,0:080:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,13 of 3614 of 37,36%37%,13 of 3614 of 37,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,20 of 5430 of 60,37%50%,20 of 5430 of 60,0 of 00 of 1,---0%,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,14 of 3923 of 50,35%46%,14 of 3923 of 51,0 of 20 of 0,0%---,00,00,0:080:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,17 of 6526 of 53,26%49%,17 of 6526 of 53,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,00,22 of 8135 of 60,27%58%,22 of 8135 of 60,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,,,,,,,,,,13 of 3614 of 37,36%37%,9 of 304 of 27,0 of 13 of 3,4 of 57 of 7,13 of 3614 of 37
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,,,,,,,,,,20 of 5430 of 60,37%50%,12 of 4514 of 42,5 of 61 of 1,3 of 315 of 17,20 of 5430 of 60
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,,,,,,,,,,14 of 3923 of 50,35%46%,8 of 3213 of 40,6 of 73 of 3,0 of 07 of 7,14 of 3823 of 50
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,,,,,,,,,,17 of 6526 of 53,26%49%,8 of 5222 of 48,7 of 102 of 2,2 of 32 of 3,17 of 6526 of 53
+UFC Fight Night: Muhammad vs. Bonfim,Gabriel Bonfim vs. Belal Muhammad,Total,Belal Muhammad,,,,,,,,,,22 of 8135 of 60,27%58%,15 of 6930 of 55,4 of 92 of 2,3 of 33 of 3,22 of 8033 of 58
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,00,89 of 19490 of 180,45%50%,91 of 19690 of 180,1 of 40 of 1,25%0%,00,00,0:280:08,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,00,20 of 5022 of 38,40%57%,21 of 5122 of 38,0 of 20 of 0,0%---,00,00,0:160:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,00,28 of 6432 of 59,43%54%,29 of 6532 of 59,0 of 10 of 0,0%---,00,00,0:020:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,00,41 of 8036 of 83,51%43%,41 of 8036 of 83,1 of 10 of 1,100%0%,00,00,0:100:08,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,,,,,,,,,,20 of 5022 of 38,40%57%,9 of 3318 of 33,4 of 102 of 2,7 of 72 of 3,19 of 4819 of 35
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,,,,,,,,,,28 of 6432 of 59,43%54%,17 of 5332 of 58,3 of 30 of 0,8 of 80 of 1,24 of 5531 of 56
+UFC Fight Night: Muhammad vs. Bonfim,Brendan Allen vs. Edmen Shahbazyan,Total,Brendan Allen,,,,,,,,,,41 of 8036 of 83,51%43%,35 of 7433 of 80,3 of 32 of 2,3 of 31 of 1,36 of 7135 of 82
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,00,16 of 3231 of 66,50%46%,48 of 7065 of 116,3 of 52 of 6,60%33%,10,11,5:076:47,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,00,6 of 1313 of 25,46%52%,14 of 2324 of 42,1 of 22 of 2,50%100%,00,10,1:382:05,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,00,6 of 1312 of 19,46%63%,14 of 2226 of 37,0 of 10 of 2,0%0%,10,00,0:493:10,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,00,4 of 66 of 22,66%27%,20 of 2515 of 37,2 of 20 of 2,100%0%,00,01,2:401:32,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,,,,,,,,,,6 of 1313 of 25,46%52%,5 of 126 of 14,0 of 03 of 5,1 of 14 of 6,5 of 128 of 16
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,,,,,,,,,,6 of 1312 of 19,46%63%,3 of 104 of 9,2 of 25 of 6,1 of 13 of 4,5 of 114 of 7
+UFC Fight Night: Muhammad vs. Bonfim,Tom Nolan vs. Fares Ziam,Total,Fares Ziam,,,,,,,,,,4 of 66 of 22,66%27%,3 of 43 of 15,1 of 23 of 5,0 of 00 of 2,2 of 31 of 9
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,00,22 of 419 of 25,53%36%,54 of 77112 of 130,2 of 50 of 1,40%0%,21,11,11:401:14,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,00,11 of 133 of 4,84%75%,18 of 2058 of 59,0 of 10 of 1,0%0%,00,00,4:080:04,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,00,9 of 223 of 12,40%25%,20 of 3615 of 25,2 of 30 of 0,66%---,00,01,3:410:24,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,00,2 of 63 of 9,33%33%,16 of 2139 of 46,0 of 10 of 0,0%---,21,10,3:510:46,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,,,,,,,,,,11 of 133 of 4,84%75%,6 of 72 of 2,2 of 21 of 2,3 of 40 of 0,7 of 93 of 4
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,,,,,,,,,,9 of 223 of 12,40%25%,1 of 122 of 7,8 of 90 of 4,0 of 11 of 1,3 of 163 of 12
+UFC Fight Night: Muhammad vs. Bonfim,Bryce Mitchell vs. Santiago Luna,Total,Bryce Mitchell,,,,,,,,,,2 of 63 of 9,33%33%,2 of 50 of 4,0 of 13 of 5,0 of 00 of 0,2 of 63 of 9
+UFC Fight Night: Muhammad vs. Bonfim,Iwo Baraniewski vs. Junior Tafa,Total,Iwo Baraniewski,10,6 of 220 of 8,27%0%,6 of 220 of 8,0 of 10 of 0,0%---,00,00,0:170:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Iwo Baraniewski vs. Junior Tafa,Total,Iwo Baraniewski,10,6 of 220 of 8,27%0%,6 of 220 of 8,0 of 10 of 0,0%---,00,00,0:170:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Iwo Baraniewski vs. Junior Tafa,Total,Iwo Baraniewski,,,,,,,,,,6 of 220 of 8,27%0%,2 of 180 of 6,1 of 10 of 2,3 of 30 of 0,4 of 60 of 8
+UFC Fight Night: Muhammad vs. Bonfim,Alessandro Costa vs. Matt Schnell,Total,Matt Schnell,01,8 of 2119 of 23,38%82%,8 of 2119 of 23,0 of 00 of 0,------,00,00,0:000:05,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Alessandro Costa vs. Matt Schnell,Total,Matt Schnell,01,8 of 2119 of 23,38%82%,8 of 2119 of 23,0 of 00 of 0,------,00,00,0:000:05,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Alessandro Costa vs. Matt Schnell,Total,Matt Schnell,,,,,,,,,,8 of 2119 of 23,38%82%,5 of 1716 of 18,1 of 22 of 2,2 of 21 of 3,8 of 217 of 11
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,00,79 of 20255 of 115,39%47%,79 of 20255 of 115,0 of 20 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,00,14 of 5113 of 40,27%32%,14 of 5113 of 40,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,00,35 of 9330 of 45,37%66%,35 of 9330 of 45,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,00,30 of 5812 of 30,51%40%,30 of 5812 of 30,0 of 20 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,,,,,,,,,,14 of 5113 of 40,27%32%,11 of 443 of 22,2 of 57 of 15,1 of 23 of 3,14 of 5113 of 40
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,,,,,,,,,,35 of 9330 of 45,37%66%,27 of 8117 of 30,6 of 910 of 12,2 of 33 of 3,35 of 9330 of 45
+UFC Fight Night: Muhammad vs. Bonfim,Marcus McGhee vs. John Yannis,Total,Marcus McGhee,,,,,,,,,,30 of 5812 of 30,51%40%,22 of 467 of 25,5 of 83 of 3,3 of 42 of 2,30 of 5811 of 29
+UFC Fight Night: Muhammad vs. Bonfim,Edgar Chairez vs. Bruno Silva,Total,Bruno Silva,02,17 of 2924 of 44,58%54%,17 of 2924 of 44,0 of 30 of 0,0%---,01,00,0:000:24,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Edgar Chairez vs. Bruno Silva,Total,Bruno Silva,02,17 of 2924 of 44,58%54%,17 of 2924 of 44,0 of 30 of 0,0%---,01,00,0:000:24,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Edgar Chairez vs. Bruno Silva,Total,Bruno Silva,,,,,,,,,,17 of 2924 of 44,58%54%,11 of 2220 of 37,3 of 42 of 5,3 of 32 of 2,17 of 2921 of 38
+UFC Fight Night: Muhammad vs. Bonfim,Chelsea Chandler vs. Priscila Cachoeira,Total,Priscila Cachoeira,01,7 of 1311 of 25,53%44%,9 of 1624 of 41,1 of 10 of 0,100%---,01,00,0:231:52,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Chelsea Chandler vs. Priscila Cachoeira,Total,Priscila Cachoeira,01,7 of 1311 of 25,53%44%,9 of 1624 of 41,1 of 10 of 0,100%---,01,00,0:231:52,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Chelsea Chandler vs. Priscila Cachoeira,Total,Priscila Cachoeira,,,,,,,,,,7 of 1311 of 25,53%44%,6 of 119 of 22,0 of 12 of 3,1 of 10 of 0,6 of 129 of 22
+UFC Fight Night: Muhammad vs. Bonfim,Joanderson Brito vs. Jordan Leavitt,Total,Jordan Leavitt,00,7 of 95 of 13,77%38%,27 of 2915 of 24,0 of 50 of 0,0%---,11,10,2:211:17,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Joanderson Brito vs. Jordan Leavitt,Total,Jordan Leavitt,00,7 of 95 of 13,77%38%,27 of 2915 of 24,0 of 50 of 0,0%---,11,10,2:211:17,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Joanderson Brito vs. Jordan Leavitt,Total,Jordan Leavitt,,,,,,,,,,7 of 95 of 13,77%38%,3 of 33 of 10,4 of 62 of 2,0 of 00 of 1,3 of 43 of 11
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,00,64 of 9962 of 112,64%55%,92 of 136110 of 165,3 of 62 of 4,50%50%,10,01,4:293:18,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,00,28 of 5326 of 56,52%46%,31 of 5639 of 69,0 of 01 of 2,---50%,00,00,0:000:37,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,00,18 of 2512 of 20,72%60%,38 of 5225 of 33,1 of 30 of 1,33%0%,10,00,3:010:26,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,00,18 of 2124 of 36,85%66%,23 of 2846 of 63,2 of 31 of 1,66%100%,00,01,1:282:15,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,,,,,,,,,,28 of 5326 of 56,52%46%,11 of 3314 of 36,10 of 136 of 8,7 of 76 of 12,24 of 4623 of 52
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,,,,,,,,,,18 of 2512 of 20,72%60%,11 of 189 of 17,5 of 53 of 3,2 of 20 of 0,7 of 1411 of 19
+UFC Fight Night: Muhammad vs. Bonfim,Jeisla Chaves vs. Yuneisy Duben,Total,Jeisla Chaves,,,,,,,,,,18 of 2124 of 36,85%66%,13 of 1518 of 30,5 of 65 of 5,0 of 01 of 1,5 of 810 of 19
+UFC Fight Night: Muhammad vs. Bonfim,Ketlen Souza vs. Ariane Carnelossi,Total,Ketlen Souza,10,13 of 178 of 21,76%38%,13 of 178 of 21,0 of 00 of 0,------,00,00,0:030:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Ketlen Souza vs. Ariane Carnelossi,Total,Ketlen Souza,10,13 of 178 of 21,76%38%,13 of 178 of 21,0 of 00 of 0,------,00,00,0:030:00,,,,,,
+UFC Fight Night: Muhammad vs. Bonfim,Ketlen Souza vs. Ariane Carnelossi,Total,Ketlen Souza,,,,,,,,,,13 of 178 of 21,76%38%,11 of 154 of 12,0 of 03 of 8,2 of 21 of 1,12 of 168 of 21
+UFC Fight Night: Song vs. Figueiredo,Song Yadong vs. Deiveson Figueiredo,Total,Song Yadong,00,24 of 529 of 17,46%52%,30 of 5817 of 26,1 of 11 of 4,100%25%,10,00,0:030:35,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Song Yadong vs. Deiveson Figueiredo,Total,Song Yadong,00,9 of 226 of 6,40%100%,14 of 2714 of 15,0 of 00 of 2,---0%,00,00,0:000:28,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Song Yadong vs. Deiveson Figueiredo,Total,Song Yadong,00,15 of 303 of 11,50%27%,16 of 313 of 11,1 of 11 of 2,100%50%,10,00,0:030:07,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Song Yadong vs. Deiveson Figueiredo,Total,Song Yadong,,,,,,,,,,9 of 226 of 6,40%100%,0 of 91 of 1,1 of 34 of 4,8 of 101 of 1,9 of 226 of 6
+UFC Fight Night: Song vs. Figueiredo,Song Yadong vs. Deiveson Figueiredo,Total,Song Yadong,,,,,,,,,,15 of 303 of 11,50%27%,6 of 201 of 7,3 of 41 of 3,6 of 61 of 1,14 of 283 of 11
+UFC Fight Night: Song vs. Figueiredo,Alonzo Menifield vs. Zhang Mingyang,Total,Zhang Mingyang,02,16 of 3728 of 52,43%53%,28 of 5142 of 68,0 of 00 of 0,------,00,00,0:431:47,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Alonzo Menifield vs. Zhang Mingyang,Total,Zhang Mingyang,02,16 of 3728 of 52,43%53%,28 of 5142 of 68,0 of 00 of 0,------,00,00,0:431:47,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Alonzo Menifield vs. Zhang Mingyang,Total,Zhang Mingyang,,,,,,,,,,16 of 3728 of 52,43%53%,2 of 2126 of 50,13 of 150 of 0,1 of 12 of 2,7 of 2723 of 44
+UFC Fight Night: Song vs. Figueiredo,Sergei Pavlovich vs. Tallison Teixeira,Total,Sergei Pavlovich,10,7 of 90 of 4,77%0%,10 of 130 of 4,0 of 00 of 0,------,00,00,0:050:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Sergei Pavlovich vs. Tallison Teixeira,Total,Sergei Pavlovich,10,7 of 90 of 4,77%0%,10 of 130 of 4,0 of 00 of 0,------,00,00,0:050:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Sergei Pavlovich vs. Tallison Teixeira,Total,Sergei Pavlovich,,,,,,,,,,7 of 90 of 4,77%0%,7 of 90 of 2,0 of 00 of 0,0 of 00 of 2,6 of 70 of 4
+UFC Fight Night: Song vs. Figueiredo,Kai Asakura vs. Cameron Smotherman,Total,Kai Asakura,10,9 of 213 of 7,42%42%,9 of 213 of 7,0 of 00 of 0,------,00,00,0:030:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Kai Asakura vs. Cameron Smotherman,Total,Kai Asakura,10,9 of 213 of 7,42%42%,9 of 213 of 7,0 of 00 of 0,------,00,00,0:030:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Kai Asakura vs. Cameron Smotherman,Total,Kai Asakura,,,,,,,,,,9 of 213 of 7,42%42%,6 of 173 of 6,2 of 20 of 1,1 of 20 of 0,8 of 183 of 7
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,10,55 of 9627 of 75,57%36%,109 of 17340 of 88,0 of 00 of 3,---0%,00,01,9:300:27,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,00,46 of 8325 of 69,55%36%,46 of 8325 of 69,0 of 00 of 2,---0%,00,00,0:200:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,00,1 of 10 of 0,100%---,22 of 267 of 7,0 of 00 of 1,---0%,00,01,4:250:27,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,10,8 of 122 of 6,66%33%,41 of 648 of 12,0 of 00 of 0,------,00,00,4:450:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,,,,,,,,,,46 of 8325 of 69,55%36%,37 of 7410 of 52,9 of 911 of 12,0 of 04 of 5,46 of 8325 of 69
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,,,,,,,,,,1 of 10 of 0,100%---,1 of 10 of 0,0 of 00 of 0,0 of 00 of 0,0 of 00 of 0
+UFC Fight Night: Song vs. Figueiredo,Jake Matthews vs. Carlston Harris,Total,Jake Matthews,,,,,,,,,,8 of 122 of 6,66%33%,8 of 122 of 5,0 of 00 of 1,0 of 00 of 0,3 of 62 of 6
+UFC Fight Night: Song vs. Figueiredo,Luis Felipe Dias vs. YiSak Lee,Total,YiSak Lee,01,10 of 2521 of 40,40%52%,10 of 2521 of 40,0 of 00 of 0,------,00,00,0:000:03,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Luis Felipe Dias vs. YiSak Lee,Total,YiSak Lee,01,10 of 2521 of 40,40%52%,10 of 2521 of 40,0 of 00 of 0,------,00,00,0:000:03,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Luis Felipe Dias vs. YiSak Lee,Total,YiSak Lee,,,,,,,,,,10 of 2521 of 40,40%52%,3 of 1514 of 31,1 of 23 of 4,6 of 84 of 5,10 of 2518 of 36
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,00,63 of 14672 of 153,43%47%,63 of 14672 of 153,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,00,24 of 4020 of 43,60%46%,24 of 4020 of 43,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,00,26 of 5123 of 51,50%45%,26 of 5123 of 51,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,00,13 of 5529 of 59,23%49%,13 of 5529 of 59,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,,,,,,,,,,24 of 4020 of 43,60%46%,4 of 1218 of 39,5 of 90 of 2,15 of 192 of 2,24 of 4020 of 43
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,,,,,,,,,,26 of 5123 of 51,50%45%,4 of 2320 of 44,2 of 43 of 7,20 of 240 of 0,25 of 5022 of 49
+UFC Fight Night: Song vs. Figueiredo,Jose Souza vs. Ding Meng,Total,Ding Meng,,,,,,,,,,13 of 5529 of 59,23%49%,5 of 3923 of 52,1 of 84 of 5,7 of 82 of 2,13 of 5529 of 59
+UFC Fight Night: Song vs. Figueiredo,Cody Haddon vs. Aoriqileng,Total,Aoriqileng,01,6 of 1157 of 70,54%81%,12 of 1784 of 105,0 of 02 of 6,---33%,10,00,0:005:30,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Cody Haddon vs. Aoriqileng,Total,Aoriqileng,00,2 of 340 of 48,66%83%,6 of 764 of 80,0 of 02 of 3,---66%,00,00,0:004:13,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Cody Haddon vs. Aoriqileng,Total,Aoriqileng,01,4 of 817 of 22,50%77%,6 of 1020 of 25,0 of 00 of 3,---0%,10,00,0:001:17,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Cody Haddon vs. Aoriqileng,Total,Aoriqileng,,,,,,,,,,2 of 340 of 48,66%83%,1 of 234 of 42,1 of 16 of 6,0 of 00 of 0,2 of 31 of 5
+UFC Fight Night: Song vs. Figueiredo,Cody Haddon vs. Aoriqileng,Total,Aoriqileng,,,,,,,,,,4 of 817 of 22,50%77%,3 of 712 of 17,1 of 14 of 4,0 of 01 of 1,4 of 67 of 12
+UFC Fight Night: Song vs. Figueiredo,Rei Tsuruya vs. Luis Gurule,Total,Rei Tsuruya,00,17 of 271 of 2,62%50%,20 of 301 of 2,1 of 30 of 0,33%---,10,00,2:170:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Rei Tsuruya vs. Luis Gurule,Total,Rei Tsuruya,00,17 of 271 of 2,62%50%,20 of 301 of 2,1 of 30 of 0,33%---,10,00,2:170:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Rei Tsuruya vs. Luis Gurule,Total,Rei Tsuruya,,,,,,,,,,17 of 271 of 2,62%50%,17 of 260 of 0,0 of 10 of 1,0 of 01 of 1,3 of 81 of 2
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,00,122 of 19768 of 198,61%34%,136 of 21291 of 224,1 of 40 of 0,25%---,10,00,2:060:07,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,00,36 of 5723 of 64,63%35%,42 of 6440 of 82,0 of 10 of 0,0%---,00,00,0:570:07,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,00,42 of 6825 of 72,61%34%,43 of 6929 of 77,1 of 10 of 0,100%---,10,00,0:410:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,00,44 of 7220 of 62,61%32%,51 of 7922 of 65,0 of 20 of 0,0%---,00,00,0:280:00,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,,,,,,,,,,36 of 5723 of 64,63%35%,19 of 3811 of 43,17 of 197 of 15,0 of 05 of 6,22 of 4118 of 56
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,,,,,,,,,,42 of 6825 of 72,61%34%,31 of 5510 of 53,10 of 1210 of 14,1 of 15 of 5,36 of 6021 of 65
+UFC Fight Night: Song vs. Figueiredo,Angela Hill vs. Xiong Jingnan,Total,Angela Hill,,,,,,,,,,44 of 7220 of 62,61%32%,27 of 5212 of 50,16 of 194 of 5,1 of 14 of 7,36 of 6119 of 59
+UFC Fight Night: Song vs. Figueiredo,Rodrigo Vera vs. Zhu Kangjie,Total,Zhu Kangjie,01,7 of 1417 of 29,50%58%,12 of 1925 of 38,0 of 01 of 1,---100%,00,00,0:000:41,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Rodrigo Vera vs. Zhu Kangjie,Total,Zhu Kangjie,01,7 of 1417 of 29,50%58%,12 of 1925 of 38,0 of 01 of 1,---100%,00,00,0:000:41,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Rodrigo Vera vs. Zhu Kangjie,Total,Zhu Kangjie,,,,,,,,,,7 of 1417 of 29,50%58%,2 of 813 of 20,2 of 21 of 1,3 of 43 of 8,7 of 147 of 16
+UFC Fight Night: Song vs. Figueiredo,Jaqueline Amorim vs. Loma Lookboonmee,Total,Loma Lookboonmee,00,3 of 70 of 7,42%0%,10 of 165 of 15,0 of 00 of 2,---0%,03,01,0:082:58,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jaqueline Amorim vs. Loma Lookboonmee,Total,Loma Lookboonmee,00,3 of 70 of 7,42%0%,10 of 165 of 15,0 of 00 of 2,---0%,03,01,0:082:58,,,,,,
+UFC Fight Night: Song vs. Figueiredo,Jaqueline Amorim vs. Loma Lookboonmee,Total,Loma Lookboonmee,,,,,,,,,,3 of 70 of 7,42%0%,1 of 30 of 4,0 of 10 of 1,2 of 30 of 2,2 of 50 of 7
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,10,98 of 152100 of 254,64%39%,156 of 222118 of 280,7 of 70 of 4,100%0%,00,00,9:281:45,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,10,9 of 910 of 14,100%71%,18 of 2019 of 25,2 of 20 of 2,100%0%,00,00,1:441:45,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,00,23 of 3826 of 78,60%33%,28 of 4428 of 81,0 of 00 of 0,------,00,00,0:360:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,00,32 of 5230 of 71,61%42%,44 of 6630 of 72,0 of 00 of 1,---0%,00,00,1:220:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,00,23 of 3623 of 63,63%36%,26 of 4124 of 67,1 of 10 of 0,100%---,00,00,1:430:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,00,11 of 1711 of 28,64%39%,40 of 5117 of 35,4 of 40 of 1,100%0%,00,00,4:030:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,,,,,,,,,,9 of 910 of 14,100%71%,8 of 85 of 8,0 of 03 of 3,1 of 12 of 3,4 of 47 of 11
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,,,,,,,,,,23 of 3826 of 78,60%33%,16 of 318 of 49,2 of 25 of 14,5 of 513 of 15,23 of 3826 of 78
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,,,,,,,,,,32 of 5230 of 71,61%42%,27 of 4714 of 49,2 of 27 of 13,3 of 39 of 9,25 of 4530 of 71
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,,,,,,,,,,23 of 3623 of 63,63%36%,20 of 3310 of 41,1 of 14 of 11,2 of 29 of 11,23 of 3523 of 63
+UFC Fight Night: Allen vs. Costa,Arnold Allen vs. Melquizael Costa,Total,Arnold Allen,,,,,,,,,,11 of 1711 of 28,64%39%,10 of 1510 of 26,1 of 21 of 1,0 of 00 of 1,4 of 911 of 26
+UFC Fight Night: Allen vs. Costa,Dooho Choi vs. Daniel Santos,Total,Dooho Choi,10,72 of 13872 of 182,52%39%,79 of 14574 of 186,0 of 00 of 6,---0%,00,00,0:110:54,,,,,,
+UFC Fight Night: Allen vs. Costa,Dooho Choi vs. Daniel Santos,Total,Dooho Choi,00,28 of 5947 of 106,47%44%,29 of 6048 of 109,0 of 00 of 4,---0%,00,00,0:010:12,,,,,,
+UFC Fight Night: Allen vs. Costa,Dooho Choi vs. Daniel Santos,Total,Dooho Choi,10,44 of 7925 of 76,55%32%,50 of 8526 of 77,0 of 00 of 2,---0%,00,00,0:100:42,,,,,,
+UFC Fight Night: Allen vs. Costa,Dooho Choi vs. Daniel Santos,Total,Dooho Choi,,,,,,,,,,28 of 5947 of 106,47%44%,20 of 5135 of 89,6 of 612 of 16,2 of 20 of 1,26 of 5740 of 97
+UFC Fight Night: Allen vs. Costa,Dooho Choi vs. Daniel Santos,Total,Dooho Choi,,,,,,,,,,44 of 7925 of 76,55%32%,36 of 7119 of 67,7 of 73 of 6,1 of 13 of 3,41 of 7624 of 75
+UFC Fight Night: Allen vs. Costa,Juan Diaz vs. Malcolm Wellmaker,Total,Malcolm Wellmaker,00,15 of 3313 of 25,45%52%,15 of 3418 of 32,0 of 05 of 8,---62%,01,00,0:003:48,,,,,,
+UFC Fight Night: Allen vs. Costa,Juan Diaz vs. Malcolm Wellmaker,Total,Malcolm Wellmaker,00,10 of 236 of 16,43%37%,10 of 249 of 19,0 of 02 of 4,---50%,00,00,0:001:28,,,,,,
+UFC Fight Night: Allen vs. Costa,Juan Diaz vs. Malcolm Wellmaker,Total,Malcolm Wellmaker,00,5 of 107 of 9,50%77%,5 of 109 of 13,0 of 03 of 4,---75%,01,00,0:002:20,,,,,,
+UFC Fight Night: Allen vs. Costa,Juan Diaz vs. Malcolm Wellmaker,Total,Malcolm Wellmaker,,,,,,,,,,10 of 236 of 16,43%37%,1 of 62 of 7,7 of 142 of 2,2 of 32 of 7,9 of 224 of 13
+UFC Fight Night: Allen vs. Costa,Juan Diaz vs. Malcolm Wellmaker,Total,Malcolm Wellmaker,,,,,,,,,,5 of 107 of 9,50%77%,2 of 51 of 2,2 of 41 of 1,1 of 15 of 6,5 of 106 of 8
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,00,36 of 8036 of 71,45%50%,52 of 9951 of 89,0 of 00 of 4,---0%,00,00,2:154:22,,,,,,
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,00,10 of 2911 of 30,34%36%,19 of 3820 of 40,0 of 00 of 2,---0%,00,00,0:001:47,,,,,,
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,00,16 of 2811 of 22,57%50%,18 of 3211 of 22,0 of 00 of 0,------,00,00,2:150:08,,,,,,
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,00,10 of 2314 of 19,43%73%,15 of 2920 of 27,0 of 00 of 2,---0%,00,00,0:002:27,,,,,,
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,,,,,,,,,,10 of 2911 of 30,34%36%,4 of 222 of 16,4 of 56 of 8,2 of 23 of 6,8 of 279 of 27
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,,,,,,,,,,16 of 2811 of 22,57%50%,14 of 263 of 12,1 of 17 of 8,1 of 11 of 2,15 of 277 of 18
+UFC Fight Night: Allen vs. Costa,Modestas Bukauskas vs. Christian Edwards,Total,Modestas Bukauskas,,,,,,,,,,10 of 2314 of 19,43%73%,3 of 168 of 13,5 of 54 of 4,2 of 22 of 2,7 of 2011 of 16
+UFC Fight Night: Allen vs. Costa,Benardo Sopaj vs. Timmy Cuamba,Total,Timmy Cuamba,01,29 of 8037 of 56,36%66%,29 of 8066 of 92,0 of 01 of 3,---33%,02,00,0:111:54,,,,,,
+UFC Fight Night: Allen vs. Costa,Benardo Sopaj vs. Timmy Cuamba,Total,Timmy Cuamba,00,20 of 6011 of 20,33%55%,20 of 6017 of 28,0 of 01 of 2,---50%,01,00,0:080:52,,,,,,
+UFC Fight Night: Allen vs. Costa,Benardo Sopaj vs. Timmy Cuamba,Total,Timmy Cuamba,01,9 of 2026 of 36,45%72%,9 of 2049 of 64,0 of 00 of 1,---0%,01,00,0:031:02,,,,,,
+UFC Fight Night: Allen vs. Costa,Benardo Sopaj vs. Timmy Cuamba,Total,Timmy Cuamba,,,,,,,,,,20 of 6011 of 20,33%55%,7 of 409 of 18,6 of 90 of 0,7 of 112 of 2,20 of 6011 of 20
+UFC Fight Night: Allen vs. Costa,Benardo Sopaj vs. Timmy Cuamba,Total,Timmy Cuamba,,,,,,,,,,9 of 2026 of 36,45%72%,5 of 1425 of 35,3 of 40 of 0,1 of 21 of 1,9 of 203 of 12
+UFC Fight Night: Allen vs. Costa,Khaos Williams vs. Nikolay Veretennikov,Total,Nikolay Veretennikov,01,13 of 2521 of 56,52%37%,20 of 3336 of 73,0 of 00 of 0,------,00,00,0:000:54,,,,,,
+UFC Fight Night: Allen vs. Costa,Khaos Williams vs. Nikolay Veretennikov,Total,Nikolay Veretennikov,01,13 of 2521 of 56,52%37%,20 of 3336 of 73,0 of 00 of 0,------,00,00,0:000:54,,,,,,
+UFC Fight Night: Allen vs. Costa,Khaos Williams vs. Nikolay Veretennikov,Total,Nikolay Veretennikov,,,,,,,,,,13 of 2521 of 56,52%37%,8 of 199 of 35,3 of 47 of 9,2 of 25 of 12,12 of 2320 of 52
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,00,54 of 12337 of 66,43%56%,57 of 126118 of 166,0 of 62 of 3,0%66%,10,00,1:098:31,,,,,,
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,00,40 of 8425 of 40,47%62%,42 of 8642 of 59,0 of 30 of 0,0%---,10,00,1:091:05,,,,,,
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,00,10 of 257 of 20,40%35%,11 of 2637 of 54,0 of 20 of 0,0%---,00,00,0:003:25,,,,,,
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,00,4 of 145 of 6,28%83%,4 of 1439 of 53,0 of 12 of 3,0%66%,00,00,0:004:01,,,,,,
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,,,,,,,,,,40 of 8425 of 40,47%62%,30 of 7224 of 39,5 of 71 of 1,5 of 50 of 0,39 of 8320 of 32
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,,,,,,,,,,10 of 257 of 20,40%35%,8 of 216 of 19,1 of 31 of 1,1 of 10 of 0,9 of 234 of 15
+UFC Fight Night: Allen vs. Costa,Ivan Erslan vs. Tuco Tokkos,Total,Tuco Tokkos,,,,,,,,,,4 of 145 of 6,28%83%,2 of 75 of 6,2 of 60 of 0,0 of 10 of 0,4 of 144 of 5
+UFC Fight Night: Allen vs. Costa,Tommy Gantt vs. Artur Minev,Total,Tommy Gantt,00,28 of 388 of 13,73%61%,72 of 8428 of 33,6 of 170 of 1,35%0%,00,00,5:150:53,,,,,,
+UFC Fight Night: Allen vs. Costa,Tommy Gantt vs. Artur Minev,Total,Tommy Gantt,00,5 of 105 of 7,50%71%,33 of 3825 of 27,3 of 110 of 0,27%---,00,00,3:240:23,,,,,,
+UFC Fight Night: Allen vs. Costa,Tommy Gantt vs. Artur Minev,Total,Tommy Gantt,00,23 of 283 of 6,82%50%,39 of 463 of 6,3 of 60 of 1,50%0%,00,00,1:510:30,,,,,,
+UFC Fight Night: Allen vs. Costa,Tommy Gantt vs. Artur Minev,Total,Tommy Gantt,,,,,,,,,,5 of 105 of 7,50%71%,0 of 40 of 2,5 of 65 of 5,0 of 00 of 0,0 of 40 of 1
+UFC Fight Night: Allen vs. Costa,Tommy Gantt vs. Artur Minev,Total,Tommy Gantt,,,,,,,,,,23 of 283 of 6,82%50%,19 of 232 of 5,4 of 50 of 0,0 of 01 of 1,3 of 63 of 6
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,00,30 of 9253 of 110,32%48%,66 of 15872 of 130,1 of 40 of 0,25%---,00,00,4:420:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,00,11 of 4724 of 46,23%52%,11 of 4724 of 46,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,00,2 of 61 of 3,33%33%,38 of 7220 of 23,1 of 30 of 0,33%---,00,00,4:420:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,00,17 of 3928 of 61,43%45%,17 of 3928 of 61,0 of 10 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,,,,,,,,,,11 of 4724 of 46,23%52%,9 of 446 of 23,1 of 24 of 8,1 of 114 of 15,11 of 4724 of 46
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,,,,,,,,,,2 of 61 of 3,33%33%,1 of 40 of 1,1 of 20 of 1,0 of 01 of 1,1 of 41 of 3
+UFC Fight Night: Allen vs. Costa,Ketlen Vieira vs. Jacqueline Cavalcanti,Total,Ketlen Vieira,,,,,,,,,,17 of 3928 of 61,43%45%,17 of 389 of 38,0 of 112 of 16,0 of 07 of 7,17 of 3928 of 61
+UFC Fight Night: Allen vs. Costa,Cody Brundage vs. Andre Petroski,Total,Cody Brundage,10,43 of 608 of 17,71%47%,44 of 6221 of 30,0 of 01 of 1,---100%,00,00,0:341:56,,,,,,
+UFC Fight Night: Allen vs. Costa,Cody Brundage vs. Andre Petroski,Total,Cody Brundage,00,6 of 108 of 16,60%50%,6 of 1021 of 29,0 of 01 of 1,---100%,00,00,0:021:56,,,,,,
+UFC Fight Night: Allen vs. Costa,Cody Brundage vs. Andre Petroski,Total,Cody Brundage,10,37 of 500 of 1,74%0%,38 of 520 of 1,0 of 00 of 0,------,00,00,0:320:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Cody Brundage vs. Andre Petroski,Total,Cody Brundage,,,,,,,,,,6 of 108 of 16,60%50%,3 of 52 of 6,2 of 21 of 4,1 of 35 of 6,6 of 107 of 15
+UFC Fight Night: Allen vs. Costa,Cody Brundage vs. Andre Petroski,Total,Cody Brundage,,,,,,,,,,37 of 500 of 1,74%0%,37 of 500 of 1,0 of 00 of 0,0 of 00 of 0,2 of 20 of 1
+UFC Fight Night: Allen vs. Costa,Alice Ardelean vs. Polyana Viana,Total,Alice Ardelean,00,46 of 9434 of 75,48%45%,80 of 13980 of 137,1 of 10 of 0,100%---,10,00,4:050:13,,,,,,
+UFC Fight Night: Allen vs. Costa,Alice Ardelean vs. Polyana Viana,Total,Alice Ardelean,00,41 of 8531 of 71,48%43%,44 of 8931 of 73,0 of 00 of 0,------,00,00,0:000:13,,,,,,
+UFC Fight Night: Allen vs. Costa,Alice Ardelean vs. Polyana Viana,Total,Alice Ardelean,00,5 of 93 of 4,55%75%,36 of 5049 of 64,1 of 10 of 0,100%---,10,00,4:050:00,,,,,,
+UFC Fight Night: Allen vs. Costa,Alice Ardelean vs. Polyana Viana,Total,Alice Ardelean,,,,,,,,,,41 of 8531 of 71,48%43%,21 of 579 of 43,9 of 1512 of 18,11 of 1310 of 10,40 of 8426 of 62
+UFC Fight Night: Allen vs. Costa,Alice Ardelean vs. Polyana Viana,Total,Alice Ardelean,,,,,,,,,,5 of 93 of 4,55%75%,1 of 40 of 1,1 of 21 of 1,3 of 32 of 2,5 of 93 of 4
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,00,113 of 246149 of 299,45%49%,117 of 252178 of 335,1 of 31 of 5,33%20%,01,01,0:482:26,,,,,,
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,00,20 of 4125 of 55,48%45%,22 of 4430 of 62,1 of 20 of 1,50%0%,01,01,0:481:21,,,,,,
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,00,42 of 6951 of 107,60%47%,43 of 7069 of 125,0 of 11 of 3,0%33%,00,00,0:000:44,,,,,,
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,00,51 of 13673 of 137,37%53%,52 of 13879 of 148,0 of 00 of 1,---0%,00,00,0:000:21,,,,,,
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,,,,,,,,,,20 of 4125 of 55,48%45%,11 of 3221 of 50,3 of 32 of 2,6 of 62 of 3,16 of 3722 of 50
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,,,,,,,,,,42 of 6951 of 107,60%47%,27 of 5245 of 99,9 of 91 of 3,6 of 85 of 5,41 of 6849 of 103
+UFC Fight Night: Allen vs. Costa,Luis Gurule vs. Daniel Barez,Total,Daniel Barez,,,,,,,,,,51 of 13673 of 137,37%53%,41 of 12463 of 124,8 of 105 of 8,2 of 25 of 5,51 of 13662 of 125
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,00,29 of 4920 of 38,59%52%,158 of 18350 of 68,0 of 14 of 9,0%44%,01,00,1:509:18,,,,,,
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,00,2 of 76 of 9,28%66%,82 of 8825 of 28,0 of 02 of 2,---100%,00,00,0:094:33,,,,,,
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,00,20 of 286 of 14,71%42%,64 of 7610 of 18,0 of 01 of 6,---16%,00,00,1:412:35,,,,,,
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,00,7 of 148 of 15,50%53%,12 of 1915 of 22,0 of 11 of 1,0%100%,01,00,0:002:10,,,,,,
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,,,,,,,,,,2 of 76 of 9,28%66%,1 of 55 of 8,0 of 01 of 1,1 of 20 of 0,2 of 74 of 7
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,,,,,,,,,,20 of 286 of 14,71%42%,13 of 185 of 13,7 of 81 of 1,0 of 20 of 0,10 of 171 of 9
+UFC Fight Night: Allen vs. Costa,Nicolle Caliari vs. Shauna Bannon,Total,Shauna Bannon,,,,,,,,,,7 of 148 of 15,50%53%,2 of 88 of 14,2 of 30 of 1,3 of 30 of 0,7 of 143 of 10
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,98 of 240123 of 312,40%39%,137 of 283160 of 355,9 of 130 of 1,69%0%,00,00,7:163:01,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,0 of 30 of 0,0%---,17 of 2312 of 13,2 of 20 of 0,100%---,00,00,4:470:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,10 of 1915 of 38,52%39%,18 of 2829 of 57,0 of 20 of 0,0%---,00,00,0:043:01,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,29 of 8943 of 100,32%43%,29 of 8943 of 100,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,37 of 7234 of 86,51%39%,45 of 8038 of 90,1 of 20 of 0,50%---,00,00,0:540:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,00,22 of 5731 of 88,38%35%,28 of 6338 of 95,6 of 70 of 1,85%0%,00,00,1:310:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,,,,,,,,,,0 of 30 of 0,0%---,0 of 00 of 0,0 of 20 of 0,0 of 10 of 0,0 of 30 of 0
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,,,,,,,,,,10 of 1915 of 38,52%39%,5 of 1115 of 37,4 of 70 of 1,1 of 10 of 0,10 of 1912 of 33
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,,,,,,,,,,29 of 8943 of 100,32%43%,17 of 6242 of 98,10 of 251 of 2,2 of 20 of 0,29 of 8943 of 100
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,,,,,,,,,,37 of 7234 of 86,51%39%,20 of 4933 of 84,11 of 171 of 2,6 of 60 of 0,37 of 7234 of 86
+UFC 328: Chimaev vs. Strickland,Sean Strickland vs. Khamzat Chimaev,Total,Khamzat Chimaev,,,,,,,,,,22 of 5731 of 88,38%35%,10 of 4128 of 83,10 of 143 of 5,2 of 20 of 0,20 of 5430 of 87
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,20,131 of 20955 of 151,62%36%,190 of 269100 of 199,1 of 28 of 21,50%38%,20,00,1:2110:38,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,00,7 of 1316 of 26,53%61%,21 of 2820 of 31,0 of 04 of 5,---80%,00,00,0:003:40,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,10,21 of 325 of 19,65%26%,47 of 5816 of 32,0 of 11 of 3,0%33%,00,00,0:272:53,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,10,57 of 8914 of 49,64%28%,64 of 9616 of 51,1 of 12 of 7,100%28%,20,00,0:500:42,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,00,19 of 3713 of 34,51%38%,31 of 4941 of 62,0 of 01 of 3,---33%,00,00,0:043:15,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,00,27 of 387 of 23,71%30%,27 of 387 of 23,0 of 00 of 3,---0%,00,00,0:000:08,,,,,,
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,,,,,,,,,,7 of 1316 of 26,53%61%,7 of 1312 of 22,0 of 01 of 1,0 of 03 of 3,7 of 129 of 16
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,,,,,,,,,,21 of 325 of 19,65%26%,20 of 313 of 15,0 of 02 of 3,1 of 10 of 1,14 of 223 of 17
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,,,,,,,,,,57 of 8914 of 49,64%28%,54 of 8513 of 46,3 of 30 of 2,0 of 11 of 1,41 of 6814 of 47
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,,,,,,,,,,19 of 3713 of 34,51%38%,19 of 3710 of 29,0 of 00 of 2,0 of 03 of 3,18 of 3610 of 30
+UFC 328: Chimaev vs. Strickland,Joshua Van vs. Tatsuro Taira,Total,Joshua Van,,,,,,,,,,27 of 387 of 23,71%30%,18 of 297 of 19,9 of 90 of 2,0 of 00 of 2,24 of 357 of 21
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,00,88 of 14354 of 130,61%41%,88 of 14354 of 130,0 of 10 of 1,0%0%,00,00,0:030:01,,,,,,
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,00,33 of 4415 of 33,75%45%,33 of 4415 of 33,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,00,34 of 5622 of 47,60%46%,34 of 5622 of 47,0 of 10 of 0,0%---,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,00,21 of 4317 of 50,48%34%,21 of 4317 of 50,0 of 00 of 1,---0%,00,00,0:030:01,,,,,,
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,,,,,,,,,,33 of 4415 of 33,75%45%,4 of 147 of 21,8 of 82 of 4,21 of 226 of 8,33 of 4415 of 33
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,,,,,,,,,,34 of 5622 of 47,60%46%,13 of 318 of 29,7 of 113 of 6,14 of 1411 of 12,34 of 5622 of 47
+UFC 328: Chimaev vs. Strickland,Alexander Volkov vs. Waldo Cortes Acosta,Total,Alexander Volkov,,,,,,,,,,21 of 4317 of 50,48%34%,5 of 2515 of 41,8 of 101 of 3,8 of 81 of 6,21 of 4316 of 49
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,00,77 of 1805 of 31,42%16%,245 of 41621 of 53,4 of 100 of 0,40%---,00,00,12:090:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,00,34 of 681 of 8,50%12%,51 of 891 of 8,1 of 30 of 0,33%---,00,00,3:120:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,00,18 of 524 of 16,34%25%,90 of 16111 of 28,2 of 40 of 0,50%---,00,00,4:330:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,00,25 of 600 of 7,41%0%,104 of 1669 of 17,1 of 30 of 0,33%---,00,00,4:240:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,,,,,,,,,,34 of 681 of 8,50%12%,34 of 680 of 6,0 of 00 of 1,0 of 01 of 1,2 of 91 of 8
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,,,,,,,,,,18 of 524 of 16,34%25%,18 of 522 of 14,0 of 02 of 2,0 of 00 of 0,1 of 24 of 16
+UFC 328: Chimaev vs. Strickland,Sean Brady vs. Joaquin Buckley,Total,Sean Brady,,,,,,,,,,25 of 600 of 7,41%0%,24 of 590 of 7,0 of 00 of 0,1 of 10 of 0,3 of 40 of 7
+UFC 328: Chimaev vs. Strickland,King Green vs. Jeremy Stephens,Total,King Green,00,57 of 875 of 13,65%38%,64 of 957 of 15,1 of 10 of 0,100%---,11,00,1:340:07,,,,,,
+UFC 328: Chimaev vs. Strickland,King Green vs. Jeremy Stephens,Total,King Green,00,57 of 875 of 13,65%38%,64 of 957 of 15,1 of 10 of 0,100%---,11,00,1:340:07,,,,,,
+UFC 328: Chimaev vs. Strickland,King Green vs. Jeremy Stephens,Total,King Green,,,,,,,,,,57 of 875 of 13,65%38%,44 of 693 of 10,9 of 140 of 1,4 of 42 of 2,22 of 414 of 12
+UFC 328: Chimaev vs. Strickland,Ateba Gautier vs. Ozzy Diaz,Total,Ateba Gautier,10,23 of 826 of 20,28%30%,27 of 868 of 22,0 of 00 of 3,---0%,00,00,0:001:03,,,,,,
+UFC 328: Chimaev vs. Strickland,Ateba Gautier vs. Ozzy Diaz,Total,Ateba Gautier,00,12 of 554 of 12,21%33%,16 of 596 of 14,0 of 00 of 3,---0%,00,00,0:001:03,,,,,,
+UFC 328: Chimaev vs. Strickland,Ateba Gautier vs. Ozzy Diaz,Total,Ateba Gautier,10,11 of 272 of 8,40%25%,11 of 272 of 8,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Ateba Gautier vs. Ozzy Diaz,Total,Ateba Gautier,,,,,,,,,,12 of 554 of 12,21%33%,8 of 494 of 11,2 of 40 of 1,2 of 20 of 0,11 of 544 of 12
+UFC 328: Chimaev vs. Strickland,Ateba Gautier vs. Ozzy Diaz,Total,Ateba Gautier,,,,,,,,,,11 of 272 of 8,40%25%,7 of 201 of 7,4 of 71 of 1,0 of 00 of 0,9 of 252 of 8
+UFC 328: Chimaev vs. Strickland,Yaroslav Amosov vs. Joel Alvarez,Total,Joel Alvarez,00,8 of 2216 of 28,36%57%,9 of 2322 of 34,0 of 06 of 11,---54%,01,00,0:003:52,,,,,,
+UFC 328: Chimaev vs. Strickland,Yaroslav Amosov vs. Joel Alvarez,Total,Joel Alvarez,00,2 of 610 of 17,33%58%,3 of 716 of 23,0 of 05 of 9,---55%,00,00,0:003:43,,,,,,
+UFC 328: Chimaev vs. Strickland,Yaroslav Amosov vs. Joel Alvarez,Total,Joel Alvarez,00,6 of 166 of 11,37%54%,6 of 166 of 11,0 of 01 of 2,---50%,01,00,0:000:09,,,,,,
+UFC 328: Chimaev vs. Strickland,Yaroslav Amosov vs. Joel Alvarez,Total,Joel Alvarez,,,,,,,,,,2 of 610 of 17,33%58%,2 of 68 of 13,0 of 00 of 1,0 of 02 of 3,2 of 63 of 9
+UFC 328: Chimaev vs. Strickland,Yaroslav Amosov vs. Joel Alvarez,Total,Joel Alvarez,,,,,,,,,,6 of 166 of 11,37%54%,5 of 143 of 7,1 of 21 of 1,0 of 02 of 3,6 of 166 of 11
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,01,35 of 9433 of 64,37%51%,71 of 13649 of 81,1 of 31 of 5,33%20%,40,01,7:082:22,,,,,,
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,00,13 of 218 of 11,61%72%,24 of 359 of 12,0 of 00 of 2,---0%,10,01,2:370:50,,,,,,
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,01,20 of 6924 of 51,28%47%,21 of 7034 of 62,0 of 21 of 3,0%33%,00,00,0:141:29,,,,,,
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,00,2 of 41 of 2,50%50%,26 of 316 of 7,1 of 10 of 0,100%---,30,00,4:170:03,,,,,,
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,,,,,,,,,,13 of 218 of 11,61%72%,7 of 157 of 10,6 of 60 of 0,0 of 01 of 1,4 of 124 of 6
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,,,,,,,,,,20 of 6924 of 51,28%47%,10 of 4820 of 45,8 of 171 of 2,2 of 43 of 4,19 of 6622 of 42
+UFC 328: Chimaev vs. Strickland,Grant Dawson vs. Mateusz Rebecki,Total,Grant Dawson,,,,,,,,,,2 of 41 of 2,50%50%,2 of 40 of 1,0 of 00 of 0,0 of 01 of 1,1 of 31 of 2
+UFC 328: Chimaev vs. Strickland,Jim Miller vs. Jared Gordon,Total,Jim Miller,00,9 of 177 of 16,52%43%,10 of 188 of 17,0 of 02 of 2,---100%,10,00,0:000:44,,,,,,
+UFC 328: Chimaev vs. Strickland,Jim Miller vs. Jared Gordon,Total,Jim Miller,00,9 of 177 of 16,52%43%,10 of 188 of 17,0 of 02 of 2,---100%,10,00,0:000:44,,,,,,
+UFC 328: Chimaev vs. Strickland,Jim Miller vs. Jared Gordon,Total,Jim Miller,,,,,,,,,,9 of 177 of 16,52%43%,5 of 134 of 11,3 of 32 of 3,1 of 11 of 2,9 of 177 of 15
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,30,61 of 12462 of 160,49%38%,69 of 13280 of 178,1 of 10 of 0,100%---,00,00,2:340:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,00,15 of 3922 of 61,38%36%,15 of 3922 of 61,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,10,22 of 4426 of 57,50%45%,23 of 4536 of 67,0 of 00 of 0,------,00,00,0:450:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,20,24 of 4114 of 42,58%33%,31 of 4822 of 50,1 of 10 of 0,100%---,00,00,1:490:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,,,,,,,,,,15 of 3922 of 61,38%36%,6 of 227 of 37,7 of 108 of 14,2 of 77 of 10,15 of 3922 of 61
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,,,,,,,,,,22 of 4426 of 57,50%45%,19 of 3811 of 37,2 of 47 of 11,1 of 28 of 9,16 of 3226 of 57
+UFC 328: Chimaev vs. Strickland,Roman Kopylov vs. Marco Tulio,Total,Roman Kopylov,,,,,,,,,,24 of 4114 of 42,58%33%,21 of 3710 of 31,3 of 33 of 9,0 of 11 of 2,15 of 3114 of 41
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,00,25 of 7023 of 64,35%35%,78 of 12554 of 98,3 of 200 of 0,15%---,00,00,11:120:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,00,3 of 112 of 4,27%50%,16 of 248 of 11,1 of 60 of 0,16%---,00,00,4:360:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,00,8 of 3010 of 30,26%33%,31 of 5420 of 40,1 of 70 of 0,14%---,00,00,3:170:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,00,14 of 2911 of 30,48%36%,31 of 4726 of 47,1 of 70 of 0,14%---,00,00,3:190:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,,,,,,,,,,3 of 112 of 4,27%50%,2 of 101 of 3,1 of 11 of 1,0 of 00 of 0,0 of 40 of 1
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,,,,,,,,,,8 of 3010 of 30,26%33%,2 of 195 of 22,2 of 54 of 6,4 of 61 of 2,7 of 277 of 26
+UFC 328: Chimaev vs. Strickland,Pat Sabatini vs. William Gomis,Total,Pat Sabatini,,,,,,,,,,14 of 2911 of 30,48%36%,3 of 156 of 25,3 of 43 of 3,8 of 102 of 2,11 of 266 of 22
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,00,107 of 21378 of 211,50%36%,136 of 24289 of 222,1 of 50 of 1,20%0%,10,00,2:160:21,,,,,,
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,00,21 of 5819 of 58,36%32%,21 of 5819 of 58,0 of 10 of 0,0%---,00,00,0:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,00,56 of 10445 of 108,53%41%,66 of 11451 of 114,0 of 00 of 1,---0%,00,00,0:000:21,,,,,,
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,00,30 of 5114 of 45,58%31%,49 of 7019 of 50,1 of 40 of 0,25%---,10,00,2:160:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,,,,,,,,,,21 of 5819 of 58,36%32%,6 of 3415 of 53,7 of 151 of 2,8 of 93 of 3,21 of 5818 of 55
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,,,,,,,,,,56 of 10445 of 108,53%41%,29 of 6942 of 102,17 of 242 of 4,10 of 111 of 2,54 of 10240 of 103
+UFC 328: Chimaev vs. Strickland,Baisangur Susurkaev vs. Djorden Santos,Total,Baisangur Susurkaev,,,,,,,,,,30 of 5114 of 45,58%31%,21 of 4012 of 43,7 of 92 of 2,2 of 20 of 0,23 of 4212 of 43
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,01,68 of 153153 of 269,44%56%,70 of 155180 of 296,1 of 70 of 2,14%0%,00,00,1:071:09,,,,,,
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,01,23 of 4954 of 98,46%55%,25 of 5160 of 104,0 of 30 of 2,0%0%,00,00,0:070:44,,,,,,
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,00,25 of 5451 of 94,46%54%,25 of 5451 of 94,0 of 20 of 0,0%---,00,00,0:000:25,,,,,,
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,00,20 of 5048 of 77,40%62%,20 of 5069 of 98,1 of 20 of 0,50%---,00,00,1:000:00,,,,,,
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,,,,,,,,,,23 of 4954 of 98,46%55%,8 of 2728 of 67,10 of 1714 of 18,5 of 512 of 13,19 of 4449 of 88
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,,,,,,,,,,25 of 5451 of 94,46%54%,12 of 3323 of 56,4 of 1219 of 29,9 of 99 of 9,25 of 5344 of 84
+UFC 328: Chimaev vs. Strickland,Jose Ochoa vs. Clayton Carpenter,Total,Clayton Carpenter,,,,,,,,,,20 of 5048 of 77,40%62%,4 of 2228 of 51,11 of 2012 of 17,5 of 88 of 9,17 of 4647 of 76
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,03,41 of 76104 of 193,53%53%,53 of 90104 of 193,2 of 50 of 0,40%---,00,00,1:130:42,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,00,15 of 3022 of 45,50%48%,23 of 4022 of 45,1 of 10 of 0,100%---,00,00,0:330:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,01,25 of 3936 of 79,64%45%,29 of 4336 of 79,1 of 20 of 0,50%---,00,00,0:330:02,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,02,1 of 746 of 69,14%66%,1 of 746 of 69,0 of 20 of 0,0%---,00,00,0:070:40,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,,,,,,,,,,15 of 3022 of 45,50%48%,5 of 1813 of 34,5 of 73 of 4,5 of 56 of 7,15 of 3022 of 45
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,,,,,,,,,,25 of 3936 of 79,64%45%,19 of 2827 of 69,3 of 75 of 6,3 of 44 of 4,25 of 3935 of 78
+UFC Fight Night: Della Maddalena vs. Prates,Carlos Prates vs. Jack Della Maddalena,Total,Jack Della Maddalena,,,,,,,,,,1 of 746 of 69,14%66%,1 of 639 of 61,0 of 13 of 4,0 of 04 of 4,1 of 732 of 48
+UFC Fight Night: Della Maddalena vs. Prates,Quillan Salkilld vs. Beneil Dariush,Total,Beneil Dariush,01,3 of 912 of 19,33%63%,4 of 1015 of 24,2 of 50 of 2,40%0%,00,00,2:320:20,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Quillan Salkilld vs. Beneil Dariush,Total,Beneil Dariush,01,3 of 912 of 19,33%63%,4 of 1015 of 24,2 of 50 of 2,40%0%,00,00,2:320:20,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Quillan Salkilld vs. Beneil Dariush,Total,Beneil Dariush,,,,,,,,,,3 of 912 of 19,33%63%,2 of 711 of 18,0 of 11 of 1,1 of 10 of 0,3 of 77 of 13
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,00,90 of 261136 of 254,34%53%,93 of 265136 of 254,2 of 111 of 3,18%33%,00,00,0:340:29,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,00,39 of 9124 of 55,42%43%,40 of 9324 of 55,2 of 30 of 0,66%---,00,00,0:180:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,00,27 of 7847 of 85,34%55%,28 of 7947 of 85,0 of 41 of 2,0%50%,00,00,0:160:29,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,00,24 of 9265 of 114,26%57%,25 of 9365 of 114,0 of 40 of 1,0%0%,00,00,0:000:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,,,,,,,,,,39 of 9124 of 55,42%43%,20 of 5721 of 52,5 of 153 of 3,14 of 190 of 0,39 of 8921 of 52
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,,,,,,,,,,27 of 7847 of 85,34%55%,10 of 5644 of 82,4 of 83 of 3,13 of 140 of 0,24 of 7544 of 81
+UFC Fight Night: Della Maddalena vs. Prates,Steve Erceg vs. Tim Elliott,Total,Tim Elliott,,,,,,,,,,24 of 9265 of 114,26%57%,14 of 7857 of 102,2 of 48 of 12,8 of 100 of 0,24 of 9164 of 112
+UFC Fight Night: Della Maddalena vs. Prates,Marwan Rahiki vs. Ollie Schmid,Total,Marwan Rahiki,10,22 of 409 of 30,55%30%,22 of 409 of 30,0 of 00 of 0,------,00,00,0:040:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Marwan Rahiki vs. Ollie Schmid,Total,Marwan Rahiki,10,22 of 409 of 30,55%30%,22 of 409 of 30,0 of 00 of 0,------,00,00,0:040:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Marwan Rahiki vs. Ollie Schmid,Total,Marwan Rahiki,,,,,,,,,,22 of 409 of 30,55%30%,14 of 250 of 15,2 of 73 of 6,6 of 86 of 9,19 of 369 of 30
+UFC Fight Night: Della Maddalena vs. Prates,Brando Pericic vs. Shamil Gaziev,Total,Shamil Gaziev,01,41 of 10089 of 163,41%54%,51 of 110100 of 177,1 of 20 of 0,50%---,00,00,3:360:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Brando Pericic vs. Shamil Gaziev,Total,Shamil Gaziev,00,25 of 4742 of 87,53%48%,34 of 5652 of 100,1 of 20 of 0,50%---,00,00,2:460:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Brando Pericic vs. Shamil Gaziev,Total,Shamil Gaziev,01,16 of 5347 of 76,30%61%,17 of 5448 of 77,0 of 00 of 0,------,00,00,0:500:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Brando Pericic vs. Shamil Gaziev,Total,Shamil Gaziev,,,,,,,,,,25 of 4742 of 87,53%48%,15 of 3733 of 77,10 of 104 of 5,0 of 05 of 5,18 of 3935 of 75
+UFC Fight Night: Della Maddalena vs. Prates,Brando Pericic vs. Shamil Gaziev,Total,Shamil Gaziev,,,,,,,,,,16 of 5347 of 76,30%61%,15 of 5129 of 57,1 of 210 of 11,0 of 08 of 8,16 of 5346 of 75
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,00,13 of 2221 of 25,59%84%,27 of 37111 of 130,0 of 05 of 11,---45%,00,02,0:4211:45,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,00,6 of 99 of 12,66%75%,8 of 1132 of 38,0 of 01 of 4,---25%,00,01,0:103:40,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,00,3 of 47 of 7,75%100%,9 of 1042 of 48,0 of 03 of 4,---75%,00,00,0:004:36,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,00,4 of 95 of 6,44%83%,10 of 1637 of 44,0 of 01 of 3,---33%,00,01,0:323:29,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,,,,,,,,,,6 of 99 of 12,66%75%,5 of 87 of 9,0 of 00 of 0,1 of 12 of 3,1 of 32 of 4
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,,,,,,,,,,3 of 47 of 7,75%100%,3 of 45 of 5,0 of 00 of 0,0 of 02 of 2,0 of 12 of 2
+UFC Fight Night: Della Maddalena vs. Prates,Louie Sutherland vs. Tai Tuivasa,Total,Tai Tuivasa,,,,,,,,,,4 of 95 of 6,44%83%,4 of 93 of 4,0 of 00 of 0,0 of 02 of 2,1 of 53 of 3
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,00,79 of 15017 of 37,52%45%,125 of 21739 of 65,3 of 70 of 0,42%---,01,00,10:100:05,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,00,24 of 568 of 17,42%47%,29 of 6717 of 28,1 of 30 of 0,33%---,00,00,2:030:05,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,00,32 of 567 of 15,57%46%,45 of 7410 of 19,1 of 30 of 0,33%---,00,00,4:000:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,00,23 of 382 of 5,60%40%,51 of 7612 of 18,1 of 10 of 0,100%---,01,00,4:070:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,,,,,,,,,,24 of 568 of 17,42%47%,19 of 491 of 8,3 of 54 of 6,2 of 23 of 3,17 of 468 of 17
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,,,,,,,,,,32 of 567 of 15,57%46%,29 of 533 of 10,1 of 13 of 3,2 of 21 of 2,9 of 207 of 15
+UFC Fight Night: Della Maddalena vs. Prates,Cam Rowston vs. Robert Bryczek,Total,Cam Rowston,,,,,,,,,,23 of 382 of 5,60%40%,21 of 351 of 4,2 of 31 of 1,0 of 00 of 0,6 of 162 of 5
+UFC Fight Night: Della Maddalena vs. Prates,Junior Tafa vs. Kevin Christian,Total,Junior Tafa,00,21 of 3113 of 21,67%61%,22 of 3213 of 21,0 of 00 of 2,---0%,00,00,0:090:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Junior Tafa vs. Kevin Christian,Total,Junior Tafa,00,21 of 3113 of 21,67%61%,22 of 3213 of 21,0 of 00 of 2,---0%,00,00,0:090:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Junior Tafa vs. Kevin Christian,Total,Junior Tafa,,,,,,,,,,21 of 3113 of 21,67%61%,20 of 302 of 7,0 of 02 of 3,1 of 19 of 11,10 of 1913 of 21
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,00,36 of 8232 of 76,43%42%,54 of 10353 of 100,3 of 30 of 3,100%0%,03,02,2:174:23,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,00,6 of 124 of 5,50%80%,11 of 1715 of 18,1 of 10 of 0,100%---,01,01,0:133:56,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,00,18 of 4216 of 32,42%50%,30 of 5718 of 35,0 of 00 of 1,---0%,00,00,1:230:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,00,12 of 2812 of 39,42%30%,13 of 2920 of 47,2 of 20 of 2,100%0%,02,01,0:410:27,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,,,,,,,,,,6 of 124 of 5,50%80%,5 of 113 of 4,1 of 11 of 1,0 of 00 of 0,6 of 123 of 4
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,,,,,,,,,,18 of 4216 of 32,42%50%,16 of 4011 of 26,2 of 23 of 4,0 of 02 of 2,18 of 4216 of 31
+UFC Fight Night: Della Maddalena vs. Prates,Jacob Malkoun vs. Gerald Meerschaert,Total,Jacob Malkoun,,,,,,,,,,12 of 2812 of 39,42%30%,9 of 239 of 36,3 of 52 of 2,0 of 01 of 1,12 of 2712 of 39
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,00,46 of 11748 of 121,39%39%,57 of 13256 of 134,0 of 62 of 2,0%100%,40,11,3:013:34,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,00,6 of 145 of 15,42%33%,13 of 237 of 18,0 of 21 of 1,0%100%,40,11,2:201:44,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,00,27 of 5418 of 55,50%32%,29 of 5619 of 57,0 of 30 of 0,0%---,00,00,0:410:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,00,13 of 4925 of 51,26%49%,15 of 5330 of 59,0 of 11 of 1,0%100%,00,00,0:001:50,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,,,,,,,,,,6 of 145 of 15,42%33%,2 of 84 of 13,2 of 31 of 1,2 of 30 of 1,5 of 134 of 14
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,,,,,,,,,,27 of 5418 of 55,50%32%,8 of 3014 of 47,15 of 193 of 7,4 of 51 of 1,27 of 5316 of 52
+UFC Fight Night: Della Maddalena vs. Prates,Colby Thicknesse vs. Vince Morales,Total,Colby Thicknesse,,,,,,,,,,13 of 4925 of 51,26%49%,5 of 3519 of 43,4 of 105 of 7,4 of 41 of 1,11 of 4622 of 46
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,01,12 of 1612 of 17,75%70%,38 of 4422 of 32,2 of 20 of 3,100%0%,05,11,9:161:37,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,00,7 of 83 of 3,87%100%,16 of 188 of 10,0 of 00 of 3,---0%,00,00,4:260:23,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,01,3 of 32 of 3,100%66%,20 of 216 of 10,0 of 00 of 0,------,03,11,3:361:14,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,00,2 of 57 of 11,40%63%,2 of 58 of 12,2 of 20 of 0,100%---,02,00,1:140:00,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,,,,,,,,,,7 of 83 of 3,87%100%,6 of 70 of 0,1 of 13 of 3,0 of 00 of 0,0 of 00 of 0
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,,,,,,,,,,3 of 32 of 3,100%66%,3 of 31 of 2,0 of 01 of 1,0 of 00 of 0,0 of 00 of 1
+UFC Fight Night: Della Maddalena vs. Prates,Wes Schultz vs. Ben Johnston,Total,Ben Johnston,,,,,,,,,,2 of 57 of 11,40%63%,2 of 55 of 9,0 of 02 of 2,0 of 00 of 0,0 of 36 of 10
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,00,55 of 11239 of 90,49%43%,83 of 14774 of 132,1 of 42 of 5,25%40%,00,10,3:265:25,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,00,6 of 2011 of 23,30%47%,11 of 2623 of 35,1 of 10 of 0,100%---,00,00,2:110:49,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,00,4 of 75 of 15,57%33%,7 of 1523 of 40,0 of 31 of 2,0%50%,00,10,0:573:41,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,00,45 of 8523 of 52,52%44%,65 of 10628 of 57,0 of 01 of 3,---33%,00,00,0:180:55,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,,,,,,,,,,6 of 2011 of 23,30%47%,2 of 165 of 17,3 of 31 of 1,1 of 15 of 5,3 of 149 of 20
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,,,,,,,,,,4 of 75 of 15,57%33%,1 of 45 of 15,3 of 30 of 0,0 of 00 of 0,1 of 32 of 11
+UFC Fight Night: Della Maddalena vs. Prates,Jonathan Micallef vs. Themba Gorimbo,Total,Jonathan Micallef,,,,,,,,,,45 of 8523 of 52,52%44%,36 of 7412 of 38,7 of 92 of 5,2 of 29 of 9,42 of 8223 of 52
+UFC Fight Night: Della Maddalena vs. Prates,Kody Steele vs. Dom Mar Fan,Total,Dom Mar Fan,00,1 of 21 of 1,50%100%,3 of 519 of 25,0 of 01 of 1,---100%,01,10,0:281:44,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Kody Steele vs. Dom Mar Fan,Total,Dom Mar Fan,00,1 of 21 of 1,50%100%,3 of 519 of 25,0 of 01 of 1,---100%,01,10,0:281:44,,,,,,
+UFC Fight Night: Della Maddalena vs. Prates,Kody Steele vs. Dom Mar Fan,Total,Dom Mar Fan,,,,,,,,,,1 of 21 of 1,50%100%,0 of 01 of 1,0 of 10 of 0,1 of 10 of 0,1 of 21 of 1
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,46 of 8935 of 65,51%53%,220 of 29361 of 97,6 of 110 of 0,54%---,11,00,13:493:59,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,8 of 244 of 16,33%25%,15 of 3117 of 33,1 of 20 of 0,50%---,00,00,2:190:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,15 of 2915 of 23,51%65%,67 of 8816 of 24,1 of 30 of 0,33%---,00,00,2:250:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,2 of 33 of 4,66%75%,11 of 144 of 6,2 of 20 of 0,100%---,01,00,0:473:48,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,16 of 223 of 4,72%75%,81 of 1013 of 4,1 of 20 of 0,50%---,10,00,4:160:11,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,00,5 of 1110 of 18,45%55%,46 of 5921 of 30,1 of 20 of 0,50%---,00,00,4:020:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,,,,,,,,,,8 of 244 of 16,33%25%,5 of 143 of 11,2 of 30 of 1,1 of 71 of 4,5 of 194 of 16
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,,,,,,,,,,15 of 2915 of 23,51%65%,6 of 1711 of 19,5 of 62 of 2,4 of 62 of 2,10 of 2315 of 23
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,,,,,,,,,,2 of 33 of 4,66%75%,1 of 22 of 3,1 of 10 of 0,0 of 01 of 1,1 of 13 of 4
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,,,,,,,,,,16 of 223 of 4,72%75%,9 of 131 of 2,4 of 62 of 2,3 of 30 of 0,6 of 91 of 2
+UFC Fight Night: Sterling vs. Zalal,Aljamain Sterling vs. Youssef Zalal,Total,Aljamain Sterling,,,,,,,,,,5 of 1110 of 18,45%55%,4 of 108 of 16,0 of 02 of 2,1 of 10 of 0,3 of 79 of 17
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,00,51 of 10070 of 152,51%46%,66 of 117121 of 207,0 of 10 of 3,0%0%,00,01,2:092:21,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,00,6 of 146 of 13,42%46%,14 of 2337 of 48,0 of 10 of 2,0%0%,00,01,2:091:31,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,00,24 of 4527 of 61,53%44%,29 of 5039 of 73,0 of 00 of 1,---0%,00,00,0:000:20,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,00,21 of 4137 of 78,51%47%,23 of 4445 of 86,0 of 00 of 0,------,00,00,0:000:30,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,,,,,,,,,,6 of 146 of 13,42%46%,0 of 72 of 6,4 of 53 of 5,2 of 21 of 2,2 of 105 of 12
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,,,,,,,,,,24 of 4527 of 61,53%44%,9 of 206 of 25,5 of 99 of 14,10 of 1612 of 22,23 of 4426 of 60
+UFC Fight Night: Sterling vs. Zalal,Joselyne Edwards vs. Norma Dumont,Total,Norma Dumont,,,,,,,,,,21 of 4137 of 78,51%47%,11 of 2712 of 32,7 of 820 of 32,3 of 65 of 14,19 of 3937 of 78
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,00,59 of 16950 of 145,34%34%,79 of 19454 of 149,4 of 70 of 1,57%0%,00,00,1:500:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,00,10 of 408 of 27,25%29%,15 of 458 of 27,2 of 20 of 1,100%0%,00,00,0:280:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,00,20 of 6618 of 38,30%47%,20 of 6618 of 38,0 of 10 of 0,0%---,00,00,0:100:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,00,29 of 6324 of 80,46%30%,44 of 8328 of 84,2 of 40 of 0,50%---,00,00,1:120:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,,,,,,,,,,10 of 408 of 27,25%29%,6 of 365 of 20,0 of 03 of 4,4 of 40 of 3,10 of 398 of 27
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,,,,,,,,,,20 of 6618 of 38,30%47%,19 of 6514 of 32,0 of 03 of 4,1 of 11 of 2,19 of 6518 of 38
+UFC Fight Night: Sterling vs. Zalal,Rafa Garcia vs. Alexander Hernandez,Total,Rafa Garcia,,,,,,,,,,29 of 6324 of 80,46%30%,27 of 6021 of 74,1 of 23 of 6,1 of 10 of 0,28 of 6124 of 80
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,00,162 of 30799 of 196,52%50%,164 of 309100 of 199,0 of 11 of 5,0%20%,00,00,0:020:43,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,00,44 of 8918 of 41,49%43%,46 of 9118 of 41,0 of 10 of 1,0%0%,00,00,0:020:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,00,54 of 10538 of 79,51%48%,54 of 10538 of 79,0 of 00 of 1,---0%,00,00,0:000:06,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,00,64 of 11343 of 76,56%56%,64 of 11344 of 79,0 of 01 of 3,---33%,00,00,0:000:37,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,,,,,,,,,,44 of 8918 of 41,49%43%,8 of 466 of 25,12 of 177 of 10,24 of 265 of 6,41 of 8618 of 40
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,,,,,,,,,,54 of 10538 of 79,51%48%,18 of 6219 of 58,15 of 2016 of 17,21 of 233 of 4,50 of 10035 of 73
+UFC Fight Night: Sterling vs. Zalal,Davey Grant vs. Adrian Luna Martinetti,Total,Davey Grant,,,,,,,,,,64 of 11343 of 76,56%56%,30 of 7523 of 53,18 of 2214 of 16,16 of 166 of 7,57 of 10338 of 70
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,10,35 of 6621 of 38,53%55%,72 of 10433 of 51,0 of 06 of 18,---33%,02,00,0:237:45,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,10,14 of 243 of 4,58%75%,46 of 577 of 8,0 of 02 of 4,---50%,01,00,0:232:49,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,00,13 of 198 of 17,68%47%,15 of 2115 of 25,0 of 01 of 7,---14%,01,00,0:002:14,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,00,8 of 2310 of 17,34%58%,11 of 2611 of 18,0 of 03 of 7,---42%,00,00,0:002:42,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,,,,,,,,,,14 of 243 of 4,58%75%,10 of 200 of 0,4 of 42 of 3,0 of 01 of 1,7 of 132 of 3
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,,,,,,,,,,13 of 198 of 17,68%47%,9 of 152 of 7,3 of 33 of 5,1 of 13 of 5,11 of 176 of 15
+UFC Fight Night: Sterling vs. Zalal,Raoni Barcelos vs. Montel Jackson,Total,Montel Jackson,,,,,,,,,,8 of 2310 of 17,34%58%,7 of 225 of 11,1 of 13 of 3,0 of 02 of 3,8 of 235 of 12
+UFC Fight Night: Sterling vs. Zalal,Ryan Spann vs. Marcus Buchecha,Total,Marcus Buchecha,01,8 of 1315 of 27,61%55%,8 of 1320 of 35,1 of 70 of 0,14%---,10,00,1:092:56,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Ryan Spann vs. Marcus Buchecha,Total,Marcus Buchecha,00,4 of 610 of 18,66%55%,4 of 615 of 26,1 of 60 of 0,16%---,10,00,1:052:29,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Ryan Spann vs. Marcus Buchecha,Total,Marcus Buchecha,01,4 of 75 of 9,57%55%,4 of 75 of 9,0 of 10 of 0,0%---,00,00,0:040:27,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Ryan Spann vs. Marcus Buchecha,Total,Marcus Buchecha,,,,,,,,,,4 of 610 of 18,66%55%,1 of 37 of 14,1 of 13 of 4,2 of 20 of 0,3 of 53 of 8
+UFC Fight Night: Sterling vs. Zalal,Ryan Spann vs. Marcus Buchecha,Total,Marcus Buchecha,,,,,,,,,,4 of 75 of 9,57%55%,3 of 54 of 8,0 of 00 of 0,1 of 21 of 1,4 of 75 of 9
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,10,40 of 7054 of 102,57%52%,58 of 9373 of 123,4 of 152 of 2,26%100%,10,00,6:240:51,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,10,10 of 1311 of 14,76%78%,15 of 1919 of 22,4 of 92 of 2,44%100%,10,00,3:150:21,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,00,20 of 3320 of 46,60%43%,27 of 4224 of 51,0 of 30 of 0,0%---,00,00,1:480:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,00,10 of 2423 of 42,41%54%,16 of 3230 of 50,0 of 30 of 0,0%---,00,00,1:210:30,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,,,,,,,,,,10 of 1311 of 14,76%78%,4 of 75 of 7,2 of 24 of 5,4 of 42 of 2,8 of 119 of 12
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,,,,,,,,,,20 of 3320 of 46,60%43%,8 of 2016 of 42,7 of 72 of 2,5 of 62 of 2,17 of 2918 of 42
+UFC Fight Night: Sterling vs. Zalal,Eric McConico vs. Rodolfo Vieira,Total,Rodolfo Vieira,,,,,,,,,,10 of 2423 of 42,41%54%,3 of 1621 of 38,2 of 22 of 4,5 of 60 of 0,10 of 2422 of 41
+UFC Fight Night: Sterling vs. Zalal,Jackson McVey vs. Sedriques Dumas,Total,Jackson McVey,10,21 of 293 of 4,72%75%,38 of 509 of 11,0 of 00 of 0,------,10,00,2:030:02,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Jackson McVey vs. Sedriques Dumas,Total,Jackson McVey,10,21 of 293 of 4,72%75%,38 of 509 of 11,0 of 00 of 0,------,10,00,2:030:02,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Jackson McVey vs. Sedriques Dumas,Total,Jackson McVey,,,,,,,,,,21 of 293 of 4,72%75%,16 of 220 of 0,5 of 72 of 3,0 of 01 of 1,2 of 41 of 1
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,00,26 of 4542 of 83,57%50%,34 of 53108 of 161,0 of 02 of 6,---33%,10,12,1:3910:14,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,00,0 of 016 of 20,---80%,0 of 046 of 51,0 of 01 of 1,---100%,00,00,0:004:56,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,00,20 of 3718 of 43,54%41%,24 of 4121 of 46,0 of 00 of 4,---0%,10,01,0:292:01,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,00,6 of 88 of 20,75%40%,10 of 1241 of 64,0 of 01 of 1,---100%,00,11,1:103:17,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,,,,,,,,,,0 of 016 of 20,---80%,0 of 016 of 20,0 of 00 of 0,0 of 00 of 0,0 of 01 of 4
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,,,,,,,,,,20 of 3718 of 43,54%41%,8 of 2317 of 40,8 of 91 of 3,4 of 50 of 0,16 of 3018 of 42
+UFC Fight Night: Sterling vs. Zalal,Michelle Montague vs. Mayra Bueno Silva,Total,Mayra Bueno Silva,,,,,,,,,,6 of 88 of 20,75%40%,3 of 48 of 20,2 of 30 of 0,1 of 10 of 0,6 of 82 of 12
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,00,23 of 6334 of 72,36%47%,50 of 9391 of 136,2 of 35 of 5,66%100%,01,10,3:085:14,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,00,3 of 1211 of 23,25%47%,9 of 1836 of 50,1 of 12 of 2,100%100%,00,10,2:001:20,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,00,8 of 2815 of 34,28%44%,17 of 3921 of 41,1 of 12 of 2,100%100%,00,00,0:440:37,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,00,12 of 238 of 15,52%53%,24 of 3634 of 45,0 of 11 of 1,0%100%,01,00,0:243:17,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,,,,,,,,,,3 of 1211 of 23,25%47%,1 of 78 of 18,1 of 42 of 3,1 of 11 of 2,3 of 113 of 14
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,,,,,,,,,,8 of 2815 of 34,28%44%,2 of 196 of 24,2 of 51 of 2,4 of 48 of 8,7 of 2614 of 33
+UFC Fight Night: Sterling vs. Zalal,Cody Durden vs. Jafel Filho,Total,Jafel Filho,,,,,,,,,,12 of 238 of 15,52%53%,7 of 187 of 12,4 of 41 of 1,1 of 10 of 2,6 of 177 of 14
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,00,33 of 699 of 36,47%25%,60 of 9920 of 48,2 of 30 of 6,66%0%,01,00,6:360:47,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,00,9 of 162 of 8,56%25%,16 of 249 of 16,1 of 10 of 2,100%0%,01,00,3:280:13,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,00,8 of 101 of 7,80%14%,27 of 315 of 11,1 of 10 of 1,100%0%,00,00,3:080:34,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,00,16 of 436 of 21,37%28%,17 of 446 of 21,0 of 10 of 3,0%0%,00,00,0:000:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,,,,,,,,,,9 of 162 of 8,56%25%,7 of 141 of 4,0 of 00 of 3,2 of 21 of 1,7 of 142 of 7
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,,,,,,,,,,8 of 101 of 7,80%14%,7 of 91 of 5,1 of 10 of 2,0 of 00 of 0,6 of 81 of 7
+UFC Fight Night: Sterling vs. Zalal,Francis Marshall vs. Lucas Brennan,Total,Francis Marshall,,,,,,,,,,16 of 436 of 21,37%28%,12 of 362 of 14,2 of 52 of 5,2 of 22 of 2,15 of 426 of 21
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,00,40 of 8953 of 117,44%45%,43 of 9453 of 117,4 of 91 of 2,44%50%,00,00,1:030:36,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,00,10 of 2412 of 29,41%41%,11 of 2512 of 29,1 of 10 of 1,100%0%,00,00,0:210:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,00,10 of 2712 of 28,37%42%,10 of 2712 of 28,2 of 41 of 1,50%100%,00,00,0:190:32,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,00,20 of 3829 of 60,52%48%,22 of 4229 of 60,1 of 40 of 0,25%---,00,00,0:230:04,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,,,,,,,,,,10 of 2412 of 29,41%41%,10 of 245 of 19,0 of 05 of 6,0 of 02 of 4,10 of 2312 of 29
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,,,,,,,,,,10 of 2712 of 28,37%42%,7 of 226 of 20,0 of 14 of 6,3 of 42 of 2,8 of 2412 of 27
+UFC Fight Night: Sterling vs. Zalal,Victor Valenzuela vs. Max Griffin,Total,Max Griffin,,,,,,,,,,20 of 3829 of 60,52%48%,19 of 3722 of 52,1 of 16 of 7,0 of 01 of 1,19 of 3726 of 55
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,00,60 of 19578 of 111,30%70%,80 of 21687 of 125,3 of 50 of 0,60%---,00,00,2:270:04,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,00,12 of 4921 of 26,24%80%,16 of 5327 of 34,2 of 20 of 0,100%---,00,00,1:000:04,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,00,20 of 6527 of 40,30%67%,36 of 8230 of 46,1 of 30 of 0,33%---,00,00,1:270:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,00,28 of 8130 of 45,34%66%,28 of 8130 of 45,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,,,,,,,,,,12 of 4921 of 26,24%80%,3 of 358 of 11,4 of 85 of 6,5 of 68 of 9,9 of 4517 of 20
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,,,,,,,,,,20 of 6527 of 40,30%67%,14 of 5618 of 31,6 of 95 of 5,0 of 04 of 4,17 of 6227 of 40
+UFC Fight Night: Sterling vs. Zalal,Talita Alencar vs. Julia Polastri,Total,Talita Alencar,,,,,,,,,,28 of 8130 of 45,34%66%,17 of 6022 of 36,9 of 182 of 3,2 of 36 of 6,28 of 8128 of 43
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,02,40 of 9256 of 121,43%46%,42 of 9456 of 121,0 of 70 of 0,0%---,00,00,0:010:14,,,,,,
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,00,11 of 3813 of 34,28%38%,12 of 3913 of 34,0 of 40 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,00,23 of 3722 of 53,62%41%,24 of 3822 of 53,0 of 20 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,02,6 of 1721 of 34,35%61%,6 of 1721 of 34,0 of 10 of 0,0%---,00,00,0:010:14,,,,,,
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,,,,,,,,,,11 of 3813 of 34,28%38%,3 of 2610 of 31,5 of 71 of 1,3 of 52 of 2,10 of 3613 of 32
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,,,,,,,,,,23 of 3722 of 53,62%41%,11 of 2321 of 48,3 of 31 of 4,9 of 110 of 1,23 of 3722 of 53
+UFC Fight Night: Burns vs. Malott,Mike Malott vs. Gilbert Burns,Total,Gilbert Burns,,,,,,,,,,6 of 1721 of 34,35%61%,2 of 1120 of 33,2 of 21 of 1,2 of 40 of 0,6 of 169 of 18
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,00,36 of 7758 of 104,46%55%,48 of 9288 of 142,7 of 131 of 4,53%25%,00,01,7:130:21,,,,,,
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,00,6 of 125 of 10,50%50%,14 of 2115 of 22,3 of 40 of 0,75%---,00,00,3:510:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,00,10 of 2222 of 42,45%52%,12 of 2638 of 63,2 of 41 of 1,50%100%,00,01,1:360:21,,,,,,
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,00,20 of 4331 of 52,46%59%,22 of 4535 of 57,2 of 50 of 3,40%0%,00,00,1:460:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,,,,,,,,,,6 of 125 of 10,50%50%,5 of 103 of 6,0 of 12 of 4,1 of 10 of 0,4 of 104 of 9
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,,,,,,,,,,10 of 2222 of 42,45%52%,6 of 188 of 22,4 of 412 of 18,0 of 02 of 2,10 of 2213 of 32
+UFC Fight Night: Burns vs. Malott,Charles Jourdain vs. Kyler Phillips,Total,Kyler Phillips,,,,,,,,,,20 of 4331 of 52,46%59%,17 of 4017 of 34,2 of 212 of 15,1 of 12 of 3,20 of 4324 of 45
+UFC Fight Night: Burns vs. Malott,Jai Herbert vs. Mandel Nallo,Total,Mandel Nallo,12,16 of 3119 of 28,51%67%,16 of 3130 of 43,0 of 00 of 0,------,00,00,0:100:27,,,,,,
+UFC Fight Night: Burns vs. Malott,Jai Herbert vs. Mandel Nallo,Total,Mandel Nallo,12,16 of 3119 of 28,51%67%,16 of 3130 of 43,0 of 00 of 0,------,00,00,0:100:27,,,,,,
+UFC Fight Night: Burns vs. Malott,Jai Herbert vs. Mandel Nallo,Total,Mandel Nallo,,,,,,,,,,16 of 3119 of 28,51%67%,13 of 2818 of 27,1 of 10 of 0,2 of 21 of 1,15 of 307 of 14
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,00,18 of 7615 of 43,23%34%,72 of 13888 of 127,3 of 50 of 0,60%---,02,00,8:090:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,00,1 of 177 of 12,5%58%,5 of 2236 of 45,1 of 20 of 0,50%---,00,00,1:490:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,00,9 of 374 of 21,24%19%,20 of 5012 of 31,1 of 20 of 0,50%---,01,00,2:200:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,00,8 of 224 of 10,36%40%,47 of 6640 of 51,1 of 10 of 0,100%---,01,00,4:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,,,,,,,,,,1 of 177 of 12,5%58%,0 of 132 of 6,1 of 41 of 1,0 of 04 of 5,1 of 176 of 11
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,,,,,,,,,,9 of 374 of 21,24%19%,4 of 322 of 17,3 of 30 of 2,2 of 22 of 2,8 of 354 of 21
+UFC Fight Night: Burns vs. Malott,Jasmine Jasudavicius vs. Karine Silva,Total,Jasmine Jasudavicius,,,,,,,,,,8 of 224 of 10,36%40%,7 of 201 of 7,1 of 20 of 0,0 of 03 of 3,8 of 224 of 10
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,01,45 of 101122 of 226,44%53%,46 of 103131 of 237,2 of 150 of 0,13%---,00,01,2:331:07,,,,,,
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,00,8 of 139 of 23,61%39%,9 of 1513 of 29,2 of 60 of 0,33%---,00,01,2:220:17,,,,,,
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,00,14 of 3844 of 88,36%50%,14 of 3844 of 88,0 of 40 of 0,0%---,00,00,0:110:08,,,,,,
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,01,23 of 5069 of 115,46%60%,23 of 5074 of 120,0 of 50 of 0,0%---,00,00,0:000:42,,,,,,
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,,,,,,,,,,8 of 139 of 23,61%39%,4 of 92 of 16,1 of 10 of 0,3 of 37 of 7,6 of 119 of 23
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,,,,,,,,,,14 of 3844 of 88,36%50%,9 of 2719 of 60,0 of 112 of 14,5 of 1013 of 14,14 of 3743 of 87
+UFC Fight Night: Burns vs. Malott,Gauge Young vs. Thiago Moises,Total,Thiago Moises,,,,,,,,,,23 of 5069 of 115,46%60%,21 of 4541 of 81,0 of 115 of 20,2 of 413 of 14,22 of 4962 of 101
+UFC Fight Night: Burns vs. Malott,Marcio Barbosa vs. Dennis Buzukja,Total,Dennis Buzukja,01,5 of 134 of 8,38%50%,5 of 134 of 8,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Marcio Barbosa vs. Dennis Buzukja,Total,Dennis Buzukja,01,5 of 134 of 8,38%50%,5 of 134 of 8,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Marcio Barbosa vs. Dennis Buzukja,Total,Dennis Buzukja,,,,,,,,,,5 of 134 of 8,38%50%,0 of 64 of 8,2 of 40 of 0,3 of 30 of 0,5 of 134 of 8
+UFC Fight Night: Burns vs. Malott,Robert Valentin vs. Julien Leblanc,Total,Julien Leblanc,00,4 of 67 of 13,66%53%,4 of 614 of 20,0 of 01 of 1,---100%,01,00,0:001:42,,,,,,
+UFC Fight Night: Burns vs. Malott,Robert Valentin vs. Julien Leblanc,Total,Julien Leblanc,00,4 of 67 of 13,66%53%,4 of 614 of 20,0 of 01 of 1,---100%,01,00,0:001:42,,,,,,
+UFC Fight Night: Burns vs. Malott,Robert Valentin vs. Julien Leblanc,Total,Julien Leblanc,,,,,,,,,,4 of 67 of 13,66%53%,1 of 31 of 7,2 of 22 of 2,1 of 14 of 4,4 of 67 of 13
+UFC Fight Night: Burns vs. Malott,Gokhan Saricam vs. Tanner Boser,Total,Tanner Boser,01,60 of 9757 of 121,61%47%,77 of 11779 of 145,0 of 10 of 4,0%0%,00,00,1:301:20,,,,,,
+UFC Fight Night: Burns vs. Malott,Gokhan Saricam vs. Tanner Boser,Total,Tanner Boser,00,27 of 4528 of 66,60%42%,35 of 5438 of 76,0 of 00 of 4,---0%,00,00,0:321:10,,,,,,
+UFC Fight Night: Burns vs. Malott,Gokhan Saricam vs. Tanner Boser,Total,Tanner Boser,01,33 of 5229 of 55,63%52%,42 of 6341 of 69,0 of 10 of 0,0%---,00,00,0:580:10,,,,,,
+UFC Fight Night: Burns vs. Malott,Gokhan Saricam vs. Tanner Boser,Total,Tanner Boser,,,,,,,,,,27 of 4528 of 66,60%42%,11 of 2720 of 57,7 of 95 of 6,9 of 93 of 3,23 of 4019 of 55
+UFC Fight Night: Burns vs. Malott,Gokhan Saricam vs. Tanner Boser,Total,Tanner Boser,,,,,,,,,,33 of 5229 of 55,63%52%,19 of 3720 of 44,2 of 33 of 4,12 of 126 of 7,24 of 4220 of 44
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,00,69 of 15341 of 118,45%34%,92 of 18581 of 163,4 of 80 of 0,50%---,10,00,5:120:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,00,15 of 4614 of 40,32%35%,15 of 4622 of 48,0 of 20 of 0,0%---,00,00,0:160:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,00,27 of 5614 of 45,48%31%,31 of 6120 of 54,1 of 20 of 0,50%---,00,00,1:390:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,00,27 of 5113 of 33,52%39%,46 of 7839 of 61,3 of 40 of 0,75%---,10,00,3:170:00,,,,,,
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,,,,,,,,,,15 of 4614 of 40,32%35%,9 of 359 of 31,4 of 82 of 6,2 of 33 of 3,13 of 4411 of 36
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,,,,,,,,,,27 of 5614 of 45,48%31%,21 of 449 of 37,2 of 74 of 7,4 of 51 of 1,20 of 4312 of 39
+UFC Fight Night: Burns vs. Malott,Melissa Croden vs. Daria Zhelezniakova,Total,Melissa Croden,,,,,,,,,,27 of 5113 of 33,52%39%,21 of 4212 of 32,6 of 91 of 1,0 of 00 of 0,10 of 2812 of 31
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,00,50 of 14970 of 230,33%30%,52 of 15473 of 233,0 of 20 of 0,0%---,00,00,0:440:00,,,,,,
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,00,7 of 4321 of 54,16%38%,9 of 4823 of 56,0 of 10 of 0,0%---,00,00,0:440:00,,,,,,
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,00,16 of 4621 of 88,34%23%,16 of 4622 of 89,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,00,27 of 6028 of 88,45%31%,27 of 6028 of 88,0 of 10 of 0,0%---,00,00,0:000:00,,,,,,
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,,,,,,,,,,7 of 4321 of 54,16%38%,5 of 3811 of 33,0 of 08 of 15,2 of 52 of 6,7 of 4321 of 54
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,,,,,,,,,,16 of 4621 of 88,34%23%,11 of 397 of 67,2 of 35 of 10,3 of 49 of 11,16 of 4621 of 88
+UFC Fight Night: Burns vs. Malott,JJ Aldrich vs. Jamey-Lyn Horth,Total,JJ Aldrich,,,,,,,,,,27 of 6028 of 88,45%31%,19 of 5010 of 58,3 of 512 of 23,5 of 56 of 7,27 of 6028 of 88
+UFC Fight Night: Burns vs. Malott,John Yannis vs. Jamie Siraj,Total,Jamie Siraj,01,6 of 2421 of 34,25%61%,6 of 2421 of 34,0 of 20 of 0,0%---,00,00,0:000:09,,,,,,
+UFC Fight Night: Burns vs. Malott,John Yannis vs. Jamie Siraj,Total,Jamie Siraj,01,6 of 2421 of 34,25%61%,6 of 2421 of 34,0 of 20 of 0,0%---,00,00,0:000:09,,,,,,
+UFC Fight Night: Burns vs. Malott,John Yannis vs. Jamie Siraj,Total,Jamie Siraj,,,,,,,,,,6 of 2421 of 34,25%61%,4 of 1712 of 24,2 of 58 of 8,0 of 21 of 2,6 of 2416 of 27
+UFC 327: Prochazka vs. Ulberg,Carlos Ulberg vs. Jiri Prochazka,Total,Jiri Prochazka,01,14 of 2027 of 42,70%64%,14 of 2027 of 42,0 of 00 of 0,------,00,00,0:000:04,,,,,,
+UFC 327: Prochazka vs. Ulberg,Carlos Ulberg vs. Jiri Prochazka,Total,Jiri Prochazka,01,14 of 2027 of 42,70%64%,14 of 2027 of 42,0 of 00 of 0,------,00,00,0:000:04,,,,,,
+UFC 327: Prochazka vs. Ulberg,Carlos Ulberg vs. Jiri Prochazka,Total,Jiri Prochazka,,,,,,,,,,14 of 2027 of 42,70%64%,6 of 1121 of 35,1 of 11 of 2,7 of 85 of 5,14 of 2016 of 30
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,01,34 of 7055 of 80,48%68%,34 of 7061 of 86,1 of 20 of 1,50%0%,10,01,0:201:20,,,,,,
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,00,7 of 2621 of 31,26%67%,7 of 2623 of 33,0 of 00 of 0,------,00,00,0:000:31,,,,,,
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,00,23 of 3819 of 31,60%61%,23 of 3823 of 35,1 of 20 of 1,50%0%,10,01,0:200:49,,,,,,
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,01,4 of 615 of 18,66%83%,4 of 615 of 18,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,,,,,,,,,,7 of 2621 of 31,26%67%,6 of 238 of 14,1 of 35 of 9,0 of 08 of 8,6 of 2514 of 22
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,,,,,,,,,,23 of 3819 of 31,60%61%,16 of 309 of 17,7 of 87 of 10,0 of 03 of 4,20 of 3415 of 26
+UFC 327: Prochazka vs. Ulberg,Paulo Costa vs. Azamat Murzakanov,Total,Azamat Murzakanov,,,,,,,,,,4 of 615 of 18,66%83%,4 of 610 of 13,0 of 04 of 4,0 of 01 of 1,4 of 615 of 18
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,00,174 of 302177 of 293,57%60%,214 of 345181 of 298,2 of 70 of 1,28%0%,00,00,2:050:31,,,,,,
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,00,58 of 10841 of 80,53%51%,77 of 12841 of 80,2 of 40 of 1,50%0%,00,00,2:050:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,00,56 of 9154 of 86,61%62%,69 of 10655 of 87,0 of 20 of 0,0%---,00,00,0:000:20,,,,,,
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,00,60 of 10382 of 127,58%64%,68 of 11185 of 131,0 of 10 of 0,0%---,00,00,0:000:11,,,,,,
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,,,,,,,,,,58 of 10841 of 80,53%51%,54 of 10441 of 80,3 of 30 of 0,1 of 10 of 0,31 of 7637 of 73
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,,,,,,,,,,56 of 9154 of 86,61%62%,42 of 7749 of 80,12 of 125 of 6,2 of 20 of 0,31 of 6246 of 75
+UFC 327: Prochazka vs. Ulberg,Josh Hokit vs. Curtis Blaydes,Total,Curtis Blaydes,,,,,,,,,,60 of 10382 of 127,58%64%,55 of 9574 of 118,2 of 48 of 9,3 of 40 of 0,50 of 8863 of 104
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,00,34 of 7342 of 80,46%52%,34 of 7342 of 80,0 of 00 of 1,---0%,00,00,0:000:10,,,,,,
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,00,10 of 1917 of 28,52%60%,10 of 1917 of 28,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,00,9 of 1913 of 28,47%46%,9 of 1913 of 28,0 of 00 of 1,---0%,00,00,0:000:10,,,,,,
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,00,15 of 3512 of 24,42%50%,15 of 3512 of 24,0 of 00 of 0,------,00,00,0:000:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,,,,,,,,,,10 of 1917 of 28,52%60%,5 of 112 of 8,2 of 42 of 2,3 of 413 of 18,10 of 1917 of 28
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,,,,,,,,,,9 of 1913 of 28,47%46%,4 of 123 of 14,3 of 51 of 5,2 of 29 of 9,9 of 1812 of 26
+UFC 327: Prochazka vs. Ulberg,Dominick Reyes vs. Johnny Walker,Total,Dominick Reyes,,,,,,,,,,15 of 3512 of 24,42%50%,1 of 122 of 9,2 of 83 of 4,12 of 157 of 11,15 of 3512 of 24
+UFC 327: Prochazka vs. Ulberg,Cub Swanson vs. Nate Landwehr,Total,Cub Swanson,20,37 of 4915 of 30,75%50%,40 of 5215 of 30,0 of 00 of 0,------,00,00,0:060:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Cub Swanson vs. Nate Landwehr,Total,Cub Swanson,20,37 of 4915 of 30,75%50%,40 of 5215 of 30,0 of 00 of 0,------,00,00,0:060:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Cub Swanson vs. Nate Landwehr,Total,Cub Swanson,,,,,,,,,,37 of 4915 of 30,75%50%,23 of 339 of 22,7 of 71 of 1,7 of 95 of 7,35 of 4615 of 30
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,00,49 of 88100 of 181,55%55%,49 of 88104 of 185,0 of 06 of 13,---46%,00,00,0:003:25,,,,,,
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,00,17 of 2822 of 56,60%39%,17 of 2825 of 59,0 of 01 of 4,---25%,00,00,0:000:47,,,,,,
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,00,19 of 3349 of 77,57%63%,19 of 3349 of 77,0 of 02 of 4,---50%,00,00,0:000:41,,,,,,
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,00,13 of 2729 of 48,48%60%,13 of 2730 of 49,0 of 03 of 5,---60%,00,00,0:001:57,,,,,,
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,,,,,,,,,,17 of 2822 of 56,60%39%,12 of 2017 of 48,3 of 51 of 4,2 of 34 of 4,15 of 2621 of 51
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,,,,,,,,,,19 of 3349 of 77,57%63%,11 of 2540 of 67,4 of 45 of 6,4 of 44 of 4,16 of 3043 of 70
+UFC 327: Prochazka vs. Ulberg,Aaron Pico vs. Patricio Pitbull,Total,Patricio Pitbull,,,,,,,,,,13 of 2729 of 48,48%60%,5 of 1522 of 41,7 of 105 of 5,1 of 22 of 2,6 of 2026 of 45
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,00,56 of 9146 of 95,61%48%,137 of 17667 of 121,0 of 30 of 4,0%0%,20,00,4:052:43,,,,,,
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,00,20 of 3418 of 39,58%46%,48 of 6223 of 46,0 of 00 of 0,------,00,00,1:410:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,00,19 of 3114 of 26,61%53%,25 of 3719 of 32,0 of 20 of 2,0%0%,20,00,1:420:18,,,,,,
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,00,17 of 2614 of 30,65%46%,64 of 7725 of 43,0 of 10 of 2,0%0%,00,00,0:422:25,,,,,,
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,,,,,,,,,,20 of 3418 of 39,58%46%,9 of 208 of 26,1 of 15 of 5,10 of 135 of 8,14 of 2614 of 35
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,,,,,,,,,,19 of 3114 of 26,61%53%,6 of 188 of 15,4 of 45 of 8,9 of 91 of 3,16 of 2710 of 21
+UFC 327: Prochazka vs. Ulberg,Kevin Holland vs. Randy Brown,Total,Kevin Holland,,,,,,,,,,17 of 2614 of 30,65%46%,9 of 179 of 24,5 of 64 of 4,3 of 31 of 2,9 of 157 of 19
+UFC 327: Prochazka vs. Ulberg,Mateusz Gamrot vs. Esteban Ribovics,Total,Mateusz Gamrot,00,18 of 344 of 21,52%19%,38 of 5616 of 34,4 of 60 of 0,66%---,10,00,6:500:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Mateusz Gamrot vs. Esteban Ribovics,Total,Mateusz Gamrot,00,14 of 211 of 12,66%8%,24 of 333 of 15,2 of 30 of 0,66%---,00,00,3:550:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Mateusz Gamrot vs. Esteban Ribovics,Total,Mateusz Gamrot,00,4 of 133 of 9,30%33%,14 of 2313 of 19,2 of 30 of 0,66%---,10,00,2:550:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Mateusz Gamrot vs. Esteban Ribovics,Total,Mateusz Gamrot,,,,,,,,,,14 of 211 of 12,66%8%,11 of 170 of 8,3 of 40 of 1,0 of 01 of 3,3 of 101 of 12
+UFC 327: Prochazka vs. Ulberg,Mateusz Gamrot vs. Esteban Ribovics,Total,Mateusz Gamrot,,,,,,,,,,4 of 133 of 9,30%33%,4 of 122 of 7,0 of 10 of 1,0 of 01 of 1,1 of 83 of 9
+UFC 327: Prochazka vs. Ulberg,Tatiana Suarez vs. Loopy Godinez,Total,Tatiana Suarez,00,12 of 2618 of 25,46%72%,56 of 7725 of 33,3 of 32 of 2,100%100%,10,00,5:120:23,,,,,,
+UFC 327: Prochazka vs. Ulberg,Tatiana Suarez vs. Loopy Godinez,Total,Tatiana Suarez,00,7 of 1317 of 22,53%77%,50 of 6323 of 29,1 of 12 of 2,100%100%,00,00,3:390:23,,,,,,
+UFC 327: Prochazka vs. Ulberg,Tatiana Suarez vs. Loopy Godinez,Total,Tatiana Suarez,00,5 of 131 of 3,38%33%,6 of 142 of 4,2 of 20 of 0,100%---,10,00,1:330:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Tatiana Suarez vs. Loopy Godinez,Total,Tatiana Suarez,,,,,,,,,,7 of 1317 of 22,53%77%,4 of 715 of 20,3 of 61 of 1,0 of 01 of 1,0 of 52 of 4
+UFC 327: Prochazka vs. Ulberg,Tatiana Suarez vs. Loopy Godinez,Total,Tatiana Suarez,,,,,,,,,,5 of 131 of 3,38%33%,0 of 71 of 3,5 of 60 of 0,0 of 00 of 0,1 of 90 of 2
+UFC 327: Prochazka vs. Ulberg,Vicente Luque vs. Kelvin Gastelum,Total,Kelvin Gastelum,01,9 of 2012 of 28,45%42%,12 of 2316 of 34,1 of 10 of 0,100%---,01,00,1:161:04,,,,,,
+UFC 327: Prochazka vs. Ulberg,Vicente Luque vs. Kelvin Gastelum,Total,Kelvin Gastelum,01,9 of 2012 of 28,45%42%,12 of 2316 of 34,1 of 10 of 0,100%---,01,00,1:161:04,,,,,,
+UFC 327: Prochazka vs. Ulberg,Vicente Luque vs. Kelvin Gastelum,Total,Kelvin Gastelum,,,,,,,,,,9 of 2012 of 28,45%42%,4 of 146 of 19,4 of 51 of 1,1 of 15 of 8,8 of 188 of 21
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,00,24 of 4729 of 66,51%43%,121 of 16441 of 79,4 of 50 of 0,80%---,02,02,9:071:50,,,,,,
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,00,7 of 118 of 10,63%80%,40 of 499 of 11,2 of 20 of 0,100%---,01,00,3:500:00,,,,,,
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,00,5 of 810 of 22,62%45%,41 of 5417 of 30,1 of 10 of 0,100%---,00,01,2:091:40,,,,,,
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,00,12 of 2811 of 34,42%32%,40 of 6115 of 38,1 of 20 of 0,50%---,01,01,3:080:10,,,,,,
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,,,,,,,,,,7 of 118 of 10,63%80%,7 of 112 of 4,0 of 03 of 3,0 of 03 of 3,2 of 48 of 10
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,,,,,,,,,,5 of 810 of 22,62%45%,5 of 77 of 17,0 of 13 of 3,0 of 00 of 2,3 of 51 of 8
+UFC 327: Prochazka vs. Ulberg,Charles Radtke vs. Francisco Prado,Total,Charles Radtke,,,,,,,,,,12 of 2811 of 34,42%32%,12 of 287 of 25,0 of 03 of 6,0 of 01 of 3,9 of 248 of 27
 UFC Fight Night: Moicano vs. Duncan,Renato Moicano vs. Chris Duncan,Total,Renato Moicano,00,21 of 3627 of 62,58%43%,62 of 8430 of 66,1 of 40 of 2,25%0%,10,00,3:160:01,,,,,,
 UFC Fight Night: Moicano vs. Duncan,Renato Moicano vs. Chris Duncan,Total,Renato Moicano,00,14 of 2017 of 38,70%44%,16 of 2219 of 41,0 of 20 of 1,0%0%,00,00,1:130:01,,,,,,
 UFC Fight Night: Moicano vs. Duncan,Renato Moicano vs. Chris Duncan,Total,Renato Moicano,00,7 of 1610 of 24,43%41%,46 of 6211 of 25,1 of 20 of 1,50%0%,10,00,2:030:00,,,,,,
@@ -2065,13 +2664,13 @@ UFC 318: Holloway vs. Poirier 3,Daniel Rodriguez vs. Kevin Holland,Total,Kevin H
 UFC 318: Holloway vs. Poirier 3,Daniel Rodriguez vs. Kevin Holland,Total,Kevin Holland,,,,,,,,,,40 of 8329 of 60,48%48%,20 of 5012 of 30,6 of 128 of 19,14 of 219 of 11,39 of 8128 of 59
 UFC 318: Holloway vs. Poirier 3,Daniel Rodriguez vs. Kevin Holland,Total,Kevin Holland,,,,,,,,,,12 of 2831 of 55,42%56%,8 of 2127 of 51,3 of 41 of 1,1 of 33 of 3,7 of 2112 of 22
 UFC 318: Holloway vs. Poirier 3,Daniel Rodriguez vs. Kevin Holland,Total,Kevin Holland,,,,,,,,,,30 of 6217 of 34,48%50%,25 of 5510 of 25,4 of 64 of 6,1 of 13 of 3,14 of 3514 of 26
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,00,47 of 12455 of 97,37%56%,59 of 14571 of 114,0 of 05 of 9,---55%,00,00,0:082:44,,,,,,
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,00,6 of 287 of 13,21%53%,10 of 327 of 13,0 of 02 of 3,---66%,00,00,0:001:03,,,,,,
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,00,19 of 5137 of 58,37%63%,19 of 5147 of 68,0 of 01 of 1,---100%,00,00,0:000:55,,,,,,
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,00,22 of 4511 of 26,48%42%,30 of 6217 of 33,0 of 02 of 5,---40%,00,00,0:080:46,,,,,,
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,,,,,,,,,,6 of 287 of 13,21%53%,1 of 212 of 8,2 of 42 of 2,3 of 33 of 3,6 of 277 of 13
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,,,,,,,,,,19 of 5137 of 58,37%63%,10 of 3830 of 50,6 of 106 of 6,3 of 31 of 2,17 of 4825 of 45
-UFC 318: Holloway vs. Poirier 3,Patricio Freire vs. Dan Ige,Total,Dan Ige,,,,,,,,,,22 of 4511 of 26,48%42%,13 of 3410 of 24,7 of 91 of 2,2 of 20 of 0,15 of 3410 of 24
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,00,47 of 12455 of 97,37%56%,59 of 14571 of 114,0 of 05 of 9,---55%,00,00,0:082:44,,,,,,
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,00,6 of 287 of 13,21%53%,10 of 327 of 13,0 of 02 of 3,---66%,00,00,0:001:03,,,,,,
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,00,19 of 5137 of 58,37%63%,19 of 5147 of 68,0 of 01 of 1,---100%,00,00,0:000:55,,,,,,
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,00,22 of 4511 of 26,48%42%,30 of 6217 of 33,0 of 02 of 5,---40%,00,00,0:080:46,,,,,,
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,,,,,,,,,,6 of 287 of 13,21%53%,1 of 212 of 8,2 of 42 of 2,3 of 33 of 3,6 of 277 of 13
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,,,,,,,,,,19 of 5137 of 58,37%63%,10 of 3830 of 50,6 of 106 of 6,3 of 31 of 2,17 of 4825 of 45
+UFC 318: Holloway vs. Poirier 3,Patricio Pitbull vs. Dan Ige,Total,Dan Ige,,,,,,,,,,22 of 4511 of 26,48%42%,13 of 3410 of 24,7 of 91 of 2,2 of 20 of 0,15 of 3410 of 24
 UFC 318: Holloway vs. Poirier 3,Michael Johnson vs. Daniel Zellhuber,Total,Michael Johnson,10,80 of 19552 of 182,41%28%,81 of 19652 of 182,0 of 10 of 0,0%---,00,00,0:220:08,,,,,,
 UFC 318: Holloway vs. Poirier 3,Michael Johnson vs. Daniel Zellhuber,Total,Michael Johnson,00,24 of 5612 of 46,42%26%,24 of 5612 of 46,0 of 00 of 0,------,00,00,0:060:00,,,,,,
 UFC 318: Holloway vs. Poirier 3,Michael Johnson vs. Daniel Zellhuber,Total,Michael Johnson,10,30 of 7717 of 66,38%25%,31 of 7817 of 66,0 of 00 of 0,------,00,00,0:160:00,,,,,,
@@ -2833,13 +3432,13 @@ UFC 314: Volkanovski vs. Lopes,Paddy Pimblett vs. Michael Chandler,Total,Michael
 UFC 314: Volkanovski vs. Lopes,Paddy Pimblett vs. Michael Chandler,Total,Michael Chandler,,,,,,,,,,5 of 1116 of 40,45%40%,4 of 107 of 28,1 of 11 of 2,0 of 08 of 10,4 of 716 of 40
 UFC 314: Volkanovski vs. Lopes,Paddy Pimblett vs. Michael Chandler,Total,Michael Chandler,,,,,,,,,,5 of 1434 of 63,35%53%,1 of 626 of 53,2 of 51 of 1,2 of 37 of 9,5 of 1419 of 41
 UFC 314: Volkanovski vs. Lopes,Paddy Pimblett vs. Michael Chandler,Total,Michael Chandler,,,,,,,,,,1 of 330 of 40,33%75%,1 of 228 of 38,0 of 12 of 2,0 of 00 of 0,1 of 38 of 15
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,10,70 of 12217 of 50,57%34%,97 of 15723 of 60,1 of 11 of 4,100%25%,01,00,1:431:03,,,,,,
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,00,11 of 214 of 10,52%40%,26 of 405 of 12,0 of 00 of 1,---0%,00,00,0:000:35,,,,,,
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,00,21 of 458 of 26,46%30%,25 of 528 of 26,1 of 11 of 3,100%33%,00,00,0:020:28,,,,,,
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,10,38 of 565 of 14,67%35%,46 of 6510 of 22,0 of 00 of 0,------,01,00,1:410:00,,,,,,
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,,,,,,,,,,11 of 214 of 10,52%40%,3 of 100 of 5,4 of 50 of 1,4 of 64 of 4,10 of 204 of 10
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,,,,,,,,,,21 of 458 of 26,46%30%,8 of 285 of 21,6 of 91 of 2,7 of 82 of 3,20 of 448 of 26
-UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Freire,Total,Yair Rodriguez,,,,,,,,,,38 of 565 of 14,67%35%,27 of 443 of 12,8 of 91 of 1,3 of 31 of 1,13 of 255 of 14
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,10,70 of 12217 of 50,57%34%,97 of 15723 of 60,1 of 11 of 4,100%25%,01,00,1:431:03,,,,,,
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,00,11 of 214 of 10,52%40%,26 of 405 of 12,0 of 00 of 1,---0%,00,00,0:000:35,,,,,,
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,00,21 of 458 of 26,46%30%,25 of 528 of 26,1 of 11 of 3,100%33%,00,00,0:020:28,,,,,,
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,10,38 of 565 of 14,67%35%,46 of 6510 of 22,0 of 00 of 0,------,01,00,1:410:00,,,,,,
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,,,,,,,,,,11 of 214 of 10,52%40%,3 of 100 of 5,4 of 50 of 1,4 of 64 of 4,10 of 204 of 10
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,,,,,,,,,,21 of 458 of 26,46%30%,8 of 285 of 21,6 of 91 of 2,7 of 82 of 3,20 of 448 of 26
+UFC 314: Volkanovski vs. Lopes,Yair Rodriguez vs. Patricio Pitbull,Total,Yair Rodriguez,,,,,,,,,,38 of 565 of 14,67%35%,27 of 443 of 12,8 of 91 of 1,3 of 31 of 1,13 of 255 of 14
 UFC 314: Volkanovski vs. Lopes,Jean Silva vs. Bryce Mitchell,Total,Bryce Mitchell,01,36 of 6427 of 63,56%42%,37 of 6629 of 65,1 of 140 of 0,7%---,03,00,1:430:19,,,,,,
 UFC 314: Volkanovski vs. Lopes,Jean Silva vs. Bryce Mitchell,Total,Bryce Mitchell,00,22 of 349 of 29,64%31%,23 of 3510 of 30,1 of 30 of 0,33%---,02,00,0:530:06,,,,,,
 UFC 314: Volkanovski vs. Lopes,Jean Silva vs. Bryce Mitchell,Total,Bryce Mitchell,01,14 of 3018 of 34,46%52%,14 of 3119 of 35,0 of 110 of 0,0%---,01,00,0:500:13,,,,,,

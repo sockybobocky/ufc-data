@@ -19,7 +19,8 @@ Usage:
   Weekly update (new only):     python scrape_ufc_data.py
 
 Requirements:
-  pip install requests beautifulsoup4
+  pip install requests beautifulsoup4 playwright
+  python -m playwright install chromium
 """
 
 import requests
@@ -33,9 +34,40 @@ import sys
 import json
 from datetime import datetime
 
-HEADERS = {"User-Agent": "UFC-Stats-Scraper/3.0"}
-SESSION = requests.Session()
-SESSION.headers.update(HEADERS)
+# Playwright browser - launched once, reused for all ufcstats.com fetches
+BROWSER = None
+PAGE = None
+
+def init_browser():
+    global BROWSER, PAGE
+    from playwright.sync_api import sync_playwright
+    pw = sync_playwright().start()
+    BROWSER = pw.chromium.launch(headless=True)
+    context = BROWSER.new_context(
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    )
+    PAGE = context.new_page()
+    # Solve Cloudflare challenge on first load
+    print("  Solving Cloudflare challenge...", end=" ", flush=True)
+    PAGE.goto("http://www.ufcstats.com/statistics/fighters?char=a&page=all", timeout=30000)
+    try:
+        PAGE.wait_for_selector('a[href*="fighter-details"]', timeout=15000)
+        print("OK")
+    except:
+        print("WARNING: challenge may not have resolved")
+
+def close_browser():
+    global BROWSER
+    if BROWSER:
+        BROWSER.close()
+        BROWSER = None
+
+# Regular requests session (used only for The Odds API)
+API_SESSION = requests.Session()
+API_SESSION.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+})
+
 ODDS_API_KEY = "c60ed248ecaef69dc5662723e95b7ce8"
 STATE_FILE = "scraper_state.json"
 
@@ -54,22 +86,42 @@ def save_state(state):
 
 
 def write_csv(filename, data, fieldnames):
+    # Safety: never overwrite existing file with empty data
+    if len(data) == 0 and os.path.exists(filename):
+        existing_size = os.path.getsize(filename)
+        if existing_size > 100:  # File has real data
+            print(f"  ⚠️  SKIPPING write to {filename} — got 0 rows but existing file has {existing_size:,} bytes")
+            return False
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(data)
+    return True
 
 
 def fetch(url, retries=2):
+    """Fetch a ufcstats.com page using the Playwright browser."""
+    global PAGE
     for attempt in range(retries + 1):
         try:
-            resp = SESSION.get(url, timeout=20)
-            resp.raise_for_status()
-            return resp
+            PAGE.goto(url, timeout=20000, wait_until="domcontentloaded")
+            # Brief wait for dynamic content
+            time.sleep(0.3)
+            content = PAGE.content()
+            if content and len(content) > 500 and "fighter" in content.lower():
+                # Return a response-like object
+                return type('Resp', (), {'status_code': 200, 'text': content})()
+            # If content is small, might still be Cloudflare challenge
+            if "Checking your browser" in content:
+                time.sleep(3)  # Wait for challenge
+                content = PAGE.content()
+                if len(content) > 500:
+                    return type('Resp', (), {'status_code': 200, 'text': content})()
         except Exception as e:
             if attempt == retries:
                 return None
             time.sleep(1)
+    return None
 
 
 # ═══════════════════════════════════════════════════
@@ -546,7 +598,7 @@ def fetch_betting_odds():
     odds_data = []
     url = f"https://api.the-odds-api.com/v4/sports/mma_mixed_martial_arts/odds?regions=us&markets=h2h&oddsFormat=american&apiKey={ODDS_API_KEY}"
     try:
-        resp = SESSION.get(url, timeout=15)
+        resp = API_SESSION.get(url, timeout=15)
         resp.raise_for_status()
         fights = resp.json()
         print(f"  {len(fights)} fights with odds")
@@ -683,26 +735,36 @@ def main():
 
     state = load_state()
 
-    # Always run these (fast)
-    records = scrape_fighter_records()
+    # Launch headless browser for ufcstats.com (bypasses Cloudflare)
+    print("\nLaunching browser...")
+    init_browser()
 
-    # Fighter stats - full only (slow)
-    if full:
-        scrape_all_fighter_stats(records)
-    else:
-        print("\n[2/8] Updating stats for upcoming fighters only...")
-        if not os.path.exists("ufc_fighter_tott.csv"):
-            print("  WARNING: No tott file! Run with --full first.")
+    try:
+        # Always run these (fast)
+        records = scrape_fighter_records()
+
+        # Fighter stats - full only (slow)
+        if full:
+            scrape_all_fighter_stats(records)
         else:
-            update_upcoming_fighter_stats()
+            print("\n[2/8] Updating stats for upcoming fighters only...")
+            if not os.path.exists("ufc_fighter_tott.csv"):
+                print("  WARNING: No tott file! Run with --full first.")
+            else:
+                update_upcoming_fighter_stats()
 
-    # Events + fights
-    scrape_events_and_fights(state, full=full)
+        # Events + fights
+        scrape_events_and_fights(state, full=full)
 
-    # Always run these (fast)
-    scrape_upcoming_events()
+        # Upcoming events + profiles (need browser)
+        scrape_upcoming_events()
+        scrape_upcoming_profiles()
+    finally:
+        close_browser()
+        print("  Browser closed.")
+
+    # Odds API doesn't need browser
     fetch_betting_odds()
-    scrape_upcoming_profiles()
 
     print("\n[7/8] Reserved\n[8/8] Reserved")
 
