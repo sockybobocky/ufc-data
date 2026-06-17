@@ -28,11 +28,13 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install chromium
+          python -m playwright install-deps
 
       - name: Run scraper
         run: |
-          # Determine mode: manual input, monthly schedule, or weekly update
           if [ "${{ github.event.inputs.mode }}" = "full" ]; then
             echo "Running FULL scrape (manual trigger)"
             python scrape_ufc_data.py --full
@@ -43,6 +45,23 @@ jobs:
             echo "Running UPDATE scrape"
             python scrape_ufc_data.py
           fi
+
+      - name: Verify CSVs have data before committing
+        run: |
+          echo "=== CSV file check ==="
+          ABORT=false
+          for f in ufc_fighter_records.csv ufc_upcoming_events.csv; do
+            if [ -f "$f" ]; then
+              LINES=$(wc -l < "$f")
+              SIZE=$(wc -c < "$f")
+              echo "$f: $LINES lines, $SIZE bytes"
+              if [ "$LINES" -le 1 ]; then
+                echo "WARNING: $f appears empty (only header). Restoring from git."
+                git checkout -- "$f" 2>/dev/null || echo "  Could not restore $f"
+              fi
+            fi
+          done
+          echo "=== Check complete ==="
 
       - name: Commit updated CSVs
         run: |
