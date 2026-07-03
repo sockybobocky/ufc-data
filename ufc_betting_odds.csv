@@ -1,23 +1,30 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-07-04T16:00:00Z,Oscar Ownsworth,Gabriele Galluccio,-105,-135,-105,-135,1
-2026-07-04T16:00:00Z,Norbert Pietrzak,Nell Ariano,-120,-120,-120,-120,1
-2026-07-11T21:00:00Z,Cody Durden,Alessandro Costa,+230,-270,+230,-265,3
-2026-07-11T21:00:00Z,Damian Pinas,Cesar Almeida,-190,+165,-190,+170,5
-2026-07-11T21:00:00Z,Ryan Gandra,Zachary Reese,-200,+170,-192,+170,4
-2026-07-11T21:00:00Z,Tracy Cortez,Wang Cong,+105,-125,+110,-122,5
-2026-07-12T00:00:00Z,Cody Garbrandt,Adrian Yanez,+310,-410,+320,-400,5
+2026-07-04T16:00:00Z,Anas Nfaou,Randy Mboyo,-145,+125,-145,+125,2
+2026-07-04T16:00:00Z,Damiano Scogna,Rony Henrique,-275,+185,-275,+195,2
+2026-07-04T16:00:00Z,Geoff Pavey,David Allen,-155,+135,-143,+135,2
+2026-07-04T16:00:00Z,Oscar Ownsworth,Gabriele Galluccio,+110,-130,+110,-130,2
+2026-07-04T16:00:00Z,Zanyar Kamaran,Lincoln Strong,-170,+140,-170,+140,2
+2026-07-04T16:00:00Z,Norbert Pietrzak,Nell Ariano,-135,+115,-135,+115,2
+2026-07-04T16:00:00Z,Stevie Lee,Vladimir Stanca,-400,+250,-400,+285,2
+2026-07-04T17:00:00Z,George Hardwick,Nicolas Savio,-550,+325,-500,+330,2
+2026-07-11T21:00:00Z,Cody Durden,Alessandro Costa,+210,-250,+215,-250,5
+2026-07-11T21:00:00Z,Paddy Pimblett,Benoit Saint-Denis,+130,-155,+130,-150,5
+2026-07-11T21:00:00Z,Damian Pinas,Cesar Almeida,-200,+170,-200,+176,5
+2026-07-11T21:00:00Z,Max Holloway,Conor McGregor,-238,+195,-215,+200,5
+2026-07-11T21:00:00Z,Ryan Gandra,Zachary Reese,-157,+137,-155,+145,4
+2026-07-11T21:00:00Z,Tracy Cortez,Wang Cong,-105,-115,+102,-115,5
+2026-07-12T00:00:00Z,Cody Garbrandt,Adrian Yanez,+310,-410,+315,-395,5
 2026-07-12T00:00:00Z,Luke Riley,Kai Kamaka,-320,+270,-320,+270,5
-2026-07-12T00:00:00Z,King Green,Terrance Mckinney,+135,-155,+136,-155,4
-2026-07-12T00:00:00Z,Robert Whittaker,Nikita Krylov,-210,+180,-205,+180,5
-2026-07-12T00:15:00Z,Gable Steveson,Elisha Ellison,-2100,+1100,-2100,+1300,5
-2026-07-12T01:45:00Z,Brandon Royval,Lone'er Kavanagh,+185,-220,+185,-205,5
-2026-07-12T02:15:00Z,Cory Sandhagen,Mario Bautista,-145,+125,-145,+130,5
-2026-07-12T02:45:00Z,Paddy Pimblett,Benoit Saint-Denis,+130,-155,+130,-147,5
-2026-07-12T03:30:00Z,Conor McGregor,Max Holloway,+196,-260,+196,-225,4
-2026-07-19T04:30:00Z,Dricus Du Plessis,Kamaru Usman,-315,+265,-315,+265,4
+2026-07-12T00:00:00Z,King Green,Terrance Mckinney,+135,-155,+136,-155,5
+2026-07-12T00:00:00Z,Robert Whittaker,Nikita Krylov,-190,+165,-190,+165,5
+2026-07-12T00:15:00Z,Gable Steveson,Elisha Ellison,-3500,+1500,-2500,+1500,5
+2026-07-12T01:45:00Z,Brandon Royval,Lone'er Kavanagh,+187,-222,+187,-210,5
+2026-07-12T02:15:00Z,Cory Sandhagen,Mario Bautista,-150,+130,-150,+130,5
+2026-07-19T04:30:00Z,Dricus Du Plessis,Kamaru Usman,-315,+265,-310,+265,4
 2026-07-25T16:00:00Z,Magomed Ankalaev,Khalil Rountree,-310,+260,-310,+260,4
-2026-08-16T03:00:00Z,Mackenzie Dern,Gillian Robertson,-180,+150,-180,+185,3
-2026-08-16T04:00:00Z,Islam Makhachev,Ian Garry,-345,+275,-345,+290,3
+2026-08-16T03:00:00Z,Mackenzie Dern,Gillian Robertson,-180,+150,-180,+172,3
+2026-08-16T04:00:00Z,Islam Makhachev,Ian Garry,-345,+275,-325,+280,3
+2026-08-29T07:00:00Z,Umar Nurmagomedov,Song Yadong,-420,+350,-420,+350,1
 2026-12-27T03:00:00Z,Manel Kape,Joshua Van,-190,+165,-190,+165,1
 2026-12-31T05:00:00Z,Josh Hokit,Alex Pereira,-160,+140,-160,+140,1
 2026-12-31T05:00:00Z,Justin Gaethje,Arman Tsarukyan,+385,-500,+385,-500,1
