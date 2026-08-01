@@ -1,6 +1,9 @@
 {
-  "last_run": "2026-07-31T08:52:22.522931",
+  "last_run": "2026-08-01T09:48:39.395509",
   "scraped_events": [
+    "http://www.ufcstats.com/event-details/1a50e734bb54861a",
+    "http://www.ufcstats.com/event-details/681d07e328798ec0",
+    "http://www.ufcstats.com/event-details/f354c50b8d63d9b3",
     "http://www.ufcstats.com/event-details/fccb0fee256b7b4d",
     "http://www.ufcstats.com/event-details/31e1ea6fe6b682f8",
     "http://www.ufcstats.com/event-details/c8661e204c66f325",
@@ -37,7 +40,6 @@
     "http://www.ufcstats.com/event-details/5efaaf313b652dd7",
     "http://www.ufcstats.com/event-details/6e380a4d73ab4f0e",
     "http://www.ufcstats.com/event-details/754968e325d6f60d",
-    "http://www.ufcstats.com/event-details/8fbcd82bf7f352bf",
     "http://www.ufcstats.com/event-details/421ccfc6ddb17958",
     "http://www.ufcstats.com/event-details/6cd3dfc54f01287f",
     "http://www.ufcstats.com/event-details/f2c934689243fe4e",
@@ -780,9 +782,6 @@
     "http://www.ufcstats.com/event-details/dedc3bb440d09554",
     "http://www.ufcstats.com/event-details/b60391da771deefe",
     "http://www.ufcstats.com/event-details/1a49e0670dfaca31",
-    "http://www.ufcstats.com/event-details/a6a9ab5a824e8f66",
-    "http://www.ufcstats.com/event-details/f354c50b8d63d9b3",
-    "http://www.ufcstats.com/event-details/681d07e328798ec0",
-    "http://www.ufcstats.com/event-details/1a50e734bb54861a"
+    "http://www.ufcstats.com/event-details/a6a9ab5a824e8f66"
   ]
 }

@@ -1,18 +1,56 @@
 EVENT,DATE,BOUT,FIGHTER_A,FIGHTER_B,WINNER,OUTCOME,WEIGHTCLASS,METHOD,ROUND,TIME,FIGHT_URL
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Conor McGregor vs. Max Holloway,Conor McGregor,Max Holloway,,,Welterweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Benoit Saint Denis vs. Paddy Pimblett,Benoit Saint Denis,Paddy Pimblett,,,Lightweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Cory Sandhagen vs. Mario Bautista,Cory Sandhagen,Mario Bautista,,,Bantamweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Brandon Royval vs. Lone'er Kavanagh,Brandon Royval,Lone'er Kavanagh,,,Flyweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",King Green vs. Terrance McKinney,King Green,Terrance McKinney,,,Lightweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Nikita Krylov vs. Robert Whittaker,Nikita Krylov,Robert Whittaker,,,Light Heavyweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Gable Steveson vs. Elisha Ellison,Gable Steveson,Elisha Ellison,,,Heavyweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Cody Garbrandt vs. Adrian Yanez,Cody Garbrandt,Adrian Yanez,,,Bantamweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Luke Riley vs. Kai Kamaka III,Luke Riley,Kai Kamaka III,,,Featherweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Tracy Cortez vs. Wang Cong,Tracy Cortez,Wang Cong,,,Women's Flyweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Damian Pinas vs. Cesar Almeida,Damian Pinas,Cesar Almeida,,,Middleweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Farid Basharat vs. Ethyn Ewing,Farid Basharat,Ethyn Ewing,,,Bantamweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Ryan Gandra vs. Zach Reese,Ryan Gandra,Zach Reese,,,Middleweight,,,,
-UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Ode Osbourne vs. Cody Durden,Ode Osbourne,Cody Durden,,,Flyweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Uros Medic vs. Daniel Rodriguez,Uros Medic,Daniel Rodriguez,,,Welterweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jan Blachowicz vs. Navajo Stirling,Jan Blachowicz,Navajo Stirling,,,Light Heavyweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Aleksandar Rakic vs. Marcin Tybura,Aleksandar Rakic,Marcin Tybura,,,Heavyweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dusko Todorovic vs. Robert Valentin,Dusko Todorovic,Robert Valentin,,,Middleweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Vlasto Cepo vs. Gilbert Urbina,Vlasto Cepo,Gilbert Urbina,,,Middleweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Milos Janicic vs. Noah Gugnon,Milos Janicic,Noah Gugnon,,,Lightweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Ludovit Klein vs. Tofiq Musayev,Ludovit Klein,Tofiq Musayev,,,Lightweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Oban Elliott vs. Michael Oliveira,Oban Elliott,Michael Oliveira,,,Welterweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Borislav Nikolic vs. Mark Vologdin,Borislav Nikolic,Mark Vologdin,,,Bantamweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dennis Buzukja vs. Bogdan Grad,Dennis Buzukja,Bogdan Grad,,,Featherweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Mateusz Rebecki vs. Kyle Prepolec,Mateusz Rebecki,Kyle Prepolec,,,Lightweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Nina Milosevic vs. Hailey Cowan,Nina Milosevic,Hailey Cowan,,,Women's Bantamweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jovan Leka vs. Alexander Poppeck,Jovan Leka,Alexander Poppeck,,,Heavyweight,,,,
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Marina Spasic vs. Stephanie Luciano,Marina Spasic,Stephanie Luciano,,,Women's Strawweight,,,,
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Ankalaev vs. Bogdan Guskov,Magomed Ankalaev,Bogdan Guskov,Magomed Ankalaev,W/L,Light Heavyweight,,5,2:41,http://www.ufcstats.com/fight-details/9009ec7b91f2be14
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Ramazan Temirov vs. Steve Erceg,Ramazan Temirov,Steve Erceg,Ramazan Temirov,W/L,Flyweight,,1,4:21,http://www.ufcstats.com/fight-details/c36cd04f8f560f0a
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Zaynukov vs. Damian Rzepecki,Magomed Zaynukov,Damian Rzepecki,Magomed Zaynukov,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/4ace64aa144389c5
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Rizvan Kuniev vs. Tyrell Fortune,Rizvan Kuniev,Tyrell Fortune,Rizvan Kuniev,W/L,Heavyweight,,3,1:12,http://www.ufcstats.com/fight-details/5ffb251c6ea48b65
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Abubakar Vagaev vs. Saygid Izagakhmaev,Abubakar Vagaev,Saygid Izagakhmaev,Abubakar Vagaev,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/61280e5644189c61
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Valter Walker vs. Thomas Petersen,Valter Walker,Thomas Petersen,Valter Walker,W/L,Heavyweight,,1,1:32,http://www.ufcstats.com/fight-details/d7070ab1b2144f8d
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Muhammad Saidov vs. Dustin Jacoby,Muhammad Saidov,Dustin Jacoby,Muhammad Saidov,W/L,Light Heavyweight,,2,4:49,http://www.ufcstats.com/fight-details/05bc7a042156b6f6
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Sam Patterson vs. Santiago Ponzinibbio,Sam Patterson,Santiago Ponzinibbio,Sam Patterson,W/L,Welterweight,,2,3:06,http://www.ufcstats.com/fight-details/f6e6b004f07363e9
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Axel Sola vs. Ismael Bonfim,Axel Sola,Ismael Bonfim,Axel Sola,W/L,Lightweight,,1,4:44,http://www.ufcstats.com/fight-details/a122306d0ce5fbfb
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Tuchalov vs. Brendson Ribeiro,Magomed Tuchalov,Brendson Ribeiro,Magomed Tuchalov,W/L,Light Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/3ac870d6e7d323b7
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Nurullo Aliev vs. Mike Davis,Nurullo Aliev,Mike Davis,Nurullo Aliev,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/3859314324918eeb
+UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Abdul Hussein vs. Cody Gibson,Abdul Hussein,Cody Gibson,Abdul Hussein,W/L,Bantamweight,,3,3:07,http://www.ufcstats.com/fight-details/532340708f0500bd
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Dricus Du Plessis vs. Kamaru Usman,Dricus Du Plessis,Kamaru Usman,Dricus Du Plessis,W/L,Middleweight,,5,5:00,http://www.ufcstats.com/fight-details/701c97405da76603
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Christian Leroy Duncan vs. Jared Cannonier,Christian Leroy Duncan,Jared Cannonier,Christian Leroy Duncan,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/4eff5a845db17572
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Chase Hooper vs. Mitch Ramirez,Chase Hooper,Mitch Ramirez,Chase Hooper,W/L,Lightweight,,1,2:15,http://www.ufcstats.com/fight-details/f2abca7379982d4f
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Fatima Kline vs. Tabatha Ricci,Fatima Kline,Tabatha Ricci,Fatima Kline,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/52ddf20a10890b41
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Tommy McMillen vs. Alberto Montes,Tommy McMillen,Alberto Montes,Tommy McMillen,W/L,Featherweight,,3,3:29,http://www.ufcstats.com/fight-details/c64c6ba6eb1e1d06
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Jose Delgado vs. Austin Bashi,Jose Delgado,Austin Bashi,Jose Delgado,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/3bd159c1bed14700
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Jean-Paul Lebosnoyani vs. Seokhyeon Ko,Jean-Paul Lebosnoyani,Seokhyeon Ko,Jean-Paul Lebosnoyani,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/f2eb569176e46edf
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Felipe Franco vs. Levi Rodrigues Jr.,Felipe Franco,Levi Rodrigues Jr.,Felipe Franco,W/L,Light Heavyweight,,2,1:40,http://www.ufcstats.com/fight-details/46d800ce45fdd3e6
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Ezra Elliott vs. Damien Anderson,Ezra Elliott,Damien Anderson,Ezra Elliott,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/9e525f939fba3e73
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Alden Coria vs. Stewart Nicoll,Alden Coria,Stewart Nicoll,Alden Coria,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/410e6b9e01660b35
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",RJ Harris vs. Alvin Hines,RJ Harris,Alvin Hines,RJ Harris,W/L,Heavyweight,,1,1:40,http://www.ufcstats.com/fight-details/e05155c1b5c2dc74
+UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Dione Barbosa vs. Anna Melisano,Dione Barbosa,Anna Melisano,Dione Barbosa,W/L,Women's Flyweight,,1,4:04,http://www.ufcstats.com/fight-details/307ea95ad7ebe466
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Max Holloway vs. Conor McGregor,Max Holloway,Conor McGregor,Max Holloway,W/L,Welterweight,KO/TKO,1,1:09,http://www.ufcstats.com/fight-details/989760fa75321d69
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Paddy Pimblett vs. Benoit Saint Denis,Paddy Pimblett,Benoit Saint Denis,Paddy Pimblett,W/L,Lightweight,,1,0:52,http://www.ufcstats.com/fight-details/130b325610c54a64
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Mario Bautista vs. Cory Sandhagen,Mario Bautista,Cory Sandhagen,Mario Bautista,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/c572daedf2012a49
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Brandon Royval vs. Lone'er Kavanagh,Brandon Royval,Lone'er Kavanagh,Brandon Royval,W/L,Flyweight,,3,3:40,http://www.ufcstats.com/fight-details/a3ab1979192b647c
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",King Green vs. Terrance McKinney,King Green,Terrance McKinney,King Green,W/L,Lightweight,,1,4:59,http://www.ufcstats.com/fight-details/a26ea74f2e908842
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Robert Whittaker vs. Nikita Krylov,Robert Whittaker,Nikita Krylov,Robert Whittaker,W/L,Light Heavyweight,,3,1:01,http://www.ufcstats.com/fight-details/7765e5e779dd7dc9
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Gable Steveson vs. Elisha Ellison,Gable Steveson,Elisha Ellison,Gable Steveson,W/L,Heavyweight,,1,2:31,http://www.ufcstats.com/fight-details/118c25bda9392140
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Adrian Yanez vs. Cody Garbrandt,Adrian Yanez,Cody Garbrandt,Adrian Yanez,W/L,Bantamweight,,1,2:47,http://www.ufcstats.com/fight-details/e9f389ba3a1e33c4
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Luke Riley vs. Kai Kamaka III,Luke Riley,Kai Kamaka III,Luke Riley,W/L,Featherweight,,1,3:03,http://www.ufcstats.com/fight-details/930317fde9dbc55e
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Wang Cong vs. Tracy Cortez,Wang Cong,Tracy Cortez,Wang Cong,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/e84c3f1f9a33fa90
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Damian Pinas vs. Cesar Almeida,Damian Pinas,Cesar Almeida,Damian Pinas,W/L,Middleweight,,1,4:44,http://www.ufcstats.com/fight-details/b223b10ef19f912c
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Farid Basharat vs. John Garza,Farid Basharat,John Garza,Farid Basharat,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/9e00ee7644774e18
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Ryan Gandra vs. Zach Reese,Ryan Gandra,Zach Reese,Ryan Gandra,W/L,Middleweight,,1,1:15,http://www.ufcstats.com/fight-details/1162a74e3604c488
+UFC 329: McGregor vs. Holloway 2,"July 11, 2026",Alessandro Costa vs. Cody Durden,Alessandro Costa,Cody Durden,Alessandro Costa,W/L,Flyweight,,2,2:19,http://www.ufcstats.com/fight-details/1b6a3b0d27654d3e
 UFC Fight Night: Fiziev vs. Torres,"June 27, 2026",Rafael Fiziev vs. Manuel Torres,Rafael Fiziev,Manuel Torres,Rafael Fiziev,W/L,Lightweight,,2,0:15,http://www.ufcstats.com/fight-details/c13dc0cccef263f7
 UFC Fight Night: Fiziev vs. Torres,"June 27, 2026",Shara Magomedov vs. Michel Pereira,Shara Magomedov,Michel Pereira,Shara Magomedov,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/012c307c9d446c4d
 UFC Fight Night: Fiziev vs. Torres,"June 27, 2026",Matheus Camilo vs. Nazim Sadykhov,Matheus Camilo,Nazim Sadykhov,Matheus Camilo,W/L,Lightweight,,1,1:31,http://www.ufcstats.com/fight-details/809814f03ff3140c
@@ -457,8 +495,6 @@ UFC Fight Night: Walker vs. Zhang,"August 23, 2025",Kyle Daukaus vs. Michel Pere
 UFC Fight Night: Walker vs. Zhang,"August 23, 2025",Yizha vs. Westin Wilson,Yizha,Westin Wilson,Yizha,W/L,Featherweight,,1,0:37,http://www.ufcstats.com/fight-details/f0b7caa90faf47e5
 UFC Fight Night: Walker vs. Zhang,"August 23, 2025",SuYoung You vs. Xiao Long,SuYoung You,Xiao Long,SuYoung You,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/2f6065fe0804d1d8
 UFC Fight Night: Walker vs. Zhang,"August 23, 2025",Uran Satybaldiev vs. Diyar Nurgozhay,Uran Satybaldiev,Diyar Nurgozhay,Uran Satybaldiev,W/L,Light Heavyweight,,1,2:45,http://www.ufcstats.com/fight-details/7fc5f1dc2df84ac7
-UFC - Road to UFC 4.6,"August 22, 2025",Bruna Brasil vs. Shi Ming,Bruna Brasil,Shi Ming,Bruna Brasil,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/abf5f4d6f777cf7b
-UFC - Road to UFC 4.6,"August 22, 2025",Nyamjargal Tumendemberel vs. Terrance Saeteurn,Nyamjargal Tumendemberel,Terrance Saeteurn,Nyamjargal Tumendemberel,W/L,Flyweight,,1,2:53,http://www.ufcstats.com/fight-details/16523b1bec3cd7b0
 UFC 319: Du Plessis vs. Chimaev,"August 16, 2025",Khamzat Chimaev vs. Dricus Du Plessis,Khamzat Chimaev,Dricus Du Plessis,Khamzat Chimaev,W/L,Middleweight,,5,5:00,http://www.ufcstats.com/fight-details/12cedec11b37ddc0
 UFC 319: Du Plessis vs. Chimaev,"August 16, 2025",Lerone Murphy vs. Aaron Pico,Lerone Murphy,Aaron Pico,Lerone Murphy,W/L,Featherweight,,1,3:21,http://www.ufcstats.com/fight-details/9fa6a029f7f8241c
 UFC 319: Du Plessis vs. Chimaev,"August 16, 2025",Carlos Prates vs. Geoff Neal,Carlos Prates,Geoff Neal,Carlos Prates,W/L,Welterweight,,1,4:59,http://www.ufcstats.com/fight-details/42585ce706c086de
@@ -8771,38 +8807,3 @@ UFC 2: No Way Out,"March 11, 1994",Frank Hamaker vs. Thaddeus Luster,Frank Hamak
 UFC 2: No Way Out,"March 11, 1994",Johnny Rhodes vs. David Levicki,Johnny Rhodes,David Levicki,Johnny Rhodes,W/L,Open Weight,,1,12:13,http://www.ufcstats.com/fight-details/ccee020be2e8d9f6
 UFC 2: No Way Out,"March 11, 1994",Patrick Smith vs. Ray Wizard,Patrick Smith,Ray Wizard,Patrick Smith,W/L,Open Weight,,1,0:58,http://www.ufcstats.com/fight-details/4b9ae533ccb3fcdf
 UFC 2: No Way Out,"March 11, 1994",Scott Morris vs. Sean Daugherty,Scott Morris,Sean Daugherty,Scott Morris,W/L,Open Weight,,1,0:20,http://www.ufcstats.com/fight-details/4acab67848e78327
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Dricus Du Plessis vs. Kamaru Usman,Dricus Du Plessis,Kamaru Usman,,,Middleweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Jared Cannonier vs. Christian Leroy Duncan,Jared Cannonier,Christian Leroy Duncan,,,Middleweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Chase Hooper vs. Mitch Ramirez,Chase Hooper,Mitch Ramirez,,,Lightweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Tabatha Ricci vs. Fatima Kline,Tabatha Ricci,Fatima Kline,,,Women's Strawweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Tommy McMillen vs. Alberto Montes,Tommy McMillen,Alberto Montes,,,Featherweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Austin Bashi vs. Jose Delgado,Austin Bashi,Jose Delgado,,,Featherweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Jean-Paul Lebosnoyani vs. Seokhyeon Ko,Jean-Paul Lebosnoyani,Seokhyeon Ko,,,Welterweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Levi Rodrigues Jr. vs. Felipe Franco,Levi Rodrigues Jr.,Felipe Franco,,,Light Heavyweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Alden Coria vs. Stewart Nicoll,Alden Coria,Stewart Nicoll,,,Flyweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",RJ Harris vs. Alvin Hines,RJ Harris,Alvin Hines,,,Heavyweight,,,,
-UFC Fight Night: Du Plessis vs. Usman,"July 18, 2026",Anna Melisano vs. Dione Barbosa,Anna Melisano,Dione Barbosa,,,Women's Flyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Ankalaev vs. Bogdan Guskov,Magomed Ankalaev,Bogdan Guskov,,,Light Heavyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Steve Erceg vs. Ramazan Temirov,Steve Erceg,Ramazan Temirov,,,Flyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Islam Dulatov vs. Wellington Turman,Islam Dulatov,Wellington Turman,,,Welterweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Zaynukov vs. Damian Rzepecki,Magomed Zaynukov,Damian Rzepecki,,,Lightweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Rizvan Kuniev vs. Tyrell Fortune,Rizvan Kuniev,Tyrell Fortune,,,Heavyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Abubakar Vagaev vs. Saygid Izagakhmaev,Abubakar Vagaev,Saygid Izagakhmaev,,,Welterweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Valter Walker vs. Thomas Petersen,Valter Walker,Thomas Petersen,,,Heavyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Uran Satybaldiev vs. Dustin Jacoby,Uran Satybaldiev,Dustin Jacoby,,,Light Heavyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Santiago Ponzinibbio vs. Sam Patterson,Santiago Ponzinibbio,Sam Patterson,,,Welterweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Ismael Bonfim vs. Axel Sola,Ismael Bonfim,Axel Sola,,,Lightweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Tuchalov vs. Brendson Ribeiro,Magomed Tuchalov,Brendson Ribeiro,,,Light Heavyweight,,,,
-UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Nurullo Aliev vs. Mike Davis,Nurullo Aliev,Mike Davis,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Uros Medic vs. Daniel Rodriguez,Uros Medic,Daniel Rodriguez,,,Welterweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jan Blachowicz vs. Navajo Stirling,Jan Blachowicz,Navajo Stirling,,,Light Heavyweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Aleksandar Rakic vs. Marcin Tybura,Aleksandar Rakic,Marcin Tybura,,,Heavyweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dusko Todorovic vs. Robert Valentin,Dusko Todorovic,Robert Valentin,,,Middleweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Vlasto Cepo vs. Gilbert Urbina,Vlasto Cepo,Gilbert Urbina,,,Middleweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Ludovit Klein vs. Tofiq Musayev,Ludovit Klein,Tofiq Musayev,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Oban Elliott vs. Michael Oliveira,Oban Elliott,Michael Oliveira,,,Welterweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Mark Vologdin vs. Josias Musasa,Mark Vologdin,Josias Musasa,,,Bantamweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dennis Buzukja vs. Bogdan Grad,Dennis Buzukja,Bogdan Grad,,,Featherweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Mateusz Rebecki vs. Kyle Prepolec,Mateusz Rebecki,Kyle Prepolec,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Nina Milosevic vs. Hailey Cowan,Nina Milosevic,Hailey Cowan,,,Women's Bantamweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jovan Leka vs. Max Gimenis,Jovan Leka,Max Gimenis,,,Heavyweight,,,,
