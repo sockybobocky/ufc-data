@@ -1,17 +1,50 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-08-08T18:00:00Z,Louie Sutherland,Jose Montanha,-155,+130,-155,+138,6
-2026-08-09T00:00:00Z,Amanda Lemos,Alexia Thainara,+203,-245,+205,-240,7
-2026-08-09T00:00:00Z,Ty Miller,Billy Goff,-355,+285,-295,+290,7
-2026-08-09T00:00:00Z,Carlos Diego Ferreira,Billy Quarantillo,-190,+165,-165,+165,6
-2026-08-09T00:00:00Z,Diyar Nurgozhay,Bruno Lopes,-155,+135,-145,+135,7
-2026-08-09T00:00:00Z,Darren Elkins,Yadier DelValle,+482,-660,+500,-660,6
-2026-08-09T00:00:00Z,Steven Asplund,Guilherme Pat,-275,+226,-240,+226,7
-2026-08-09T00:00:00Z,Juliana Miller,Ravena Oliveira,-260,+215,-240,+220,7
-2026-08-09T00:00:00Z,Manoel Sousa,Richie Miranda,-250,+207,-250,+207,1
-2026-08-09T00:00:00Z,Mateusz Gamrot,Quillan Salkilld,+125,-145,+130,-135,7
-2026-08-16T03:00:00Z,Mackenzie Dern,Gillian Robertson,-218,+180,-215,+200,4
-2026-08-16T04:00:00Z,Islam Makhachev,Ian Garry,-345,+275,-345,+280,4
-2026-08-29T20:00:00Z,Umar Nurmagomedov,Song Yadong,-450,+350,-450,+360,5
+2026-08-07T13:35:00Z,Denis Goltsov,Hasan Mezhiev,-380,+303,-380,+315,3
+2026-08-07T14:35:00Z,Lewis McGrillen,Brandon Lewis,-950,+637,-800,+637,3
+2026-08-07T22:40:00Z,Trukon Carson,Trey Waters,+200,-240,+205,-240,2
+2026-08-07T23:05:00Z,Eduardo Neves,Maxwell Djantou Nana,+135,-155,+140,-150,3
+2026-08-07T23:30:00Z,Jonathan Martin,Wilson Lopshire,-140,+120,-135,+132,3
+2026-08-07T23:55:00Z,Valentin Moldavsky,Bruno Cappelozza,-450,+350,-425,+370,3
+2026-08-08T00:20:00Z,Michael Boylan,Landry Ward,+237,-290,+245,-290,3
+2026-08-08T00:45:00Z,Cheyanne Bowers,Elora Dana,-350,+280,-350,+290,3
+2026-08-08T01:10:00Z,Cheyden Leialoha,Robbie Ring,-250,+207,-250,+240,2
+2026-08-08T02:10:00Z,Josh Fremd,Jhony Gregory,-400,+316,-375,+330,3
+2026-08-08T03:00:00Z,Joshua Silveira,Aaron Jeffery,+153,-175,+158,-175,2
+2026-08-08T03:25:00Z,Dovletdzhan Yagshimuradov,Simeon Powell,-170,+149,-170,+154,2
+2026-08-08T03:50:00Z,Bryan Battle,Dalton Rosta,-145,+125,-136,+125,3
+2026-08-08T21:10:00Z,Giovanna Canuto,Carol Foro,+222,-270,+225,-265,6
+2026-08-08T21:35:00Z,Juliana Miller,Ravena Oliveira,-305,+249,-305,+260,6
+2026-08-08T22:00:00Z,Jessie Rosas,Miles Johns,+125,-145,+125,-145,1
+2026-08-08T22:25:00Z,Manoel Sousa,Richie Miranda,-320,+260,-280,+260,6
+2026-08-08T23:15:00Z,Diyar Nurgozhay,Bruno Lopes,-135,+115,-135,+130,6
+2026-08-08T23:15:00Z,Louie Sutherland,Jose Montanha,-185,+154,-182,+167,6
+2026-08-08T23:40:00Z,Steven Asplund,Guilherme Pat,-292,+239,-292,+250,6
+2026-08-09T00:15:00Z,Ty Miller,Billy Goff,-389,+310,-389,+321,6
+2026-08-09T00:45:00Z,Amanda Lemos,Alexia Thainara,+215,-260,+215,-250,6
+2026-08-09T01:15:00Z,Darren Elkins,Yadier DelValle,+571,-820,+575,-750,6
+2026-08-09T01:45:00Z,Carlos Diego Ferreira,Billy Quarantillo,-163,+143,-163,+147,6
+2026-08-09T02:15:00Z,Mateusz Gamrot,Quillan Salkilld,+121,-141,+122,-141,6
+2026-08-16T02:00:00Z,Charles Johnson,Jose Ochoa,+285,-355,+285,-345,3
+2026-08-16T02:00:00Z,Chidi Njokuani,Joel Alvarez,+215,-260,+215,-250,3
+2026-08-16T02:00:00Z,Donte Johnson,Eric McConico,-240,+200,-240,+200,3
+2026-08-16T02:00:00Z,Mansur Abdul-Malik,Dustin Stoltzfus,-550,+415,-550,+420,3
+2026-08-16T02:00:00Z,Edson Barboza,Esteban Ribovics,+316,-400,+325,-395,3
+2026-08-16T02:00:00Z,Jalin Turner,Kauê Fernandes,-155,+135,-148,+135,3
+2026-08-16T02:00:00Z,Jeremiah Wells,Myktybek Orolbai,+446,-600,+446,-550,3
+2026-08-16T02:00:00Z,Rafael Tobias,Lucas Fernando,+192,-230,+192,-205,3
+2026-08-16T02:00:00Z,Neil Magny,Ramiz Brahimaj,-110,-110,-110,-105,3
+2026-08-16T02:00:00Z,Vicente Luque,Tresean Gore,+110,-130,+124,-130,3
+2026-08-16T03:00:00Z,Mackenzie Dern,Gillian Robertson,-238,+195,-225,+200,4
+2026-08-16T04:00:00Z,Islam Makhachev,Ian Garry,-360,+285,-360,+303,4
+2026-08-29T20:00:00Z,Umar Nurmagomedov,Song Yadong,-450,+350,-450,+350,5
+2026-09-10T00:00:00Z,Alexandre Pantoja,Joshua Van,+100,-120,+100,-120,1
+2026-09-10T00:00:00Z,Mauricio Ruffy,Arman Tsarukyan,+306,-385,+306,-385,1
+2026-09-10T00:00:00Z,Robelis Despaigne,Tai Tuivasa,-475,+367,-475,+367,1
+2026-09-13T00:00:00Z,Jean Silva,Yair Rodriguez,-350,+280,-350,+280,3
+2026-09-20T00:00:00Z,Gable Steveson,Sean Sharaf,-1500,+600,-1500,+1100,2
+2026-09-20T00:00:00Z,Tai Tuivasa,Robelis Despaigne,+380,-500,+380,-500,1
+2026-09-20T03:30:00Z,Arman Tsarukyan,Mauricio Ruffy,-360,+285,-360,+285,1
+2026-09-20T04:00:00Z,Joshua Van,Alexandre Pantoja,-110,-110,-103,-110,2
 2026-09-26T18:00:00Z,Darren Till,Yoel Romero,-175,+135,-175,+135,1
 2026-12-27T03:00:00Z,Manel Kape,Joshua Van,-190,+165,-190,+165,1
 2026-12-31T05:00:00Z,Josh Hokit,Alex Pereira,-160,+140,-160,+140,1
@@ -20,7 +53,6 @@ event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
 2026-12-31T05:00:00Z,Justin Gaethje,Ilia Topuria,+210,-250,+210,-250,1
 2026-12-31T15:00:00Z,Valentina Shevchenko,Natalia Silva,-250,+210,-250,+210,1
 2026-12-31T17:00:00Z,Conor McGregor,Jorge Masvidal,-145,+125,-145,+125,1
-2027-01-01T03:00:00Z,Alexandre Pantoja,Joshua Van,-130,+110,-130,+110,1
 2027-01-01T03:00:00Z,Tom Aspinall,Ciryl Gane,-125,+105,-125,+105,1
 2027-01-01T03:00:00Z,Khamzat Chimaev,Paulo Henrique Costa,-500,+375,-500,+375,1
 2027-01-01T03:00:00Z,Sean Strickland,Khamzat Chimaev,+175,-205,+175,-205,1
