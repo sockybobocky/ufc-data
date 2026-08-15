@@ -498,12 +498,13 @@ def scrape_fight_stats(fight_url, event, fa, fb):
     soup = BeautifulSoup(resp.text, "html.parser")
     bout = f"{fa} vs. {fb}"
 
-    # The fight detail page has sections: Totals and Per Round
-    # Each section has two tables: striking totals and significant strikes
+    # UFCstats fight detail tables have TWO fighters per row.
+    # Each <td> contains two <p> tags - first for fighter A, second for fighter B.
+    # We need to split each cell's <p> tags to get individual fighter values.
+
     sections = soup.select("section.b-fight-details__section")
 
     for section in sections:
-        # Check if this is per-round or totals
         header = section.select_one("p.b-fight-details__collapse-link_tot, p.b-fight-details__table-title")
         section_text = header.get_text(strip=True) if header else ""
         is_round = "round" in section_text.lower()
@@ -516,33 +517,62 @@ def scrape_fight_stats(fight_url, event, fa, fb):
                 if len(cells) < 2:
                     continue
 
-                # Each row has one fighter's stats
-                fighter_link = cells[0].select_one('a[href*="fighter-details"]')
-                if not fighter_link:
+                # Extract p tags from each cell to separate fighter A and B values
+                fighter_a_vals = []
+                fighter_b_vals = []
+                fighter_a_name = ""
+                fighter_b_name = ""
+
+                for ci, cell in enumerate(cells):
+                    p_tags = cell.select("p")
+                    if len(p_tags) >= 2:
+                        val_a = p_tags[0].get_text(strip=True)
+                        val_b = p_tags[1].get_text(strip=True)
+                    elif len(p_tags) == 1:
+                        val_a = p_tags[0].get_text(strip=True)
+                        val_b = val_a
+                    else:
+                        val_a = cell.get_text(strip=True)
+                        val_b = val_a
+
+                    if ci == 0:
+                        # First cell has fighter names
+                        links = cell.select('a[href*="fighter-details"]')
+                        if len(links) >= 2:
+                            fighter_a_name = links[0].get_text(strip=True)
+                            fighter_b_name = links[1].get_text(strip=True)
+                        elif len(links) == 1:
+                            fighter_a_name = links[0].get_text(strip=True)
+                    else:
+                        fighter_a_vals.append(val_a)
+                        fighter_b_vals.append(val_b)
+
+                if not fighter_a_name:
                     continue
-                fighter_name = fighter_link.get_text(strip=True)
-                cell_vals = [c.get_text(strip=True) for c in cells]
 
-                stat = {"EVENT": event, "BOUT": bout, "FIGHTER": fighter_name}
-                stat["ROUND"] = str((ri // 2) + 1) if is_round else "Total"
+                round_num = str(ri + 1) if is_round else "Total"
 
-                # Map values to stat keys based on cell count and content
-                # Totals table: Fighter, KD, Sig.Str, Sig.Str%, Total Str, TD, TD%, Sub, Rev, Ctrl
-                # Sig strikes table: Fighter, Head, Body, Leg, Distance, Clinch, Ground
-                vals = cell_vals[1:]  # Skip fighter name cell
+                # Determine which stat keys to use based on number of value columns
+                # Main stats table: KD, Sig.Str, Sig.Str%, Total Str, TD, TD%, Sub, Rev, Ctrl
+                # Sig strikes table: Head, Body, Leg, Distance, Clinch, Ground
+                main_keys = ["KD", "SIG.STR.", "SIG.STR. %", "TOTAL STR.", "TD", "TD %", "SUB.ATT", "REV.", "CTRL"]
+                sig_keys = ["HEAD", "BODY", "LEG", "DISTANCE", "CLINCH", "GROUND"]
 
-                if len(vals) >= 9 and any("%" in v for v in vals[:9]):
-                    # This is the main stats table
-                    keys = ["KD", "SIG.STR.", "SIG.STR. %", "TOTAL STR.", "TD", "TD %", "SUB.ATT", "REV.", "CTRL"]
+                is_main = len(fighter_a_vals) >= 9 or any("%" in v for v in fighter_a_vals[:9])
+                keys = main_keys if is_main and len(fighter_a_vals) >= 9 else sig_keys if len(fighter_a_vals) >= 6 else main_keys
+
+                # Build stat row for fighter A
+                stat_a = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_a_name}
+                for ki, key in enumerate(keys):
+                    stat_a[key] = fighter_a_vals[ki] if ki < len(fighter_a_vals) else ""
+                stats.append(stat_a)
+
+                # Build stat row for fighter B
+                if fighter_b_name:
+                    stat_b = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_b_name}
                     for ki, key in enumerate(keys):
-                        stat[key] = vals[ki] if ki < len(vals) else ""
-                elif len(vals) >= 6:
-                    # This is the significant strikes by target table
-                    keys = ["HEAD", "BODY", "LEG", "DISTANCE", "CLINCH", "GROUND"]
-                    for ki, key in enumerate(keys):
-                        stat[key] = vals[ki] if ki < len(vals) else ""
-
-                stats.append(stat)
+                        stat_b[key] = fighter_b_vals[ki] if ki < len(fighter_b_vals) else ""
+                    stats.append(stat_b)
 
     time.sleep(0.1)
     return stats
