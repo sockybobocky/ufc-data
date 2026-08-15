@@ -1,18 +1,42 @@
 EVENT,DATE,BOUT,FIGHTER_A,FIGHTER_B,WINNER,OUTCOME,WEIGHTCLASS,METHOD,ROUND,TIME,FIGHT_URL
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Uros Medic vs. Daniel Rodriguez,Uros Medic,Daniel Rodriguez,,,Welterweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jan Blachowicz vs. Navajo Stirling,Jan Blachowicz,Navajo Stirling,,,Light Heavyweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Aleksandar Rakic vs. Marcin Tybura,Aleksandar Rakic,Marcin Tybura,,,Heavyweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dusko Todorovic vs. Robert Valentin,Dusko Todorovic,Robert Valentin,,,Middleweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Vlasto Cepo vs. Gilbert Urbina,Vlasto Cepo,Gilbert Urbina,,,Middleweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Milos Janicic vs. Noah Gugnon,Milos Janicic,Noah Gugnon,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Ludovit Klein vs. Tofiq Musayev,Ludovit Klein,Tofiq Musayev,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Oban Elliott vs. Michael Oliveira,Oban Elliott,Michael Oliveira,,,Welterweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Borislav Nikolic vs. Mark Vologdin,Borislav Nikolic,Mark Vologdin,,,Bantamweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Dennis Buzukja vs. Bogdan Grad,Dennis Buzukja,Bogdan Grad,,,Featherweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Mateusz Rebecki vs. Kyle Prepolec,Mateusz Rebecki,Kyle Prepolec,,,Lightweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Nina Milosevic vs. Hailey Cowan,Nina Milosevic,Hailey Cowan,,,Women's Bantamweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jovan Leka vs. Alexander Poppeck,Jovan Leka,Alexander Poppeck,,,Heavyweight,,,,
-UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Marina Spasic vs. Stephanie Luciano,Marina Spasic,Stephanie Luciano,,,Women's Strawweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Islam Makhachev vs. Ian Machado Garry,Islam Makhachev,Ian Machado Garry,,,Welterweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Mackenzie Dern vs. Gillian Robertson,Mackenzie Dern,Gillian Robertson,,,Women's Strawweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Jalin Turner vs. Kaue Fernandes,Jalin Turner,Kaue Fernandes,,,Lightweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Mansur Abdul-Malik vs. Dustin Stoltzfus,Mansur Abdul-Malik,Dustin Stoltzfus,,,Middleweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Edson Barboza vs. Esteban Ribovics,Edson Barboza,Esteban Ribovics,,,Lightweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Chidi Njokuani vs. Joel Alvarez,Chidi Njokuani,Joel Alvarez,,,Welterweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Charles Johnson vs. Eduardo Chapolin,Charles Johnson,Eduardo Chapolin,,,Catch Weight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Donte Johnson vs. Eric McConico,Donte Johnson,Eric McConico,,,Middleweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Vicente Luque vs. Tresean Gore,Vicente Luque,Tresean Gore,,,Middleweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Rafael Tobias vs. Lucas Fernando,Rafael Tobias,Lucas Fernando,,,Light Heavyweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Neil Magny vs. Ramiz Brahimaj,Neil Magny,Ramiz Brahimaj,,,Welterweight,,,,
+UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Jeremiah Wells vs. Myktybek Orolbai,Jeremiah Wells,Myktybek Orolbai,,,Welterweight,,,,
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Quillan Salkilld vs. Mateusz Gamrot,Quillan Salkilld,Mateusz Gamrot,Quillan Salkilld,W/L,Lightweight,,1,4:25,http://www.ufcstats.com/fight-details/a10deecfb8558335
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Diego Ferreira vs. Billy Quarantillo,Diego Ferreira,Billy Quarantillo,Diego Ferreira,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/d5245f5b96b8afdf
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Yadier del Valle vs. Darren Elkins,Yadier del Valle,Darren Elkins,Yadier del Valle,W/L,Featherweight,,1,0:35,http://www.ufcstats.com/fight-details/06bfde3e3577906f
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Alexia Thainara vs. Amanda Lemos,Alexia Thainara,Amanda Lemos,Alexia Thainara,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/13f31f7a784013a3
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Ty Miller vs. Billy Ray Goff,Ty Miller,Billy Ray Goff,Ty Miller,W/L,Welterweight,,3,0:15,http://www.ufcstats.com/fight-details/f44ab9e9e4a89735
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Steven Asplund vs. Guilherme Pat,Steven Asplund,Guilherme Pat,Steven Asplund,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/3050549d19395f6f
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Diyar Nurgozhay vs. Bruno Lopes,Diyar Nurgozhay,Bruno Lopes,Diyar Nurgozhay,W/L,Light Heavyweight,,1,4:59,http://www.ufcstats.com/fight-details/13380a8d6cdbb381
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Jose Montanha vs. Louie Sutherland,Jose Montanha,Louie Sutherland,Jose Montanha,W/L,Heavyweight,,1,1:50,http://www.ufcstats.com/fight-details/64829a32c78ab656
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Manoel Sousa vs. Richie Miranda,Manoel Sousa,Richie Miranda,Manoel Sousa,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/81ae2a465e0dfa4f
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Miles Johns vs. Gianni Vazquez,Miles Johns,Gianni Vazquez,Miles Johns,W/L,Featherweight,,1,3:09,http://www.ufcstats.com/fight-details/1168a8e59aacfd72
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Juliana Miller vs. Ravena Oliveira,Juliana Miller,Ravena Oliveira,Juliana Miller,W/L,Women's Flyweight,,2,1:38,http://www.ufcstats.com/fight-details/d463229133909215
+UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Carol Foro vs. Gigi Canuto,Carol Foro,Gigi Canuto,Carol Foro,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/ded584e13276cbcb
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Uros Medic vs. Daniel Rodriguez,Uros Medic,Daniel Rodriguez,Uros Medic,W/L,Welterweight,,1,0:30,http://www.ufcstats.com/fight-details/68ae50dbf98dc15f
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Navajo Stirling vs. Jan Blachowicz,Navajo Stirling,Jan Blachowicz,Navajo Stirling,W/L,Light Heavyweight,,1,2:56,http://www.ufcstats.com/fight-details/0c3c835e681972d3
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Aleksandar Rakic vs. Marcin Tybura,Aleksandar Rakic,Marcin Tybura,Aleksandar Rakic,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/eb8753ed0476b3d1
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Robert Valentin vs. Dusko Todorovic,Robert Valentin,Dusko Todorovic,Robert Valentin,W/L,Middleweight,,1,4:14,http://www.ufcstats.com/fight-details/f425b7a527dd53aa
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Gilbert Urbina vs. Vlasto Cepo,Gilbert Urbina,Vlasto Cepo,Gilbert Urbina,W/L,Middleweight,,1,1:01,http://www.ufcstats.com/fight-details/7ecb154439aca0f9
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Noah Gugnon vs. Milos Janicic,Noah Gugnon,Milos Janicic,Noah Gugnon,W/L,Lightweight,,1,1:21,http://www.ufcstats.com/fight-details/fec91da886d80200
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Tofiq Musayev vs. Ludovit Klein,Tofiq Musayev,Ludovit Klein,Tofiq Musayev,W/L,Lightweight,,2,4:07,http://www.ufcstats.com/fight-details/fbd99ae7e1ff993a
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Michael Oliveira vs. Oban Elliott,Michael Oliveira,Oban Elliott,Michael Oliveira,W/L,Welterweight,,1,1:49,http://www.ufcstats.com/fight-details/f1bce0c9a3fa4bcb
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Borislav Nikolic vs. Mark Vologdin,Borislav Nikolic,Mark Vologdin,Borislav Nikolic,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/4350abb4f1933f88
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Bogdan Grad vs. Dennis Buzukja,Bogdan Grad,Dennis Buzukja,Bogdan Grad,W/L,Featherweight,,2,4:33,http://www.ufcstats.com/fight-details/13aa6688d0538095
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Mateusz Rebecki vs. Kyle Prepolec,Mateusz Rebecki,Kyle Prepolec,Mateusz Rebecki,W/L,Lightweight,,1,4:41,http://www.ufcstats.com/fight-details/5425c577ed4f50b3
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Nina Milosevic vs. Hailey Cowan,Nina Milosevic,Hailey Cowan,Nina Milosevic,W/L,Women's Bantamweight,,1,3:41,http://www.ufcstats.com/fight-details/f78f34ef2ee7b02c
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Jovan Leka vs. Alexander Poppeck,Jovan Leka,Alexander Poppeck,Jovan Leka,W/L,Heavyweight,,1,2:22,http://www.ufcstats.com/fight-details/94cef172179c9778
+UFC Fight Night: Medic vs. Rodriguez,"August 01, 2026",Stephanie Luciano vs. Marina Spasic,Stephanie Luciano,Marina Spasic,Stephanie Luciano,W/L,Women's Strawweight,,1,3:20,http://www.ufcstats.com/fight-details/878a7e6fec3e4573
 UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Ankalaev vs. Bogdan Guskov,Magomed Ankalaev,Bogdan Guskov,Magomed Ankalaev,W/L,Light Heavyweight,,5,2:41,http://www.ufcstats.com/fight-details/9009ec7b91f2be14
 UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Ramazan Temirov vs. Steve Erceg,Ramazan Temirov,Steve Erceg,Ramazan Temirov,W/L,Flyweight,,1,4:21,http://www.ufcstats.com/fight-details/c36cd04f8f560f0a
 UFC Fight Night: Ankalaev vs. Guskov,"July 25, 2026",Magomed Zaynukov vs. Damian Rzepecki,Magomed Zaynukov,Damian Rzepecki,Magomed Zaynukov,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/4ace64aa144389c5
@@ -435,7 +459,7 @@ UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Merab Dvalishvili vs. Cory Sa
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Jiri Prochazka vs. Khalil Rountree Jr.,Jiri Prochazka,Khalil Rountree Jr.,Jiri Prochazka,W/L,Light Heavyweight,,3,3:04,http://www.ufcstats.com/fight-details/2560ea97b2cce4ef
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Youssef Zalal vs. Josh Emmett,Youssef Zalal,Josh Emmett,Youssef Zalal,W/L,Featherweight,,1,1:38,http://www.ufcstats.com/fight-details/84ebd144d5e79c88
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Joe Pyfer vs. Abus Magomedov,Joe Pyfer,Abus Magomedov,Joe Pyfer,W/L,Middleweight,,2,1:46,http://www.ufcstats.com/fight-details/d006dd2513bd376d
-UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Ateba Gautier vs. Tre'ston Vines,Ateba Gautier,Tre'ston Vines,Ateba Gautier,W/L,Middleweight,,1,1:41,http://www.ufcstats.com/fight-details/9418ebb3db2a4bae
+UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Ateba Gautier vs. Treston Vines,Ateba Gautier,Treston Vines,Ateba Gautier,W/L,Middleweight,,1,1:41,http://www.ufcstats.com/fight-details/9418ebb3db2a4bae
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Daniel Santos vs. JooSang Yoo,Daniel Santos,JooSang Yoo,Daniel Santos,W/L,Catch Weight,,2,0:21,http://www.ufcstats.com/fight-details/7b34aa1eb09b8301
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Jakub Wiklacz vs. Patchy Mix,Jakub Wiklacz,Patchy Mix,Jakub Wiklacz,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/b09ecdc8ef0f0d20
 UFC 320: Ankalaev vs. Pereira 2,"October 04, 2025",Edmen Shahbazyan vs. Andre Muniz,Edmen Shahbazyan,Andre Muniz,Edmen Shahbazyan,W/L,Middleweight,,1,4:58,http://www.ufcstats.com/fight-details/1c7cc3a22ab7d907
@@ -456,20 +480,20 @@ UFC Fight Night: Ulberg vs. Reyes,"September 27, 2025",Colby Thicknesse vs. Josi
 UFC Fight Night: Ulberg vs. Reyes,"September 27, 2025",Michelle Montague vs. Luana Carolina,Michelle Montague,Luana Carolina,Michelle Montague,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/44cd8c9f622e155f
 UFC Fight Night: Ulberg vs. Reyes,"September 27, 2025",Brando Pericic vs. Elisha Ellison,Brando Pericic,Elisha Ellison,Brando Pericic,W/L,Heavyweight,,1,1:55,http://www.ufcstats.com/fight-details/140937779a2466a7
 UFC Fight Night: Ulberg vs. Reyes,"September 27, 2025",Alexia Thainara vs. Loma Lookboonmee,Alexia Thainara,Loma Lookboonmee,Alexia Thainara,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/e35f7504d83b8b07
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Diego Lopes vs. Jean Silva,Diego Lopes,Jean Silva,Diego Lopes,W/L,Featherweight,,2,4:48,http://www.ufcstats.com/fight-details/de1a3734be60e6a1
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",David Martinez vs. Rob Font,David Martinez,Rob Font,David Martinez,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/944b929130b23c2a
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Rafa Garcia vs. Jared Gordon,Rafa Garcia,Jared Gordon,Rafa Garcia,W/L,Lightweight,,3,2:27,http://www.ufcstats.com/fight-details/7cbfeba85f86d1bf
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Kelvin Gastelum vs. Dustin Stoltzfus,Kelvin Gastelum,Dustin Stoltzfus,Kelvin Gastelum,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/114d2f6fcd3f6f00
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Alexander Hernandez vs. Diego Ferreira,Alexander Hernandez,Diego Ferreira,Alexander Hernandez,W/L,Lightweight,,2,3:46,http://www.ufcstats.com/fight-details/202c47db69768356
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Santiago Luna vs. Quang Le,Santiago Luna,Quang Le,Santiago Luna,W/L,Bantamweight,,1,2:48,http://www.ufcstats.com/fight-details/8a884a7930d75ca9
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Dusko Todorovic vs. Jose Daniel Medina,Dusko Todorovic,Jose Daniel Medina,Dusko Todorovic,W/L,Middleweight,,1,4:21,http://www.ufcstats.com/fight-details/07a378b257aad5a9
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Joaquim Silva vs. Claudio Puelles,Joaquim Silva,Claudio Puelles,Joaquim Silva,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/352839a03b428e74
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Tatiana Suarez vs. Amanda Lemos,Tatiana Suarez,Amanda Lemos,Tatiana Suarez,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/9474f64347aade7a
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Jesus Aguilar vs. Luis Gurule,Jesus Aguilar,Luis Gurule,Jesus Aguilar,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/3dc1a6335d890650
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Zach Reese vs. Sedriques Dumas,Zach Reese,Sedriques Dumas,,D/D,Middleweight,,1,0:51,http://www.ufcstats.com/fight-details/d822ebc7dbc6c259
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Alden Coria vs. Alessandro Costa,Alden Coria,Alessandro Costa,Alden Coria,W/L,Flyweight,,3,0:47,http://www.ufcstats.com/fight-details/a1e193425e716b42
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Montse Rendon vs. Alice Pereira,Montse Rendon,Alice Pereira,Montse Rendon,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/c4a6174b0698652e
-UFC Fight Night: Lopes vs. Silva,"September 13, 2025",Daniil Donchenko vs. Rodrigo Sezinando,Daniil Donchenko,Rodrigo Sezinando,Daniil Donchenko,W/L,Welterweight,,1,4:27,http://www.ufcstats.com/fight-details/3dd2fde7bff79c51
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Diego Lopes vs. Jean Silva,Diego Lopes,Jean Silva,Diego Lopes,W/L,Featherweight,,2,4:48,http://www.ufcstats.com/fight-details/de1a3734be60e6a1
+Noche UFC: Lopes vs. Silva,"September 13, 2025",David Martinez vs. Rob Font,David Martinez,Rob Font,David Martinez,W/L,Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/944b929130b23c2a
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Rafa Garcia vs. Jared Gordon,Rafa Garcia,Jared Gordon,Rafa Garcia,W/L,Lightweight,,3,2:27,http://www.ufcstats.com/fight-details/7cbfeba85f86d1bf
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Kelvin Gastelum vs. Dustin Stoltzfus,Kelvin Gastelum,Dustin Stoltzfus,Kelvin Gastelum,W/L,Middleweight,,3,5:00,http://www.ufcstats.com/fight-details/114d2f6fcd3f6f00
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Alexander Hernandez vs. Diego Ferreira,Alexander Hernandez,Diego Ferreira,Alexander Hernandez,W/L,Lightweight,,2,3:46,http://www.ufcstats.com/fight-details/202c47db69768356
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Santiago Luna vs. Quang Le,Santiago Luna,Quang Le,Santiago Luna,W/L,Bantamweight,,1,2:48,http://www.ufcstats.com/fight-details/8a884a7930d75ca9
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Dusko Todorovic vs. Jose Daniel Medina,Dusko Todorovic,Jose Daniel Medina,Dusko Todorovic,W/L,Middleweight,,1,4:21,http://www.ufcstats.com/fight-details/07a378b257aad5a9
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Joaquim Silva vs. Claudio Puelles,Joaquim Silva,Claudio Puelles,Joaquim Silva,W/L,Lightweight,,3,5:00,http://www.ufcstats.com/fight-details/352839a03b428e74
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Tatiana Suarez vs. Amanda Lemos,Tatiana Suarez,Amanda Lemos,Tatiana Suarez,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/9474f64347aade7a
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Jesus Aguilar vs. Luis Gurule,Jesus Aguilar,Luis Gurule,Jesus Aguilar,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/3dc1a6335d890650
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Zach Reese vs. Sedriques Dumas,Zach Reese,Sedriques Dumas,,D/D,Middleweight,,1,0:51,http://www.ufcstats.com/fight-details/d822ebc7dbc6c259
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Alden Coria vs. Alessandro Costa,Alden Coria,Alessandro Costa,Alden Coria,W/L,Flyweight,,3,0:47,http://www.ufcstats.com/fight-details/a1e193425e716b42
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Montse Rendon vs. Alice Pereira,Montse Rendon,Alice Pereira,Montse Rendon,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/c4a6174b0698652e
+Noche UFC: Lopes vs. Silva,"September 13, 2025",Daniil Donchenko vs. Rodrigo Sezinando,Daniil Donchenko,Rodrigo Sezinando,Daniil Donchenko,W/L,Welterweight,,1,4:27,http://www.ufcstats.com/fight-details/3dd2fde7bff79c51
 UFC Fight Night: Imavov vs. Borralho,"September 06, 2025",Nassourdine Imavov vs. Caio Borralho,Nassourdine Imavov,Caio Borralho,Nassourdine Imavov,W/L,Middleweight,,5,5:00,http://www.ufcstats.com/fight-details/5bcd8abf6da01dae
 UFC Fight Night: Imavov vs. Borralho,"September 06, 2025",Benoit Saint Denis vs. Mauricio Ruffy,Benoit Saint Denis,Mauricio Ruffy,Benoit Saint Denis,W/L,Lightweight,,2,2:56,http://www.ufcstats.com/fight-details/d14fea43712707f0
 UFC Fight Night: Imavov vs. Borralho,"September 06, 2025",Modestas Bukauskas vs. Paul Craig,Modestas Bukauskas,Paul Craig,Modestas Bukauskas,W/L,Light Heavyweight,,1,5:00,http://www.ufcstats.com/fight-details/0149e875b31e57f8
@@ -1467,17 +1491,17 @@ UFC Fight Night: Fiziev vs. Gamrot,"September 23, 2023",Cody Brundage vs. Jacob 
 UFC Fight Night: Fiziev vs. Gamrot,"September 23, 2023",Mohammed Usman vs. Jake Collier,Mohammed Usman,Jake Collier,Mohammed Usman,W/L,Heavyweight,,3,5:00,http://www.ufcstats.com/fight-details/49ede01b061cfae3
 UFC Fight Night: Fiziev vs. Gamrot,"September 23, 2023",Mizuki vs. Hannah Goldy,Mizuki,Hannah Goldy,Mizuki,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/adb411b0f418ce33
 UFC Fight Night: Fiziev vs. Gamrot,"September 23, 2023",Montse Rendon vs. Tamires Vidal,Montse Rendon,Tamires Vidal,Montse Rendon,W/L,Women's Bantamweight,,3,5:00,http://www.ufcstats.com/fight-details/0732e6b6eb0a607d
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Alexa Grasso vs. Valentina Shevchenko,Alexa Grasso,Valentina Shevchenko,,D/D,Women's Flyweight,,5,5:00,http://www.ufcstats.com/fight-details/b395c89e19a3fec4
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Jack Della Maddalena vs. Kevin Holland,Jack Della Maddalena,Kevin Holland,Jack Della Maddalena,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/697efaf0d162e877
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Raul Rosas Jr. vs. Terrence Mitchell,Raul Rosas Jr.,Terrence Mitchell,Raul Rosas Jr.,W/L,Bantamweight,,1,0:54,http://www.ufcstats.com/fight-details/c0ca4c201d086ea8
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Daniel Zellhuber vs. Christos Giagos,Daniel Zellhuber,Christos Giagos,Daniel Zellhuber,W/L,Lightweight,,2,3:26,http://www.ufcstats.com/fight-details/2e1435c160bfe8b2
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Kyle Nelson vs. Fernando Padilla,Kyle Nelson,Fernando Padilla,Kyle Nelson,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/a5d76e93a5052e3f
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Loopy Godinez vs. Elise Reed,Loopy Godinez,Elise Reed,Loopy Godinez,W/L,Women's Strawweight,,2,3:38,http://www.ufcstats.com/fight-details/79f03eca3fe5cdb3
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Roman Kopylov vs. Josh Fremd,Roman Kopylov,Josh Fremd,Roman Kopylov,W/L,Middleweight,,2,4:44,http://www.ufcstats.com/fight-details/7a0813ec0fadc84e
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Edgar Chairez vs. Daniel Lacerda,Edgar Chairez,Daniel Lacerda,,D/D,Flyweight,Overturned,1,3:47,http://www.ufcstats.com/fight-details/5d3e046b6bcd49f5
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Tracy Cortez vs. Jasmine Jasudavicius,Tracy Cortez,Jasmine Jasudavicius,Tracy Cortez,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/bcec26b425194e40
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Charlie Campbell vs. Alex Reyes,Charlie Campbell,Alex Reyes,Charlie Campbell,W/L,Lightweight,,1,3:38,http://www.ufcstats.com/fight-details/58b2fdad7af9be02
-UFC Fight Night: Grasso vs. Shevchenko 2,"September 16, 2023",Josefine Knutsson vs. Marnic Mann,Josefine Knutsson,Marnic Mann,Josefine Knutsson,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/11318a7807cee8ca
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Alexa Grasso vs. Valentina Shevchenko,Alexa Grasso,Valentina Shevchenko,,D/D,Women's Flyweight,,5,5:00,http://www.ufcstats.com/fight-details/b395c89e19a3fec4
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Jack Della Maddalena vs. Kevin Holland,Jack Della Maddalena,Kevin Holland,Jack Della Maddalena,W/L,Welterweight,,3,5:00,http://www.ufcstats.com/fight-details/697efaf0d162e877
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Raul Rosas Jr. vs. Terrence Mitchell,Raul Rosas Jr.,Terrence Mitchell,Raul Rosas Jr.,W/L,Bantamweight,,1,0:54,http://www.ufcstats.com/fight-details/c0ca4c201d086ea8
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Daniel Zellhuber vs. Christos Giagos,Daniel Zellhuber,Christos Giagos,Daniel Zellhuber,W/L,Lightweight,,2,3:26,http://www.ufcstats.com/fight-details/2e1435c160bfe8b2
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Kyle Nelson vs. Fernando Padilla,Kyle Nelson,Fernando Padilla,Kyle Nelson,W/L,Featherweight,,3,5:00,http://www.ufcstats.com/fight-details/a5d76e93a5052e3f
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Loopy Godinez vs. Elise Reed,Loopy Godinez,Elise Reed,Loopy Godinez,W/L,Women's Strawweight,,2,3:38,http://www.ufcstats.com/fight-details/79f03eca3fe5cdb3
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Roman Kopylov vs. Josh Fremd,Roman Kopylov,Josh Fremd,Roman Kopylov,W/L,Middleweight,,2,4:44,http://www.ufcstats.com/fight-details/7a0813ec0fadc84e
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Edgar Chairez vs. Daniel Lacerda,Edgar Chairez,Daniel Lacerda,,D/D,Flyweight,Overturned,1,3:47,http://www.ufcstats.com/fight-details/5d3e046b6bcd49f5
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Tracy Cortez vs. Jasmine Jasudavicius,Tracy Cortez,Jasmine Jasudavicius,Tracy Cortez,W/L,Women's Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/bcec26b425194e40
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Charlie Campbell vs. Alex Reyes,Charlie Campbell,Alex Reyes,Charlie Campbell,W/L,Lightweight,,1,3:38,http://www.ufcstats.com/fight-details/58b2fdad7af9be02
+Noche UFC: Grasso vs. Shevchenko 2,"September 16, 2023",Josefine Knutsson vs. Marnic Mann,Josefine Knutsson,Marnic Mann,Josefine Knutsson,W/L,Women's Strawweight,,3,5:00,http://www.ufcstats.com/fight-details/11318a7807cee8ca
 UFC 293: Adesanya vs. Strickland,"September 09, 2023",Sean Strickland vs. Israel Adesanya,Sean Strickland,Israel Adesanya,Sean Strickland,W/L,Middleweight,,5,5:00,http://www.ufcstats.com/fight-details/7f16e7725245bb2d
 UFC 293: Adesanya vs. Strickland,"September 09, 2023",Alexander Volkov vs. Tai Tuivasa,Alexander Volkov,Tai Tuivasa,Alexander Volkov,W/L,Heavyweight,,2,4:37,http://www.ufcstats.com/fight-details/e4ed294e16e16d81
 UFC 293: Adesanya vs. Strickland,"September 09, 2023",Manel Kape vs. Felipe dos Santos,Manel Kape,Felipe dos Santos,Manel Kape,W/L,Flyweight,,3,5:00,http://www.ufcstats.com/fight-details/222bb2c67a87d312
@@ -8807,26 +8831,3 @@ UFC 2: No Way Out,"March 11, 1994",Frank Hamaker vs. Thaddeus Luster,Frank Hamak
 UFC 2: No Way Out,"March 11, 1994",Johnny Rhodes vs. David Levicki,Johnny Rhodes,David Levicki,Johnny Rhodes,W/L,Open Weight,,1,12:13,http://www.ufcstats.com/fight-details/ccee020be2e8d9f6
 UFC 2: No Way Out,"March 11, 1994",Patrick Smith vs. Ray Wizard,Patrick Smith,Ray Wizard,Patrick Smith,W/L,Open Weight,,1,0:58,http://www.ufcstats.com/fight-details/4b9ae533ccb3fcdf
 UFC 2: No Way Out,"March 11, 1994",Scott Morris vs. Sean Daugherty,Scott Morris,Sean Daugherty,Scott Morris,W/L,Open Weight,,1,0:20,http://www.ufcstats.com/fight-details/4acab67848e78327
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Mateusz Gamrot vs. Quillan Salkilld,Mateusz Gamrot,Quillan Salkilld,,,Lightweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Diego Ferreira vs. Billy Quarantillo,Diego Ferreira,Billy Quarantillo,,,Lightweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Darren Elkins vs. Yadier del Valle,Darren Elkins,Yadier del Valle,,,Featherweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Amanda Lemos vs. Alexia Thainara,Amanda Lemos,Alexia Thainara,,,Women's Strawweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Ty Miller vs. Billy Ray Goff,Ty Miller,Billy Ray Goff,,,Welterweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Diyar Nurgozhay vs. Bruno Lopes,Diyar Nurgozhay,Bruno Lopes,,,Light Heavyweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Louie Sutherland vs. Jose Montanha,Louie Sutherland,Jose Montanha,,,Heavyweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Steven Asplund vs. Guilherme Pat,Steven Asplund,Guilherme Pat,,,Heavyweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Juliana Miller vs. Ravena Oliveira,Juliana Miller,Ravena Oliveira,,,Women's Flyweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Manoel Sousa vs. Richie Miranda,Manoel Sousa,Richie Miranda,,,Lightweight,,,,
-UFC Fight Night: Gamrot vs. Salkilld,"August 08, 2026",Miles Johns vs. Jessie Rosas,Miles Johns,Jessie Rosas,,,Featherweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Islam Makhachev vs. Ian Machado Garry,Islam Makhachev,Ian Machado Garry,,,Welterweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Mackenzie Dern vs. Gillian Robertson,Mackenzie Dern,Gillian Robertson,,,Women's Strawweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Charles Johnson vs. Jose Ochoa,Charles Johnson,Jose Ochoa,,,Flyweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Mansur Abdul-Malik vs. Dustin Stoltzfus,Mansur Abdul-Malik,Dustin Stoltzfus,,,Middleweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Edson Barboza vs. Esteban Ribovics,Edson Barboza,Esteban Ribovics,,,Lightweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Chidi Njokuani vs. Joel Alvarez,Chidi Njokuani,Joel Alvarez,,,Welterweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Jalin Turner vs. Kaue Fernandes,Jalin Turner,Kaue Fernandes,,,Lightweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Donte Johnson vs. Eric McConico,Donte Johnson,Eric McConico,,,Middleweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Vicente Luque vs. Tresean Gore,Vicente Luque,Tresean Gore,,,Middleweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Rafael Tobias vs. Lucas Fernando,Rafael Tobias,Lucas Fernando,,,Light Heavyweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Neil Magny vs. Ramiz Brahimaj,Neil Magny,Ramiz Brahimaj,,,Welterweight,,,,
-UFC 330: Makhachev vs. Machado Garry,"August 15, 2026",Jeremiah Wells vs. Myktybek Orolbai,Jeremiah Wells,Myktybek Orolbai,,,Welterweight,,,,
