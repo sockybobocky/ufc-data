@@ -490,39 +490,77 @@ def scrape_events_and_fights(state, full=False):
 
 
 def scrape_fight_stats(fight_url, event, fa, fb):
-    """Scrape round-by-round stats from a fight detail page."""
+    """Scrape round-by-round stats from a fight detail page using Playwright directly."""
+    global PAGE
     stats = []
-    resp = fetch(fight_url)
-    if not resp:
-        return stats
-    soup = BeautifulSoup(resp.text, "html.parser")
     bout = f"{fa} vs. {fb}"
-
-    # UFCstats fight detail tables have TWO fighters per row.
-    # Each <td> contains two <p> tags - first for fighter A, second for fighter B.
-    # We need to split each cell's <p> tags to get individual fighter values.
-
-    sections = soup.select("section.b-fight-details__section")
-
-    for section in sections:
-        header = section.select_one("p.b-fight-details__collapse-link_tot, p.b-fight-details__table-title")
-        section_text = header.get_text(strip=True) if header else ""
-        is_round = "round" in section_text.lower()
-
-        tables = section.select("table")
-        for table in tables:
+    
+    try:
+        PAGE.goto(fight_url, timeout=20000, wait_until="domcontentloaded")
+        time.sleep(0.5)
+        
+        # Click all "expand" links to reveal per-round sections
+        try:
+            expanders = PAGE.query_selector_all('a.b-fight-details__collapse-link_rnd, .js-fight-section-expand, [data-link="expand"]')
+            for exp in expanders:
+                try:
+                    exp.click()
+                    time.sleep(0.2)
+                except:
+                    pass
+        except:
+            pass
+        
+        # Also try clicking any collapsed section toggles
+        try:
+            toggles = PAGE.query_selector_all('.b-fight-details__collapse-link_tot')
+            for tog in toggles:
+                try:
+                    tog.click()
+                    time.sleep(0.2)
+                except:
+                    pass
+        except:
+            pass
+        
+        time.sleep(0.3)
+        content = PAGE.content()
+        soup = BeautifulSoup(content, "html.parser")
+        
+        # Find ALL tables on the page (totals + per-round for both striking and sig strikes)
+        all_tables = soup.select("table.b-fight-details__table")
+        if not all_tables:
+            all_tables = soup.select("table")
+        
+        # Determine which tables are per-round by looking at their parent/sibling context
+        for table in all_tables:
+            # Check if this table is in a per-round section
+            parent = table.parent
+            is_round_section = False
+            section_text = ""
+            
+            # Walk up to find section header
+            for _ in range(5):
+                if parent is None:
+                    break
+                header = parent.select_one("p.b-fight-details__collapse-link_tot, .b-fight-details__table-title, .b-fight-details__collapse-link_rnd")
+                if header:
+                    section_text = header.get_text(strip=True)
+                    is_round_section = "round" in section_text.lower() or "per round" in section_text.lower()
+                    break
+                parent = parent.parent
+            
             rows = table.select("tbody tr")
             for ri, row in enumerate(rows):
                 cells = row.select("td")
                 if len(cells) < 2:
                     continue
-
-                # Extract p tags from each cell to separate fighter A and B values
+                
                 fighter_a_vals = []
                 fighter_b_vals = []
                 fighter_a_name = ""
                 fighter_b_name = ""
-
+                
                 for ci, cell in enumerate(cells):
                     p_tags = cell.select("p")
                     if len(p_tags) >= 2:
@@ -534,9 +572,8 @@ def scrape_fight_stats(fight_url, event, fa, fb):
                     else:
                         val_a = cell.get_text(strip=True)
                         val_b = val_a
-
+                    
                     if ci == 0:
-                        # First cell has fighter names
                         links = cell.select('a[href*="fighter-details"]')
                         if len(links) >= 2:
                             fighter_a_name = links[0].get_text(strip=True)
@@ -546,34 +583,32 @@ def scrape_fight_stats(fight_url, event, fa, fb):
                     else:
                         fighter_a_vals.append(val_a)
                         fighter_b_vals.append(val_b)
-
+                
                 if not fighter_a_name:
                     continue
-
-                round_num = str(ri + 1) if is_round else "Total"
-
-                # Determine which stat keys to use based on number of value columns
-                # Main stats table: KD, Sig.Str, Sig.Str%, Total Str, TD, TD%, Sub, Rev, Ctrl
-                # Sig strikes table: Head, Body, Leg, Distance, Clinch, Ground
+                
+                round_num = str(ri + 1) if is_round_section else "Total"
+                
                 main_keys = ["KD", "SIG.STR.", "SIG.STR. %", "TOTAL STR.", "TD", "TD %", "SUB.ATT", "REV.", "CTRL"]
                 sig_keys = ["HEAD", "BODY", "LEG", "DISTANCE", "CLINCH", "GROUND"]
-
-                is_main = len(fighter_a_vals) >= 9 or any("%" in v for v in fighter_a_vals[:9])
-                keys = main_keys if is_main and len(fighter_a_vals) >= 9 else sig_keys if len(fighter_a_vals) >= 6 else main_keys
-
-                # Build stat row for fighter A
+                
+                is_main = len(fighter_a_vals) >= 9
+                keys = main_keys if is_main else sig_keys if len(fighter_a_vals) >= 6 else main_keys
+                
                 stat_a = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_a_name}
                 for ki, key in enumerate(keys):
                     stat_a[key] = fighter_a_vals[ki] if ki < len(fighter_a_vals) else ""
                 stats.append(stat_a)
-
-                # Build stat row for fighter B
+                
                 if fighter_b_name:
                     stat_b = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_b_name}
                     for ki, key in enumerate(keys):
                         stat_b[key] = fighter_b_vals[ki] if ki < len(fighter_b_vals) else ""
                     stats.append(stat_b)
-
+    
+    except Exception as e:
+        pass
+    
     time.sleep(0.1)
     return stats
 
