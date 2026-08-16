@@ -400,6 +400,17 @@ def scrape_events_and_fights(state, full=False):
             fight_stats = list(csv.DictReader(f))
         print(f"  Loaded {len(fight_stats)} existing stats")
 
+    # Build set of fight URLs that already have per-round data (skip re-scraping these)
+    fights_with_rounds = set()
+    for fs in fight_stats:
+        rnd = fs.get("ROUND", "")
+        if rnd and rnd not in ("Total", "total", ""):
+            # Find the matching fight URL from results
+            bout = fs.get("BOUT", "")
+            fights_with_rounds.add(bout)
+    if fights_with_rounds:
+        print(f"  {len(fights_with_rounds)} fights already have per-round data (will skip)")
+
     for idx, (event_url, event_name) in enumerate(to_scrape):
         print(f"  [{idx+1}/{len(to_scrape)}] {event_name}...", end=" ", flush=True)
         resp2 = fetch(event_url)
@@ -470,8 +481,9 @@ def scrape_events_and_fights(state, full=False):
             })
             count += 1
 
-            # Scrape fight detail page for round-by-round stats
-            if fight_url and winner:  # Only scrape completed fights
+            # Scrape fight detail page for round-by-round stats (skip if already have per-round data)
+            bout_key = f"{fa} vs. {fb}"
+            if fight_url and winner and bout_key not in fights_with_rounds:
                 fstats = scrape_fight_stats(fight_url, event_name, fa, fb)
                 fight_stats.extend(fstats)
 
@@ -490,7 +502,7 @@ def scrape_events_and_fights(state, full=False):
 
 
 def scrape_fight_stats(fight_url, event, fa, fb):
-    """Scrape round-by-round stats from a fight detail page using Playwright directly."""
+    """Scrape round-by-round stats from a fight detail page using Playwright."""
     global PAGE
     stats = []
     bout = f"{fa} vs. {fb}"
@@ -498,64 +510,29 @@ def scrape_fight_stats(fight_url, event, fa, fb):
     try:
         PAGE.goto(fight_url, timeout=20000, wait_until="domcontentloaded")
         time.sleep(0.5)
-        
-        # Click all "expand" links to reveal per-round sections
-        try:
-            expanders = PAGE.query_selector_all('a.b-fight-details__collapse-link_rnd, .js-fight-section-expand, [data-link="expand"]')
-            for exp in expanders:
-                try:
-                    exp.click()
-                    time.sleep(0.2)
-                except:
-                    pass
-        except:
-            pass
-        
-        # Also try clicking any collapsed section toggles
-        try:
-            toggles = PAGE.query_selector_all('.b-fight-details__collapse-link_tot')
-            for tog in toggles:
-                try:
-                    tog.click()
-                    time.sleep(0.2)
-                except:
-                    pass
-        except:
-            pass
-        
-        time.sleep(0.3)
         content = PAGE.content()
         soup = BeautifulSoup(content, "html.parser")
         
-        # Find ALL tables on the page (totals + per-round for both striking and sig strikes)
-        all_tables = soup.select("table.b-fight-details__table")
-        if not all_tables:
-            all_tables = soup.select("table")
+        # All fight stats tables are on the page. Structure:
+        #   1-row table = Totals
+        #   2+ row table = Per-round (row 0 = round 1, row 1 = round 2, etc.)
+        # Main stats tables have 9+ value columns, sig strike tables have 6
         
-        # Determine which tables are per-round by looking at their parent/sibling context
+        all_tables = soup.select("table")
+        
         for table in all_tables:
-            # Check if this table is in a per-round section
-            parent = table.parent
-            is_round_section = False
-            section_text = ""
-            
-            # Walk up to find section header
-            for _ in range(5):
-                if parent is None:
-                    break
-                header = parent.select_one("p.b-fight-details__collapse-link_tot, .b-fight-details__table-title, .b-fight-details__collapse-link_rnd")
-                if header:
-                    section_text = header.get_text(strip=True)
-                    is_round_section = "round" in section_text.lower() or "per round" in section_text.lower()
-                    break
-                parent = parent.parent
-            
             rows = table.select("tbody tr")
+            if not rows:
+                continue
+            
+            is_per_round = len(rows) > 1
+            
             for ri, row in enumerate(rows):
                 cells = row.select("td")
                 if len(cells) < 2:
                     continue
                 
+                # Extract fighter names and values from p tags
                 fighter_a_vals = []
                 fighter_b_vals = []
                 fighter_a_name = ""
@@ -587,13 +564,11 @@ def scrape_fight_stats(fight_url, event, fa, fb):
                 if not fighter_a_name:
                     continue
                 
-                round_num = str(ri + 1) if is_round_section else "Total"
+                round_num = str(ri + 1) if is_per_round else "Total"
                 
                 main_keys = ["KD", "SIG.STR.", "SIG.STR. %", "TOTAL STR.", "TD", "TD %", "SUB.ATT", "REV.", "CTRL"]
                 sig_keys = ["HEAD", "BODY", "LEG", "DISTANCE", "CLINCH", "GROUND"]
-                
-                is_main = len(fighter_a_vals) >= 9
-                keys = main_keys if is_main else sig_keys if len(fighter_a_vals) >= 6 else main_keys
+                keys = main_keys if len(fighter_a_vals) >= 9 else sig_keys if len(fighter_a_vals) >= 6 else main_keys
                 
                 stat_a = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_a_name}
                 for ki, key in enumerate(keys):
@@ -784,11 +759,75 @@ def scrape_upcoming_profiles():
 def main():
     start = datetime.now()
     full = "--full" in sys.argv
+    fight_stats_only = "--fight-stats" in sys.argv
     print(f"{'='*60}")
     print(f"UFC Self-Contained Scraper v3.0")
-    print(f"Mode: {'FULL HISTORICAL' if full else 'UPDATE'}")
+    mode_label = "FIGHT STATS ONLY" if fight_stats_only else ("FULL HISTORICAL" if full else "UPDATE")
+    print(f"Mode: {mode_label}")
     print(f"Started: {start.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*60}")
+
+    if fight_stats_only:
+        # Only re-scrape fight detail pages for round-by-round stats
+        if not os.path.exists("ufc_fight_results.csv"):
+            print("ERROR: ufc_fight_results.csv not found. Run --full first.")
+            return
+        
+        print("\nLoading existing fight results...")
+        with open("ufc_fight_results.csv", "r", encoding="utf-8") as f:
+            results = list(csv.DictReader(f))
+        
+        fight_urls = [(r.get("FIGHT_URL",""), r.get("EVENT",""), r.get("FIGHTER_A",""), r.get("FIGHTER_B","")) 
+                      for r in results if r.get("FIGHT_URL","").strip() and r.get("WINNER","").strip()]
+        print(f"Found {len(fight_urls)} completed fights with URLs")
+        
+        # Load existing fight stats to skip fights that already have per-round data
+        fights_with_rounds = set()
+        if os.path.exists("ufc_fight_stats.csv"):
+            with open("ufc_fight_stats.csv", "r", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    rnd = row.get("ROUND", "")
+                    if rnd and rnd not in ("Total", "total", ""):
+                        fights_with_rounds.add(row.get("BOUT", ""))
+            # Keep existing stats that already have per-round data
+            with open("ufc_fight_stats.csv", "r", encoding="utf-8") as f:
+                all_stats = list(csv.DictReader(f))
+            print(f"  {len(fights_with_rounds)} fights already have per-round data (will skip)")
+            print(f"  {len(all_stats)} existing stat rows loaded")
+            # Filter to only scrape fights missing per-round data
+            fight_urls = [(u, e, fa, fb) for u, e, fa, fb in fight_urls 
+                          if f"{fa} vs. {fb}" not in fights_with_rounds]
+            print(f"  {len(fight_urls)} fights still need per-round data")
+        
+        print("\nLaunching browser...")
+        init_browser()
+        
+        all_stats = []
+        try:
+            for i, (url, event, fa, fb) in enumerate(fight_urls):
+                if (i + 1) % 100 == 0:
+                    print(f"  [{i+1}/{len(fight_urls)}] {fa} vs {fb}...")
+                    write_csv("ufc_fight_stats.csv", all_stats, 
+                              ["EVENT","BOUT","ROUND","FIGHTER","KD","SIG.STR.","SIG.STR. %","TOTAL STR.","TD","TD %","SUB.ATT","REV.","CTRL","HEAD","BODY","LEG","DISTANCE","CLINCH","GROUND"])
+                    print(f"    checkpoint: {len(all_stats)} stat rows saved")
+                
+                fstats = scrape_fight_stats(url, event, fa, fb)
+                all_stats.extend(fstats)
+        except KeyboardInterrupt:
+            print(f"\n  Interrupted at fight {i+1}. Saving {len(all_stats)} stat rows...")
+        finally:
+            close_browser()
+        
+        write_csv("ufc_fight_stats.csv", all_stats,
+                  ["EVENT","BOUT","ROUND","FIGHTER","KD","SIG.STR.","SIG.STR. %","TOTAL STR.","TD","TD %","SUB.ATT","REV.","CTRL","HEAD","BODY","LEG","DISTANCE","CLINCH","GROUND"])
+        
+        # Count per-round rows
+        round_rows = sum(1 for s in all_stats if s.get("ROUND") not in ("Total", "total", ""))
+        print(f"\n  -> {len(all_stats)} total rows ({round_rows} per-round rows) saved")
+        
+        elapsed = (datetime.now() - start).total_seconds()
+        print(f"Done in {elapsed:.0f}s ({elapsed/60:.1f} min)")
+        return
 
     if full:
         print("\nFULL mode scrapes ALL historical data.")
