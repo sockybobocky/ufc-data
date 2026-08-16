@@ -1,0 +1,3448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UFC Fight Predictor</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b0e; --card: #111118; --card2: #16161f; --border: #1e1e2d;
+    --red: #e53e3e; --red-dk: #9b1c1c; --red-glow: rgba(229,62,62,0.12);
+    --blue: #3182ce; --blue-dk: #1a56a0; --green: #38a169; --yellow: #d69e2e;
+    --text: #e2e2e8; --dim: #8888a0; --muted: #555570;
+    --font: 'DM Sans', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', 'Menlo', monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  .header { background: linear-gradient(180deg, #150808 0%, var(--bg) 100%); border-bottom: 1px solid var(--border); padding: 18px 20px; }
+  .header-inner { max-width: 880px; margin: 0 auto; display: flex; align-items: center; gap: 14px; }
+  .logo { width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, var(--red), var(--red-dk)); display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 0 24px var(--red-glow); flex-shrink: 0; }
+  .header h1 { font-size: 21px; font-weight: 700; letter-spacing: -0.5px; line-height: 1.2; }
+  .header .sub { font-size: 11px; color: var(--muted); font-family: var(--mono); letter-spacing: 1px; margin-top: 2px; }
+
+  .nav { display: flex; border-bottom: 1px solid var(--border); background: #0e0e14; max-width: 880px; margin: 0 auto; }
+  .nav button { flex: 1; padding: 12px 6px; background: none; border: none; border-bottom: 2px solid transparent; color: var(--muted); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; transition: all .2s; }
+  .nav button.active { color: var(--text); border-bottom-color: var(--red); }
+  .nav button:hover { color: var(--dim); }
+  .nav button svg { width: 16px; height: 16px; }
+
+  .main { max-width: 880px; margin: 0 auto; padding: 16px; }
+  .tab { display: none; }
+  .tab.active { display: block; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 10px; }
+  .card h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+  .card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .lbl { font-size: 10px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); font-weight: 600; margin-bottom: 10px; }
+
+  .btn-primary { width: 100%; padding: 14px 20px; background: linear-gradient(135deg, var(--red), var(--red-dk)); border: none; border-radius: 8px; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--font); display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 0 24px var(--red-glow); transition: opacity .2s; }
+  .btn-primary:disabled { opacity: 0.5; cursor: wait; }
+  .btn-primary:hover:not(:disabled) { opacity: 0.9; }
+  .btn-predict { width: 100%; padding: 13px; background: linear-gradient(90deg, var(--red), var(--blue)); border: none; border-radius: 8px; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; font-family: var(--font); transition: opacity .2s; }
+  .btn-predict:disabled { background: var(--border); opacity: 0.4; cursor: default; }
+  .btn-clear { padding: 8px 14px; background: rgba(229,62,62,0.1); border: 1px solid rgba(229,62,62,0.3); border-radius: 6px; color: var(--red); font-size: 12px; font-family: var(--mono); cursor: pointer; }
+  .btn-secondary { padding: 8px 14px; background: rgba(49,130,206,0.12); border: 1px solid rgba(49,130,206,0.3); border-radius: 6px; color: var(--blue); font-size: 12px; font-family: var(--mono); cursor: pointer; }
+
+  .search-wrap { position: relative; flex: 1; }
+  .search-wrap svg { position: absolute; left: 10px; top: 11px; color: var(--muted); width: 16px; height: 16px; }
+  .search-wrap input { width: 100%; padding: 10px 10px 10px 32px; }
+  input, select { background: var(--card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 14px; font-family: var(--font); outline: none; padding: 10px 12px; }
+  select { font-size: 12px; font-family: var(--mono); }
+
+  .drop-zone { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 20px; border: 2px dashed var(--border); border-radius: 8px; cursor: pointer; color: var(--dim); font-size: 13px; font-family: var(--mono); transition: all .2s; text-align: center; flex-direction: column; }
+  .drop-zone:hover, .drop-zone.dragover { border-color: var(--red); background: var(--red-glow); }
+  .drop-zone input { display: none; }
+
+  .file-link { display: flex; align-items: center; gap: 8px; padding: 9px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; text-decoration: none; color: var(--text); font-size: 12px; transition: border-color .2s; margin-bottom: 6px; }
+  .file-link:hover { border-color: var(--red); }
+  .file-link .fname { font-family: var(--mono); font-weight: 600; }
+  .file-link .fdesc { color: var(--muted); margin-left: 6px; }
+
+  .progress-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 14px; }
+  .progress-fill { height: 100%; background: var(--red); width: 60%; border-radius: 2px; animation: pulse 1.5s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .status-msg { font-size: 12px; color: var(--dim); font-family: var(--mono); margin-top: 8px; white-space: pre-line; }
+  .success-box { margin-top: 14px; padding: 14px; background: rgba(56,161,105,0.1); border: 1px solid rgba(56,161,105,0.3); border-radius: 8px; }
+  .success-box p { color: var(--green); font-weight: 600; font-size: 13px; white-space: pre-line; }
+  .error-box { margin-top: 14px; padding: 14px; background: rgba(229,62,62,0.1); border: 1px solid rgba(229,62,62,0.3); border-radius: 8px; }
+  .error-box p { color: var(--red); font-size: 13px; white-space: pre-line; }
+  .debug-box { margin-top: 14px; padding: 14px; background: rgba(49,130,206,0.08); border: 1px solid rgba(49,130,206,0.24); border-radius: 8px; }
+  .debug-box p, .debug-box pre { color: #b6d6ff; font-size: 12px; white-space: pre-wrap; word-break: break-word; }
+  .debug-box pre { margin-top: 8px; font-family: var(--mono); }
+
+  .picker { position: relative; }
+  .picker label { display: block; font-size: 10px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 4px; }
+  .picker input { width: 100%; }
+  .picker input.selected-red { border-color: var(--red); }
+  .picker input.selected-blue { border-color: var(--blue); }
+  .picker-dropdown { position: absolute; top: 100%; left: 0; right: 0; z-index: 100; background: var(--card); border: 1px solid var(--border); border-radius: 8px; max-height: 220px; overflow-y: auto; margin-top: 4px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); display: none; }
+  .picker-dropdown.open { display: block; }
+  .picker-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .picker-item:hover { background: var(--card2); }
+  .picker-item .pname { font-weight: 600; }
+  .picker-item .psub { color: var(--muted); font-size: 11px; margin-left: 8px; }
+  .picker .clear-btn { position: absolute; right: 8px; top: 26px; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; }
+
+  .prob-bar { display: flex; height: 44px; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+  .prob-a { background: linear-gradient(90deg, var(--red-dk), var(--red)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; font-family: var(--mono); transition: width 0.8s ease; min-width: 50px; }
+  .prob-b { background: linear-gradient(90deg, var(--blue), var(--blue-dk)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; font-family: var(--mono); transition: width 0.8s ease; min-width: 50px; }
+  .factor-grid { display: grid; grid-template-columns: 1fr 100px 1fr; font-size: 12px; }
+  .factor-header { padding: 6px 8px; font-family: var(--mono); font-size: 10px; font-weight: 600; border-bottom: 1px solid var(--border); }
+  .factor-cell { padding: 7px 8px; font-family: var(--mono); font-size: 11px; border-bottom: 1px solid var(--border); }
+  .factor-cell.winner { color: var(--green); }
+  .factor-cell.neutral { color: var(--dim); }
+
+  .mini-stat { border-top-width: 2px; border-top-style: solid; }
+  .mini-stat h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .mini-stat .stats-lines { font-size: 11px; font-family: var(--mono); color: var(--dim); line-height: 2.1; }
+
+  .fighter-row { display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 12px 16px; }
+  .fighter-row:hover { background: var(--card2); }
+  .fighter-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--red), var(--red-dk)); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; flex-shrink: 0; }
+  .fighter-info { flex: 1; min-width: 0; }
+  .fighter-name { font-weight: 600; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fighter-meta { font-size: 11px; color: var(--dim); font-family: var(--mono); display: flex; flex-wrap: wrap; gap: 2px 8px; margin-top: 2px; }
+  .fighter-side { text-align: right; font-family: var(--mono); font-size: 11px; color: var(--dim); flex-shrink: 0; }
+
+  .lb-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); }
+  .lb-rank { width: 26px; text-align: center; font-size: 13px; font-weight: 700; font-family: var(--mono); }
+  .lb-rank.top3 { color: var(--red); }
+  .lb-rank.rest { color: var(--muted); }
+  .lb-name { flex: 1; font-size: 13px; font-weight: 600; }
+  .lb-sub { font-size: 11px; color: var(--muted); margin-left: 8px; font-weight: 400; }
+  .lb-val { font-family: var(--mono); font-size: 12px; color: var(--green); }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 1000; padding: 16px; backdrop-filter: blur(4px); }
+  .modal-overlay.open { display: flex; }
+  .modal-body { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; width: 100%; max-width: 520px; max-height: 85vh; overflow-y: auto; }
+  .modal-close { float: right; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 20px; }
+
+  .detail-avatar { width: 52px; height: 52px; border-radius: 50%; margin: 0 auto 10px; background: linear-gradient(135deg, var(--red), var(--red-dk)); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .detail-cell { background: var(--bg); border-radius: 6px; padding: 8px 10px; text-align: center; }
+  .detail-cell .dk { font-size: 9px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .detail-cell .dv { font-size: 13px; font-weight: 600; }
+  .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .metric-cell { background: var(--bg); border-radius: 6px; padding: 8px 10px; }
+  .metric-cell .mh { display: flex; justify-content: space-between; }
+  .metric-cell .mk { font-size: 11px; font-family: var(--mono); color: var(--muted); }
+  .metric-cell .mv { font-size: 15px; font-weight: 700; color: var(--green); }
+  .metric-cell .md { font-size: 9px; color: var(--muted); margin-top: 2px; }
+
+  .fight-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .fight-badge { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+  .fight-badge.win { background: rgba(56,161,105,0.2); color: var(--green); }
+  .fight-badge.loss { background: rgba(229,62,62,0.2); color: var(--red); }
+
+  .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .step-box { background: var(--bg); border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+  .step-title { font-size: 12px; font-family: var(--mono); color: var(--text); font-weight: 600; margin-bottom: 10px; }
+  .muted { color: var(--dim); }
+
+  /* ── UPCOMING CARD ── */
+  .event-header { padding: 16px 18px; background: linear-gradient(135deg, #1a0808 0%, var(--card) 100%); border-radius: 10px 10px 0 0; border: 1px solid var(--border); border-bottom: none; cursor: pointer; user-select: none; transition: background .2s; }
+  .event-header:hover { background: linear-gradient(135deg, #1f0a0a 0%, var(--card2) 100%); }
+  .event-header.collapsed { border-radius: 10px; border-bottom: 1px solid var(--border); }
+  .event-toggle { float: right; font-size: 14px; color: var(--muted); transition: transform .2s; }
+  .event-header.collapsed .event-toggle { transform: rotate(-90deg); }
+  .event-title { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
+  .event-meta { font-size: 11px; color: var(--dim); font-family: var(--mono); }
+  .matchup-card { background: var(--card); border: 1px solid var(--border); border-top: none; padding: 14px 18px; }
+  .matchup-card:last-child { border-radius: 0 0 10px 10px; }
+  .matchup-fighters { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .matchup-fighter { text-align: center; flex: 1; }
+  .matchup-fighter .mf-name { font-weight: 600; font-size: 14px; }
+  .matchup-fighter .mf-record { font-size: 11px; color: var(--dim); font-family: var(--mono); margin-top: 2px; }
+  .matchup-fighter .mf-style { font-size: 10px; color: var(--muted); font-family: var(--mono); }
+  .matchup-vs { font-size: 11px; color: var(--muted); font-family: var(--mono); font-weight: 600; padding: 0 12px; flex-shrink: 0; }
+  .matchup-prob { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin-bottom: 6px; }
+  .matchup-prob .mp-a { background: linear-gradient(90deg, var(--red-dk), var(--red)); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 12px; font-family: var(--mono); min-width: 40px; transition: width .6s; }
+  .matchup-prob .mp-b { background: linear-gradient(90deg, var(--blue), var(--blue-dk)); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 12px; font-family: var(--mono); min-width: 40px; transition: width .6s; }
+  .matchup-odds { display: flex; justify-content: space-between; font-size: 11px; font-family: var(--mono); color: var(--dim); }
+  .odds-tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-family: var(--mono); font-weight: 600; }
+  .odds-fav { background: rgba(56,161,105,0.15); color: var(--green); }
+  .odds-dog { background: rgba(229,62,62,0.12); color: var(--red); }
+  .odds-even { background: rgba(136,136,160,0.12); color: var(--dim); }
+  .value-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-family: var(--mono); font-weight: 600; background: rgba(214,158,46,0.2); color: var(--yellow); margin-left: 6px; letter-spacing: 0.5px; }
+  .matchup-wclass { font-size: 10px; color: var(--muted); font-family: var(--mono); text-align: center; margin-bottom: 4px; }
+
+  /* ── STREAK BAR ── */
+  .streak-bar { display: flex; gap: 2px; margin-top: 4px; }
+  .streak-dot { width: 14px; height: 14px; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 700; }
+  .streak-dot.w { background: rgba(56,161,105,0.3); color: var(--green); }
+  .streak-dot.l { background: rgba(229,62,62,0.25); color: var(--red); }
+  .streak-dot.d { background: rgba(136,136,160,0.2); color: var(--dim); }
+
+  /* ── RADAR CHART ── */
+  .radar-wrap { display: flex; justify-content: center; margin: 16px 0; }
+  .radar-wrap svg text { font-family: var(--mono); }
+
+  /* ── MOMENTUM BADGE ── */
+  .momentum-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-family: var(--mono); font-weight: 600; margin-left: 6px; }
+  .momentum-hot { background: rgba(56,161,105,0.2); color: var(--green); }
+  .momentum-cold { background: rgba(229,62,62,0.15); color: var(--red); }
+  .momentum-neutral { background: rgba(136,136,160,0.12); color: var(--dim); }
+
+  @media (max-width: 500px) {
+    .g2 { grid-template-columns: 1fr; }
+    .factor-grid { grid-template-columns: 1fr 80px 1fr; }
+    .matchup-fighters { flex-direction: column; gap: 6px; }
+    .matchup-vs { padding: 4px 0; }
+  }
+
+  /* ── RESULTS TRACKER ── */
+  .results-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .rs-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; }
+  .rs-box .rs-num { font-size: 28px; font-weight: 700; font-family: var(--mono); }
+  .rs-box .rs-label { font-size: 10px; color: var(--dim); font-family: var(--mono); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .result-row { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px; }
+  .result-row .rr-pred { font-weight: 600; font-size: 13px; flex: 1; }
+  .result-row .rr-conf { font-size: 11px; font-family: var(--mono); color: var(--dim); }
+  .result-row .rr-btns { display: flex; gap: 4px; }
+  .result-row .rr-btn { padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: var(--card2); color: var(--text); }
+  .result-row .rr-btn:hover { background: var(--border); }
+  .result-row .rr-btn.correct { background: rgba(56,161,105,0.2); color: var(--green); border-color: var(--green); }
+  .result-row .rr-btn.wrong { background: rgba(229,62,62,0.15); color: var(--red); border-color: var(--red); }
+  .result-event-header { font-size: 13px; font-weight: 600; margin: 16px 0 8px; padding: 8px 12px; background: var(--card2); border-radius: 6px; }
+  .rr-result-badge { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; font-family: var(--mono); }
+  .rr-correct { background: rgba(56,161,105,0.2); color: var(--green); }
+  .rr-wrong { background: rgba(229,62,62,0.15); color: var(--red); }
+
+  /* ── ROUND-BY-ROUND BARS ── */
+  .rnd-bars { margin: 12px 0; }
+  .rnd-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .rnd-bar-label { font-size: 10px; font-family: var(--mono); color: var(--dim); width: 26px; text-align: right; }
+  .rnd-bar-track { flex: 1; height: 14px; background: var(--card2); border-radius: 3px; overflow: hidden; }
+  .rnd-bar-fill { height: 100%; border-radius: 3px; transition: width .4s; }
+  .rnd-bar-val { font-size: 10px; font-family: var(--mono); color: var(--dim); width: 36px; }
+
+  /* ── LAYOFF INDICATOR ── */
+  .layoff-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-family: var(--mono); font-weight: 600; margin-left: 4px; }
+  .layoff-rusty { background: rgba(229,62,62,0.15); color: var(--red); }
+  .layoff-active { background: rgba(56,161,105,0.15); color: var(--green); }
+  .layoff-normal { background: rgba(136,136,160,0.12); color: var(--dim); }
+
+  /* ── ELO BADGE ── */
+  .elo-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-family: var(--mono); font-weight: 600; margin-left: 4px; }
+  .elo-elite { background: rgba(214,158,46,0.2); color: var(--yellow); }
+  .elo-high { background: rgba(56,161,105,0.15); color: var(--green); }
+  .elo-mid { background: rgba(136,136,160,0.12); color: var(--dim); }
+  .elo-low { background: rgba(229,62,62,0.12); color: var(--red); }
+
+  /* ── STRIKE TARGETING ── */
+  .target-bars { margin: 12px 0; }
+  .target-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+  .target-label { font-size: 10px; font-family: var(--mono); color: var(--dim); width: 52px; text-align: right; }
+  .target-track { flex: 1; height: 16px; background: var(--card2); border-radius: 3px; overflow: hidden; }
+  .target-fill { height: 100%; border-radius: 3px; transition: width .4s; display: flex; align-items: center; padding-left: 6px; font-size: 9px; font-family: var(--mono); font-weight: 600; color: #fff; min-width: 28px; }
+  .target-pct { font-size: 10px; font-family: var(--mono); color: var(--dim); width: 36px; text-align: right; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo">⚔</div>
+    <div>
+      <h1>UFC Fight Predictor</h1>
+      <div class="sub" id="headerStats">0 FIGHTERS · 0 FIGHTS</div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav" id="nav">
+  <button class="active" data-tab="import"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Import</button>
+  <button data-tab="predict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8"/></svg>Predict</button>
+  <button data-tab="upcoming"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>Upcoming</button>
+  <button data-tab="fighters"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/></svg>Fighters</button>
+  <button data-tab="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18M6 16v4M10 12v8M14 8v12M18 4v16"/></svg>Stats</button>
+  <button data-tab="results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Results</button>
+</nav>
+
+<div class="main">
+  <div class="tab active" id="tab-import">
+    <div class="card">
+      <h2>Auto-Import UFC Data</h2>
+      <p style="color:var(--dim);font-size:13px;line-height:1.7;margin-bottom:16px">Pull the complete UFC fighter database from your centralized data repo. Imports fighter stats, W/L records, fight history, upcoming events, betting odds, and fighter profiles — all from sockybobocky/ufc-data.</p>
+      <button class="btn-primary" id="btnAutoImport"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Import Full UFC Database</button>
+      <div id="importProgress" style="display:none">
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <p class="status-msg" id="importMsg"></p>
+      </div>
+      <div id="importSuccess" class="success-box" style="display:none"><p></p></div>
+      <div id="importError" class="error-box" style="display:none"><p></p></div>
+      <div id="importDebug" class="debug-box" style="display:none">
+        <p><strong>Import diagnostics</strong></p>
+        <pre id="importDebugText"></pre>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Manual Download (if auto-import fails)</h3>
+      <p style="color:var(--dim);font-size:13px;line-height:1.7;margin-bottom:12px">Download the CSV files yourself and upload them here. Select all files at once for best results.</p>
+      <div class="step-box">
+        <div class="step-title">STEP 1: Download from sockybobocky/ufc-data</div>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fighter_tott.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fighter_tott.csv</span><span class="fdesc">— Fighter performance metrics (SLpM, TDs, etc)</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fighter_details.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fighter_details.csv</span><span class="fdesc">— Fighter bio (height, weight, reach, DOB)</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fighter_records.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fighter_records.csv</span><span class="fdesc">— W/L records (auto-updated weekly)</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fight_results.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fight_results.csv</span><span class="fdesc">— Fight history and outcomes</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fight_stats.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fight_stats.csv</span><span class="fdesc">— Round-by-round stats (strike defense, etc)</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_upcoming_events.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_upcoming_events.csv</span><span class="fdesc">— Upcoming fight cards</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_betting_odds.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_betting_odds.csv</span><span class="fdesc">— Betting odds from sportsbooks</span></a>
+        <a class="file-link" href="https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/ufc_fighter_profiles.csv" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="fname">ufc_fighter_profiles.csv</span><span class="fdesc">— Detailed profiles for upcoming fighters</span></a>
+      </div>
+      <div class="step-box">
+        <div class="step-title">STEP 2: Upload them here</div>
+        <div class="drop-zone" id="dropZone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          <div>Click to select or drag &amp; drop CSV files<br><span style="font-size:11px;color:var(--muted)">Select all 8 files at once for best results</span></div>
+          <input type="file" accept=".csv,text/csv" multiple id="fileInput">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="loadedCard" style="display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+        <div>
+          <p style="color:var(--dim);font-size:13px">Currently loaded:</p>
+          <p style="font-size:15px;font-weight:600;margin-top:4px" id="loadedCounts"></p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn-secondary" id="btnResetView">RESET VIEW</button>
+          <button class="btn-clear" id="btnClear">CLEAR ALL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab" id="tab-predict">
+    <div class="card" id="predictEmpty" style="text-align:center;padding:40px">
+      <p style="color:var(--muted);font-size:15px">Import data first to run predictions</p>
+      <button class="btn-primary" style="width:auto;margin:12px auto 0;padding:10px 24px" onclick="switchTab('import')">Go to Import</button>
+    </div>
+    <div id="predictMain" style="display:none">
+      <div class="card">
+        <div class="lbl">SELECT MATCHUP</div>
+        <div class="g2" style="margin-bottom:12px">
+          <div class="picker" id="pickerA"><label>Red Corner</label><input type="text" placeholder="Type a fighter name..." id="inputA"><div class="picker-dropdown" id="dropdownA"></div><button class="clear-btn" id="clearA" style="display:none">×</button></div>
+          <div class="picker" id="pickerB"><label>Blue Corner</label><input type="text" placeholder="Type a fighter name..." id="inputB"><div class="picker-dropdown" id="dropdownB"></div><button class="clear-btn" id="clearB" style="display:none">×</button></div>
+        </div>
+        <button class="btn-predict" id="btnPredict" disabled>⚡ ANALYZE MATCHUP</button>
+      </div>
+      <div id="predCompare"></div>
+      <div id="predResult"></div>
+    </div>
+  </div>
+
+  <!-- ═══ UPCOMING TAB ═══ -->
+  <div class="tab" id="tab-upcoming">
+    <div id="upcomingContent"><div class="card" style="text-align:center;padding:40px;color:var(--muted)">Import data first to see upcoming events</div></div>
+  </div>
+
+  <div class="tab" id="tab-fighters">
+    <div style="display:flex;gap:8px;margin-bottom:12px">
+      <div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg><input type="text" placeholder="Search fighters..." id="fighterSearch"></div>
+      <select id="weightFilter"><option value="All">All Classes</option></select>
+    </div>
+    <p style="font-size:11px;color:var(--muted);font-family:var(--mono);margin-bottom:8px" id="fighterCount"></p>
+    <div id="fighterList" style="max-height:65vh;overflow-y:auto"></div>
+  </div>
+
+  <div class="tab" id="tab-stats">
+    <div id="statsContent"></div>
+  </div>
+
+  <!-- ═══ RESULTS TAB ═══ -->
+  <div class="tab" id="tab-results">
+    <div id="resultsContent"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<script>
+// ==================================================
+// DATA STORE
+// ==================================================
+let fighters = [];
+let fights = [];
+let selectedA = null, selectedB = null;
+
+const STORE = "ufc_pred_v18_ml";
+const GHRAW = "https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/";
+const CUSTOM_BASE = "https://raw.githubusercontent.com/sockybobocky/ufc-data/refs/heads/main/";
+const FETCH_TIMEOUT_MS = 15000;
+const MAX_DEBUG_LINES = 20;
+
+const CUSTOM_RECORDS_URL = CUSTOM_BASE + "ufc_fighter_records.csv";
+const CUSTOM_UPCOMING_URL = CUSTOM_BASE + "ufc_upcoming_events.csv";
+const CUSTOM_ODDS_URL = CUSTOM_BASE + "ufc_betting_odds.csv";
+const CUSTOM_PROFILES_URL = CUSTOM_BASE + "ufc_fighter_profiles.csv";
+
+let upcomingEvents = [];
+let bettingOdds = [];
+let fighterProfiles = new Map();
+let mlWeights = null; // Loaded from ufc_ml_weights.json
+const CUSTOM_WEIGHTS_URL = CUSTOM_BASE + "ufc_ml_weights.json";
+
+const PROXIES = [
+  (u) => u,
+  (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+  (u) => `https://corsfix.com/${encodeURIComponent(u)}`,
+  (u) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+  (u) => `https://cors.x2u.in/${u}`,
+];
+
+const TYPE_REQUIREMENTS = {
+  fighterStats: ["fighter_name", "slpm"],
+  fighterDetails: ["fighter_name", "wins"],
+  fightResults: ["winner", "method"]
+};
+
+const WEIGHT_CLASSES = [
+  "Strawweight", "Flyweight", "Bantamweight", "Featherweight", "Lightweight",
+  "Welterweight", "Middleweight", "Light Heavyweight", "Heavyweight"
+];
+
+let importDebugLines = [];
+
+function addDebug(line) {
+  importDebugLines.push(line);
+  if (importDebugLines.length > MAX_DEBUG_LINES) importDebugLines.shift();
+  const box = document.getElementById("importDebug");
+  const text = document.getElementById("importDebugText");
+  text.textContent = importDebugLines.join("\n");
+  box.style.display = importDebugLines.length ? "block" : "none";
+}
+
+function clearMessages() {
+  document.getElementById("importSuccess").style.display = "none";
+  document.getElementById("importError").style.display = "none";
+  document.getElementById("importDebug").style.display = "none";
+  document.getElementById("importDebugText").textContent = "";
+  importDebugLines = [];
+}
+
+function showSuccess(message) {
+  const succ = document.getElementById("importSuccess");
+  succ.style.display = "block";
+  succ.querySelector("p").textContent = message;
+}
+
+function showError(message) {
+  const err = document.getElementById("importError");
+  err.style.display = "block";
+  err.querySelector("p").textContent = message;
+}
+
+function saveAll() {
+  try {
+    // Slim down data for storage - strip temporary/bulky fields
+    const slimFighters = fighters.map(f => {
+      const s = { ...f };
+      delete s._prefetchingProfile;
+      delete s._profilePromise;
+      return s;
+    });
+    // Only save last 2000 fights to stay under quota
+    const slimFights = fights.slice(-2000);
+    localStorage.setItem(STORE, JSON.stringify({ fighters: slimFighters, fights: slimFights }));
+  } catch (e) {
+    // If still too big, try saving just fighters (no fights)
+    try {
+      const slimFighters = fighters.map(f => {
+        const s = { ...f };
+        delete s._prefetchingProfile;
+        delete s._profilePromise;
+        delete s.profileRecentFights;
+        return s;
+      });
+      localStorage.setItem(STORE, JSON.stringify({ fighters: slimFighters, fights: [] }));
+    } catch (e2) {
+      console.warn("Could not save to localStorage:", e2.message);
+    }
+  }
+  updateHeader();
+}
+
+function countFightersWithStrDef(list) {
+  return (list || []).filter(f => f && f.strDef != null && Number.isFinite(f.strDef)).length;
+}
+
+function loadAll() {
+  try {
+    const raw = localStorage.getItem(STORE);
+    if (!raw) return updateHeader();
+    const data = JSON.parse(raw);
+    fighters = Array.isArray(data?.fighters) ? data.fighters : [];
+    fights = Array.isArray(data?.fights) ? data.fights : [];
+  } catch (e) {
+    showError("Saved data could not be loaded and was ignored.\n" + (e?.message || String(e)));
+    fighters = [];
+    fights = [];
+  }
+  updateHeader();
+}
+
+function updateHeader() {
+  document.getElementById("headerStats").textContent = `${fighters.length.toLocaleString()} FIGHTERS · ${fights.length.toLocaleString()} FIGHTS`;
+  const lc = document.getElementById("loadedCard");
+  if (fighters.length > 0 || fights.length > 0) {
+    lc.style.display = "block";
+    document.getElementById("loadedCounts").textContent = `${fighters.length.toLocaleString()} fighters, ${fights.length.toLocaleString()} fights`;
+  } else {
+    lc.style.display = "none";
+  }
+  document.getElementById("predictEmpty").style.display = fighters.length < 2 ? "block" : "none";
+  document.getElementById("predictMain").style.display = fighters.length >= 2 ? "block" : "none";
+}
+
+// ==================================================
+// CSV PARSING (ROBUST, NO EXTERNAL LIB NEEDED)
+// ==================================================
+function stripBom(text) {
+  return text.charCodeAt(0) === 0xFEFF ? text.slice(1) : text;
+}
+
+function parseCSV(text) {
+  text = stripBom(String(text || ""));
+  if (!text.trim()) return [];
+  const rows = [];
+  let row = [];
+  let value = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    const next = text[i + 1];
+
+    if (ch === '"') {
+      if (inQuotes && next === '"') {
+        value += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (ch === "," && !inQuotes) {
+      row.push(value);
+      value = "";
+      continue;
+    }
+
+    if ((ch === "\n" || ch === "\r") && !inQuotes) {
+      if (ch === "\r" && next === "\n") i++;
+      row.push(value);
+      const nonEmpty = row.some(cell => String(cell).trim() !== "");
+      if (nonEmpty) rows.push(row);
+      row = [];
+      value = "";
+      continue;
+    }
+
+    value += ch;
+  }
+
+  if (value.length || row.length) {
+    row.push(value);
+    const nonEmpty = row.some(cell => String(cell).trim() !== "");
+    if (nonEmpty) rows.push(row);
+  }
+
+  if (rows.length < 2) return [];
+
+  const headers = rows[0].map(h => String(h).trim());
+  return rows.slice(1).map(rawRow => {
+    const obj = {};
+    headers.forEach((header, idx) => {
+      obj[header] = String(rawRow[idx] ?? "").trim();
+    });
+    return obj;
+  });
+}
+
+// ==================================================
+// NORMALIZATION / HELPERS
+// ==================================================
+function normalizeKey(key) {
+  return String(key || "")
+    .toLowerCase()
+    .trim()
+    .replace(/\u00a0/g, " ")
+    .replace(/%/g, " pct")
+    .replace(/[./()-]/g, " ")
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+}
+
+function normalizeHeaders(row) {
+  const out = {};
+  Object.entries(row || {}).forEach(([k, v]) => {
+    out[normalizeKey(k)] = v;
+  });
+  return out;
+}
+
+function getFirst(obj, keys) {
+  for (const key of keys) {
+    const val = obj[key];
+    if (val !== undefined && val !== null && String(val).trim() !== "") return val;
+  }
+  return "";
+}
+
+function parseIn(v) {
+  if (!v || v === "--") return 0;
+  const s = String(v).replace(/"/g, "").trim();
+  const m = s.match(/(\d+)\s*'?\s*(\d+)/);
+  if (m) return parseInt(m[1], 10) * 12 + parseInt(m[2], 10);
+  const n = parseFloat(s);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function parsePct(v) {
+  if (!v || v === "--") return 0;
+  const n = parseFloat(String(v).replace("%", "").trim());
+  if (!Number.isFinite(n)) return 0;
+  return n > 1 ? n / 100 : n;
+}
+
+function parseN(v) {
+  if (!v || v === "--") return 0;
+  const n = parseFloat(String(v).trim());
+  return Number.isFinite(n) ? n : 0;
+}
+
+function parseMaybeN(v) {
+  if (v === undefined || v === null || String(v).trim() === "" || String(v).trim() === "--") return null;
+  const n = parseFloat(String(v).trim());
+  return Number.isFinite(n) ? n : null;
+}
+
+function parseMaybePct(v) {
+  if (v === undefined || v === null || String(v).trim() === "" || String(v).trim() === "--") return null;
+  const n = parseFloat(String(v).replace("%", "").trim());
+  if (!Number.isFinite(n)) return null;
+  return n > 1 ? n / 100 : n;
+}
+
+function calcAge(dob) {
+  if (!dob || dob === "--") return 0;
+  try {
+    const d = new Date(dob);
+    if (Number.isNaN(d.getTime())) return 0;
+    const now = new Date();
+    let a = now.getFullYear() - d.getFullYear();
+    if (now.getMonth() < d.getMonth() || (now.getMonth() === d.getMonth() && now.getDate() < d.getDate())) a--;
+    return a;
+  } catch {
+    return 0;
+  }
+}
+
+function fmtH(h) {
+  return h ? `${Math.floor(h / 12)}'${h % 12}"` : "—";
+}
+
+function inferWeightClass(wt) {
+  if (!wt || wt <= 0) return "Unknown";
+  if (wt <= 115) return "Strawweight";
+  if (wt <= 125) return "Flyweight";
+  if (wt <= 135) return "Bantamweight";
+  if (wt <= 145) return "Featherweight";
+  if (wt <= 155) return "Lightweight";
+  if (wt <= 170) return "Welterweight";
+  if (wt <= 185) return "Middleweight";
+  if (wt <= 205) return "Light Heavyweight";
+  return "Heavyweight";
+}
+
+function hasPerformanceMetrics(f) {
+  return [f.slpm, f.strAcc, f.sapm, f.strDef, f.tdAvg, f.tdAcc, f.tdDef, f.subAvg].some(v => v != null && Number.isFinite(v));
+}
+
+function inferStyle(f) {
+  if (!hasPerformanceMetrics(f)) return "Unclassified";
+  const slpm = f.slpm ?? 0;
+  const tdAvg = f.tdAvg ?? 0;
+  const subAvg = f.subAvg ?? 0;
+  const strAcc = f.strAcc ?? 0;
+  if (tdAvg >= 3.5 && subAvg >= 1) return "Sambo";
+  if (tdAvg >= 3 && subAvg < 1) return "Wrestler";
+  if (subAvg >= 1.5 && tdAvg < 2) return "BJJ Specialist";
+  if (subAvg >= 1 && tdAvg >= 1.5) return "Grappler";
+  if (slpm >= 5 && strAcc >= 0.5 && tdAvg < 1) return "Striker";
+  if (slpm >= 4 && strAcc >= 0.45 && tdAvg < 0.5) return "Boxer";
+  if (slpm >= 4.5 && tdAvg < 1.5) return "Kickboxer";
+  if (tdAvg >= 1.5 && slpm >= 3) return "Well-Rounded";
+  if (slpm >= 3) return "Striker";
+  return "Well-Rounded";
+}
+
+function safeNameKey(name) {
+  return String(name || "").trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function dedupeBy(items, keyFn) {
+  const seen = new Set();
+  const out = [];
+  for (const item of items) {
+    const key = keyFn(item);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    out.push(item);
+  }
+  return out;
+}
+
+// ==================================================
+// VALIDATION / CLASSIFICATION
+// ==================================================
+function detectHeaders(rows) {
+  if (!rows.length) return [];
+  return Object.keys(rows[0]).map(normalizeKey);
+}
+
+function classifyRows(rows, fileName = "") {
+  const headers = detectHeaders(rows);
+  const hs = new Set(headers);
+  const name = String(fileName || "").toLowerCase();
+
+  const hasAny = (...keys) => keys.some(k => hs.has(normalizeKey(k)));
+
+  const isFightResults =
+    hasAny("method", "win_by") &&
+    (
+      (hasAny("winner") && (hasAny("fighter_a", "fighter_b") || hasAny("fighter_1", "fighter_2"))) ||
+      hasAny("bout")
+    );
+
+  const isFightStats =
+    hasAny("fighter", "fighter_name", "name") &&
+    hasAny("event") &&
+    hasAny("bout") &&
+    (
+      hasAny("sig_str") ||
+      hasAny("sig_str_pct") ||
+      hasAny("td", "td_pct", "sub_att", "kd")
+    );
+
+  const isFighterStats =
+    hasAny("fighter_name", "name", "fighter") &&
+    (hasAny("height") || hasAny("reach") || hasAny("stance") || hasAny("dob"));
+
+  const isFighterDetails =
+    (
+      (hasAny("fighter_name", "name", "fighter") && hasAny("wins", "w", "losses", "l")) ||
+      (hasAny("first") && hasAny("last") && hasAny("url"))
+    ) &&
+    !isFightResults &&
+    !isFightStats;
+
+  if (name.includes("fight_stats")) return "fightStats";
+  if (name.includes("fight_result") || name.includes("fight_results")) return "fightResults";
+  if (name.includes("fighter_tott") || name.includes("tott")) return "fighterStats";
+  if (name.includes("fighter_detail") || name.includes("fighter_details")) return "fighterDetails";
+
+  if (isFightStats) return "fightStats";
+  if (isFightResults) return "fightResults";
+  if (isFighterStats) return "fighterStats";
+  if (isFighterDetails) return "fighterDetails";
+  return "unknown";
+}
+
+function validateParsedRows(rows, label) {
+  if (!Array.isArray(rows) || rows.length === 0) {
+    throw new Error(`${label}: CSV parsed, but produced 0 data rows.`);
+  }
+  const headers = Object.keys(rows[0] || {});
+  if (!headers.length) {
+    throw new Error(`${label}: no headers detected.`);
+  }
+  addDebug(`${label} headers: ${headers.join(", ")}`);
+}
+
+function validateFighterRows(rows, label) {
+  validateParsedRows(rows, label);
+  const headers = detectHeaders(rows);
+  const hasName = headers.includes("fighter_name") || headers.includes("name") || headers.includes("fighter");
+  if (!hasName) {
+    throw new Error(`${label}: missing a recognized fighter name column.`);
+  }
+}
+
+function validateDetailRows(rows, label) {
+  validateParsedRows(rows, label);
+  const headers = detectHeaders(rows);
+  const hasName = headers.includes("fighter_name") || headers.includes("name") || headers.includes("fighter") || (headers.includes("first") && headers.includes("last"));
+  if (!hasName) {
+    throw new Error(`${label}: missing recognized fighter identity columns.`);
+  }
+}
+
+function validateFightRows(rows, label) {
+  validateParsedRows(rows, label);
+  const headers = detectHeaders(rows);
+  const hasWinner = headers.includes("winner");
+  const hasMethod = headers.includes("method") || headers.includes("win_by");
+  const hasFighters = headers.includes("fighter_a") || headers.includes("fighter_1") || headers.includes("bout");
+  if (!(hasMethod && hasFighters && (hasWinner || headers.includes("bout")))) {
+    throw new Error(`${label}: not recognized as a fight results file.`);
+  }
+}
+
+function validateFightStatsRows(rows, label) {
+  validateParsedRows(rows, label);
+  const headers = detectHeaders(rows);
+  const hasFighter = headers.includes("fighter") || headers.includes("fighter_name") || headers.includes("name");
+  const hasBout = headers.includes("bout");
+  const hasEvent = headers.includes("event");
+  const hasStat = headers.includes("sig_str") || headers.includes("td") || headers.includes("td_pct") || headers.includes("sub_att") || headers.includes("kd");
+  if (!(hasFighter && hasBout && hasEvent && hasStat)) {
+    throw new Error(`${label}: not recognized as a fight stats file.`);
+  }
+}
+
+function isLikelyHTML(text) {
+  return /<!doctype html>|<html|<body/i.test(text);
+}
+
+// ==================================================
+// TRANSFORM DATA
+// ==================================================
+function buildDetailsMaps(detailRows) {
+  const byUrl = {};
+  const byName = {};
+  for (const raw of detailRows || []) {
+    const row = normalizeHeaders(raw);
+    const url = getFirst(row, ["fighter_url", "url"]);
+    let name = getFirst(row, ["fighter_name", "name", "fighter"]);
+    if (!name) {
+      const first = getFirst(row, ["first"]);
+      const last = getFirst(row, ["last"]);
+      name = [first, last].filter(Boolean).join(" ").trim();
+    }
+    if (url) byUrl[url] = row;
+    if (name) byName[safeNameKey(name)] = row;
+  }
+  return { byUrl, byName };
+}
+
+function transformFighters(tottRows, detailRows) {
+  const detailMaps = buildDetailsMaps(detailRows);
+  const results = [];
+
+  // On first row, dump all raw + normalized keys for debugging
+  if (tottRows.length > 0) {
+    const rawKeys = Object.keys(tottRows[0]);
+    const normKeys = Object.keys(normalizeHeaders(tottRows[0]));
+    addDebug("RAW CSV headers: " + rawKeys.join(", "));
+    addDebug("Normalized headers: " + normKeys.join(", "));
+  }
+
+  for (let i = 0; i < tottRows.length; i++) {
+    const raw = tottRows[i];
+    // Search BOTH the raw row AND the normalized row
+    // This way we catch headers regardless of how normalizeKey transforms them
+    const norm = normalizeHeaders(raw);
+
+    // Helper: find a value by trying keys in both raw and normalized objects
+    const get = (...keys) => {
+      for (const k of keys) {
+        if (raw[k] !== undefined && raw[k] !== null && String(raw[k]).trim() !== "") return raw[k];
+        if (norm[k] !== undefined && norm[k] !== null && String(norm[k]).trim() !== "") return norm[k];
+      }
+      // Also try normalizing each key and looking in norm
+      for (const k of keys) {
+        const nk = normalizeKey(k);
+        if (norm[nk] !== undefined && norm[nk] !== null && String(norm[nk]).trim() !== "") return norm[nk];
+      }
+      return "";
+    };
+
+    const url = get("fighter_url", "url");
+    const nameFromRow = get("fighter_name", "name", "fighter");
+    const detailByUrl = url ? detailMaps.byUrl[url] : null;
+    const detailByName = nameFromRow ? detailMaps.byName[safeNameKey(nameFromRow)] : null;
+    const det = detailByUrl || detailByName || {};
+    const name = nameFromRow || getFirst(det, ["fighter_name", "name", "fighter"]);
+
+    if (!name) continue;
+
+    const height = parseIn(get("Height", "height") || getFirst(det, ["height"]));
+    const reach = parseIn(get("Reach", "reach") || getFirst(det, ["reach"]));
+    const stance = get("Stance", "stance") || getFirst(det, ["stance"]) || "Unknown";
+    const dob = get("DOB", "dob", "date_of_birth") || getFirst(det, ["dob", "date_of_birth"]);
+    const wt = parseN(get("Weight", "weight") || getFirst(det, ["weight"]));
+
+    // Performance metrics - try every conceivable header variant
+    const slpm = parseMaybeN(get("SLpM", "slpm", "s_lpm", "SLpM"));
+    const strAcc = parseMaybePct(get("Str. Acc.", "Str. Acc", "str_acc", "Str Acc", "str acc"));
+    const sapm = parseMaybeN(get("SApM", "sapm", "s_apm", "SApM"));
+    const strDef = parseMaybePct(get("Str. Def", "Str. Def.", "str_def", "Str Def", "str def", "Str. Def"));
+    const tdAvg = parseMaybeN(get("TD Avg.", "TD Avg", "td_avg", "td avg"));
+    const tdAcc = parseMaybePct(get("TD Acc.", "TD Acc", "td_acc", "td acc"));
+    const tdDef = parseMaybePct(get("TD Def.", "TD Def", "td_def", "td def"));
+    const subAvg = parseMaybeN(get("Sub. Avg.", "Sub. Avg", "sub_avg", "sub avg"));
+
+    const wins = parseInt(getFirst(det, ["w", "wins"]) || get("W", "wins") || 0, 10) || 0;
+    const losses = parseInt(getFirst(det, ["l", "losses"]) || get("L", "losses") || 0, 10) || 0;
+    const draws = parseInt(getFirst(det, ["d", "draws"]) || get("D", "draws") || 0, 10) || 0;
+
+    // Debug first fighter's strDef to verify it's being read
+    if (i === 0) {
+      addDebug(`First fighter: ${name}, strDef raw="${get("Str. Def", "Str. Def.", "str_def")}", parsed=${strDef}`);
+    }
+
+    const fighter = {
+      id: url || `fighter_${safeNameKey(name)}_${i}`,
+      sourceUrl: url || "",
+      name,
+      height,
+      reach,
+      stance,
+      dob,
+      age: calcAge(dob),
+      weight: wt,
+      weightClass: inferWeightClass(wt),
+      wins,
+      losses,
+      draws,
+      slpm,
+      strAcc,
+      sapm,
+      strDef,
+      tdAvg,
+      tdAcc,
+      tdDef,
+      subAvg
+    };
+    fighter.style = inferStyle(fighter);
+    results.push(fighter);
+  }
+
+  return dedupeBy(results, f => f.sourceUrl || safeNameKey(f.name));
+}
+
+function parseBoutNames(bout) {
+  const s = String(bout || "").trim();
+  if (!s) return { fighterAName: "", fighterBName: "" };
+  const cleaned = s.replace(/\s+/g, " ").trim();
+  const patterns = [
+    /^(.*?)\s+vs\.?\s+(.*?)$/i,
+    /^(.*?)\s+v\.?\s+(.*?)$/i,
+    /^(.*?)\s+-\s+(.*?)$/i
+  ];
+  for (const p of patterns) {
+    const m = cleaned.match(p);
+    if (m) return { fighterAName: m[1].trim(), fighterBName: m[2].trim() };
+  }
+  return { fighterAName: "", fighterBName: "" };
+}
+
+function inferWinnerFromOutcome(outcome, fighterAName, fighterBName) {
+  const s = String(outcome || "").trim().toUpperCase();
+  if (!s) return "";
+  if (s === "W" || s === "WIN") return fighterAName || "";
+  if (s === "L" || s === "LOSS") return fighterBName || "";
+  if (s === "D" || s === "DRAW" || s === "NC" || s === "D/D") return "";
+  const parts = s.split("/").map(x => x.trim()).filter(Boolean);
+  if (parts.length === 2) {
+    const [left, right] = parts;
+    if (left === "D" && right === "D") return "";
+    // left = fighter A's result, right = fighter B's result
+    if (left === "W") return fighterAName || "";   // A won
+    if (left === "L") return fighterBName || "";    // A lost, so B won
+  }
+  return "";
+}
+
+function transformFights(rows) {
+  const out = [];
+  for (let i = 0; i < rows.length; i++) {
+    const r = normalizeHeaders(rows[i]);
+    let fighterAName = getFirst(r, ["fighter_a", "fighter_1"]);
+    let fighterBName = getFirst(r, ["fighter_b", "fighter_2"]);
+    if (!fighterAName || !fighterBName) {
+      const parsedBout = parseBoutNames(getFirst(r, ["bout"]));
+      fighterAName = fighterAName || parsedBout.fighterAName;
+      fighterBName = fighterBName || parsedBout.fighterBName;
+    }
+    if (!fighterAName || !fighterBName) continue;
+
+    const winnerName = getFirst(r, ["winner"]) || inferWinnerFromOutcome(getFirst(r, ["outcome"]), fighterAName, fighterBName);
+
+    const fight = {
+      id: `fight_${i}_${safeNameKey(fighterAName)}_${safeNameKey(fighterBName)}`,
+      fighterAName,
+      fighterBName,
+      bout: getFirst(r, ["bout"]) || `${fighterAName} vs ${fighterBName}`,
+      winnerName,
+      outcome: getFirst(r, ["outcome"]),
+      method: getFirst(r, ["method", "win_by"]),
+      endRound: parseInt(getFirst(r, ["last_round", "round"]) || 0, 10) || 0,
+      time: getFirst(r, ["time"]),
+      event: getFirst(r, ["event"]),
+      date: getFirst(r, ["date"]),
+      weightClass: getFirst(r, ["weight_class", "weightclass"]),
+      sourceUrl: getFirst(r, ["url"])
+    };
+    out.push(fight);
+  }
+
+  return dedupeBy(out, f => [
+    safeNameKey(f.fighterAName),
+    safeNameKey(f.fighterBName),
+    safeNameKey(f.winnerName),
+    f.date,
+    f.event,
+    f.endRound,
+    safeNameKey(f.method)
+  ].join("|"));
+}
+
+
+function parseOfStat(value) {
+  const s = String(value || "").trim();
+  if (!s || s === "--") return { landed: 0, attempted: 0 };
+  const m = s.match(/(\d+)\s*of\s*(\d+)/i);
+  if (m) return { landed: parseInt(m[1], 10) || 0, attempted: parseInt(m[2], 10) || 0 };
+  const n = parseInt(s, 10);
+  return { landed: Number.isFinite(n) ? n : 0, attempted: Number.isFinite(n) ? n : 0 };
+}
+
+function parseCtrlSeconds(value) {
+  const s = String(value || "").trim();
+  if (!s || s === "--") return 0;
+  const m = s.match(/(?:(\d+):)?(\d{1,2})$/);
+  if (m) return (parseInt(m[1] || 0, 10) || 0) * 60 + (parseInt(m[2] || 0, 10) || 0);
+  const n = parseFloat(s);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function fightDurationMinutes(fight) {
+  const rounds = Math.max(1, parseInt(fight?.endRound || 0, 10) || 0);
+  const time = String(fight?.time || "").trim();
+  if (!time) return rounds * 5;
+  const tm = time.match(/(\d+):(\d{2})/);
+  if (!tm) return rounds * 5;
+  const secInRound = (parseInt(tm[1], 10) || 0) * 60 + (parseInt(tm[2], 10) || 0);
+  return Math.max(0.25, ((rounds - 1) * 300 + secInRound) / 60);
+}
+
+function buildFightIndex(fightRows) {
+  const byEventBout = new Map();
+  const byUrl = new Map();
+  for (const fight of fightRows || []) {
+    const eventKey = safeNameKey(fight.event);
+    const explicitBoutKey = safeNameKey(fight.bout || "");
+    const fallbackBoutKey = safeNameKey(`${fight.fighterAName} vs ${fight.fighterBName}`);
+    const altFallbackBoutKey = safeNameKey(`${fight.fighterBName} vs ${fight.fighterAName}`);
+    if (fight.sourceUrl) byUrl.set(fight.sourceUrl, fight);
+    for (const boutKey of [explicitBoutKey, fallbackBoutKey, altFallbackBoutKey]) {
+      if (!boutKey) continue;
+      const key = `${eventKey}|${boutKey}`;
+      if (!byEventBout.has(key)) byEventBout.set(key, fight);
+    }
+  }
+  return { byEventBout, byUrl };
+}
+
+function aggregateMetricsFromFightStats(statRows, fightRows) {
+  const fightIndex = buildFightIndex(fightRows);
+  const agg = new Map();
+
+  const ensure = (name) => {
+    const key = safeNameKey(name);
+    if (!key) return null;
+    if (!agg.has(key)) {
+      agg.set(key, {
+        sigLanded: 0,
+        sigAttempted: 0,
+        sigAbsorbed: 0,
+        sigAbsorbedAttempted: 0,
+        tdLanded: 0,
+        tdAttempted: 0,
+        tdFacedLanded: 0,
+        tdFacedAttempted: 0,
+        subAtt: 0,
+        roundCount: 0,
+        minuteEstimate: 0
+      });
+    }
+    return agg.get(key);
+  };
+
+  const roundGroups = new Map();
+  const fightRoundCounts = new Map();
+
+  for (const raw of statRows || []) {
+    const row = normalizeHeaders(raw);
+    const fighterName = getFirst(row, ["fighter", "fighter_name", "name"]);
+    const event = getFirst(row, ["event"]);
+    const bout = getFirst(row, ["bout"]);
+    const round = getFirst(row, ["round"]) || "1";
+
+    if (!fighterName || !event || !bout) continue;
+
+    const sig = parseOfStat(getFirst(row, ["sig_str"]));
+    const td = parseOfStat(getFirst(row, ["td"]));
+    const subAtt = parseN(getFirst(row, ["sub_att"])) || 0;
+
+    const entry = ensure(fighterName);
+    if (!entry) continue;
+
+    entry.sigLanded += sig.landed;
+    entry.sigAttempted += sig.attempted;
+    entry.tdLanded += td.landed;
+    entry.tdAttempted += td.attempted;
+    entry.subAtt += subAtt;
+
+    const roundKey = `${safeNameKey(event)}|${safeNameKey(bout)}|${round}`;
+    if (!roundGroups.has(roundKey)) roundGroups.set(roundKey, []);
+    roundGroups.get(roundKey).push({
+      fighterKey: safeNameKey(fighterName),
+      fighterName,
+      sig,
+      td,
+      event,
+      bout,
+      round
+    });
+
+    const fightKey = `${safeNameKey(event)}|${safeNameKey(bout)}`;
+    if (!fightRoundCounts.has(fightKey)) fightRoundCounts.set(fightKey, new Set());
+    fightRoundCounts.get(fightKey).add(String(round));
+  }
+
+  const roundMinutesByFight = new Map();
+  for (const [fightKey, rounds] of fightRoundCounts.entries()) {
+    const [eventKey, boutKey] = fightKey.split("|");
+    const matchedFight = fightIndex.byEventBout.get(`${eventKey}|${boutKey}`);
+    if (matchedFight) {
+      roundMinutesByFight.set(
+        fightKey,
+        fightDurationMinutes(matchedFight) / Math.max(1, rounds.size)
+      );
+    } else {
+      roundMinutesByFight.set(fightKey, 5);
+    }
+  }
+
+  for (const [roundKey, rows] of roundGroups.entries()) {
+    if (rows.length < 2) continue;
+
+    const fightKey = roundKey.split("|").slice(0, 2).join("|");
+    const roundMinutes = roundMinutesByFight.get(fightKey) || 5;
+
+    for (let i = 0; i < rows.length; i++) {
+      const me = rows[i];
+      const opp = rows.find((row, idx) => idx !== i && row.fighterKey !== me.fighterKey);
+      const entry = agg.get(me.fighterKey);
+      if (!entry) continue;
+
+      entry.roundCount += 1;
+      entry.minuteEstimate += roundMinutes;
+
+      if (opp) {
+        entry.sigAbsorbed += opp.sig.landed;
+        entry.sigAbsorbedAttempted += opp.sig.attempted;
+        entry.tdFacedLanded += opp.td.landed;
+        entry.tdFacedAttempted += opp.td.attempted;
+      }
+    }
+  }
+
+  const out = new Map();
+  for (const [fighterKey, a] of agg.entries()) {
+    const minutes = a.minuteEstimate || (a.roundCount * 5) || 0;
+    if (!minutes) continue;
+
+    out.set(fighterKey, {
+      slpm: a.sigLanded / minutes,
+      strAcc: a.sigAttempted > 0 ? a.sigLanded / a.sigAttempted : null,
+      sapm: a.sigAbsorbed / minutes,
+      strDef: a.sigAbsorbedAttempted > 0 ? 1 - (a.sigAbsorbed / a.sigAbsorbedAttempted) : null,
+      tdAvg: a.tdLanded / (minutes / 15),
+      tdAcc: a.tdAttempted > 0 ? a.tdLanded / a.tdAttempted : null,
+      tdDef: a.tdFacedAttempted > 0 ? 1 - (a.tdFacedLanded / a.tdFacedAttempted) : null,
+      subAvg: a.subAtt / (minutes / 15)
+    });
+  }
+
+  return out;
+}
+
+function mergeComputedMetricsIntoFighters(baseFighters, metricMap) {
+  return (baseFighters || []).map(f => {
+    const m = metricMap.get(safeNameKey(f.name));
+    if (!m) return f;
+    const merged = { ...f };
+    for (const key of ["slpm", "strAcc", "sapm", "strDef", "tdAvg", "tdAcc", "tdDef", "subAvg"]) {
+      // Only fill in computed values if the fighter doesn't already have a value from tott CSV
+      if (m[key] != null && Number.isFinite(m[key]) && (merged[key] == null || !Number.isFinite(merged[key]))) {
+        merged[key] = m[key];
+      }
+    }
+    merged.style = inferStyle(merged);
+    return merged;
+  });
+}
+
+function enrichFightersFromFights(baseFighters, fightRows) {
+  const fightersIn = Array.isArray(baseFighters) ? baseFighters : [];
+  const fightsIn = Array.isArray(fightRows) ? fightRows : [];
+  const fighterMap = new Map();
+
+  // Track fighters that came from CSV with an actual W/L record.
+  // Fighters with 0-0-0 from CSV (details didn't match) need W/L derived from fights.
+  const hasRecord = new Set();
+
+  for (const fighter of fightersIn) {
+    const clone = { ...fighter };
+    clone.wins = Number.isFinite(clone.wins) ? clone.wins : 0;
+    clone.losses = Number.isFinite(clone.losses) ? clone.losses : 0;
+    clone.draws = Number.isFinite(clone.draws) ? clone.draws : 0;
+    clone.noContests = Number.isFinite(clone.noContests) ? clone.noContests : 0;
+    clone.fightCount = Number.isFinite(clone.fightCount) ? clone.fightCount : clone.wins + clone.losses + clone.draws;
+    const key = safeNameKey(clone.name);
+    fighterMap.set(key, clone);
+    if (clone.wins > 0 || clone.losses > 0 || clone.draws > 0 || clone.recordVerified) {
+      hasRecord.add(key);
+    }
+  }
+
+  const ensure = (name) => {
+    const key = safeNameKey(name);
+    if (!key) return null;
+    if (!fighterMap.has(key)) {
+      fighterMap.set(key, {
+        id: `derived_${key}`,
+        sourceUrl: "",
+        name: String(name || "").trim(),
+        height: 0,
+        reach: 0,
+        stance: "Unknown",
+        dob: "",
+        age: 0,
+        weight: 0,
+        weightClass: "Unknown",
+        wins: 0,
+        losses: 0,
+        draws: 0,
+        noContests: 0,
+        fightCount: 0,
+        slpm: null,
+        strAcc: null,
+        sapm: null,
+        strDef: null,
+        tdAvg: null,
+        tdAcc: null,
+        tdDef: null,
+        subAvg: null,
+        style: "Unclassified"
+      });
+    }
+    return fighterMap.get(key);
+  };
+
+  for (const fight of fightsIn) {
+    const a = ensure(fight.fighterAName);
+    const b = ensure(fight.fighterBName);
+    if (!a || !b) continue;
+
+    const aKey = safeNameKey(fight.fighterAName);
+    const bKey = safeNameKey(fight.fighterBName);
+    const aProtected = hasRecord.has(aKey);
+    const bProtected = hasRecord.has(bKey);
+
+    // Always count total fights participated in
+    a.fightCount = (a.fightCount || 0) + 1;
+    b.fightCount = (b.fightCount || 0) + 1;
+
+    const winnerKey = safeNameKey(fight.winnerName);
+    const methodKey = safeNameKey(fight.method);
+    const isNoContest = methodKey.includes("no contest") || methodKey === "nc";
+    const isDraw = methodKey.includes("draw");
+    const isUnknownOutcome = !winnerKey && !isDraw && !isNoContest;
+
+    if (isNoContest) {
+      if (!aProtected) a.noContests = (a.noContests || 0) + 1;
+      if (!bProtected) b.noContests = (b.noContests || 0) + 1;
+      continue;
+    }
+
+    if (isDraw) {
+      if (!aProtected) a.draws = (a.draws || 0) + 1;
+      if (!bProtected) b.draws = (b.draws || 0) + 1;
+      continue;
+    }
+
+    if (isUnknownOutcome) {
+      continue;
+    }
+
+    if (winnerKey && winnerKey === safeNameKey(a.name)) {
+      if (!aProtected) a.wins = (a.wins || 0) + 1;
+      if (!bProtected) b.losses = (b.losses || 0) + 1;
+    } else if (winnerKey && winnerKey === safeNameKey(b.name)) {
+      if (!bProtected) b.wins = (b.wins || 0) + 1;
+      if (!aProtected) a.losses = (a.losses || 0) + 1;
+    }
+  }
+
+  const out = Array.from(fighterMap.values());
+  for (const fighter of out) {
+    fighter.style = inferStyle(fighter);
+  }
+  return out;
+}
+
+function syncDerivedData() {
+  fighters = enrichFightersFromFights(fighters, fights);
+}
+
+function fmtMetric(v, kind = "number", digits = 1) {
+  if (v == null || !Number.isFinite(v)) return "—";
+  if (kind === "pct") return `${(v * 100).toFixed(0)}%`;
+  return Number(v).toFixed(digits);
+}
+
+// ==================================================
+// W/L RECORD SCRAPER FROM UFCSTATS FIGHTER LISTING
+// ==================================================
+async function fetchWithFirstWorkingProxy(url) {
+  // Try each proxy with a short timeout - return first success
+  for (let pi = 0; pi < PROXIES.length; pi++) {
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 8000);
+      const res = await fetch(PROXIES[pi](url), { signal: ctrl.signal, cache: "no-store" });
+      clearTimeout(timer);
+      if (res.ok) {
+        const text = await res.text();
+        if (text && text.length > 500 && isLikelyHTML(text)) return text;
+      }
+    } catch {}
+  }
+  return null;
+}
+
+function parseFighterListPage(html) {
+  const results = [];
+  try {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+    const rows = doc.querySelectorAll("tr");
+    for (const row of rows) {
+      const cells = row.querySelectorAll("td");
+      if (cells.length < 10) continue;
+      const links = row.querySelectorAll('a[href*="fighter-details"]');
+      if (!links.length) continue;
+      const url = (links[0].getAttribute("href") || "").trim();
+      const first = (cells[0]?.textContent || "").trim();
+      const last = (cells[1]?.textContent || "").trim();
+      const name = [first, last].filter(Boolean).join(" ");
+      if (!name) continue;
+      results.push({
+        url, name,
+        wins: parseInt((cells[7]?.textContent || "").trim(), 10) || 0,
+        losses: parseInt((cells[8]?.textContent || "").trim(), 10) || 0,
+        draws: parseInt((cells[9]?.textContent || "").trim(), 10) || 0,
+      });
+    }
+  } catch {}
+  return results;
+}
+
+async function scrapeAllFighterRecords(onStatus) {
+  const letters = "abcdefghijklmnopqrstuvwxyz".split("");
+  const records = new Map();
+  const BATCH = 6; // fetch 6 letters at a time
+
+  for (let i = 0; i < letters.length; i += BATCH) {
+    const batch = letters.slice(i, i + BATCH);
+    if (onStatus) onStatus(`Scraping W/L records: ${batch.map(l => l.toUpperCase()).join(",")} (${Math.min(i + BATCH, 26)}/26)...`);
+
+    const results = await Promise.all(batch.map(letter => {
+      const url = `http://www.ufcstats.com/statistics/fighters?char=${letter}&page=all`;
+      return fetchWithFirstWorkingProxy(url).then(html => {
+        if (!html) { addDebug(`No data for letter ${letter}`); return []; }
+        return parseFighterListPage(html);
+      });
+    }));
+
+    for (const fighters of results) {
+      for (const f of fighters) {
+        records.set(f.url, f);
+        records.set(safeNameKey(f.name), f);
+      }
+    }
+  }
+
+  addDebug(`Scraped W/L records for ${records.size} entries`);
+  return records;
+}
+
+function applyScrapedRecords(fighterList, recordMap) {
+  let matched = 0;
+  for (const fighter of fighterList) {
+    const rec = recordMap.get(fighter.sourceUrl) || recordMap.get(safeNameKey(fighter.name));
+    if (rec) {
+      fighter.wins = rec.wins;
+      fighter.losses = rec.losses;
+      fighter.draws = rec.draws;
+      fighter.recordVerified = true;
+      if (rec.stance && (!fighter.stance || fighter.stance === "Unknown")) {
+        fighter.stance = rec.stance;
+      }
+      matched++;
+    }
+  }
+  addDebug(`Applied scraped W/L to ${matched} of ${fighterList.length} fighters`);
+  return fighterList;
+}
+
+// ==================================================
+// PREDICTION ENGINE
+// ==================================================
+const SM = {
+  "Striker-Wrestler": -0.08, "Striker-Grappler": 0.04, "Striker-BJJ Specialist": 0.08,
+  "Wrestler-Striker": 0.12, "Wrestler-Grappler": 0.04, "Wrestler-BJJ Specialist": -0.08,
+  "Wrestler-Boxer": 0.16, "Wrestler-Kickboxer": 0.12, "Wrestler-Muay Thai": 0.08,
+  "Grappler-Striker": 0.04, "Grappler-Wrestler": -0.04, "Grappler-Boxer": 0.12,
+  "BJJ Specialist-Wrestler": 0.08, "BJJ Specialist-Grappler": 0.04,
+  "Boxer-Wrestler": -0.16, "Boxer-Grappler": -0.08, "Boxer-Striker": 0.04,
+  "Kickboxer-Wrestler": -0.08, "Muay Thai-Wrestler": -0.04, "Muay Thai-Grappler": 0.04,
+  "Muay Thai-Striker": 0.04, "Sambo-Striker": 0.12, "Sambo-Wrestler": 0.04,
+  "Sambo-Boxer": 0.16, "Sambo-Grappler": 0.08, "Judo-Striker": 0.08,
+  "Judo-Boxer": 0.12, "Well-Rounded-Striker": 0.04, "Well-Rounded-Wrestler": 0.04,
+  "Well-Rounded-Grappler": 0.04, "Well-Rounded-Boxer": 0.08
+};
+const STM = {
+  "Orthodox-Southpaw": -0.02,
+  "Southpaw-Orthodox": 0.04,
+  "Switch-Orthodox": 0.02,
+  "Switch-Southpaw": 0.02
+};
+
+function predict(fA, fB) {
+  let sA = 50, sB = 50;
+  const factors = [];
+  const add = (name, a, b, mod) => {
+    sA += mod;
+    sB -= mod;
+    factors.push({ name, a, b, adv: mod > 0.5 ? "A" : mod < -0.5 ? "B" : "-", impact: Math.abs(mod) });
+  };
+
+  // Dynamic weights from ML model, with fallback defaults
+  const w = mlWeights?.weights || {};
+  const wt = (key, fallback) => w[key] != null ? w[key] : fallback;
+
+  const hasAStats = hasPerformanceMetrics(fA);
+  const hasBStats = hasPerformanceMetrics(fB);
+  const tA = (fA.wins || 0) + (fA.losses || 0);
+  const tB = (fB.wins || 0) + (fB.losses || 0);
+  const wrA = tA > 0 ? fA.wins / tA : 0.5;
+  const wrB = tB > 0 ? fB.wins / tB : 0.5;
+
+  // Win Rate — ML importance: highest
+  const wrWeight = wt("Win Rate", 5.0);
+  add("Win Rate", `${(wrA * 100).toFixed(0)}%`, `${(wrB * 100).toFixed(0)}%`, (wrA - wrB) * (wrWeight * 4));
+
+  if (hasAStats && hasBStats) {
+    // Strike Differential — ML importance: high
+    const sdWeight = wt("Strike Differential", 2.69);
+    const sdA = (fA.slpm ?? 0) - (fA.sapm ?? 0);
+    const sdB = (fB.slpm ?? 0) - (fB.sapm ?? 0);
+    add("Strike Diff", `${sdA >= 0 ? "+" : ""}${sdA.toFixed(1)}/m`, `${sdB >= 0 ? "+" : ""}${sdB.toFixed(1)}/m`, (sdA - sdB) * (sdWeight * 0.75));
+
+    // Strike Accuracy + Defense
+    const saWeight = wt("Strike Accuracy", 1.30);
+    const sdWeight2 = wt("Strike Defense", 1.28);
+    add(
+      "Str Acc/Def",
+      `${fmtMetric(fA.strAcc, "pct")}/${fmtMetric(fA.strDef, "pct")}`,
+      `${fmtMetric(fB.strAcc, "pct")}/${fmtMetric(fB.strDef, "pct")}`,
+      ((fA.strAcc ?? 0) - (fB.strAcc ?? 0)) * (saWeight * 8) + ((fA.strDef ?? 0) - (fB.strDef ?? 0)) * (sdWeight2 * 8)
+    );
+
+    // Takedowns — ML: TD defense more important than offense
+    const tdWeight = wt("Takedown Game", 1.18);
+    const tdDefW = wt("TD Defense", 1.56);
+    const tdNet = (fA.tdAvg ?? 0) * (1 - (fB.tdDef ?? 0)) - (fB.tdAvg ?? 0) * (1 - (fA.tdDef ?? 0));
+    add(
+      "Takedowns",
+      `${fmtMetric(fA.tdAvg, "number", 1)}/15m · ${fmtMetric(fA.tdDef, "pct")} def`,
+      `${fmtMetric(fB.tdAvg, "number", 1)}/15m · ${fmtMetric(fB.tdDef, "pct")} def`,
+      tdNet * ((tdWeight + tdDefW) / 2 * 1.8)
+    );
+
+    // Submissions
+    const subWeight = wt("Submissions", 1.09);
+    add("Submissions", `${fmtMetric(fA.subAvg, "number", 1)}/15m`, `${fmtMetric(fB.subAvg, "number", 1)}/15m`, ((fA.subAvg ?? 0) - (fB.subAvg ?? 0)) * (subWeight * 1.4));
+    add("Style", fA.style, fB.style, (SM[`${fA.style}-${fB.style}`] || 0) * 50);
+  } else {
+    add("Performance Metrics", hasAStats ? "Available" : "Not available", hasBStats ? "Available" : "Not available", 0);
+    add("Style", fA.style, fB.style, 0);
+  }
+
+  add("Stance", fA.stance, fB.stance, (STM[`${fA.stance}-${fB.stance}`] || 0) * 50);
+
+  // Reach — ML importance: 2nd highest
+  const reachWeight = wt("Reach", 3.46);
+  add("Reach", fA.reach ? `${fA.reach}"` : "?", fB.reach ? `${fB.reach}"` : "?", (fA.reach && fB.reach) ? (fA.reach - fB.reach) * (reachWeight * 0.15) : 0);
+
+  // Height — ML importance: lowest
+  const htWeight = wt("Height", 0.90);
+  add("Height", fmtH(fA.height), fmtH(fB.height), (fA.height && fB.height) ? (fA.height - fB.height) * (htWeight * 0.13) : 0);
+
+  const agePenalty = (age) => Math.abs(age - 29.5) > 3.5 ? -(Math.abs(age - 29.5) - 3.5) * 0.6 : 0;
+  add("Age", `${fA.age || "?"}`, `${fB.age || "?"}`, agePenalty(fA.age || 30) - agePenalty(fB.age || 30));
+
+  // Experience — ML importance: higher than expected
+  const expWeight = wt("Experience", 2.17);
+  add("Experience", `${tA} fights`, `${tB} fights`, (tA - tB) * (expWeight * 0.12));
+
+  // Momentum
+  const momA = calcMomentum(fA);
+  const momB = calcMomentum(fB);
+  const momDiff = (momA.score - momB.score) * 6;
+  const momLabelA = momA.streak.length ? momA.streak.join("") : "?";
+  const momLabelB = momB.streak.length ? momB.streak.join("") : "?";
+  add("Momentum", `${momLabelA} (${momA.label})`, `${momLabelB} (${momB.label})`, momDiff);
+
+  // Ring Rust
+  const layoffA = calcLayoff(fA);
+  const layoffB = calcLayoff(fB);
+  if (layoffA.days != null && layoffB.days != null) {
+    const rustPenalty = (days) => {
+      if (days > 730) return -4;
+      if (days > 540) return -3;
+      if (days > 365) return -2;
+      if (days > 270) return -1;
+      return 0;
+    };
+    const rustA = rustPenalty(layoffA.days);
+    const rustB = rustPenalty(layoffB.days);
+    const layoffMod = rustA - rustB;
+    if (Math.abs(layoffMod) > 0) {
+      add("Ring Rust", layoffA.label, layoffB.label, layoffMod);
+    }
+  }
+
+  // Elo Rating
+  const eloA = fA.elo || 1500;
+  const eloB = fB.elo || 1500;
+  const eloDiff = (eloA - eloB) / 50;
+  if (Math.abs(eloDiff) > 0.5) {
+    add("Elo Rating", `${eloA}`, `${eloB}`, eloDiff);
+  }
+
+  factors.sort((a, b) => b.impact - a.impact);
+  const total = sA + sB || 100;
+  const probA = Math.max(3, Math.min(97, (sA / total) * 100));
+  return { probA, probB: 100 - probA, factors };
+}
+
+// ==================================================
+// FETCH WITH STRONGER VALIDATION
+// ==================================================
+async function fetchText(url) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      signal: ctrl.signal,
+      headers: { "Accept": "text/plain,text/csv,*/*" },
+      cache: "no-store"
+    });
+    const text = await res.text();
+    return { ok: res.ok, status: res.status, text };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function fetchCSV(filename, onStatus) {
+  const sourceUrl = GHRAW + filename;
+  for (let i = 0; i < PROXIES.length; i++) {
+    const attemptUrl = PROXIES[i](sourceUrl);
+    try {
+      if (onStatus) onStatus(i === 0 ? `Fetching ${filename}...` : `Trying proxy ${i} for ${filename}...`);
+      addDebug(`Attempt ${i}: ${attemptUrl}`);
+      const res = await fetchText(attemptUrl);
+      if (!res.ok) {
+        addDebug(`HTTP ${res.status} for ${filename} via attempt ${i}`);
+        continue;
+      }
+      if (!res.text || res.text.trim().length < 50) {
+        addDebug(`Response too short for ${filename} via attempt ${i}`);
+        continue;
+      }
+      if (isLikelyHTML(res.text)) {
+        addDebug(`Rejected HTML response for ${filename} via attempt ${i}`);
+        continue;
+      }
+      const rows = parseCSV(res.text);
+      if (!rows.length) {
+        addDebug(`Parsed 0 rows for ${filename} via attempt ${i}`);
+        continue;
+      }
+      addDebug(`Fetched ${filename}: ${rows.length} rows`);
+      return res.text;
+    } catch (e) {
+      addDebug(`Fetch failed for ${filename} via attempt ${i}: ${e?.message || e}`);
+    }
+  }
+  throw new Error(`Could not fetch ${filename} from any source.`);
+}
+
+function extractTextMetric(text, labels, kind = "number") {
+  const all = Array.isArray(labels) ? labels : [labels];
+  for (const label of all) {
+    const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s*");
+    const re = new RegExp(`${escaped}\\s*:?\\s*([\\d.]+%?)`, "i");
+    const m = text.match(re);
+    if (!m) continue;
+    return kind === "pct" ? parsePct(m[1]) : parseN(m[1]);
+  }
+  return null;
+}
+
+function parseRecordFromText(text) {
+  const m = text.match(/Record\s*:?\s*(\d+)\s*-\s*(\d+)\s*-\s*(\d+)(?:\s*\((\d+)\s*NC\))?/i);
+  if (!m) return null;
+  return { wins: parseInt(m[1], 10) || 0, losses: parseInt(m[2], 10) || 0, draws: parseInt(m[3], 10) || 0, noContests: parseInt(m[4], 10) || 0 };
+}
+
+function parseFighterProfileHtml(html, fighterName) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, "text/html");
+  const text = (doc.body?.innerText || "").replace(/\s+/g, " ").trim();
+  const parsed = {
+    record: parseRecordFromText(text),
+    slpm: extractTextMetric(text, ["SLpM", "SLPM"], "number"),
+    strAcc: extractTextMetric(text, ["Str. Acc.", "Str Acc"], "pct"),
+    sapm: extractTextMetric(text, ["SApM", "SAPM"], "number"),
+    strDef: extractTextMetric(text, ["Str. Def.", "Str Def"], "pct"),
+    tdAvg: extractTextMetric(text, ["TD Avg.", "TD Avg"], "number"),
+    tdAcc: extractTextMetric(text, ["TD Acc.", "TD Acc"], "pct"),
+    tdDef: extractTextMetric(text, ["TD Def.", "TD Def"], "pct"),
+    subAvg: extractTextMetric(text, ["Sub. Avg.", "Sub Avg"], "number"),
+    recentFights: []
+  };
+
+  const isResultToken = (v) => /^(win|loss|draw|nc|no contest|w|l|d)$/i.test(String(v || "").trim());
+  const normalizeResult = (v) => {
+    const x = String(v || "").trim().toLowerCase();
+    if (x === "w") return "win";
+    if (x === "l") return "loss";
+    if (x === "d") return "draw";
+    return x;
+  };
+
+  const rows = Array.from(doc.querySelectorAll("tr"));
+  for (const row of rows) {
+    const rowText = (row.innerText || "").replace(/\s+/g, " ").trim();
+    if (!/^(win|loss|draw|nc|no contest|w|l|d)\b/i.test(rowText)) continue;
+
+    const resultMatch = rowText.match(/^(win|loss|draw|nc|no contest|w|l|d)\b/i);
+    const result = normalizeResult(resultMatch?.[1] || "");
+
+    const fighterLinks = Array.from(row.querySelectorAll('a[href*="fighter-details"]'))
+      .map(a => (a.textContent || "").replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+
+    const eventLinks = Array.from(row.querySelectorAll('a[href*="event-details"]'))
+      .map(a => (a.textContent || "").replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+
+    const links = Array.from(row.querySelectorAll("a"))
+      .map(a => (a.textContent || "").replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+
+    const cells = Array.from(row.querySelectorAll("td"))
+      .map(td => (td.textContent || "").replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+
+    let opponent = fighterLinks.find(t =>
+      safeNameKey(t) !== safeNameKey(fighterName) && !isResultToken(t)
+    ) || "";
+
+    let event = eventLinks[0] || "";
+
+    if (!opponent) {
+      for (const linkText of links) {
+        if (!event && /^ufc\b/i.test(linkText)) event = linkText;
+        if (!opponent &&
+            safeNameKey(linkText) !== safeNameKey(fighterName) &&
+            !/^ufc\b/i.test(linkText) &&
+            !isResultToken(linkText)) {
+          opponent = linkText;
+        }
+      }
+    }
+
+    if (!opponent) {
+      opponent = cells.find(t =>
+        t &&
+        safeNameKey(t) !== safeNameKey(fighterName) &&
+        !/^ufc\b/i.test(t) &&
+        !isResultToken(t) &&
+        !/^\d/.test(t) &&
+        !/(decision|submission|ko|tko|dq)/i.test(t)
+      ) || "";
+    }
+
+    if (isResultToken(opponent) || safeNameKey(opponent) === safeNameKey(result)) {
+      opponent = "";
+    }
+
+    if (!event) event = cells.find(t => /^ufc\b/i.test(t)) || "";
+
+    const methodMatch = rowText.match(/\b(KO\/TKKO|KO\/TKO|Submission|Decision\s*-\s*[A-Za-z]+|DQ|NC|No Contest)\b/i);
+    const roundMatch = rowText.match(/\b(\d+)\b\s+(\d+:\d{2})\b/);
+    const dateMatch = rowText.match(/\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+\d{1,2},\s+\d{4}\b/i);
+
+    parsed.recentFights.push({
+      result,
+      opponent,
+      event,
+      method: methodMatch ? methodMatch[1].replace("TKKO", "TKO") : "",
+      endRound: roundMatch ? (parseInt(roundMatch[1], 10) || 0) : 0,
+      date: dateMatch ? dateMatch[0] : ""
+    });
+  }
+
+  parsed.recentFights = parsed.recentFights.slice(0, 15);
+  return parsed;
+}
+
+async function fetchPageHtml(sourceUrl, onStatus) {
+  for (let i = 0; i < PROXIES.length; i++) {
+    const attemptUrl = PROXIES[i](sourceUrl);
+    try {
+      if (onStatus) onStatus(i === 0 ? "Loading live fighter profile..." : `Trying profile proxy ${i}...`);
+      addDebug(`Profile attempt ${i}: ${attemptUrl}`);
+      const res = await fetchText(attemptUrl);
+      if (!res.ok || !res.text || res.text.trim().length < 200) continue;
+      if (!isLikelyHTML(res.text)) continue;
+      return res.text;
+    } catch (e) {
+      addDebug(`Profile fetch failed for ${sourceUrl} via attempt ${i}: ${e?.message || e}`);
+    }
+  }
+  throw new Error("Could not load fighter profile.");
+}
+
+async function ensureFighterProfile(fighter, onStatus) {
+  if (!fighter || !fighter.sourceUrl) return fighter;
+  // Only skip if we've already successfully loaded this fighter's profile
+  if (fighter.profileLoadedAt) return fighter;
+  if (fighter._profilePromise) return fighter._profilePromise;
+  fighter._profilePromise = (async () => {
+    const html = await fetchPageHtml(fighter.sourceUrl, onStatus);
+    const parsed = parseFighterProfileHtml(html, fighter.name);
+    if (parsed.record) {
+      fighter.wins = parsed.record.wins;
+      fighter.losses = parsed.record.losses;
+      fighter.draws = parsed.record.draws;
+      fighter.noContests = parsed.record.noContests;
+    }
+    for (const key of ["slpm", "strAcc", "sapm", "strDef", "tdAvg", "tdAcc", "tdDef", "subAvg"]) {
+      if (parsed[key] != null && Number.isFinite(parsed[key])) fighter[key] = parsed[key];
+    }
+    if (parsed.recentFights.length) fighter.profileRecentFights = parsed.recentFights;
+    fighter.style = inferStyle(fighter);
+    fighter.profileLoadedAt = new Date().toISOString();
+    saveAll();
+    return fighter;
+  })().catch(err => {
+    addDebug(`Profile load failed for ${fighter.name}: ${err?.message || err}`);
+    return fighter;
+  }).finally(() => { delete fighter._profilePromise; });
+  return fighter._profilePromise;
+}
+
+
+// ==================================================
+// IMPORT PIPELINE
+// ==================================================
+function mergeFighters(existing, incoming) {
+  const byKey = new Map();
+  for (const fighter of existing) {
+    byKey.set(fighter.sourceUrl || safeNameKey(fighter.name), fighter);
+  }
+  let added = 0;
+  for (const fighter of incoming) {
+    const key = fighter.sourceUrl || safeNameKey(fighter.name);
+    if (!byKey.has(key)) added++;
+    byKey.set(key, fighter);
+  }
+  return { merged: Array.from(byKey.values()), added };
+}
+
+function mergeFights(existing, incoming) {
+  const out = dedupeBy([...existing, ...incoming], f => [
+    safeNameKey(f.fighterAName),
+    safeNameKey(f.fighterBName),
+    safeNameKey(f.winnerName),
+    f.date,
+    f.event,
+    f.endRound,
+    safeNameKey(f.method)
+  ].join("|"));
+  return { merged: out, added: out.length - existing.length };
+}
+
+function resetSelectionsAndViews() {
+  selectedA = null;
+  selectedB = null;
+  document.getElementById("inputA").value = "";
+  document.getElementById("inputB").value = "";
+  document.getElementById("inputA").className = "";
+  document.getElementById("inputB").className = "";
+  document.getElementById("clearA").style.display = "none";
+  document.getElementById("clearB").style.display = "none";
+  document.getElementById("predCompare").innerHTML = "";
+  document.getElementById("predResult").innerHTML = "";
+  updatePredictBtn();
+}
+
+async function doAutoImport() {
+  const btn = document.getElementById("btnAutoImport");
+  const prog = document.getElementById("importProgress");
+  const msg = document.getElementById("importMsg");
+
+  clearMessages();
+  btn.disabled = true;
+  btn.textContent = "Importing...";
+  prog.style.display = "block";
+
+  const status = (t) => { msg.textContent = t; };
+
+  try {
+    status("Downloading fighter stats...");
+    const tottText = await fetchCSV("ufc_fighter_tott.csv", status);
+    const tott = parseCSV(tottText);
+    validateFighterRows(tott, "ufc_fighter_tott.csv");
+
+    status(`Parsed ${tott.length.toLocaleString()} fighter stat rows. Downloading fighter details...`);
+    let details = [];
+    try {
+      const dt = await fetchCSV("ufc_fighter_details.csv", status);
+      details = parseCSV(dt);
+      validateDetailRows(details, "ufc_fighter_details.csv");
+    } catch (e) {
+      addDebug(`Details file skipped: ${e?.message || e}`);
+      status("Details file unavailable. Continuing without details.");
+    }
+
+    status("Transforming fighters...");
+    const importedFighters = transformFighters(tott, details);
+    if (!importedFighters.length) {
+      throw new Error("Fighter transform produced 0 usable fighters. This usually means the file headers did not match the expected schema.");
+    }
+
+    status("Downloading fight results...");
+    let importedFights = [];
+    try {
+      const ft = await fetchCSV("ufc_fight_results.csv", status);
+      const rawFights = parseCSV(ft);
+      validateFightRows(rawFights, "ufc_fight_results.csv");
+      importedFights = transformFights(rawFights);
+    } catch (e) {
+      addDebug(`Fight results skipped: ${e?.message || e}`);
+      status("Fight results unavailable. Continuing with fighters only.");
+    }
+
+    let computedMetricMap = new Map();
+    try {
+      status("Downloading fight stats...");
+      const fst = await fetchCSV("ufc_fight_stats.csv", status);
+      const rawFightStats = parseCSV(fst);
+      validateFightStatsRows(rawFightStats, "ufc_fight_stats.csv");
+      window._rawFightStats = rawFightStats;  // Store for round-by-round analysis
+      computedMetricMap = aggregateMetricsFromFightStats(rawFightStats, importedFights);
+      addDebug(`Computed advanced metrics for ${computedMetricMap.size.toLocaleString()} fighters from fight stats.`);
+      addDebug(`Fight stats rows parsed: ${rawFightStats.length.toLocaleString()}`);
+    } catch (e) {
+      addDebug(`Fight stats skipped: ${e?.message || e}`);
+      status("Fight stats unavailable. Using results + profile fallback for advanced metrics.");
+    }
+
+    let nextFighters = mergeFighters([], importedFighters).merged;
+    const fightMerge = mergeFights([], importedFights);
+    fights = fightMerge.merged;
+
+    // Get W/L records - try custom CSV first (instant), fall back to scraping (slow)
+    let recordMap = new Map();
+    let wlSource = "none";
+
+    if (CUSTOM_RECORDS_URL) {
+      try {
+        status("Downloading W/L records from your CSV...");
+        for (let pi = 0; pi < PROXIES.length; pi++) {
+          try {
+            const ctrl = new AbortController();
+            const timer = setTimeout(() => ctrl.abort(), 10000);
+            const res = await fetch(PROXIES[pi](CUSTOM_RECORDS_URL), { signal: ctrl.signal, cache: "no-store" });
+            clearTimeout(timer);
+            if (res.ok) {
+              const text = await res.text();
+              if (text && text.length > 200 && !isLikelyHTML(text)) {
+                const rows = parseCSV(text);
+                for (const raw of rows) {
+                  const row = normalizeHeaders(raw);
+                  const name = getFirst(row, ["fighter_name", "name", "fighter"]);
+                  const url = getFirst(row, ["fighter_url", "url"]);
+                  if (!name) continue;
+                  const rec = {
+                    name,
+                    wins: parseInt(getFirst(row, ["wins", "w"]) || 0, 10) || 0,
+                    losses: parseInt(getFirst(row, ["losses", "l"]) || 0, 10) || 0,
+                    draws: parseInt(getFirst(row, ["draws", "d"]) || 0, 10) || 0,
+                    stance: getFirst(row, ["stance"]) || "",
+                  };
+                  if (url) recordMap.set(url, rec);
+                  recordMap.set(safeNameKey(name), rec);
+                }
+                if (recordMap.size > 0) {
+                  wlSource = "csv";
+                  addDebug(`Loaded ${recordMap.size} W/L records from custom CSV`);
+                  break;
+                }
+              }
+            }
+          } catch {}
+        }
+      } catch (e) {
+        addDebug(`Custom CSV failed: ${e?.message || e}`);
+      }
+    }
+
+    if (recordMap.size === 0) {
+      try {
+        status("Scraping W/L records from ufcstats.com (this takes ~1 min)...");
+        recordMap = await scrapeAllFighterRecords(status);
+        if (recordMap.size > 0) wlSource = "scrape";
+      } catch (e) {
+        addDebug(`W/L scrape failed: ${e?.message || e}`);
+        status("W/L scrape failed. Falling back to fight-result counting...");
+      }
+    }
+
+    if (recordMap.size > 0) {
+      nextFighters = applyScrapedRecords(nextFighters, recordMap);
+    }
+
+    // Only use fight-result counting for fighters that didn't get a scraped record
+    nextFighters = enrichFightersFromFights(nextFighters, fights);
+
+    if (computedMetricMap.size) nextFighters = mergeComputedMetricsIntoFighters(nextFighters, computedMetricMap);
+    fighters = nextFighters;
+
+    saveAll();
+
+    // Load upcoming events, betting odds, fighter profiles, and ML weights
+    try {
+      status("Loading upcoming events, odds & ML model...");
+      const [ueText, oddsText, profText, weightsText] = await Promise.all([
+        quickFetch(CUSTOM_UPCOMING_URL), quickFetch(CUSTOM_ODDS_URL), quickFetch(CUSTOM_PROFILES_URL), quickFetch(CUSTOM_WEIGHTS_URL)
+      ]);
+      if (ueText) { upcomingEvents = parseCSV(ueText); addDebug(`Loaded ${upcomingEvents.length} upcoming fights`); }
+      if (oddsText) { bettingOdds = parseCSV(oddsText); addDebug(`Loaded ${bettingOdds.length} odds entries`); }
+      if (profText) {
+        const profRows = parseCSV(profText);
+        fighterProfiles = new Map();
+        for (const row of profRows) {
+          const norm = normalizeHeaders(row);
+          const name = getFirst(norm, ["fighter_name", "name"]);
+          const url = getFirst(norm, ["fighter_url", "url"]);
+          if (name) { fighterProfiles.set(safeNameKey(name), row); if (url) fighterProfiles.set(url, row); }
+        }
+        addDebug(`Loaded ${fighterProfiles.size} fighter profile entries`);
+        applyProfileStats(fighters, fighterProfiles);
+      }
+      if (weightsText) {
+        try {
+          mlWeights = JSON.parse(weightsText);
+          addDebug(`ML model loaded: ${mlWeights.model || "XGBoost"} · CV accuracy: ${((mlWeights.cv_accuracy || 0) * 100).toFixed(1)}%`);
+        } catch(e) { addDebug(`ML weights parse error: ${e?.message}`); }
+      }
+    } catch(e) { addDebug(`Supplemental data: ${e?.message}`); }
+
+    // Calculate Elo ratings from fight history
+    if (fights.length > 0) {
+      calculateAllElo();
+    }
+
+    resetSelectionsAndViews();
+    prog.style.display = "none";
+    const strDefCount = countFightersWithStrDef(fighters);
+    const verifiedCount = fighters.filter(f => f.recordVerified).length;
+    const wlLabel = wlSource === "csv" ? "from your CSV (instant)" : wlSource === "scrape" ? "scraped from ufcstats.com" : "counted from fight results";
+    const mlLabel = mlWeights ? `ML ${((mlWeights.cv_accuracy || 0) * 100).toFixed(0)}%` : "default weights";
+    showSuccess(
+      `✓ Auto-import complete\n` +
+      `Fighters: ${fighters.length.toLocaleString()} · Fights: ${fights.length.toLocaleString()}\n` +
+      `W/L verified: ${verifiedCount.toLocaleString()} (${wlLabel})\n` +
+      `Str Def: ${strDefCount.toLocaleString()} · Upcoming: ${upcomingEvents.length} · Odds: ${bettingOdds.length} · ${mlLabel}`
+    );
+    switchTab(upcomingEvents.length > 0 ? "upcoming" : "predict");
+  } catch (e) {
+    prog.style.display = "none";
+    showError((e?.message || String(e)) + "\n\nUse the manual upload method below if needed.");
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Import Full UFC Database';
+  }
+}
+
+async function handleFiles(fileList) {
+  if (!fileList || fileList.length === 0) return;
+  clearMessages();
+
+  try {
+    let fighterStatsRows = [];
+    let fighterDetailRows = [];
+    let fightRows = [];
+    let fightStatRows = [];
+
+    for (const file of fileList) {
+      const text = await file.text();
+      if (isLikelyHTML(text)) {
+        throw new Error(`${file.name}: this looks like HTML, not CSV.`);
+      }
+      const rows = parseCSV(text);
+      validateParsedRows(rows, file.name);
+
+      const fileType = classifyRows(rows, file.name);
+      addDebug(`${file.name} classified as: ${fileType}`);
+
+      if (fileType === "fighterStats") {
+        validateFighterRows(rows, file.name);
+        fighterStatsRows = rows;
+      } else if (fileType === "fighterDetails") {
+        validateDetailRows(rows, file.name);
+        fighterDetailRows = rows;
+      } else if (fileType === "fightResults") {
+        validateFightRows(rows, file.name);
+        fightRows = rows;
+      } else if (fileType === "fightStats") {
+        validateFightStatsRows(rows, file.name);
+        fightStatRows = rows;
+      } else {
+        throw new Error(`${file.name}: could not determine file type from headers. Please use the official dataset CSVs.`);
+      }
+    }
+
+    let fightersAdded = 0;
+    let fightsAdded = 0;
+
+    if (fighterStatsRows.length) {
+      const imported = transformFighters(fighterStatsRows, fighterDetailRows);
+      if (!imported.length) {
+        throw new Error("Fighter stats file was parsed, but produced 0 usable fighters.");
+      }
+      const fighterMerge = mergeFighters(fighters, imported);
+      fighters = fighterMerge.merged;
+      fightersAdded = fighterMerge.added;
+    } else if (fighterDetailRows.length) {
+      const imported = transformFighters(fighterDetailRows, []);
+      if (!imported.length) {
+        throw new Error("Fighter details file was parsed, but produced 0 usable fighters.");
+      }
+      const fighterMerge = mergeFighters(fighters, imported);
+      fighters = fighterMerge.merged;
+      fightersAdded = fighterMerge.added;
+    }
+
+    if (fightRows.length) {
+      const importedFights = transformFights(fightRows);
+      const fightMerge = mergeFights(fights, importedFights);
+      fights = fightMerge.merged;
+      fightsAdded = fightMerge.added;
+    }
+
+    if (fightStatRows.length) {
+      window._rawFightStats = fightStatRows;
+      const metricMap = aggregateMetricsFromFightStats(fightStatRows, fights);
+      if (metricMap.size) {
+        fighters = mergeComputedMetricsIntoFighters(fighters, metricMap);
+      }
+      addDebug(`Computed advanced metrics for ${metricMap.size.toLocaleString()} fighters from manual fight stats upload.`);
+      addDebug(`Manual fight stats rows parsed: ${fightStatRows.length.toLocaleString()}`);
+    }
+
+    fighters = enrichFightersFromFights(fighters, fights);
+
+    if (!fightersAdded && !fightsAdded && !fightStatRows.length) {
+      throw new Error("Files were read successfully, but no new fighters or fights were added. This usually means the same data was already loaded or the file schema did not match.");
+    }
+
+    saveAll();
+    resetSelectionsAndViews();
+
+    const strDefCount = countFightersWithStrDef(fighters);
+    showSuccess(
+      `✓ Manual import complete\n` +
+      `New fighters added: ${fightersAdded.toLocaleString()}\n` +
+      `New fights added: ${fightsAdded.toLocaleString()}\n` +
+      `Strike defense computed: ${strDefCount.toLocaleString()} fighters\n` +
+      `Current total: ${fighters.length.toLocaleString()} fighters, ${fights.length.toLocaleString()} fights`
+    );
+
+    if (fighters.length >= 2) switchTab("predict");
+  } catch (e) {
+    showError("Manual import failed.\n" + (e?.message || String(e)));
+  }
+}
+
+// ==================================================
+// TAB SWITCHING
+// ==================================================
+function switchTab(id) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  document.querySelectorAll(".nav button").forEach(b => b.classList.remove("active"));
+
+  document.getElementById("tab-" + id).classList.add("active");
+  const activeBtn = document.querySelector(`.nav button[data-tab="${id}"]`);
+  if (activeBtn) activeBtn.classList.add("active");
+
+  if (id === "fighters") renderFighters();
+  if (id === "stats") renderStats();
+  if (id === "upcoming") renderUpcoming();
+  if (id === "results") renderResults();
+  if (id === "predict") updateHeader();
+}
+
+// ==================================================
+// PICKERS / PREDICTION UI
+// ==================================================
+function setupPicker(inputId, dropdownId, clearId, side) {
+  const inp = document.getElementById(inputId);
+  const dd = document.getElementById(dropdownId);
+  const clr = document.getElementById(clearId);
+
+  inp.addEventListener("input", () => {
+    const q = inp.value.toLowerCase().trim();
+    if (q.length < 2) {
+      dd.classList.remove("open");
+      return;
+    }
+
+    const exclude = side === "A" ? selectedB : selectedA;
+    const results = fighters
+      .filter(f => f.name.toLowerCase().includes(q) && f !== exclude)
+      .slice(0, 15);
+
+    dd.innerHTML = results.map(f => `
+      <div class="picker-item" data-id="${f.id}">
+        <span class="pname">${escapeHtml(f.name)}</span>
+        <span class="psub">${f.wins}W-${f.losses}L · ${escapeHtml(f.style)}</span>
+      </div>
+    `).join("");
+
+    dd.classList.toggle("open", results.length > 0);
+    hydrateVisibleFighters(results);
+    dd.querySelectorAll(".picker-item").forEach(item => {
+      item.addEventListener("click", async () => {
+        const fighter = fighters.find(f => f.id === item.dataset.id);
+        if (!fighter) return;
+        if (side === "A") {
+          selectedA = fighter;
+          inp.value = fighter.name;
+          inp.className = "selected-red";
+        } else {
+          selectedB = fighter;
+          inp.value = fighter.name;
+          inp.className = "selected-blue";
+        }
+        dd.classList.remove("open");
+        clr.style.display = "block";
+        updatePredictBtn();
+        showCompare();
+        if (document.getElementById("tab-fighters").classList.contains("active")) renderFighters();
+      });
+    });
+  });
+
+  inp.addEventListener("focus", () => {
+    if (inp.value.length >= 2) inp.dispatchEvent(new Event("input"));
+  });
+
+  document.addEventListener("click", e => {
+    if (!inp.contains(e.target) && !dd.contains(e.target)) dd.classList.remove("open");
+  });
+
+  clr.addEventListener("click", () => {
+    if (side === "A") selectedA = null;
+    else selectedB = null;
+    inp.value = "";
+    inp.className = "";
+    clr.style.display = "none";
+    document.getElementById("predResult").innerHTML = "";
+    document.getElementById("predCompare").innerHTML = "";
+    updatePredictBtn();
+  });
+}
+
+function updatePredictBtn() {
+  const btn = document.getElementById("btnPredict");
+  btn.disabled = !(selectedA && selectedB);
+  if (selectedA && selectedB && !document.getElementById("predResult").innerHTML) showCompare();
+}
+
+function showCompare() {
+  const el = document.getElementById("predCompare");
+  if (!selectedA || !selectedB) {
+    el.innerHTML = "";
+    return;
+  }
+  el.innerHTML = `<div class="g2">${miniCard(selectedA, "var(--red)")}${miniCard(selectedB, "var(--blue)")}</div>`;
+}
+
+function hydrateVisibleFighters(list) {
+  const visible = (list || []).filter(Boolean).slice(0, 6);
+  let delay = 0;
+  for (const fighter of visible) {
+    // Skip if already loaded, already has verified record, or no source URL
+    if (!fighter.sourceUrl || fighter.profileLoadedAt || fighter.recordVerified) continue;
+    if (fighter._prefetchingProfile) continue;
+
+    fighter._prefetchingProfile = true;
+    const thisDelay = delay;
+    delay += 300;
+
+    setTimeout(() => {
+      ensureFighterProfile(fighter).then(() => {
+        if (document.getElementById("tab-fighters").classList.contains("active")) {
+          renderFightersWithoutRehydrate();
+        }
+        if (selectedA && selectedA.id === fighter.id) showCompare();
+        if (selectedB && selectedB.id === fighter.id) showCompare();
+      }).finally(() => {
+        delete fighter._prefetchingProfile;
+        if (document.getElementById("tab-fighters").classList.contains("active")) {
+          renderFightersWithoutRehydrate();
+        }
+      });
+    }, thisDelay);
+  }
+}
+
+// Render fighters list without triggering another hydration pass (prevents infinite loop)
+function renderFightersWithoutRehydrate() {
+  const q = (document.getElementById("fighterSearch").value || "").toLowerCase().trim();
+  const wf = document.getElementById("weightFilter").value;
+
+  let list = fighters;
+  if (wf !== "All") list = list.filter(f => f.weightClass === wf);
+  if (q) list = list.filter(f => f.name.toLowerCase().includes(q));
+
+  list = [...list].sort((a, b) => a.name.localeCompare(b.name));
+  const shown = list.slice(0, 100);
+
+  document.getElementById("fighterCount").textContent = `SHOWING ${shown.length} OF ${list.length}`;
+  const el = document.getElementById("fighterList");
+
+  if (!shown.length) {
+    el.innerHTML = `<div class="card" style="text-align:center;padding:30px;color:var(--muted)">${fighters.length === 0 ? "No data loaded — go to Import tab" : "No fighters match"}</div>`;
+    return;
+  }
+
+  el.innerHTML = shown.map(f => {
+    const isHydrating = !!f._prefetchingProfile || !!f._profilePromise;
+    const strDefDisplay = f.strDef != null ? ` · Def ${fmtMetric(f.strDef, "pct")}` : "";
+    return `<div class="card" style="padding:0">
+    <div class="fighter-row" data-id="${f.id}">
+      <div class="fighter-avatar">${escapeHtml((f.name || "?")[0])}</div>
+      <div class="fighter-info">
+        <div class="fighter-name">${escapeHtml(f.name)}${isHydrating ? '<span style="color:var(--yellow);font-size:10px;margin-left:6px">⟳</span>' : ''}</div>
+        <div class="fighter-meta">
+          <span>${f.wins}W-${f.losses}L${f.draws ? `-${f.draws}D` : ""}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.style)}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.stance)}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.weightClass)}</span>
+        </div>
+      </div>
+      <div class="fighter-side">${f.slpm != null ? `SLpM ${fmtMetric(f.slpm, "number", 1)}<br>` : ""}${f.tdAvg != null ? `TD ${fmtMetric(f.tdAvg, "number", 1)}` : ""}${strDefDisplay}</div>
+    </div>
+  </div>`;
+  }).join("") + (list.length > 100 ? `<p style="text-align:center;color:var(--muted);font-size:12px;font-family:var(--mono);padding:12px">Showing first 100. Refine your search.</p>` : "");
+
+  el.querySelectorAll(".fighter-row").forEach(row => {
+    row.addEventListener("click", () => {
+      const f = fighters.find(x => x.id === row.dataset.id);
+      if (f) showFighterDetail(f);
+    });
+  });
+}
+
+function miniCard(f, color) {
+  return `<div class="card mini-stat" style="border-top-color:${color}">
+    <h4>${escapeHtml(f.name)}${eloBadgeHTML(f)}${momentumBadgeHTML(f)}</h4>
+    <div class="stats-lines">
+      ${f.wins}W-${f.losses}L${f.draws ? `-${f.draws}D` : ""} · ${escapeHtml(f.style)} · ${escapeHtml(f.stance)}<br>
+      ${fmtH(f.height)} · ${f.reach ? `${f.reach}" reach` : "—"} · Age ${f.age || "?"}<br>
+      SLpM ${fmtMetric(f.slpm, "number", 1)} · SApM ${fmtMetric(f.sapm, "number", 1)} · Acc ${fmtMetric(f.strAcc, "pct")} · Def ${fmtMetric(f.strDef, "pct")}<br>
+      TD ${fmtMetric(f.tdAvg, "number", 1)}/15m · TD Def ${fmtMetric(f.tdDef, "pct")} · Sub ${fmtMetric(f.subAvg, "number", 1)}/15m
+    </div>
+    ${streakBarHTML(f)}
+  </div>`;
+}
+
+function runPrediction() {
+  if (!selectedA || !selectedB) return;
+  const p = predict(selectedA, selectedB);
+  const winnerName = p.probA > p.probB ? selectedA.name : selectedB.name;
+  const winnerProb = Math.max(p.probA, p.probB);
+  const verdict = winnerProb > 65 ? `${winnerName} strongly favored` : winnerProb > 55 ? `${winnerName} slightly favored` : "Competitive matchup";
+
+  let html = `<div class="card">
+    <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;font-weight:700">
+      <span style="color:var(--red)">${escapeHtml(selectedA.name)}</span>
+      <span style="color:var(--blue)">${escapeHtml(selectedB.name)}</span>
+    </div>
+    <div class="prob-bar">
+      <div class="prob-a" style="width:${p.probA}%">${p.probA.toFixed(1)}%</div>
+      <div class="prob-b" style="width:${p.probB}%">${p.probB.toFixed(1)}%</div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--dim);font-family:var(--mono)">${escapeHtml(verdict)}</p>
+  </div>`;
+
+  // Odds comparison
+  const odds = findOdds(selectedA.name, selectedB.name);
+  if (odds && (odds.oddsA || odds.oddsB)) {
+    const bookProbA = oddsToProb(odds.oddsA);
+    const bookProbB = oddsToProb(odds.oddsB);
+    const edgeA = bookProbA != null ? (p.probA / 100) - bookProbA : null;
+    const edgeB = bookProbB != null ? (p.probB / 100) - bookProbB : null;
+    html += `<div class="card">
+      <div class="lbl">BETTING ODDS COMPARISON</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div style="text-align:center;flex:1">
+          <div style="font-size:12px;color:var(--dim);margin-bottom:4px">${escapeHtml(selectedA.name.split(" ").pop())}</div>
+          ${oddsTagHTML(odds.oddsA)}
+          ${bookProbA != null ? `<div style="font-size:10px;color:var(--muted);margin-top:4px">Book: ${(bookProbA * 100).toFixed(0)}% · Model: ${p.probA.toFixed(0)}%</div>` : ""}
+          ${edgeA != null && edgeA > 0.08 ? `<div class="value-badge" style="margin:4px 0 0 0">VALUE +${(edgeA * 100).toFixed(0)}%</div>` : ""}
+        </div>
+        <div style="color:var(--muted);font-size:10px;font-family:var(--mono);padding:0 12px">VS</div>
+        <div style="text-align:center;flex:1">
+          <div style="font-size:12px;color:var(--dim);margin-bottom:4px">${escapeHtml(selectedB.name.split(" ").pop())}</div>
+          ${oddsTagHTML(odds.oddsB)}
+          ${bookProbB != null ? `<div style="font-size:10px;color:var(--muted);margin-top:4px">Book: ${(bookProbB * 100).toFixed(0)}% · Model: ${p.probB.toFixed(0)}%</div>` : ""}
+          ${edgeB != null && edgeB > 0.08 ? `<div class="value-badge" style="margin:4px 0 0 0">VALUE +${(edgeB * 100).toFixed(0)}%</div>` : ""}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  html += `<div class="card"><div class="lbl">FACTOR BREAKDOWN</div><div class="factor-grid">
+    <div class="factor-header" style="text-align:right;color:var(--red)">${escapeHtml(selectedA.name.split(" ").pop())}</div>
+    <div class="factor-header" style="text-align:center;color:var(--muted)">FACTOR</div>
+    <div class="factor-header" style="color:var(--blue)">${escapeHtml(selectedB.name.split(" ").pop())}</div>`;
+
+  p.factors.forEach(f => {
+    html += `<div class="factor-cell ${f.adv === "A" ? "winner" : "neutral"}" style="text-align:right">${f.adv === "A" ? "✓ " : ""}${escapeHtml(String(f.a))}</div>
+      <div class="factor-cell neutral" style="text-align:center">${escapeHtml(f.name)}</div>
+      <div class="factor-cell ${f.adv === "B" ? "winner" : "neutral"}">${f.adv === "B" ? "✓ " : ""}${escapeHtml(String(f.b))}</div>`;
+  });
+
+  html += `</div></div>`;
+  html += `<div class="g2">${miniCard(selectedA, "var(--red)")}${miniCard(selectedB, "var(--blue)")}</div>`;
+
+  document.getElementById("predResult").innerHTML = html;
+  document.getElementById("predCompare").innerHTML = "";
+}
+
+// ==================================================
+// FIGHTERS LIST / MODAL
+// ==================================================
+function renderFighters() {
+  const q = (document.getElementById("fighterSearch").value || "").toLowerCase().trim();
+  const wf = document.getElementById("weightFilter").value;
+
+  let list = fighters;
+  if (wf !== "All") list = list.filter(f => f.weightClass === wf);
+  if (q) list = list.filter(f => f.name.toLowerCase().includes(q));
+
+  list = [...list].sort((a, b) => a.name.localeCompare(b.name));
+  const shown = list.slice(0, 100);
+
+  document.getElementById("fighterCount").textContent = `SHOWING ${shown.length} OF ${list.length}`;
+  const el = document.getElementById("fighterList");
+
+  if (!shown.length) {
+    el.innerHTML = `<div class="card" style="text-align:center;padding:30px;color:var(--muted)">${fighters.length === 0 ? "No data loaded — go to Import tab" : "No fighters match"}</div>`;
+    return;
+  }
+
+  el.innerHTML = shown.map(f => {
+    const isHydrating = !!f._prefetchingProfile || !!f._profilePromise;
+    const strDefDisplay = f.strDef != null ? ` · Def ${fmtMetric(f.strDef, "pct")}` : "";
+    return `<div class="card" style="padding:0">
+    <div class="fighter-row" data-id="${f.id}">
+      <div class="fighter-avatar">${escapeHtml((f.name || "?")[0])}</div>
+      <div class="fighter-info">
+        <div class="fighter-name">${escapeHtml(f.name)}${isHydrating ? '<span style="color:var(--yellow);font-size:10px;margin-left:6px">⟳</span>' : ''}</div>
+        <div class="fighter-meta">
+          <span>${f.wins}W-${f.losses}L${f.draws ? `-${f.draws}D` : ""}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.style)}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.stance)}</span><span style="color:var(--muted)">·</span>
+          <span>${escapeHtml(f.weightClass)}</span>
+        </div>
+      </div>
+      <div class="fighter-side">${f.slpm != null ? `SLpM ${fmtMetric(f.slpm, "number", 1)}<br>` : ""}${f.tdAvg != null ? `TD ${fmtMetric(f.tdAvg, "number", 1)}` : ""}${strDefDisplay}</div>
+    </div>
+  </div>`;
+  }).join("") + (list.length > 100 ? `<p style="text-align:center;color:var(--muted);font-size:12px;font-family:var(--mono);padding:12px">Showing first 100. Refine your search.</p>` : "");
+
+  el.querySelectorAll(".fighter-row").forEach(row => {
+    row.addEventListener("click", () => {
+      const f = fighters.find(x => x.id === row.dataset.id);
+      if (f) showFighterDetail(f);
+    });
+  });
+}
+
+function setupWeightFilter() {
+  const sel = document.getElementById("weightFilter");
+  WEIGHT_CLASSES.forEach(w => {
+    const o = document.createElement("option");
+    o.value = w;
+    o.textContent = w;
+    sel.appendChild(o);
+  });
+}
+
+
+function resolveOpponentFromFallback(fighter, profileFight, fallbackFights, index = -1) {
+  const profOpp = String(profileFight?.opponent || "").trim();
+  if (profOpp && !/^(win|loss|draw|nc|no contest|w|l|d)$/i.test(profOpp)) return profOpp;
+
+  const nameKey = safeNameKey(fighter?.name || "");
+  const profileEvent = safeNameKey(profileFight?.event || "");
+  const profileDate = safeNameKey(profileFight?.date || "");
+  const profileMethod = safeNameKey(profileFight?.method || "");
+  const profileRound = parseInt(profileFight?.endRound || 0, 10) || 0;
+
+  const pool = (fallbackFights || []).filter(Boolean);
+
+  const chooseOpponent = (fight) => {
+    if (!fight) return "";
+    if (safeNameKey(fight.fighterAName) === nameKey) return fight.fighterBName || "";
+    if (safeNameKey(fight.fighterBName) === nameKey) return fight.fighterAName || "";
+    return "";
+  };
+
+  let match = pool.find(x =>
+    profileEvent && safeNameKey(x.event || "") === profileEvent &&
+    profileMethod && safeNameKey(x.method || "") === profileMethod &&
+    profileRound && (parseInt(x.endRound || 0, 10) || 0) === profileRound
+  );
+
+  if (!match) {
+    match = pool.find(x =>
+      profileEvent && safeNameKey(x.event || "") === profileEvent
+    );
+  }
+
+  if (!match) {
+    match = pool.find(x =>
+      profileDate && safeNameKey(x.date || "") === profileDate
+    );
+  }
+
+  if (!match && index >= 0 && pool[index]) {
+    match = pool[index];
+  }
+
+  const opponent = chooseOpponent(match);
+  return opponent || "Unknown";
+}
+
+async function showFighterDetail(f) {
+  // Build fight history from already-loaded data (instant)
+  let localFights = fights
+    .filter(x => x.fighterAName === f.name || x.fighterBName === f.name)
+    .slice();
+  
+  // Sort by date descending (most recent first)
+  localFights.sort((a, b) => {
+    const da = new Date(a.date || 0);
+    const db = new Date(b.date || 0);
+    return db - da;
+  });
+  localFights = localFights.slice(0, 15);
+
+  const hasFightHistory = localFights.length > 0 || (Array.isArray(f.profileRecentFights) && f.profileRecentFights.length > 0);
+
+  // Render immediately with local data
+  renderFighterModal(f, localFights);
+
+  // Only fetch live profile if we have NO fight history at all and fighter has a URL
+  if (!hasFightHistory && f.sourceUrl && !f.profileLoadedAt) {
+    try {
+      await ensureFighterProfile(f);
+      // Re-render with any newly fetched data
+      const updatedFights = fights
+        .filter(x => x.fighterAName === f.name || x.fighterBName === f.name)
+        .slice().reverse().slice(0, 15);
+      renderFighterModal(f, updatedFights);
+    } catch {}
+  }
+}
+
+function renderFighterModal(f, localFights) {
+  const ff = Array.isArray(f.profileRecentFights) && f.profileRecentFights.length ? f.profileRecentFights : localFights;
+
+  document.getElementById("modal").classList.add("open");
+
+  const mom = calcMomentum(f);
+  const momBadge = momentumBadgeHTML(f);
+
+  let html = `<button class="modal-close" onclick="closeModal()">×</button>
+    <div style="text-align:center;margin-bottom:16px">
+      <div class="detail-avatar">${escapeHtml(f.name[0])}</div>
+      <h2 style="font-size:20px;font-weight:700">${escapeHtml(f.name)}${eloBadgeHTML(f)}${momBadge}${layoffBadgeHTML(f)}</h2>
+      <p style="font-size:12px;color:var(--dim);font-family:var(--mono)">${f.wins}W-${f.losses}L${f.draws > 0 ? `-${f.draws}D` : ""}${f.noContests > 0 ? ` (${f.noContests} NC)` : ""} · ${escapeHtml(f.weightClass)}</p>
+      ${streakBarHTML(f) ? `<div style="display:flex;justify-content:center;margin-top:6px"><div><div style="font-size:9px;color:var(--muted);font-family:var(--mono);margin-bottom:3px;text-align:center">RECENT FORM</div>${streakBarHTML(f)}</div></div>` : ""}
+    </div>
+    <div class="detail-grid">${[["Style", f.style], ["Stance", f.stance], ["Age", f.age || "?"], ["Height", fmtH(f.height)], ["Reach", f.reach ? f.reach + '"' : "—"], ["Weight", f.weight ? f.weight + " lbs" : "—"]].map(([k, v]) => `<div class="detail-cell"><div class="dk">${escapeHtml(k)}</div><div class="dv">${escapeHtml(String(v))}</div></div>`).join("")}</div>`;
+
+  // Radar chart
+  if (hasPerformanceMetrics(f)) {
+    html += `<div class="lbl">FIGHTER PROFILE</div><div class="radar-wrap">${radarChartSVG(f, 220)}</div>`;
+  }
+
+  html += `<div class="lbl">PERFORMANCE METRICS</div>
+    <div class="metric-grid">${[
+      ["SLpM", fmtMetric(f.slpm, "number", 2), "Sig. Strikes Landed/Min"],
+      ["SApM", fmtMetric(f.sapm, "number", 2), "Sig. Strikes Absorbed/Min"],
+      ["Str Acc", fmtMetric(f.strAcc, "pct"), "Strike Accuracy"],
+      ["Str Def", fmtMetric(f.strDef, "pct"), "Strike Defense"],
+      ["TD Avg", fmtMetric(f.tdAvg, "number", 2), "Takedowns / 15 Min"],
+      ["TD Acc", fmtMetric(f.tdAcc, "pct"), "Takedown Accuracy"],
+      ["TD Def", fmtMetric(f.tdDef, "pct"), "Takedown Defense"],
+      ["Sub Avg", fmtMetric(f.subAvg, "number", 1), "Submissions / 15 Min"]
+    ].map(([k, v, d]) => `<div class="metric-cell"><div class="mh"><span class="mk">${escapeHtml(k)}</span><span class="mv">${escapeHtml(String(v))}</span></div><div class="md">${escapeHtml(d)}</div></div>`).join("")}</div>`;
+
+  // Round-by-round performance bars
+  const rndBars = roundBarsHTML(f.name);
+  if (rndBars) html += rndBars;
+
+  // Strike targeting analysis
+  const targeting = strikeTargetHTML(f.name);
+  if (targeting) html += targeting;
+
+  if (ff.length > 0) {
+    html += `<div class="lbl">RECENT FIGHTS (${ff.length})</div>`;
+    ff.forEach((x, idx) => {
+      if ("result" in x) {
+        // Profile fight - result is directly "win" or "loss"
+        const res = String(x.result || "").toLowerCase();
+        const badgeClass = res === "win" ? "win" : res === "loss" ? "loss" : "";
+        const badgeText = res === "win" ? "W" : res === "loss" ? "L" : "D";
+        const opponent = resolveOpponentFromFallback(f, x, localFights, idx);
+        html += `<div class="fight-row"><span class="fight-badge ${badgeClass}">${badgeText}</span><div style="flex:1"><span style="font-weight:600">vs ${escapeHtml(opponent)}</span><span style="color:var(--muted);margin-left:6px">${escapeHtml(x.method || "")}${x.endRound ? ` R${x.endRound}` : ""}</span></div><span style="color:var(--muted);font-family:var(--mono);font-size:10px;text-align:right">${escapeHtml(x.date || "")}${x.date && x.event ? "<br>" : ""}${escapeHtml(x.event || "")}</span></div>`;
+      } else {
+        // Fallback fight from fights array - use safeNameKey for reliable matching
+        const fKey = safeNameKey(f.name);
+        const winKey = safeNameKey(x.winnerName || "");
+        const aKey = safeNameKey(x.fighterAName || "");
+        const bKey = safeNameKey(x.fighterBName || "");
+        const known = !!winKey;
+        const won = known ? (winKey === fKey) : null;
+        const badgeClass = won === true ? "win" : won === false ? "loss" : "";
+        const badgeText = won === true ? "W" : won === false ? "L" : "?";
+        const opp = aKey === fKey ? (x.fighterBName || "") : (x.fighterAName || "");
+        html += `<div class="fight-row"><span class="fight-badge ${badgeClass}">${badgeText}</span><div style="flex:1"><span style="font-weight:600">vs ${escapeHtml(opp || "Unknown")}</span><span style="color:var(--muted);margin-left:6px">${escapeHtml(x.method || "")}${x.endRound ? ` R${x.endRound}` : ""}</span></div><span style="color:var(--muted);font-family:var(--mono);font-size:10px;text-align:right">${escapeHtml(x.date || "")}${x.date && x.event ? "<br>" : ""}${escapeHtml(x.event || "")}</span></div>`;
+      }
+    });
+  }
+
+  document.getElementById("modalBody").innerHTML = html;
+}
+function closeModal() {
+  document.getElementById("modal").classList.remove("open");
+  // Re-render fighters list so any stats updated by the profile view are reflected
+  if (document.getElementById("tab-fighters").classList.contains("active")) {
+    renderFightersWithoutRehydrate();
+  }
+  // Also refresh comparison cards if fighters were selected in predict tab
+  if (selectedA || selectedB) showCompare();
+}
+
+// ==================================================
+// STATS TAB
+// ==================================================
+function renderStats() {
+  const el = document.getElementById("statsContent");
+  if (fighters.length === 0) {
+    el.innerHTML = '<div class="card" style="text-align:center;padding:30px;color:var(--muted)">No data loaded</div>';
+    return;
+  }
+
+  const sections = [
+    { title: "HIGHEST ELO RATINGS", sort: (a, b) => (b.elo || 1500) - (a.elo || 1500), val: f => `${f.elo || 1500} Elo`, sub: f => `${f.wins}W-${f.losses}L · ${f.style}`, filter: f => (f.elo || 1500) > 1500 },
+    { title: "TOP STRIKERS (SLpM)", sort: (a, b) => b.slpm - a.slpm, val: f => `${f.slpm.toFixed(2)} SLpM`, sub: f => `${f.wins}W-${f.losses}L · Acc ${((f.strAcc || 0) * 100).toFixed(0)}%`, filter: f => f.slpm > 0 },
+    { title: "BEST TAKEDOWN ARTISTS", sort: (a, b) => b.tdAvg - a.tdAvg, val: f => `${f.tdAvg.toFixed(2)} TD/15m`, sub: f => `${f.wins}W-${f.losses}L · ${((f.tdAcc || 0) * 100).toFixed(0)}% acc`, filter: f => f.tdAvg > 0 },
+    { title: "BEST STRIKE DEFENSE", sort: (a, b) => b.strDef - a.strDef, val: f => `${((f.strDef || 0) * 100).toFixed(0)}% Def`, sub: f => `${f.wins}W-${f.losses}L · ${(f.sapm || 0).toFixed(1)} SApM`, filter: f => f.strDef > 0 },
+    { title: "SUBMISSION SPECIALISTS", sort: (a, b) => b.subAvg - a.subAvg, val: f => `${f.subAvg.toFixed(1)} Sub/15m`, sub: f => `${f.wins}W-${f.losses}L · ${f.style}`, filter: f => f.subAvg > 0 }
+  ];
+
+  let html = "";
+  sections.forEach(section => {
+    const top = [...fighters].filter(f => section.filter(f) && (f.wins + f.losses) >= 5).sort(section.sort).slice(0, 10);
+    html += `<div class="card"><div class="lbl">${escapeHtml(section.title)}</div>${top.map((f, i) => `
+      <div class="lb-row">
+        <span class="lb-rank ${i < 3 ? "top3" : "rest"}">#${i + 1}</span>
+        <span class="lb-name">${escapeHtml(f.name)}<span class="lb-sub">${escapeHtml(section.sub(f))}</span></span>
+        <span class="lb-val">${escapeHtml(section.val(f))}</span>
+      </div>`).join("")}</div>`;
+  });
+
+  html += `<div class="card">
+    <div class="lbl">HOW PREDICTIONS WORK</div>
+    <p style="font-size:13px;color:var(--dim);line-height:1.8">
+      The engine analyzes up to 15 weighted factors: <strong style="color:var(--text)">strike differential</strong>,
+      <strong style="color:var(--text)">strike accuracy vs defense</strong>,
+      <strong style="color:var(--text)">takedown efficiency</strong>,
+      <strong style="color:var(--text)">submission threat</strong>,
+      <strong style="color:var(--text)">style matchup</strong>,
+      <strong style="color:var(--text)">stance advantage</strong>,
+      <strong style="color:var(--text)">reach &amp; height</strong>,
+      <strong style="color:var(--text)">age vs prime</strong>,
+      <strong style="color:var(--text)">experience</strong>,
+      <strong style="color:var(--text)">win rate</strong>,
+      <strong style="color:var(--text)">momentum</strong>,
+      <strong style="color:var(--text)">ring rust</strong>,
+      and <strong style="color:var(--text)">Elo rating</strong>.
+      Elo ratings are calculated from the entire fight history — beating top-rated opponents boosts your rating more than beating newcomers.
+      Factors are sorted by impact so you can see what mattered most.
+    </p>
+  </div>`;
+
+  el.innerHTML = html;
+}
+
+// ==================================================
+// NEW HELPER FUNCTIONS (Phase 2)
+// ==================================================
+async function quickFetch(url) {
+  if (!url) return null;
+  for (let i = 0; i < PROXIES.length; i++) {
+    try {
+      const proxyUrl = PROXIES[i](url);
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 10000);
+      const res = await fetch(proxyUrl, { signal: ctrl.signal, cache: "no-store" });
+      clearTimeout(timer);
+      if (res.ok) {
+        const t = await res.text();
+        if (t && t.length > 50 && !isLikelyHTML(t)) {
+          addDebug(`quickFetch OK via proxy ${i}: ${url.split("/").pop()} (${t.length} bytes)`);
+          return t;
+        }
+        addDebug(`quickFetch proxy ${i} rejected: ${url.split("/").pop()} (len=${t?.length}, html=${isLikelyHTML(t)})`);
+      } else {
+        addDebug(`quickFetch proxy ${i} HTTP ${res.status}: ${url.split("/").pop()}`);
+      }
+    } catch (e) {
+      addDebug(`quickFetch proxy ${i} error: ${url.split("/").pop()} - ${e?.message || e}`);
+    }
+  }
+  addDebug(`quickFetch FAILED all proxies: ${url.split("/").pop()}`);
+  return null;
+}
+
+function applyProfileStats(fighterList, profileMap) {
+  let applied = 0;
+  for (const f of fighterList) {
+    const prof = profileMap.get(f.sourceUrl) || profileMap.get(safeNameKey(f.name));
+    if (!prof) continue;
+    const norm = normalizeHeaders(prof);
+    // Apply stats from profile if fighter doesn't have them
+    const fields = [["slpm","slpm"],["str_acc","strAcc"],["sapm","sapm"],["str_def","strDef"],["td_avg","tdAvg"],["td_acc","tdAcc"],["td_def","tdDef"],["sub_avg","subAvg"]];
+    for (const [csvKey, fKey] of fields) {
+      const val = fKey.includes("Acc") || fKey.includes("Def") ? parseMaybePct(norm[csvKey]) : parseMaybeN(norm[csvKey]);
+      if (val != null && (f[fKey] == null || !Number.isFinite(f[fKey]))) f[fKey] = val;
+    }
+    // Apply recent fights from profile
+    const recentFights = [];
+    for (let i = 0; i < 10; i++) {
+      const result = prof[`fight_${i}_result`]; 
+      if (!result) break;
+      recentFights.push({
+        result: result, opponent: prof[`fight_${i}_opponent`] || "",
+        method: prof[`fight_${i}_method`] || "", endRound: prof[`fight_${i}_round`] || "",
+        event: prof[`fight_${i}_event`] || "", date: prof[`fight_${i}_date`] || "",
+      });
+    }
+    if (recentFights.length > 0) f.profileRecentFights = recentFights;
+    f.style = inferStyle(f);
+    applied++;
+  }
+  addDebug(`Applied profile stats to ${applied} fighters`);
+}
+
+// ── MOMENTUM ──
+function calcMomentum(fighter) {
+  const fights = fighter.profileRecentFights || [];
+  if (fights.length === 0) return { score: 0, label: "Unknown", streak: [] };
+  const last5 = fights.slice(0, 5);
+  const streak = last5.map(f => f.result === "win" ? "W" : f.result === "loss" ? "L" : "D");
+  // Weighted: most recent fight worth 5, then 4, 3, 2, 1
+  let score = 0;
+  last5.forEach((f, i) => {
+    const weight = 5 - i;
+    if (f.result === "win") score += weight;
+    else if (f.result === "loss") score -= weight;
+  });
+  // Normalize to -1 to 1 range (max possible is 15, min is -15)
+  const normalized = score / 15;
+  const label = normalized > 0.3 ? "Hot" : normalized < -0.3 ? "Cold" : "Neutral";
+  return { score: normalized, label, streak };
+}
+
+function streakBarHTML(fighter) {
+  const fights = fighter.profileRecentFights || [];
+  if (fights.length === 0) return "";
+  const last5 = fights.slice(0, 5);
+  return `<div class="streak-bar">${last5.map(f => {
+    const r = f.result === "win" ? "w" : f.result === "loss" ? "l" : "d";
+    return `<div class="streak-dot ${r}">${r.toUpperCase()}</div>`;
+  }).join("")}</div>`;
+}
+
+function momentumBadgeHTML(fighter) {
+  const m = calcMomentum(fighter);
+  if (m.label === "Unknown") return "";
+  const cls = m.label === "Hot" ? "momentum-hot" : m.label === "Cold" ? "momentum-cold" : "momentum-neutral";
+  const icon = m.label === "Hot" ? "🔥" : m.label === "Cold" ? "❄️" : "➡️";
+  return `<span class="momentum-badge ${cls}">${icon} ${m.label}</span>`;
+}
+
+// ── ODDS ──
+function oddsToProb(odds) {
+  const o = parseInt(odds);
+  if (!o || !Number.isFinite(o)) return null;
+  if (o > 0) return 100 / (o + 100);
+  return Math.abs(o) / (Math.abs(o) + 100);
+}
+
+function findOdds(fighterAName, fighterBName) {
+  const aKey = safeNameKey(fighterAName);
+  const bKey = safeNameKey(fighterBName);
+  const aLast = aKey.split(" ").pop();
+  const bLast = bKey.split(" ").pop();
+
+  // Try to find a row that contains BOTH fighters (exact matchup)
+  for (const row of bettingOdds) {
+    const rA = safeNameKey(row.fighter_a || "");
+    const rB = safeNameKey(row.fighter_b || "");
+    const rALast = rA.split(" ").pop();
+    const rBLast = rB.split(" ").pop();
+
+    const aMatchesRA = rA === aKey || rALast === aLast || rA.includes(aLast) || aKey.includes(rALast);
+    const aMatchesRB = rB === aKey || rBLast === aLast || rB.includes(aLast) || aKey.includes(rBLast);
+    const bMatchesRA = rA === bKey || rALast === bLast || rA.includes(bLast) || bKey.includes(rALast);
+    const bMatchesRB = rB === bKey || rBLast === bLast || rB.includes(bLast) || bKey.includes(rBLast);
+
+    if (aMatchesRA && bMatchesRB) {
+      return { oddsA: row.odds_a || "", oddsB: row.odds_b || "" };
+    }
+    if (aMatchesRB && bMatchesRA) {
+      return { oddsA: row.odds_b || "", oddsB: row.odds_a || "" };
+    }
+  }
+
+  // Fallback: find each fighter individually in ANY odds row
+  let oddsA = "", oddsB = "";
+  for (const row of bettingOdds) {
+    const rA = safeNameKey(row.fighter_a || "");
+    const rB = safeNameKey(row.fighter_b || "");
+    const rALast = rA.split(" ").pop();
+    const rBLast = rB.split(" ").pop();
+
+    if (!oddsA && (rA === aKey || rALast === aLast)) oddsA = row.odds_a || "";
+    if (!oddsA && (rB === aKey || rBLast === aLast)) oddsA = row.odds_b || "";
+    if (!oddsB && (rA === bKey || rALast === bLast)) oddsB = row.odds_a || "";
+    if (!oddsB && (rB === bKey || rBLast === bLast)) oddsB = row.odds_b || "";
+    if (oddsA && oddsB) break;
+  }
+
+  if (oddsA || oddsB) return { oddsA, oddsB };
+  return null;
+}
+
+function oddsTagHTML(odds) {
+  if (!odds) return `<span class="odds-tag odds-even">—</span>`;
+  const o = parseInt(odds);
+  const cls = o < -150 ? "odds-fav" : o > 150 ? "odds-dog" : "odds-even";
+  return `<span class="odds-tag ${cls}">${odds > 0 ? "+" : ""}${odds}</span>`;
+}
+
+function valuePickHTML(modelProb, odds) {
+  const bookProb = oddsToProb(odds);
+  if (bookProb == null || modelProb == null) return "";
+  const edge = modelProb - bookProb;
+  if (edge > 0.08) return `<span class="value-badge">VALUE +${(edge * 100).toFixed(0)}%</span>`;
+  return "";
+}
+
+// ── RADAR CHART (SVG) ──
+function radarChartSVG(fighter, size = 200) {
+  const metrics = [
+    { key: "slpm", label: "Strike Vol", max: 8 },
+    { key: "strAcc", label: "Str Acc", max: 1 },
+    { key: "strDef", label: "Str Def", max: 1 },
+    { key: "tdAvg", label: "TD Off", max: 6 },
+    { key: "tdDef", label: "TD Def", max: 1 },
+    { key: "subAvg", label: "Sub", max: 3 },
+  ];
+  const cx = size / 2, cy = size / 2, r = size * 0.38;
+  const n = metrics.length;
+  const angleStep = (Math.PI * 2) / n;
+
+  let gridLines = "", labels = "", dataPath = "";
+  const points = [];
+
+  for (let ring = 1; ring <= 4; ring++) {
+    const rr = r * (ring / 4);
+    let ringPath = "";
+    for (let i = 0; i < n; i++) {
+      const angle = angleStep * i - Math.PI / 2;
+      const x = cx + Math.cos(angle) * rr;
+      const y = cy + Math.sin(angle) * rr;
+      ringPath += (i === 0 ? "M" : "L") + `${x.toFixed(1)},${y.toFixed(1)}`;
+    }
+    gridLines += `<polygon points="" fill="none" stroke="#1e1e2d" stroke-width="0.5"/><path d="${ringPath}Z" fill="none" stroke="#1e1e2d" stroke-width="0.5"/>`;
+  }
+
+  for (let i = 0; i < n; i++) {
+    const angle = angleStep * i - Math.PI / 2;
+    const x1 = cx + Math.cos(angle) * r;
+    const y1 = cy + Math.sin(angle) * r;
+    gridLines += `<line x1="${cx}" y1="${cy}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}" stroke="#1e1e2d" stroke-width="0.5"/>`;
+
+    const lx = cx + Math.cos(angle) * (r + 18);
+    const ly = cy + Math.sin(angle) * (r + 18);
+    labels += `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" dominant-baseline="central" fill="#8888a0" font-size="9">${metrics[i].label}</text>`;
+
+    const val = fighter[metrics[i].key];
+    const norm = (val != null && Number.isFinite(val)) ? Math.min(1, val / metrics[i].max) : 0;
+    const px = cx + Math.cos(angle) * (r * norm);
+    const py = cy + Math.sin(angle) * (r * norm);
+    points.push(`${px.toFixed(1)},${py.toFixed(1)}`);
+  }
+
+  dataPath = `<polygon points="${points.join(" ")}" fill="rgba(229,62,62,0.15)" stroke="var(--red)" stroke-width="1.5"/>`;
+  for (const pt of points) {
+    dataPath += `<circle cx="${pt.split(",")[0]}" cy="${pt.split(",")[1]}" r="3" fill="var(--red)"/>`;
+  }
+
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${gridLines}${dataPath}${labels}</svg>`;
+}
+
+// ── UPCOMING TAB RENDERER ──
+function renderUpcoming() {
+  const el = document.getElementById("upcomingContent");
+  if (upcomingEvents.length === 0) {
+    el.innerHTML = `<div class="card" style="text-align:center;padding:40px;color:var(--muted)">${fighters.length === 0 ? "Import data first to see upcoming events" : "No upcoming events loaded. Run the scraper and re-import."}</div>`;
+    return;
+  }
+
+  // Group by event
+  const events = new Map();
+  for (const row of upcomingEvents) {
+    const key = row.event_name || "Unknown Event";
+    if (!events.has(key)) events.set(key, { name: key, date: row.event_date || "", location: row.event_location || "", fights: [] });
+    events.get(key).fights.push(row);
+  }
+
+  let html = "";
+  let eventIndex = 0;
+  for (const [eventName, event] of events) {
+    const isFirst = eventIndex === 0;
+    const evtId = `evt_${eventIndex}`;
+
+    html += `<div style="margin-bottom:16px">
+      <div class="event-header ${isFirst ? "" : "collapsed"}" onclick="toggleEvent('${evtId}', this)">
+        <span class="event-toggle">▼</span>
+        <div class="event-title">${escapeHtml(event.name)}</div>
+        <div class="event-meta">${escapeHtml(event.date)} · ${escapeHtml(event.location)} · ${event.fights.length} fights</div>
+      </div>
+      <div id="${evtId}" style="display:${isFirst ? "block" : "none"}">`;
+
+    for (const fight of event.fights) {
+      const fA = fighters.find(f => f.sourceUrl === fight.fighter_a_url) || fighters.find(f => safeNameKey(f.name) === safeNameKey(fight.fighter_a));
+      const fB = fighters.find(f => f.sourceUrl === fight.fighter_b_url) || fighters.find(f => safeNameKey(f.name) === safeNameKey(fight.fighter_b));
+
+      let probA = 50, probB = 50;
+      if (fA && fB) {
+        const p = predict(fA, fB);
+        probA = p.probA; probB = p.probB;
+        // Auto-log prediction for tracking
+        logPrediction(fight.fighter_a, fight.fighter_b, probA, probB, event.name);
+      }
+
+      const odds = findOdds(fight.fighter_a, fight.fighter_b);
+      const momA = fA ? momentumBadgeHTML(fA) : "";
+      const momB = fB ? momentumBadgeHTML(fB) : "";
+      const valueA = odds ? valuePickHTML(probA / 100, odds.oddsA) : "";
+      const valueB = odds ? valuePickHTML(probB / 100, odds.oddsB) : "";
+      const wc = fight.weight_class || "";
+      const favored = probA > probB ? "A" : probB > probA ? "B" : "-";
+
+      html += `<div class="matchup-card">
+        ${wc ? `<div class="matchup-wclass">${escapeHtml(wc)}</div>` : ""}
+        <div class="matchup-fighters">
+          <div class="matchup-fighter">
+            <div class="mf-name" style="color:${favored === "A" ? "var(--green)" : "var(--text)"}; cursor:${fA ? "pointer" : "default"}; text-decoration:${fA ? "underline" : "none"}; text-underline-offset:3px" ${fA ? `onclick="openFighterByName('${escapeHtml(fight.fighter_a).replace(/'/g, "\\'")}')"` : ""}>${escapeHtml(fight.fighter_a)}${valueA}</div>
+            <div class="mf-record">${fA ? `${fA.wins}W-${fA.losses}L` : "?"} ${odds ? oddsTagHTML(odds.oddsA) : ""}</div>
+            <div class="mf-style">${fA ? escapeHtml(fA.style) : ""}${momA}</div>
+            ${fA ? streakBarHTML(fA) : ""}
+          </div>
+          <div class="matchup-vs">VS</div>
+          <div class="matchup-fighter">
+            <div class="mf-name" style="color:${favored === "B" ? "var(--green)" : "var(--text)"}; cursor:${fB ? "pointer" : "default"}; text-decoration:${fB ? "underline" : "none"}; text-underline-offset:3px" ${fB ? `onclick="openFighterByName('${escapeHtml(fight.fighter_b).replace(/'/g, "\\'")}')"` : ""}>${escapeHtml(fight.fighter_b)}${valueB}</div>
+            <div class="mf-record">${fB ? `${fB.wins}W-${fB.losses}L` : "?"} ${odds ? oddsTagHTML(odds.oddsB) : ""}</div>
+            <div class="mf-style">${fB ? escapeHtml(fB.style) : ""}${momB}</div>
+            ${fB ? streakBarHTML(fB) : ""}
+          </div>
+        </div>
+        <div class="matchup-prob">
+          <div class="mp-a" style="width:${probA}%">${probA.toFixed(0)}%</div>
+          <div class="mp-b" style="width:${probB}%">${probB.toFixed(0)}%</div>
+        </div>
+      </div>`;
+    }
+    html += `</div></div>`;
+    eventIndex++;
+  }
+
+  el.innerHTML = html;
+}
+
+function toggleEvent(id, headerEl) {
+  const body = document.getElementById(id);
+  if (!body) return;
+  const isHidden = body.style.display === "none";
+  body.style.display = isHidden ? "block" : "none";
+  headerEl.classList.toggle("collapsed", !isHidden);
+}
+
+// ==================================================
+// PREDICTION TRACKING & RESULTS
+// ==================================================
+const RESULTS_STORE = "ufc_pred_results";
+
+function loadResults() {
+  try {
+    const raw = localStorage.getItem(RESULTS_STORE);
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+function saveResults(results) {
+  try { localStorage.setItem(RESULTS_STORE, JSON.stringify(results)); } catch {}
+}
+
+function logPrediction(fighterA, fighterB, probA, probB, event) {
+  const results = loadResults();
+  const existing = results.find(r => 
+    safeNameKey(r.fighterA) === safeNameKey(fighterA) && 
+    safeNameKey(r.fighterB) === safeNameKey(fighterB) &&
+    r.event === event
+  );
+  if (existing) return; // Already logged
+  results.push({
+    fighterA, fighterB, probA, probB, event,
+    predicted: probA > probB ? fighterA : fighterB,
+    confidence: Math.max(probA, probB),
+    date: new Date().toISOString().split("T")[0],
+    actual: null // null = pending, "A" = fighter A won, "B" = fighter B won
+  });
+  saveResults(results);
+}
+
+function markResult(idx, winner) {
+  const results = loadResults();
+  if (results[idx]) {
+    results[idx].actual = winner;
+    saveResults(results);
+    renderResults();
+  }
+}
+
+function clearAllResults() {
+  if (confirm("Clear all prediction history?")) {
+    saveResults([]);
+    renderResults();
+  }
+}
+
+function renderResults() {
+  const el = document.getElementById("resultsContent");
+  const results = loadResults();
+
+  if (results.length === 0) {
+    el.innerHTML = `<div class="card" style="text-align:center;padding:40px;color:var(--muted)">
+      No predictions logged yet.<br><span style="font-size:12px">Predictions are automatically logged when you view upcoming events.</span>
+    </div>`;
+    return;
+  }
+
+  // Calculate stats
+  const completed = results.filter(r => r.actual);
+  const correct = completed.filter(r => {
+    const predictedA = r.probA > r.probB;
+    return (predictedA && r.actual === "A") || (!predictedA && r.actual === "B");
+  });
+  const totalPct = completed.length > 0 ? ((correct.length / completed.length) * 100).toFixed(1) : "—";
+  const pending = results.filter(r => !r.actual);
+
+  // Accuracy by confidence tier
+  const highConf = completed.filter(r => r.confidence >= 65);
+  const highCorrect = highConf.filter(r => {
+    const predictedA = r.probA > r.probB;
+    return (predictedA && r.actual === "A") || (!predictedA && r.actual === "B");
+  });
+  const midConf = completed.filter(r => r.confidence >= 55 && r.confidence < 65);
+  const midCorrect = midConf.filter(r => {
+    const predictedA = r.probA > r.probB;
+    return (predictedA && r.actual === "A") || (!predictedA && r.actual === "B");
+  });
+  const closeConf = completed.filter(r => r.confidence < 55);
+  const closeCorrect = closeConf.filter(r => {
+    const predictedA = r.probA > r.probB;
+    return (predictedA && r.actual === "A") || (!predictedA && r.actual === "B");
+  });
+
+  let html = `<div class="results-summary">
+    <div class="rs-box"><div class="rs-num" style="color:var(--green)">${totalPct}%</div><div class="rs-label">Overall Accuracy</div></div>
+    <div class="rs-box"><div class="rs-num">${correct.length}/${completed.length}</div><div class="rs-label">Correct</div></div>
+    <div class="rs-box"><div class="rs-num">${pending.length}</div><div class="rs-label">Pending</div></div>
+    <div class="rs-box"><div class="rs-num">${results.length}</div><div class="rs-label">Total Logged</div></div>
+  </div>`;
+
+  // Accuracy by confidence
+  if (completed.length > 0) {
+    html += `<div class="card"><div class="lbl">ACCURACY BY CONFIDENCE</div>
+    <div class="results-summary">
+      <div class="rs-box"><div class="rs-num" style="font-size:20px">${highConf.length > 0 ? ((highCorrect.length/highConf.length)*100).toFixed(0)+"%" : "—"}</div><div class="rs-label">Strong (65%+)<br>${highCorrect.length}/${highConf.length}</div></div>
+      <div class="rs-box"><div class="rs-num" style="font-size:20px">${midConf.length > 0 ? ((midCorrect.length/midConf.length)*100).toFixed(0)+"%" : "—"}</div><div class="rs-label">Lean (55-65%)<br>${midCorrect.length}/${midConf.length}</div></div>
+      <div class="rs-box"><div class="rs-num" style="font-size:20px">${closeConf.length > 0 ? ((closeCorrect.length/closeConf.length)*100).toFixed(0)+"%" : "—"}</div><div class="rs-label">Toss-up (&lt;55%)<br>${closeCorrect.length}/${closeConf.length}</div></div>
+    </div></div>`;
+  }
+
+  // Pending predictions
+  if (pending.length > 0) {
+    html += `<div class="card"><div class="lbl">PENDING — LOG RESULTS</div>`;
+    // Group by event
+    const byEvent = new Map();
+    for (const r of pending) {
+      const key = r.event || "Unknown Event";
+      if (!byEvent.has(key)) byEvent.set(key, []);
+      byEvent.get(key).push(r);
+    }
+    for (const [event, preds] of byEvent) {
+      html += `<div class="result-event-header">${escapeHtml(event)}</div>`;
+      for (const r of preds) {
+        const idx = results.indexOf(r);
+        const favored = r.probA > r.probB ? r.fighterA : r.fighterB;
+        html += `<div class="result-row">
+          <div class="rr-pred">${escapeHtml(r.fighterA)} vs ${escapeHtml(r.fighterB)}</div>
+          <div class="rr-conf">Pick: ${escapeHtml(favored)} ${r.confidence.toFixed(0)}%</div>
+          <div class="rr-btns">
+            <button class="rr-btn" onclick="markResult(${idx},'A')">${escapeHtml(r.fighterA.split(' ').pop())}</button>
+            <button class="rr-btn" onclick="markResult(${idx},'B')">${escapeHtml(r.fighterB.split(' ').pop())}</button>
+          </div>
+        </div>`;
+      }
+    }
+    html += `</div>`;
+  }
+
+  // Completed predictions
+  if (completed.length > 0) {
+    html += `<div class="card"><div class="lbl">COMPLETED PREDICTIONS</div>`;
+    for (const r of [...completed].reverse()) {
+      const predictedA = r.probA > r.probB;
+      const isCorrect = (predictedA && r.actual === "A") || (!predictedA && r.actual === "B");
+      const winner = r.actual === "A" ? r.fighterA : r.fighterB;
+      html += `<div class="result-row">
+        <span class="rr-result-badge ${isCorrect ? "rr-correct" : "rr-wrong"}">${isCorrect ? "✓" : "✗"}</span>
+        <div class="rr-pred">${escapeHtml(r.fighterA)} vs ${escapeHtml(r.fighterB)}</div>
+        <div class="rr-conf">${r.confidence.toFixed(0)}% → ${escapeHtml(winner)} won</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  html += `<div style="text-align:center;margin-top:16px"><button class="rr-btn" onclick="clearAllResults()" style="color:var(--muted)">Clear All History</button></div>`;
+
+  el.innerHTML = html;
+}
+
+// ==================================================
+// LAYOFF / RING RUST CALCULATOR
+// ==================================================
+function calcLayoff(fighter) {
+  // Try profile recent fights first, then fallback to fights array
+  let lastFightDate = null;
+
+  const pf = fighter.profileRecentFights;
+  if (pf && pf.length > 0 && pf[0].date) {
+    lastFightDate = new Date(pf[0].date);
+  }
+
+  if (!lastFightDate || isNaN(lastFightDate)) {
+    // Try from fights array
+    const fName = fighter.name;
+    const myFights = fights
+      .filter(f => f.fighterAName === fName || f.fighterBName === fName)
+      .filter(f => f.date)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (myFights.length > 0) {
+      lastFightDate = new Date(myFights[0].date);
+    }
+  }
+
+  if (!lastFightDate || isNaN(lastFightDate)) return { days: null, label: "Unknown", class: "layoff-normal" };
+
+  const days = Math.floor((new Date() - lastFightDate) / (1000 * 60 * 60 * 24));
+  
+  if (days > 365) return { days, label: `${Math.floor(days/30)}mo layoff`, class: "layoff-rusty" };
+  if (days > 180) return { days, label: `${Math.floor(days/30)}mo off`, class: "layoff-normal" };
+  return { days, label: "Active", class: "layoff-active" };
+}
+
+function layoffBadgeHTML(fighter) {
+  const l = calcLayoff(fighter);
+  if (l.label === "Unknown") return "";
+  return `<span class="layoff-badge ${l.class}">${l.label}</span>`;
+}
+
+// ==================================================
+// ROUND-BY-ROUND PERFORMANCE ANALYSIS
+// ==================================================
+function calcRoundPerformance(fighterName) {
+  const key = safeNameKey(fighterName);
+  const roundData = {};  // { "1": { sigLanded, sigAttempted, count }, "2": ..., "3": ... }
+
+  for (const raw of (window._rawFightStats || [])) {
+    const row = normalizeHeaders(raw);
+    const name = getFirst(row, ["fighter", "fighter_name", "name"]);
+    if (!name || safeNameKey(name) !== key) continue;
+
+    const round = getFirst(row, ["round"]) || "1";
+    if (round === "Total" || round === "total") continue;
+
+    const sig = parseOfStat(getFirst(row, ["sig_str"]));
+    
+    if (!roundData[round]) roundData[round] = { sigLanded: 0, sigAttempted: 0, count: 0 };
+    roundData[round].sigLanded += sig.landed;
+    roundData[round].sigAttempted += sig.attempted;
+    roundData[round].count += 1;
+  }
+
+  const result = [];
+  for (let r = 1; r <= 5; r++) {
+    const d = roundData[String(r)];
+    if (!d || d.count === 0) continue;
+    result.push({
+      round: r,
+      avgLanded: d.sigLanded / d.count,
+      avgAttempted: d.sigAttempted / d.count,
+      accuracy: d.sigAttempted > 0 ? d.sigLanded / d.sigAttempted : 0,
+      sampleSize: d.count,
+    });
+  }
+  return result;
+}
+
+function roundBarsHTML(fighterName) {
+  const data = calcRoundPerformance(fighterName);
+  if (data.length < 2) return ""; // Need at least 2 rounds for this to be useful
+
+  const maxLanded = Math.max(...data.map(d => d.avgLanded), 1);
+  
+  let html = `<div class="lbl">ROUND-BY-ROUND OUTPUT</div><div class="rnd-bars">`;
+  for (const d of data) {
+    const pct = (d.avgLanded / maxLanded) * 100;
+    const color = d.round <= 2 ? "var(--red)" : d.round <= 3 ? "var(--yellow)" : "var(--blue)";
+    html += `<div class="rnd-bar-row">
+      <div class="rnd-bar-label">R${d.round}</div>
+      <div class="rnd-bar-track"><div class="rnd-bar-fill" style="width:${pct.toFixed(0)}%;background:${color}"></div></div>
+      <div class="rnd-bar-val">${d.avgLanded.toFixed(1)} sig</div>
+    </div>`;
+  }
+  
+  // Add trend label
+  if (data.length >= 3) {
+    const early = (data[0].avgLanded + (data[1]?.avgLanded || 0)) / Math.min(2, data.length);
+    const late = data[data.length - 1].avgLanded;
+    const diff = ((late - early) / early) * 100;
+    const trend = diff > 15 ? "📈 Strong Finisher" : diff < -15 ? "📉 Fades Late" : "➡️ Consistent";
+    html += `<div style="text-align:center;font-size:11px;font-family:var(--mono);color:var(--dim);margin-top:6px">${trend} (${diff > 0 ? "+" : ""}${diff.toFixed(0)}% R1→R${data.length})</div>`;
+  }
+  
+  html += `</div>`;
+  return html;
+}
+
+function openFighterByName(name) {
+  const f = fighters.find(x => x.name === name) || fighters.find(x => safeNameKey(x.name) === safeNameKey(name));
+  if (f) showFighterDetail(f);
+}
+
+// ==================================================
+// ELO RATING SYSTEM
+// ==================================================
+function calculateAllElo() {
+  // Sort fights chronologically
+  const sortedFights = fights
+    .filter(f => f.date && f.winnerName)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  const elo = new Map(); // safeNameKey -> rating
+  const K = 32; // K-factor
+
+  for (const fight of sortedFights) {
+    const aKey = safeNameKey(fight.fighterAName);
+    const bKey = safeNameKey(fight.fighterBName);
+    if (!aKey || !bKey) continue;
+
+    // Initialize at 1500
+    if (!elo.has(aKey)) elo.set(aKey, 1500);
+    if (!elo.has(bKey)) elo.set(bKey, 1500);
+
+    const rA = elo.get(aKey);
+    const rB = elo.get(bKey);
+
+    // Expected scores
+    const eA = 1 / (1 + Math.pow(10, (rB - rA) / 400));
+    const eB = 1 / (1 + Math.pow(10, (rA - rB) / 400));
+
+    // Actual scores
+    const winnerKey = safeNameKey(fight.winnerName);
+    let sA, sB;
+    if (winnerKey === aKey) { sA = 1; sB = 0; }
+    else if (winnerKey === bKey) { sA = 0; sB = 1; }
+    else { sA = 0.5; sB = 0.5; } // Draw
+
+    // Finish bonus: KO/Sub finishes get a slightly higher K
+    const method = (fight.method || "").toLowerCase();
+    const finishBonus = (method.includes("ko") || method.includes("sub")) ? 1.15 : 1;
+
+    // Update ratings
+    elo.set(aKey, rA + K * finishBonus * (sA - eA));
+    elo.set(bKey, rB + K * finishBonus * (sB - eB));
+  }
+
+  // Apply to fighters
+  let applied = 0;
+  for (const f of fighters) {
+    const rating = elo.get(safeNameKey(f.name));
+    if (rating != null) {
+      f.elo = Math.round(rating);
+      applied++;
+    } else {
+      f.elo = 1500;
+    }
+  }
+  addDebug(`Elo ratings calculated for ${applied} fighters from ${sortedFights.length} fights`);
+}
+
+function eloBadgeHTML(fighter) {
+  const elo = fighter.elo || 1500;
+  let cls, label;
+  if (elo >= 1700) { cls = "elo-elite"; label = `⭐ ${elo}`; }
+  else if (elo >= 1550) { cls = "elo-high"; label = `${elo}`; }
+  else if (elo >= 1400) { cls = "elo-mid"; label = `${elo}`; }
+  else { cls = "elo-low"; label = `${elo}`; }
+  return `<span class="elo-badge ${cls}">${label}</span>`;
+}
+
+// ==================================================
+// STRIKE TARGETING ANALYSIS
+// ==================================================
+function calcStrikeTargeting(fighterName) {
+  const key = safeNameKey(fighterName);
+  let head = 0, body = 0, leg = 0, distance = 0, clinch = 0, ground = 0;
+  let totalTarget = 0, totalRange = 0;
+  let rounds = 0;
+
+  for (const raw of (window._rawFightStats || [])) {
+    const row = normalizeHeaders(raw);
+    const name = getFirst(row, ["fighter", "fighter_name", "name"]);
+    if (!name || safeNameKey(name) !== key) continue;
+
+    const rnd = getFirst(row, ["round"]);
+    if (rnd === "Total" || rnd === "total") continue; // Use per-round data only
+
+    const h = parseOfStat(getFirst(row, ["head"]));
+    const b = parseOfStat(getFirst(row, ["body"]));
+    const l = parseOfStat(getFirst(row, ["leg"]));
+    const dist = parseOfStat(getFirst(row, ["distance"]));
+    const clin = parseOfStat(getFirst(row, ["clinch"]));
+    const gnd = parseOfStat(getFirst(row, ["ground"]));
+
+    head += h.landed; body += b.landed; leg += l.landed;
+    distance += dist.landed; clinch += clin.landed; ground += gnd.landed;
+    totalTarget += h.landed + b.landed + l.landed;
+    totalRange += dist.landed + clin.landed + gnd.landed;
+    rounds++;
+  }
+
+  if (totalTarget === 0 && totalRange === 0) return null;
+
+  return {
+    head, body, leg, distance, clinch, ground,
+    totalTarget, totalRange, rounds,
+    headPct: totalTarget > 0 ? head / totalTarget : 0,
+    bodyPct: totalTarget > 0 ? body / totalTarget : 0,
+    legPct: totalTarget > 0 ? leg / totalTarget : 0,
+    distPct: totalRange > 0 ? distance / totalRange : 0,
+    clinchPct: totalRange > 0 ? clinch / totalRange : 0,
+    groundPct: totalRange > 0 ? ground / totalRange : 0,
+  };
+}
+
+function strikeTargetHTML(fighterName) {
+  const t = calcStrikeTargeting(fighterName);
+  if (!t) return "";
+
+  const targetBars = [
+    { label: "Head", pct: t.headPct, count: t.head, color: "var(--red)" },
+    { label: "Body", pct: t.bodyPct, count: t.body, color: "var(--yellow)" },
+    { label: "Leg", pct: t.legPct, count: t.leg, color: "var(--green)" },
+  ];
+  const rangeBars = [
+    { label: "Distance", pct: t.distPct, count: t.distance, color: "var(--blue)" },
+    { label: "Clinch", pct: t.clinchPct, count: t.clinch, color: "#b07cc6" },
+    { label: "Ground", pct: t.groundPct, count: t.ground, color: "#cc8844" },
+  ];
+
+  let html = `<div class="lbl">STRIKE TARGETING</div><div class="target-bars">`;
+  for (const b of targetBars) {
+    html += `<div class="target-row">
+      <div class="target-label">${b.label}</div>
+      <div class="target-track"><div class="target-fill" style="width:${(b.pct * 100).toFixed(0)}%;background:${b.color}">${b.count}</div></div>
+      <div class="target-pct">${(b.pct * 100).toFixed(0)}%</div>
+    </div>`;
+  }
+  html += `</div><div class="lbl" style="margin-top:8px">STRIKING RANGE</div><div class="target-bars">`;
+  for (const b of rangeBars) {
+    html += `<div class="target-row">
+      <div class="target-label">${b.label}</div>
+      <div class="target-track"><div class="target-fill" style="width:${(b.pct * 100).toFixed(0)}%;background:${b.color}">${b.count}</div></div>
+      <div class="target-pct">${(b.pct * 100).toFixed(0)}%</div>
+    </div>`;
+  }
+  html += `</div>`;
+
+  // Style label
+  const dominant = t.headPct > 0.55 ? "Headhunter" : t.legPct > 0.25 ? "Leg Kick Specialist" : t.bodyPct > 0.2 ? "Body Sniper" : "Balanced";
+  const range = t.distPct > 0.7 ? "Distance Fighter" : t.groundPct > 0.3 ? "Ground & Pound" : t.clinchPct > 0.25 ? "Clinch Fighter" : "Mixed Range";
+  html += `<div style="text-align:center;font-size:11px;font-family:var(--mono);color:var(--dim);margin-top:6px">${dominant} · ${range}</div>`;
+
+  return html;
+}
+
+// ==================================================
+// GENERAL UTILS
+// ==================================================
+function escapeHtml(str) {
+  return String(str ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+// ==================================================
+// INIT
+// ==================================================
+document.addEventListener("DOMContentLoaded", () => {
+  loadAll();
+  setupWeightFilter();
+  setupPicker("inputA", "dropdownA", "clearA", "A");
+  setupPicker("inputB", "dropdownB", "clearB", "B");
+
+  document.querySelectorAll(".nav button").forEach(btn => {
+    btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+  });
+
+  document.getElementById("btnAutoImport").addEventListener("click", doAutoImport);
+
+  const fileInput = document.getElementById("fileInput");
+  const dropZone = document.getElementById("dropZone");
+
+  dropZone.addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", () => {
+    handleFiles(fileInput.files);
+    fileInput.value = "";
+  });
+
+  dropZone.addEventListener("dragover", e => {
+    e.preventDefault();
+    dropZone.classList.add("dragover");
+  });
+  dropZone.addEventListener("dragleave", () => dropZone.classList.remove("dragover"));
+  dropZone.addEventListener("drop", e => {
+    e.preventDefault();
+    dropZone.classList.remove("dragover");
+    handleFiles(e.dataTransfer.files);
+  });
+
+  document.getElementById("btnClear").addEventListener("click", () => {
+    if (!confirm("Clear all data?")) return;
+    fighters = [];
+    fights = [];
+    try { localStorage.removeItem(STORE); } catch {}
+    clearMessages();
+    resetSelectionsAndViews();
+    updateHeader();
+    renderFighters();
+    renderStats();
+    switchTab("import");
+  });
+
+  document.getElementById("btnResetView").addEventListener("click", () => {
+    resetSelectionsAndViews();
+    document.getElementById("fighterSearch").value = "";
+    document.getElementById("weightFilter").value = "All";
+    renderFighters();
+    showSuccess("View reset. Stored fighter and fight data were left intact.");
+  });
+
+  document.getElementById("btnPredict").addEventListener("click", runPrediction);
+  document.getElementById("fighterSearch").addEventListener("input", renderFighters);
+  document.getElementById("weightFilter").addEventListener("change", renderFighters);
+
+  document.getElementById("modal").addEventListener("click", e => {
+    if (e.target === document.getElementById("modal")) closeModal();
+  });
+
+  if (fighters.length > 0) switchTab("predict");
+  else switchTab("import");
+});
+</script>
+</body>
+</html>
