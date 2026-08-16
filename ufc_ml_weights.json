@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "model": "XGBoost",
+  "test_accuracy": 0.693,
+  "cv_accuracy": 0.7023,
+  "weights": {
+    "Win Rate": 
