@@ -29,7 +29,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 playwright
+          pip install requests beautifulsoup4 playwright xgboost scikit-learn pandas numpy
           python -m playwright install chromium
           python -m playwright install-deps
 
@@ -46,10 +46,15 @@ jobs:
             python scrape_ufc_data.py
           fi
 
+      - name: Retrain ML model
+        run: |
+          echo "Retraining prediction model..."
+          python train_model.py
+          echo "Model training complete"
+
       - name: Verify CSVs have data before committing
         run: |
           echo "=== CSV file check ==="
-          ABORT=false
           for f in ufc_fighter_records.csv ufc_upcoming_events.csv; do
             if [ -f "$f" ]; then
               LINES=$(wc -l < "$f")
@@ -63,10 +68,10 @@ jobs:
           done
           echo "=== Check complete ==="
 
-      - name: Commit updated CSVs
+      - name: Commit updated data + model
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add *.csv scraper_state.json
-          git diff --cached --quiet || git commit -m "Update UFC data $(date +%Y-%m-%d)"
+          git add *.csv *.json
+          git diff --cached --quiet || git commit -m "Update UFC data + ML model $(date +%Y-%m-%d)"
           git push
