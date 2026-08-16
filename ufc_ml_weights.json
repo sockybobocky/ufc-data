@@ -1,7 +1,21 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "model": "XGBoost",
   "test_accuracy": 0.693,
   "cv_accuracy": 0.7023,
   "weights": {
-    "Win Rate": 
+    "Win Rate": 5.0,
+    "Strike Differential": 2.69,
+    "Strike Accuracy": 1.3,
+    "Strike Defense": 1.28,
+    "Takedown Game": 1.18,
+    "Submissions": 1.09,
+    "Reach": 3.46,
+    "Height": 0.9,
+    "Experience": 2.17,
+    "SLpM": 1.75,
+    "SApM": 1.07,
+    "TD Accuracy": 1.17,
+    "TD Defense": 1.56
+  }
+}
