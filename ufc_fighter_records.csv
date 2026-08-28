@@ -5,7 +5,7 @@ Nariman Abbasov,Nariman,Abbasov,Bayraktar,http://www.ufcstats.com/fighter-detail
 Darion Abbey,Darion,Abbey,,http://www.ufcstats.com/fighter-details/4961467134abd8be,"6' 2""",265 lbs.,"80.0""",Orthodox,9,5,0
 David Abbott,David,Abbott,Tank,http://www.ufcstats.com/fighter-details/b361180739bed4b0,"6' 0""",265 lbs.,--,Switch,10,15,0
 Hamdy Abdelwahab,Hamdy,Abdelwahab,The Hammer,http://www.ufcstats.com/fighter-details/3329d692aea4dc28,"6' 2""",265 lbs.,"72.0""",Southpaw,7,1,0
-Farida Abdueva,Farida,Abdueva,,http://www.ufcstats.com/fighter-details/8f3837b4c06f3d1e,"5' 3""",115 lbs.,"66.0""",Orthodox,8,1,0
+Farida Abdueva,Farida,Abdueva,,http://www.ufcstats.com/fighter-details/8f3837b4c06f3d1e,"5' 3""",115 lbs.,"66.0""",Orthodox,8,2,0
 Mansur Abdul-Malik,Mansur,Abdul-Malik,,http://www.ufcstats.com/fighter-details/841695e02c99a521,"6' 2""",185 lbs.,"80.0""",Orthodox,9,2,1
 Akbar Abdullaev,Akbar,Abdullaev,Bakal,http://www.ufcstats.com/fighter-details/24cb8f04de1310cb,--,155 lbs.,--,,13,0,0
 Tahir Abdullayev,Tahir,Abdullayev,Tank,http://www.ufcstats.com/fighter-details/e047d3b541afd4a7,"5' 8""",170 lbs.,"73.0""",Orthodox,20,3,0
@@ -39,7 +39,7 @@ Jesus Aguilar,Jesus,Aguilar,,http://www.ufcstats.com/fighter-details/c051c2e12d6
 Christian Aguilera,Christian,Aguilera,The Beast,http://www.ufcstats.com/fighter-details/ae071698e1a3ccd4,"5' 9""",170 lbs.,"72.0""",Switch,14,8,0
 Nick Aguirre,Nick,Aguirre,Slick,http://www.ufcstats.com/fighter-details/0978385b2bd9ef9b,"5' 9""",135 lbs.,"74.0""",Southpaw,7,2,0
 Agulali,,Agulali,,http://www.ufcstats.com/fighter-details/b2efa582adf73604,"5' 9""",125 lbs.,"67.0""",Switch,13,2,0
-Ahejiang Ailinuer,Ahejiang,Ailinuer,,http://www.ufcstats.com/fighter-details/ff584c17bccbae0b,"5' 9""",145 lbs.,"72.0""",Southpaw,17,3,0
+Ahejiang Ailinuer,Ahejiang,Ailinuer,,http://www.ufcstats.com/fighter-details/ff584c17bccbae0b,"5' 9""",145 lbs.,"72.0""",Southpaw,17,4,0
 Mike Aina,Mike,Aina,Iron,http://www.ufcstats.com/fighter-details/9e3dbb9c68ed5d1a,"5' 9""",155 lbs.,--,Orthodox,14,6,1
 Ashiek Ajim,Ashiek,Ajim,Peak Physique,http://www.ufcstats.com/fighter-details/49dea784f6cfed71,"5' 8""",135 lbs.,"71.0""",Switch,6,2,0
 Hitomi Akano,Hitomi,Akano,Girlfight Monster,http://www.ufcstats.com/fighter-details/2eada40ac8801559,"5' 4""",135 lbs.,--,Southpaw,18,10,0
@@ -88,7 +88,7 @@ Nurullo Aliev,Nurullo,Aliev,Tajik Eagle,http://www.ufcstats.com/fighter-details/
 Kimbert Alintozon,Kimbert,Alintozon,The Hunter,http://www.ufcstats.com/fighter-details/a075a34d7527fadf,"5' 3""",135 lbs.,"65.0""",Orthodox,7,4,0
 Ikram Aliskerov,Ikram,Aliskerov,,http://www.ufcstats.com/fighter-details/b07aed698fba8624,"6' 0""",185 lbs.,"76.0""",Southpaw,18,2,0
 Leon Aliu,Leon,Aliu,The Albanian Lion,http://www.ufcstats.com/fighter-details/6db394bf6c3b017c,"6' 0""",185 lbs.,"74.0""",Orthodox,10,2,0
-Michael Aljarouj,Michael,Aljarouj,The Soldier,http://www.ufcstats.com/fighter-details/22e3458965d5d08a,--,125 lbs.,--,,13,3,0
+Michael Aljarouj,Michael,Aljarouj,The Soldier,http://www.ufcstats.com/fighter-details/22e3458965d5d08a,--,125 lbs.,--,Orthodox,13,3,0
 John Allan,John,Allan,,http://www.ufcstats.com/fighter-details/6ebe96a116e79e52,"6' 1""",205 lbs.,"75.0""",Orthodox,13,7,0
 George Allen,George,Allen,,http://www.ufcstats.com/fighter-details/1e13936d708bcff7,"6' 2""",205 lbs.,--,Open Stance,13,19,2
 Arnold Allen,Arnold,Allen,Almighty,http://www.ufcstats.com/fighter-details/040a74bb0a465c54,"5' 8""",145 lbs.,"70.0""",Southpaw,21,4,0
@@ -130,6 +130,7 @@ Andre Amado,Andre,Amado,Dida,http://www.ufcstats.com/fighter-details/20821819c40
 Adlan Amagov,Adlan,Amagov,Borz,http://www.ufcstats.com/fighter-details/1e327b281ef6a745,"6' 2""",170 lbs.,"76.0""",Orthodox,14,2,1
 Maiara Amanajas dos Santos,Maiara,Amanajas dos Santos,,http://www.ufcstats.com/fighter-details/247fbbfafea60bb1,"5' 5""",115 lbs.,--,Southpaw,7,3,0
 Chris Amarante,Chris,Amarante,,http://www.ufcstats.com/fighter-details/ee0b69e307c857e5,--,185 lbs.,--,,2,0,0
+Melissa Amaya,Melissa,Amaya,La Mamba,http://www.ufcstats.com/fighter-details/71758ab9f337716c,--,115 lbs.,--,,8,0,0
 Jimmy Ambriz,Jimmy,Ambriz,The Titan,http://www.ufcstats.com/fighter-details/c912f676692c353a,"6' 2""",315 lbs.,--,Southpaw,17,21,1
 JJ Ambrose,JJ,Ambrose,,http://www.ufcstats.com/fighter-details/d562b12b8fe88336,"5' 10""",170 lbs.,--,Orthodox,28,7,0
 Alen Amedovski,Alen,Amedovski,,http://www.ufcstats.com/fighter-details/70fa1c64a2c439ef,"5' 10""",185 lbs.,"74.0""",Orthodox,8,4,0
@@ -172,7 +173,7 @@ Shinsho Anzai,Shinsho,Anzai,Animal,http://www.ufcstats.com/fighter-details/4665f
 Jin Aoi,Jin,Aoi,,http://www.ufcstats.com/fighter-details/031da10a00c8ccd4,"5' 7""",145 lbs.,"67.0""",Orthodox,16,7,1
 Shinya Aoki,Shinya,Aoki,Tobikan Judan,http://www.ufcstats.com/fighter-details/79ded75550efc139,"5' 11""",154 lbs.,--,Southpaw,39,7,0
 Aoriqileng,,Aoriqileng,The Mongolian Murderer,http://www.ufcstats.com/fighter-details/7d420039bbfe7c1a,"5' 7""",135 lbs.,"69.0""",Orthodox,26,13,0
-Alex Apodaca,Alex,Apodaca,,http://www.ufcstats.com/fighter-details/14a48a86b2b57f0e,--,135 lbs.,--,Switch,3,1,0
+Alex Apodaca,Alex,Apodaca,,http://www.ufcstats.com/fighter-details/14a48a86b2b57f0e,"5' 7""",135 lbs.,"71.0""",Switch,4,1,0
 Josh Appelt,Josh,Appelt,,http://www.ufcstats.com/fighter-details/0c1a04afca64e38f,"5' 10""",255 lbs.,--,Southpaw,15,7,0
 Erik Apple,Erik,Apple,,http://www.ufcstats.com/fighter-details/1ccff7f0cfdf85eb,"6' 0""",170 lbs.,--,Orthodox,10,3,0
 Kenji Arai,Kenji,Arai,,http://www.ufcstats.com/fighter-details/269d103c96a4c3a5,"5' 10""",145 lbs.,--,Southpaw,15,15,5
@@ -259,7 +260,7 @@ Scott Baker,Scott,Baker,,http://www.ufcstats.com/fighter-details/7d5b12de1625984
 Bryan Baker,Bryan,Baker,The Beast,http://www.ufcstats.com/fighter-details/898337ef520fe4d3,"6' 3""",185 lbs.,--,Orthodox,18,5,0
 Jin Bala,Jin,Bala,,http://www.ufcstats.com/fighter-details/371efa53bd0cf669,"5' 9""",155 lbs.,--,,23,3,0
 Balajin,,Balajin,The Snow Leopard,http://www.ufcstats.com/fighter-details/e626e92a8f2a9737,"5' 9""",145 lbs.,"72.0""",Orthodox,23,4,0
-Gary Balletto,Gary,Balletto,Batman,http://www.ufcstats.com/fighter-details/623f2eed9e1495af,--,170 lbs.,--,Switch,11,3,0
+Gary Balletto,Gary,Balletto,Batman,http://www.ufcstats.com/fighter-details/623f2eed9e1495af,"5' 8""",170 lbs.,"70.0""",Switch,11,4,0
 Eros Baluyot,Eros,Baluyot,,http://www.ufcstats.com/fighter-details/3497f4c29654862c,"5' 4""",125 lbs.,"65.0""",Orthodox,7,1,0
 Oluwale Bamgbose,Oluwale,Bamgbose,Holy War Angel,http://www.ufcstats.com/fighter-details/04b39f4e8eb59d7c,"5' 11""",185 lbs.,"78.0""",Switch,6,4,0
 Stephen Banaszak,Stephen,Banaszak,,http://www.ufcstats.com/fighter-details/4c4b44e3cf5815b3,"6' 0""",145 lbs.,--,,5,5,0
@@ -681,7 +682,7 @@ Rafael Cerqueira,Rafael,Cerqueira,The Lion,http://www.ufcstats.com/fighter-detai
 Donald Cerrone,Donald,Cerrone,Cowboy,http://www.ufcstats.com/fighter-details/1d00756835ca67c9,"6' 1""",155 lbs.,"73.0""",Orthodox,36,17,0
 Jared Chaffee,Jared,Chaffee,,http://www.ufcstats.com/fighter-details/fdf59144e535bc38,"5' 10""",155 lbs.,--,,5,2,0
 Luan Chagas,Luan,Chagas,Tarzan,http://www.ufcstats.com/fighter-details/9ccf8371fd80d45d,"6' 0""",170 lbs.,"75.0""",Orthodox,15,3,1
-Dagiisuren Chagnaadorj,Dagiisuren,Chagnaadorj,,http://www.ufcstats.com/fighter-details/70186298465de3f3,"5' 8""",145 lbs.,"71.0""",Orthodox,11,2,0
+Dagiisuren Chagnaadorj,Dagiisuren,Chagnaadorj,,http://www.ufcstats.com/fighter-details/70186298465de3f3,"5' 8""",145 lbs.,"71.0""",Orthodox,12,2,0
 Edgar Chairez,Edgar,Chairez,Puro Chicali,http://www.ufcstats.com/fighter-details/5ef94841c4bc3f86,"5' 7""",125 lbs.,"71.0""",Orthodox,14,6,0
 Ansar Chalangov,Ansar,Chalangov,,http://www.ufcstats.com/fighter-details/7342fcc41a4817fa,"5' 9""",170 lbs.,--,Orthodox,14,5,0
 Alex Chambers,Alex,Chambers,Astro Girl,http://www.ufcstats.com/fighter-details/26b63bc5c0c1f65d,"5' 3""",115 lbs.,"63.0""",Southpaw,5,5,0
@@ -732,7 +733,7 @@ Branko Cikatic,Branko,Cikatic,,http://www.ufcstats.com/fighter-details/4e5bbc456
 Nikolajus Cilkinas,Nikolajus,Cilkinas,,http://www.ufcstats.com/fighter-details/3f3550bf126a5721,--,--,--,Orthodox,2,6,0
 Misha Cirkunov,Misha,Cirkunov,,http://www.ufcstats.com/fighter-details/67f272324a030d00,"6' 3""",205 lbs.,"77.0""",Orthodox,15,9,0
 Johnny Cisneros,Johnny,Cisneros,The Tattooed Terror,http://www.ufcstats.com/fighter-details/42611508ba8c3298,"5' 11""",170 lbs.,--,,9,6,0
-Sean Clancy Jr.,Sean,Clancy Jr.,The One,http://www.ufcstats.com/fighter-details/c02862a5f6d3fbd0,--,170 lbs.,--,Orthodox,8,0,0
+Sean Clancy Jr.,Sean,Clancy Jr.,The One,http://www.ufcstats.com/fighter-details/c02862a5f6d3fbd0,"6' 1""",170 lbs.,"72.0""",Orthodox,9,0,0
 Laverne Clark,Laverne,Clark,,http://www.ufcstats.com/fighter-details/1c2f2571b18791b6,"5' 11""",170 lbs.,--,Orthodox,27,21,1
 Logan Clark,Logan,Clark,,http://www.ufcstats.com/fighter-details/6776260cb0aef647,"6' 2""",185 lbs.,--,Orthodox,18,6,0
 Mychal Clark,Mychal,Clark,,http://www.ufcstats.com/fighter-details/69108cb8b32efe04,"6' 3""",224 lbs.,--,Orthodox,10,14,0
@@ -745,7 +746,7 @@ John Clarke,John,Clarke,,http://www.ufcstats.com/fighter-details/a77c71a57413218
 Mitch Clarke,Mitch,Clarke,Danger Zone,http://www.ufcstats.com/fighter-details/c76ec2bc3a57666a,"5' 10""",155 lbs.,"73.0""",Orthodox,11,5,0
 Rich Clementi,Rich,Clementi,No Love,http://www.ufcstats.com/fighter-details/7d21de9c6d7c98b2,"5' 9""",155 lbs.,"72.0""",Southpaw,45,23,1
 Chris Clements,Chris,Clements,The Menace,http://www.ufcstats.com/fighter-details/e5ecaf884b6da2bc,"5' 10""",170 lbs.,"70.0""",Orthodox,12,6,0
-Charlie Cleveland,Charlie,Cleveland,The Reaper,http://www.ufcstats.com/fighter-details/a221b4812b0e7364,--,248 lbs.,--,,6,1,0
+Charlie Cleveland,Charlie,Cleveland,The Reaper,http://www.ufcstats.com/fighter-details/a221b4812b0e7364,--,248 lbs.,--,Southpaw,6,1,0
 RJ Clifford,RJ,Clifford,,http://www.ufcstats.com/fighter-details/8e32bfcff3ec1717,--,160 lbs.,--,,4,3,0
 Mark Climaco,Mark,Climaco,,http://www.ufcstats.com/fighter-details/60098849c703e389,"5' 4""",125 lbs.,"65.0""",Southpaw,9,2,0
 Josh Clopton,Josh,Clopton,The Gentleman,http://www.ufcstats.com/fighter-details/48e96d9cea6d4ab0,"5' 6""",145 lbs.,--,Orthodox,6,2,1
@@ -905,7 +906,7 @@ Alexandre Dantas,Alexandre,Dantas,Cafe,http://www.ufcstats.com/fighter-details/8
 Eduardo Dantas,Eduardo,Dantas,Dudu,http://www.ufcstats.com/fighter-details/676a2e5ec4d7338c,"5' 10""",135 lbs.,--,,20,4,0
 Mac Danzig,Mac,Danzig,,http://www.ufcstats.com/fighter-details/86f582852a5b240a,"5' 8""",155 lbs.,"70.0""",Orthodox,21,12,1
 Karen Darabedyan,Karen,Darabedyan,,http://www.ufcstats.com/fighter-details/d2fa318f34d0aadc,"5' 7""",155 lbs.,"68.0""",Orthodox,13,6,0
-Adam Darby,Adam,Darby,The Plank,http://www.ufcstats.com/fighter-details/a4555c13e6257539,--,170 lbs.,--,,7,1,0
+Adam Darby,Adam,Darby,,http://www.ufcstats.com/fighter-details/a4555c13e6257539,--,170 lbs.,--,,7,1,0
 Beneil Dariush,Beneil,Dariush,,http://www.ufcstats.com/fighter-details/08af939f41b5a57b,"5' 10""",155 lbs.,"72.0""",Southpaw,23,8,1
 Alvi Dasuyev,Alvi,Dasuyev,Spartan,http://www.ufcstats.com/fighter-details/03c629aaa15a17ce,--,170 lbs.,--,,9,0,0
 Sean Daugherty,Sean,Daugherty,,http://www.ufcstats.com/fighter-details/a683f9ddb70aa4bd,"6' 0""",175 lbs.,--,,0,2,0
@@ -964,7 +965,7 @@ Roland Delorme,Roland,Delorme,,http://www.ufcstats.com/fighter-details/173acb3f9
 Jon Delos Reyes,Jon,Delos Reyes,The Heat,http://www.ufcstats.com/fighter-details/0d0351c20169a499,"5' 6""",125 lbs.,"67.0""",Orthodox,8,5,0
 Jason DeLucia,Jason,DeLucia,,http://www.ufcstats.com/fighter-details/6ceff86fae4f6b3b,"5' 11""",190 lbs.,--,Southpaw,33,21,1
 Justin DeMoney,Justin,DeMoney,,http://www.ufcstats.com/fighter-details/985bca5a097fb3f4,--,170 lbs.,--,,15,7,1
-Vanessa Demopoulos,Vanessa,Demopoulos,Lil Monster,http://www.ufcstats.com/fighter-details/2c483cf443f38ece,"5' 2""",125 lbs.,"59.0""",Orthodox,11,8,0
+Vanessa Demopoulos,Vanessa,Demopoulos,Lil Monster,http://www.ufcstats.com/fighter-details/2c483cf443f38ece,"5' 2""",115 lbs.,"59.0""",Orthodox,11,8,0
 Chris Dempsey,Chris,Dempsey,,http://www.ufcstats.com/fighter-details/dfae5da5676e4194,"5' 10""",185 lbs.,"72.0""",Orthodox,11,5,0
 Nick Denis,Nick,Denis,The Ninja of Love,http://www.ufcstats.com/fighter-details/e4aaaa34535e32b6,"5' 7""",135 lbs.,--,Orthodox,11,3,0
 Thomas Denny,Thomas,Denny,The Wildman,http://www.ufcstats.com/fighter-details/a11a6ee8eeb03c18,"5' 10""",170 lbs.,--,Orthodox,27,21,1
@@ -977,7 +978,7 @@ Robelis Despaigne,Robelis,Despaigne,The Big Boy,http://www.ufcstats.com/fighter-
 Cory Devela,Cory,Devela,The One,http://www.ufcstats.com/fighter-details/48544433372ecfa6,"5' 0""",185 lbs.,--,Orthodox,16,7,0
 John Devine,John,Devine,,http://www.ufcstats.com/fighter-details/2bcc39af95d6f2e8,--,--,--,,6,4,0
 Edwin DeWees,Edwin,DeWees,Babyface,http://www.ufcstats.com/fighter-details/75bbd2206a15319f,"6' 1""",185 lbs.,--,Orthodox,38,17,0
-Rabindra Dhant,Rabindra,Dhant,,http://www.ufcstats.com/fighter-details/9f8bd85aaeec2f56,"5' 7""",135 lbs.,"69.0""",Switch,10,1,0
+Rabindra Dhant,Rabindra,Dhant,,http://www.ufcstats.com/fighter-details/9f8bd85aaeec2f56,"5' 7""",135 lbs.,"69.0""",Switch,11,1,0
 Alessio Di Chirico,Alessio,Di Chirico,Manzo,http://www.ufcstats.com/fighter-details/77d7295d1b22c694,"6' 0""",185 lbs.,"74.0""",Orthodox,13,7,0
 Micol Di Segni,Micol,Di Segni,,http://www.ufcstats.com/fighter-details/8126e4dff0cdf69e,"5' 3""",115 lbs.,"60.0""",Orthodox,7,3,0
 Cyrille Diabate,Cyrille,Diabate,The Snake,http://www.ufcstats.com/fighter-details/43563a32c3f10e95,"6' 6""",205 lbs.,"81.0""",Southpaw,19,10,1
@@ -1064,7 +1065,7 @@ Hugo Duarte,Hugo,Duarte,,http://www.ufcstats.com/fighter-details/706404da0775dcb
 Antonio Duarte,Antonio,Duarte,Tigre,http://www.ufcstats.com/fighter-details/29b5d32584e02d8d,"5' 7""",135 lbs.,--,,19,7,0
 Joe Duarte,Joe,Duarte,,http://www.ufcstats.com/fighter-details/454c3e9d4cd4a1b3,--,155 lbs.,--,,10,4,0
 Yuneisy Duben,Yuneisy,Duben,,http://www.ufcstats.com/fighter-details/c3d2b9bcb4cead6b,"5' 4""",125 lbs.,"65.0""",Orthodox,6,2,0
-Matthieu Duclos,Matthieu,Duclos,,http://www.ufcstats.com/fighter-details/ec322adbabbfa6e7,"6' 3""",185 lbs.,"77.0""",Orthodox,6,3,0
+Matthieu Duclos,Matthieu,Duclos,,http://www.ufcstats.com/fighter-details/ec322adbabbfa6e7,"6' 3""",185 lbs.,"77.0""",Orthodox,10,3,0
 Emily Ducote,Emily,Ducote,Gordinha,http://www.ufcstats.com/fighter-details/02f8fedc18cbd26c,"5' 2""",115 lbs.,"63.0""",Orthodox,13,9,0
 Viktoriia Dudakova,Viktoriia,Dudakova,,http://www.ufcstats.com/fighter-details/6c9b66b43663f2f7,"5' 5""",115 lbs.,"67.0""",Orthodox,8,2,0
 Milana Dudieva,Milana,Dudieva,,http://www.ufcstats.com/fighter-details/072a10e85f7d4bff,"5' 3""",135 lbs.,--,Orthodox,11,6,0
@@ -1104,6 +1105,7 @@ Vincent Eazelle,Vincent,Eazelle,The Real Deal,http://www.ufcstats.com/fighter-de
 Ross Ebanez,Ross,Ebanez,The Boss,http://www.ufcstats.com/fighter-details/a5b0bd216d8ba84e,"5' 9""",154 lbs.,--,Southpaw,20,10,0
 Brian Ebersole,Brian,Ebersole,Bad Boy,http://www.ufcstats.com/fighter-details/32ba186f4b0e3267,"6' 0""",170 lbs.,"73.0""",Southpaw,51,18,1
 Roybert Echeverria,Roybert,Echeverria,The Unbroken,http://www.ufcstats.com/fighter-details/20b13e96668caaa4,"5' 5""",125 lbs.,"67.0""",Switch,7,1,0
+Christian Echols,Christian,Echols,The Vanilla Gorilla,http://www.ufcstats.com/fighter-details/13ebc425c8dade90,--,185 lbs.,--,,8,4,0
 Mark Eddiva,Mark,Eddiva,,http://www.ufcstats.com/fighter-details/40ff198adda94b9f,"5' 8""",145 lbs.,"68.0""",Orthodox,6,3,0
 Frankie Edgar,Frankie,Edgar,The Answer,http://www.ufcstats.com/fighter-details/f2688492b9a525a3,"5' 6""",135 lbs.,"68.0""",Orthodox,23,11,1
 Abdul-Kerim Edilov,Abdul-Kerim,Edilov,,http://www.ufcstats.com/fighter-details/37e03538c960bac6,"6' 2""",205 lbs.,--,Orthodox,17,4,0
@@ -1278,7 +1280,7 @@ Luke Flores,Luke,Flores,,http://www.ufcstats.com/fighter-details/b5f44dcb863f595
 Ty Flores,Ty,Flores,Big Medicine,http://www.ufcstats.com/fighter-details/4bb0f74d5e26f89a,"6' 3""",205 lbs.,"73.0""",Switch,7,3,0
 Alejandro Flores,Alejandro,Flores,El Gallito,http://www.ufcstats.com/fighter-details/d23d5960ac5e117c,"5' 10""",145 lbs.,"73.0""",Orthodox,17,3,0
 Kenny Florian,Kenny,Florian,KenFlo,http://www.ufcstats.com/fighter-details/cb139171ed1b69fe,"5' 10""",145 lbs.,"74.0""",Southpaw,14,6,0
-Darrius Flowers,Darrius,Flowers,Beast Mode,http://www.ufcstats.com/fighter-details/65db4065e2bc107d,"5' 9""",155 lbs.,"71.0""",Orthodox,13,8,1
+Darrius Flowers,Darrius,Flowers,Beast Mode,http://www.ufcstats.com/fighter-details/65db4065e2bc107d,"5' 9""",155 lbs.,"71.0""",Orthodox,13,9,1
 Cody Floyd,Cody,Floyd,,http://www.ufcstats.com/fighter-details/8164250600b7c91b,--,--,--,,2,0,0
 Bobby Flynn,Bobby,Flynn,,http://www.ufcstats.com/fighter-details/c97fc5fbf7d32b8a,--,170 lbs.,--,,6,4,0
 Caros Fodor,Caros,Fodor,The Future,http://www.ufcstats.com/fighter-details/01d2ed8c502e3828,"5' 9""",155 lbs.,"74.0""",Orthodox,11,6,0
@@ -1341,7 +1343,7 @@ Megumi Fujii,Megumi,Fujii,Mega Megu,http://www.ufcstats.com/fighter-details/fb6c
 Kazuyuki Fujita,Kazuyuki,Fujita,Ironhead,http://www.ufcstats.com/fighter-details/b1605ea39fba6af6,"6' 0""",235 lbs.,--,Orthodox,15,12,0
 Keisuke Fujiwara,Keisuke,Fujiwara,,http://www.ufcstats.com/fighter-details/ccd58ff71e260ed5,"5' 6""",139 lbs.,--,Switch,17,12,5
 Riki Fukuda,Riki,Fukuda,,http://www.ufcstats.com/fighter-details/7c35f869033901ae,"6' 0""",185 lbs.,"73.0""",Southpaw,24,9,0
-Machi Fukuda,Machi,Fukuda,Kakutou Komachi,http://www.ufcstats.com/fighter-details/42189c98d434a413,"5' 0""",115 lbs.,"61.0""",Southpaw,11,2,0
+Machi Fukuda,Machi,Fukuda,Kakutou Komachi,http://www.ufcstats.com/fighter-details/42189c98d434a413,"5' 0""",115 lbs.,"61.0""",Southpaw,11,3,0
 Masio Fullen,Masio,Fullen,Lobo,http://www.ufcstats.com/fighter-details/4638cc6479cc0afe,"5' 10""",145 lbs.,"70.0""",Orthodox,11,7,0
 Travis Fulton,Travis,Fulton,The Ironman,http://www.ufcstats.com/fighter-details/911fb265462f0d94,"6' 0""",240 lbs.,--,Orthodox,253,53,10
 Sam Fulton,Sam,Fulton,,http://www.ufcstats.com/fighter-details/1f5f75658551f2d3,--,--,--,,0,2,0
@@ -1358,7 +1360,7 @@ Sheila Gaff,Sheila,Gaff,The German Tank,http://www.ufcstats.com/fighter-details/
 Muin Gafurov,Muin,Gafurov,Tajik,http://www.ufcstats.com/fighter-details/a54660deb6a8489c,"5' 7""",135 lbs.,"68.0""",Orthodox,20,7,0
 Mitch Gagnon,Mitch,Gagnon,,http://www.ufcstats.com/fighter-details/b8592b4a383696cd,"5' 5""",135 lbs.,"65.0""",Southpaw,12,5,0
 Brandon Gaines,Brandon,Gaines,,http://www.ufcstats.com/fighter-details/8e6cfbd455f0f9c2,"6' 3""",185 lbs.,--,,5,21,0
-Nicholas Galanti,Nicholas,Galanti,,http://www.ufcstats.com/fighter-details/8988705468d04ef7,--,185 lbs.,--,Southpaw,7,1,0
+Nicholas Galanti,Nicholas,Galanti,,http://www.ufcstats.com/fighter-details/8988705468d04ef7,"6' 1""",185 lbs.,"75.0""",Southpaw,8,1,0
 Travis Galbraith,Travis,Galbraith,The Gladiator,http://www.ufcstats.com/fighter-details/06dc1a58663579d2,"6' 0""",170 lbs.,--,Orthodox,18,7,0
 Dave Galera,Dave,Galera,Scarecrow,http://www.ufcstats.com/fighter-details/0876d21328cf4a45,"5' 11""",135 lbs.,--,Orthodox,5,1,0
 Zelg Galesic,Zelg,Galesic,Benkei,http://www.ufcstats.com/fighter-details/8a1b4330c7957961,"6' 2""",185 lbs.,--,Orthodox,11,9,0
@@ -1636,7 +1638,7 @@ Greg Hardy,Greg,Hardy,Prince of War,http://www.ufcstats.com/fighter-details/8507
 Tobias Harila,Tobias,Harila,Bad Intention,http://www.ufcstats.com/fighter-details/4d1e92b61bcef308,--,--,--,,12,3,0
 Baru Harn,Baru,Harn,Seiryu,http://www.ufcstats.com/fighter-details/848809f3986b4977,--,265 lbs.,--,,1,2,0
 Scott Harper,Scott,Harper,,http://www.ufcstats.com/fighter-details/14a433bccba87016,"6' 0""",185 lbs.,--,Orthodox,12,7,0
-Josiah Harrell,Josiah,Harrell,The Muscle Hamster,http://www.ufcstats.com/fighter-details/e5864a42c80294f6,"5' 7""",170 lbs.,"68.0""",Southpaw,11,1,0
+Josiah Harrell,Josiah,Harrell,The Muscle Hamster,http://www.ufcstats.com/fighter-details/e5864a42c80294f6,"5' 7""",155 lbs.,"68.0""",Southpaw,11,1,0
 Gerry Harris,Gerry,Harris,,http://www.ufcstats.com/fighter-details/30cd319d39ee689b,"6' 8""",270 lbs.,--,Orthodox,1,4,0
 Gerald Harris,Gerald,Harris,,http://www.ufcstats.com/fighter-details/c4b81cdecd5d6abe,"5' 11""",185 lbs.,"77.0""",Southpaw,23,5,0
 Phil Harris,Phil,Harris,Billy,http://www.ufcstats.com/fighter-details/ba043b03eb799063,"5' 4""",125 lbs.,"65.0""",Orthodox,22,12,0
@@ -1760,7 +1762,7 @@ Jeremie Holloway,Jeremie,Holloway,Hit Em,http://www.ufcstats.com/fighter-details
 Holly Holm,Holly,Holm,The Preacher's Daughter,http://www.ufcstats.com/fighter-details/634e2fb70bde3fd5,"5' 8""",135 lbs.,"69.0""",Southpaw,15,7,0
 Rex Holman,Rex,Holman,Big Dog,http://www.ufcstats.com/fighter-details/b5ea750025697880,"6' 3""",205 lbs.,--,Southpaw,4,2,0
 Joseph Holmes,Joseph,Holmes,Uglyman Joe,http://www.ufcstats.com/fighter-details/8d20d76af3f213ce,"6' 4""",185 lbs.,"80.0""",Orthodox,8,4,0
-Brandon Holmes,Brandon,Holmes,,http://www.ufcstats.com/fighter-details/f295d50c56339ab6,"6' 2""",185 lbs.,"74.0""",Orthodox,5,1,0
+Brandon Holmes,Brandon,Holmes,,http://www.ufcstats.com/fighter-details/f295d50c56339ab6,"6' 2""",185 lbs.,"74.0""",Orthodox,6,1,0
 Kurt Holobaugh,Kurt,Holobaugh,The Hurt,http://www.ufcstats.com/fighter-details/a7151778b3381036,"5' 11""",155 lbs.,"70.0""",Orthodox,22,10,0
 Paddy Holohan,Paddy,Holohan,The Hooligan,http://www.ufcstats.com/fighter-details/6e7c758f5cdec01a,"5' 10""",125 lbs.,"69.0""",Orthodox,12,2,1
 Ben Holscher,Ben,Holscher,The Teacher,http://www.ufcstats.com/fighter-details/6070f16bcfd89fcf,"5' 11""",155 lbs.,--,,4,0,0
@@ -1816,7 +1818,7 @@ David Hulett,David,Hulett,Hollywood,http://www.ufcstats.com/fighter-details/b071
 Dominik Humburger,Dominik,Humburger,,http://www.ufcstats.com/fighter-details/e4cbc82c36e47299,--,185 lbs.,--,,8,1,0
 Bryan Humes,Bryan,Humes,,http://www.ufcstats.com/fighter-details/b9c75e7fc910f587,--,265 lbs.,--,,6,2,0
 Abongo Humphrey,Abongo,Humphrey,,http://www.ufcstats.com/fighter-details/cb1b4d237b0079e6,"5' 11""",205 lbs.,--,Orthodox,7,3,0
-Ronald Humphrey,Ronald,Humphrey,The Career Ender,http://www.ufcstats.com/fighter-details/15e0d2df09025bda,--,170 lbs.,--,Orthodox,4,0,0
+Ronald Humphrey,Ronald,Humphrey,The Career Ender,http://www.ufcstats.com/fighter-details/15e0d2df09025bda,"5' 10""",170 lbs.,"77.0""",Orthodox,5,0,0
 Harry Hunsucker,Harry,Hunsucker,The Hurricane,http://www.ufcstats.com/fighter-details/f703250471acaf96,"6' 2""",205 lbs.,"75.0""",Orthodox,7,6,0
 Mark Hunt,Mark,Hunt,Super Samoan,http://www.ufcstats.com/fighter-details/eef9b891edbd4604,"5' 10""",265 lbs.,"72.0""",Orthodox,13,14,1
 Zevan Hunt,Zevan,Hunt,Cheese,http://www.ufcstats.com/fighter-details/da27d061bad0f341,--,170 lbs.,--,,7,0,0
@@ -2145,10 +2147,10 @@ Cheick Kongo,Cheick,Kongo,,http://www.ufcstats.com/fighter-details/1eacf73d6a005
 Andrei Kopylov,Andrei,Kopylov,,http://www.ufcstats.com/fighter-details/dd39f1ca787a3d9d,"6' 2""",265 lbs.,--,Orthodox,6,11,0
 Roman Kopylov,Roman,Kopylov,,http://www.ufcstats.com/fighter-details/9d83f6da776ff7d6,"6' 0""",185 lbs.,"75.0""",Southpaw,15,5,0
 Bruno Korea,Bruno,Korea,,http://www.ufcstats.com/fighter-details/6c011be66326ad97,"5' 6""",135 lbs.,"65.0""",,7,3,0
-Chungreng Koren,Chungreng,Koren,The Indian Rhino,http://www.ufcstats.com/fighter-details/000774e57404d8c7,"5' 6""",135 lbs.,"67.0""",Orthodox,8,2,0
+Chungreng Koren,Chungreng,Koren,The Indian Rhino,http://www.ufcstats.com/fighter-details/000774e57404d8c7,"5' 6""",135 lbs.,"67.0""",Orthodox,8,3,0
 Andrey Koreshkov,Andrey,Koreshkov,Spartan,http://www.ufcstats.com/fighter-details/aee885b8ca29ab4f,"6' 0""",170 lbs.,--,,19,2,0
 Josh Koscheck,Josh,Koscheck,,http://www.ufcstats.com/fighter-details/dd37fd509af89f15,"5' 10""",170 lbs.,"73.0""",Orthodox,17,11,0
-Steven Koslow,Steven,Koslow,Obi Won Shinobi The Pillow,http://www.ufcstats.com/fighter-details/84512339473dd300,"5' 7""",125 lbs.,"69.0""",Switch,6,1,0
+Steven Koslow,Steven,Koslow,Obi Won Shinobi The Pillow,http://www.ufcstats.com/fighter-details/84512339473dd300,"5' 7""",135 lbs.,"69.0""",Switch,6,1,0
 Naoyuki Kotani,Naoyuki,Kotani,,http://www.ufcstats.com/fighter-details/bc8f6b42767e28df,"5' 8""",155 lbs.,"66.0""",Southpaw,34,14,7
 Ilya Kotau,Ilya,Kotau,,http://www.ufcstats.com/fighter-details/a68d57ae177a5815,--,170 lbs.,--,,1,2,0
 Iouri Kotchkine,Iouri,Kotchkine,,http://www.ufcstats.com/fighter-details/c6becb722706c7d8,"6' 2""",235 lbs.,--,Orthodox,7,4,1
@@ -2221,7 +2223,7 @@ Taylor Lapilus,Taylor,Lapilus,Double Impact,http://www.ufcstats.com/fighter-deta
 Chad Laprise,Chad,Laprise,The Disciple,http://www.ufcstats.com/fighter-details/c03a5022f8439f2a,"5' 10""",170 lbs.,"71.0""",Orthodox,13,4,0
 Anthony Lapsley,Anthony,Lapsley,The Recipe,http://www.ufcstats.com/fighter-details/f3a853544e4413c4,"5' 9""",170 lbs.,--,Southpaw,23,7,0
 TJ Laramie,TJ,Laramie,,http://www.ufcstats.com/fighter-details/cd2e5a390821fb48,"5' 6""",145 lbs.,"66.0""",Orthodox,12,5,0
-Joseph Larcinese,Joseph,Larcinese,Big Sexy,http://www.ufcstats.com/fighter-details/62a72adeb0227603,"5' 3""",125 lbs.,"64.0""",Orthodox,6,0,0
+Joseph Larcinese,Joseph,Larcinese,Big Sexy,http://www.ufcstats.com/fighter-details/62a72adeb0227603,"5' 3""",125 lbs.,"64.0""",Orthodox,6,1,0
 Icho Larenas,Icho,Larenas,,http://www.ufcstats.com/fighter-details/49efbdc6c9f650c4,"6' 3""",235 lbs.,--,Orthodox,6,5,0
 Lorenz Larkin,Lorenz,Larkin,The Monsoon,http://www.ufcstats.com/fighter-details/9450848a71d53776,"5' 11""",170 lbs.,"72.0""",Orthodox,18,6,0
 Jeremy Larsen,Jeremy,Larsen,,http://www.ufcstats.com/fighter-details/c3bd649a9194e50c,"5' 10""",145 lbs.,"70.0""",Orthodox,8,5,0
@@ -2344,8 +2346,8 @@ Philipe Lins,Philipe,Lins,Monstro,http://www.ufcstats.com/fighter-details/53c943
 Tainara Lisboa,Tainara,Lisboa,Thai Panther,http://www.ufcstats.com/fighter-details/2c5f5749569eef66,"5' 7""",135 lbs.,"67.0""",Orthodox,7,4,0
 Dean Lister,Dean,Lister,The Boogeyman,http://www.ufcstats.com/fighter-details/68c6cd5287b473a7,"6' 1""",185 lbs.,"75.0""",Orthodox,13,7,0
 Wesley Little,Wesley,Little,,http://www.ufcstats.com/fighter-details/008c6e1a25751575,"6' 4""",205 lbs.,--,,4,8,0
-Liu Ce,Liu,Ce,The Oriental Dragon,http://www.ufcstats.com/fighter-details/a9936818d709e2d7,--,205 lbs.,--,Orthodox,3,1,0
-Adam Livingston,Adam,Livingston,Bomb,http://www.ufcstats.com/fighter-details/515890922fe9ce96,"6' 2""",155 lbs.,"71.0""",Orthodox,6,1,0
+Liu Ce,Liu,Ce,The Oriental Dragon,http://www.ufcstats.com/fighter-details/a9936818d709e2d7,"6' 3""",205 lbs.,"77.0""",Orthodox,3,1,0
+Adam Livingston,Adam,Livingston,Bomb,http://www.ufcstats.com/fighter-details/515890922fe9ce96,"6' 2""",155 lbs.,"71.0""",Orthodox,7,1,0
 James Llontop,James,Llontop,Goku,http://www.ufcstats.com/fighter-details/93b2b7caa457cbea,"6' 0""",155 lbs.,"73.0""",Orthodox,14,5,0
 Abner Lloveras,Abner,Lloveras,Skullman,http://www.ufcstats.com/fighter-details/6448e57a9533b7e4,"5' 11""",155 lbs.,--,,20,9,1
 Brian Lo-A-Njoe,Brian,Lo-A-Njoe,,http://www.ufcstats.com/fighter-details/7abce81b72fbbd9b,"5' 7""",155 lbs.,--,Orthodox,6,10,3
@@ -2376,7 +2378,7 @@ Christopher Lopez,Christopher,Lopez,,http://www.ufcstats.com/fighter-details/514
 Matthew Lopez,Matthew,Lopez,,http://www.ufcstats.com/fighter-details/2fc7e9701642ca38,"5' 7""",135 lbs.,"69.0""",Southpaw,10,4,0
 Benito Lopez,Benito,Lopez,Golden Boy,http://www.ufcstats.com/fighter-details/773f7feacf96153e,"5' 10""",135 lbs.,"73.0""",Switch,10,2,0
 Gustavo Lopez,Gustavo,Lopez,,http://www.ufcstats.com/fighter-details/93b62c5f2ba18e51,"5' 5""",135 lbs.,"67.0""",Orthodox,12,6,1
-Gabriel Lorenco,Gabriel,Lorenco,Black Mamba,http://www.ufcstats.com/fighter-details/e3fc6c1fab298561,--,--,--,,7,1,0
+Gabriel Lorenco,Gabriel,Lorenco,The Black Mamba,http://www.ufcstats.com/fighter-details/e3fc6c1fab298561,--,--,--,Orthodox,7,1,0
 Alik Lorenz,Alik,Lorenz,,http://www.ufcstats.com/fighter-details/92b5f4ee9ff40321,"6' 2""",205 lbs.,"77.0""",Orthodox,8,2,0
 Colton Loud,Colton,Loud,,http://www.ufcstats.com/fighter-details/1c01e9a0c44e3128,--,125 lbs.,--,,7,1,0
 Brendan Loughnane,Brendan,Loughnane,,http://www.ufcstats.com/fighter-details/b788862dd1c11eac,"5' 10""",145 lbs.,"70.0""",Switch,17,3,0
@@ -2455,13 +2457,14 @@ Zabit Magomedsharipov,Zabit,Magomedsharipov,,http://www.ufcstats.com/fighter-det
 John Maguire,John,Maguire,The One,http://www.ufcstats.com/fighter-details/1a7745388839e52b,"5' 9""",155 lbs.,"69.0""",Southpaw,24,9,0
 Lolohea Mahe,Lolohea,Mahe,,http://www.ufcstats.com/fighter-details/fb0b6593cec84356,--,--,--,,10,4,1
 Michelle Maher,Michelle,Maher,,http://www.ufcstats.com/fighter-details/118463dd8db16e7f,--,145 lbs.,--,,1,2,0
-Maheshate,,Maheshate,,http://www.ufcstats.com/fighter-details/8c1ca54b5089d199,"6' 0""",155 lbs.,"71.0""",Orthodox,11,5,0
+Maheshate,,Maheshate,,http://www.ufcstats.com/fighter-details/8c1ca54b5089d199,"6' 0""",155 lbs.,"71.0""",Orthodox,12,5,0
+Javad Mahjoub,Javad,Mahjoub,,http://www.ufcstats.com/fighter-details/e9f9add1481fc11c,--,--,--,,5,0,0
 Bill Mahood,Bill,Mahood,The Butcher,http://www.ufcstats.com/fighter-details/ae58685caf8e4a0d,"6' 3""",200 lbs.,--,Orthodox,20,7,1
 Klayton Mai,Klayton,Mai,,http://www.ufcstats.com/fighter-details/7a9c1bb08a743d7f,"5' 9""",125 lbs.,--,,8,3,0
 Demian Maia,Demian,Maia,,http://www.ufcstats.com/fighter-details/427b5953ac8e3a27,"6' 1""",170 lbs.,"72.0""",Southpaw,28,11,0
 Jennifer Maia,Jennifer,Maia,,http://www.ufcstats.com/fighter-details/8e1f36476ef02a6a,"5' 4""",125 lbs.,"64.0""",Orthodox,21,10,1
 Nayara Maia,Nayara,Maia,Capita,http://www.ufcstats.com/fighter-details/03b1b79b34eaf217,"5' 5""",125 lbs.,"66.0""",Orthodox,7,1,1
-Yilizhati Maimaitijiang,Yilizhati,Maimaitijiang,The Taranchi,http://www.ufcstats.com/fighter-details/df1e855932897f45,--,185 lbs.,--,Orthodox,7,1,0
+Yilizhati Maimaitijiang,Yilizhati,Maimaitijiang,The Taranchi,http://www.ufcstats.com/fighter-details/df1e855932897f45,"6' 4""",185 lbs.,"77.0""",Orthodox,7,1,1
 Roshan Mainam,Roshan,Mainam,The Indian Notorious,http://www.ufcstats.com/fighter-details/b301292b1bc92bdb,--,135 lbs.,--,,6,3,0
 Levan Makashvili,Levan,Makashvili,The Hornet,http://www.ufcstats.com/fighter-details/938ad489fb7a1f31,"5' 8""",145 lbs.,"68.0""",Orthodox,15,2,1
 John Makdessi,John,Makdessi,The Bull,http://www.ufcstats.com/fighter-details/c21a036b4e012f1c,"5' 8""",155 lbs.,"68.0""",Orthodox,18,9,0
@@ -2482,7 +2485,7 @@ Troy Mandaloniz,Troy,Mandaloniz,Rude Boy,http://www.ufcstats.com/fighter-details
 Nate Maness,Nate,Maness,Mayhem,http://www.ufcstats.com/fighter-details/6e9f40c706f91f32,"5' 10""",125 lbs.,"72.0""",Orthodox,16,3,0
 Michael Mangan,Michael,Mangan,,http://www.ufcstats.com/fighter-details/9297ce6eee046f7a,--,155 lbs.,--,,0,3,0
 Gary Mangat,Gary,Mangat,,http://www.ufcstats.com/fighter-details/1c0ffc63d8ec8f45,"5' 7""",135 lbs.,--,,15,3,0
-George Mangos,George,Mangos,,http://www.ufcstats.com/fighter-details/122ae3b34275fbb2,"5' 8""",145 lbs.,"69.0""",Switch,9,1,0
+George Mangos,George,Mangos,,http://www.ufcstats.com/fighter-details/122ae3b34275fbb2,"5' 8""",145 lbs.,"69.0""",Switch,10,1,0
 Melvin Manhoef,Melvin,Manhoef,No Mercy,http://www.ufcstats.com/fighter-details/e5767ed355a937c2,"5' 9""",185 lbs.,--,Orthodox,30,14,1
 Melchor Manibusan,Melchor,Manibusan,Barracuda,http://www.ufcstats.com/fighter-details/b6c6d1731ff00eeb,"5' 5""",154 lbs.,--,Southpaw,2,4,0
 Jon Manley,Jon,Manley,,http://www.ufcstats.com/fighter-details/a0602dd050bebefc,"6' 1""",170 lbs.,--,Orthodox,9,4,0
@@ -2587,7 +2590,7 @@ Eric McConico,Eric,McConico,,http://www.ufcstats.com/fighter-details/9508cc6184c
 Sean McCorkle,Sean,McCorkle,,http://www.ufcstats.com/fighter-details/008dc37cca279def,"6' 7""",265 lbs.,"81.0""",Orthodox,17,7,0
 Danni McCormack,Danni,McCormack,Mac,http://www.ufcstats.com/fighter-details/2a9f9db24cd032ba,"5' 4""",125 lbs.,"62.0""",Southpaw,9,2,0
 Paddy McCorry,Paddy,McCorry,,http://www.ufcstats.com/fighter-details/b43620395f655046,"6' 3""",185 lbs.,"73.0""",Switch,7,1,0
-Liam McCracken,Liam,McCracken,,http://www.ufcstats.com/fighter-details/e431ed30fc027c77,--,155 lbs.,--,,8,1,0
+Liam McCracken,Liam,McCracken,,http://www.ufcstats.com/fighter-details/e431ed30fc027c77,--,155 lbs.,--,Orthodox,8,1,0
 Kris McCray,Kris,McCray,Savage,http://www.ufcstats.com/fighter-details/baed16f18348908e,"6' 0""",170 lbs.,"76.0""",Orthodox,8,5,0
 Tamdan McCrory,Tamdan,McCrory,The Barncat,http://www.ufcstats.com/fighter-details/eff47295daf721a6,"6' 4""",185 lbs.,"76.0""",Switch,14,5,0
 Rob McCullough,Rob,McCullough,Razor,http://www.ufcstats.com/fighter-details/11e3fd7546359fc5,"5' 9""",155 lbs.,"69.0""",Orthodox,19,8,0
@@ -2655,7 +2658,7 @@ Augusto Mendes,Augusto,Mendes,Tanquinho,http://www.ufcstats.com/fighter-details/
 Eddie Mendez,Eddie,Mendez,,http://www.ufcstats.com/fighter-details/49e49b54e5901d0d,"5' 10""",185 lbs.,--,,8,3,1
 Mateus Mendonca,Mateus,Mendonca,Bocao,http://www.ufcstats.com/fighter-details/48812daf291a4e23,"5' 6""",125 lbs.,"71.0""",Orthodox,10,3,0
 Luis Mendoza,Luis,Mendoza,,http://www.ufcstats.com/fighter-details/28200bc87367614f,--,155 lbs.,--,,0,1,0
-Meng Bo,Meng,Bo,,http://www.ufcstats.com/fighter-details/2d85fcb4468c30d7,"5' 4""",115 lbs.,"62.0""",Orthodox,23,8,0
+Meng Bo,Meng,Bo,,http://www.ufcstats.com/fighter-details/2d85fcb4468c30d7,"5' 4""",115 lbs.,"62.0""",Orthodox,24,8,0
 Pietro Menga,Pietro,Menga,,http://www.ufcstats.com/fighter-details/869d68b5383131fd,"5' 7""",125 lbs.,"68.0""",Southpaw,13,0,0
 Alonzo Menifield,Alonzo,Menifield,Atomic,http://www.ufcstats.com/fighter-details/a495f599e787614f,"6' 0""",205 lbs.,"76.0""",Orthodox,18,6,1
 Ivan Menjivar,Ivan,Menjivar,The Pride of El Salvador,http://www.ufcstats.com/fighter-details/5755960ebd0b16f6,"5' 6""",145 lbs.,"64.0""",Orthodox,25,12,0
@@ -2712,12 +2715,12 @@ Ikuhisa Minowa,Ikuhisa,Minowa,Minowaman,http://www.ufcstats.com/fighter-details/
 Carlton Minus,Carlton,Minus,Clutch,http://www.ufcstats.com/fighter-details/40d8b74488743800,"5' 10""",170 lbs.,"75.0""",Orthodox,10,3,0
 Stipe Miocic,Stipe,Miocic,,http://www.ufcstats.com/fighter-details/d28dee5c705991df,"6' 4""",240 lbs.,"80.0""",Orthodox,20,5,0
 Frank Mir,Frank,Mir,,http://www.ufcstats.com/fighter-details/1ff9589f9065a9ed,"6' 3""",264 lbs.,"79.0""",Southpaw,18,11,0
-Bella Mir,Bella,Mir,Lady,http://www.ufcstats.com/fighter-details/9ab21ab88230ce48,--,135 lbs.,--,Southpaw,4,0,0
+Bella Mir,Bella,Mir,Lady,http://www.ufcstats.com/fighter-details/9ab21ab88230ce48,"5' 7""",135 lbs.,"66.0""",Southpaw,4,1,0
 Juan Miranda,Juan,Miranda,,http://www.ufcstats.com/fighter-details/be8ad887e4d674b0,--,155 lbs.,--,,7,5,0
 Mario Miranda,Mario,Miranda,,http://www.ufcstats.com/fighter-details/df2bf09c99594848,"6' 3""",185 lbs.,"74.0""",Orthodox,14,7,0
 Vitor Miranda,Vitor,Miranda,Lex Luthor,http://www.ufcstats.com/fighter-details/4bcb6eb12b4ad4aa,"6' 1""",185 lbs.,"77.0""",Orthodox,12,5,0
 Gabriel Miranda,Gabriel,Miranda,Fly,http://www.ufcstats.com/fighter-details/b909a9a9688b5284,"5' 11""",145 lbs.,"71.0""",Orthodox,17,8,0
-Alexis Miranda,Alexis,Miranda,Mantis,http://www.ufcstats.com/fighter-details/d458266c796643e2,--,170 lbs.,--,Orthodox,9,2,0
+Alexis Miranda,Alexis,Miranda,Mantis,http://www.ufcstats.com/fighter-details/d458266c796643e2,"6' 1""",170 lbs.,"74.0""",Orthodox,9,3,0
 Richie Miranda,Richie,Miranda,El Machete,http://www.ufcstats.com/fighter-details/abde3388a589103c,"5' 8""",155 lbs.,"75.0""",Southpaw,13,2,0
 Damir Mirenic,Damir,Mirenic,Wolf,http://www.ufcstats.com/fighter-details/992c82450d96f726,"6' 0""",185 lbs.,--,Orthodox,9,4,0
 Kazuo Misaki,Kazuo,Misaki,Hitman,http://www.ufcstats.com/fighter-details/5e7a28f20927d64a,"5' 8""",183 lbs.,--,Orthodox,25,11,2
@@ -2796,6 +2799,7 @@ Vinicius Moreira,Vinicius,Moreira,Mamute,http://www.ufcstats.com/fighter-details
 Jesse Moreng,Jesse,Moreng,Arturo,http://www.ufcstats.com/fighter-details/2e2cdb6e9eb84bb9,"5' 7""",145 lbs.,--,Orthodox,9,1,0
 Brandon Moreno,Brandon,Moreno,The Assassin Baby,http://www.ufcstats.com/fighter-details/792be9a24df82ed6,"5' 7""",125 lbs.,"70.0""",Orthodox,23,10,2
 Mike Moreno,Mike,Moreno,El Palo Duro,http://www.ufcstats.com/fighter-details/bb2eee4fb3259c01,"6' 0""",185 lbs.,--,,6,5,0
+Isaac Moreno,Isaac,Moreno,Primetime,http://www.ufcstats.com/fighter-details/0572ebd8e276d66f,--,170 lbs.,--,,8,0,0
 Dan Moret,Dan,Moret,The Hitman,http://www.ufcstats.com/fighter-details/66e98b3bb5fc5250,"6' 0""",155 lbs.,"73.0""",Southpaw,13,6,0
 Sammy Morgan,Sammy,Morgan,The Squeeze,http://www.ufcstats.com/fighter-details/2067a177a2842fbf,"5' 10""",170 lbs.,--,Orthodox,18,12,0
 Peggy Morgan,Peggy,Morgan,The Daywalker,http://www.ufcstats.com/fighter-details/92b36014314b028b,"6' 1""",135 lbs.,--,,4,4,0
@@ -2841,7 +2845,7 @@ Kazunari Murakami,Kazunari,Murakami,,http://www.ufcstats.com/fighter-details/cfb
 Ryuichi Murata,Ryuichi,Murata,,http://www.ufcstats.com/fighter-details/e3a6c6d6d0ac0815,"5' 8""",183 lbs.,--,Orthodox,8,3,1
 Kanako Murata,Kanako,Murata,,http://www.ufcstats.com/fighter-details/e0b0cf71e0d69dd0,"5' 1""",115 lbs.,"62.0""",Orthodox,12,3,0
 Ailiya Muratbek,Ailiya,Muratbek,,http://www.ufcstats.com/fighter-details/9b6dcc335ad03696,--,155 lbs.,--,,9,2,0
-Kasib Murdoch,Kasib,Murdoch,Murder,http://www.ufcstats.com/fighter-details/3a51f8d30900b580,"5' 4""",135 lbs.,"65.0""",Orthodox,8,0,0
+Kasib Murdoch,Kasib,Murdoch,Murder,http://www.ufcstats.com/fighter-details/3a51f8d30900b580,"5' 4""",135 lbs.,"65.0""",Orthodox,8,1,0
 Vince Murdock,Vince,Murdock,,http://www.ufcstats.com/fighter-details/4b90384d7c3519b8,"5' 6""",145 lbs.,"64.0""",Orthodox,12,4,0
 Samandar Murodov,Samandar,Murodov,,http://www.ufcstats.com/fighter-details/6f4d199c0adc06f5,"6' 1""",170 lbs.,"75.0""",Orthodox,11,0,0
 Tom Murphy,Tom,Murphy,,http://www.ufcstats.com/fighter-details/62918a2118de08b2,"6' 2""",227 lbs.,--,Southpaw,8,0,0
@@ -2914,7 +2918,7 @@ Shane Nelson,Shane,Nelson,Sugar,http://www.ufcstats.com/fighter-details/2db7fa8d
 Roy Nelson,Roy,Nelson,Big Country,http://www.ufcstats.com/fighter-details/3f7c14c7eca7195d,"6' 0""",263 lbs.,"73.0""",Orthodox,22,14,0
 Gunnar Nelson,Gunnar,Nelson,Gunni,http://www.ufcstats.com/fighter-details/fd55393021a8c255,"5' 11""",170 lbs.,"72.0""",Switch,19,6,1
 Kyle Nelson,Kyle,Nelson,The Monster,http://www.ufcstats.com/fighter-details/31f8081c7600da93,"5' 11""",155 lbs.,"71.0""",Switch,17,7,1
-Cameron Nelson,Cameron,Nelson,,http://www.ufcstats.com/fighter-details/34d4cae19105eb68,--,170 lbs.,--,Orthodox,7,1,0
+Cam Nelson,Cam,Nelson,,http://www.ufcstats.com/fighter-details/34d4cae19105eb68,"5' 11""",170 lbs.,"72.0""",Orthodox,7,1,0
 Lissette Neri,Lissette,Neri,,http://www.ufcstats.com/fighter-details/f4db63258ecf0613,"5' 2""",145 lbs.,--,,6,4,0
 Mario Neto,Mario,Neto,Sukata,http://www.ufcstats.com/fighter-details/1209b5134401ca53,"6' 0""",229 lbs.,--,Orthodox,13,5,0
 Antonio Braga Neto,Antonio Braga,Neto,,http://www.ufcstats.com/fighter-details/fae67903c4fe636b,"6' 3""",185 lbs.,"77.0""",Orthodox,9,3,0
@@ -2984,7 +2988,7 @@ Said Nurmagomedov,Said,Nurmagomedov,,http://www.ufcstats.com/fighter-details/0fd
 Abubakar Nurmagomedov,Abubakar,Nurmagomedov,,http://www.ufcstats.com/fighter-details/029e1293e609fd74,"5' 11""",170 lbs.,"72.0""",Orthodox,17,4,1
 Umar Nurmagomedov,Umar,Nurmagomedov,,http://www.ufcstats.com/fighter-details/2b6fc1c02736833d,"5' 8""",135 lbs.,"69.0""",Orthodox,20,1,0
 Adilet Nurmatov,Adilet,Nurmatov,Kok-Zhal,http://www.ufcstats.com/fighter-details/689502703bbfe5f2,--,155 lbs.,--,,13,2,0
-Francesco Nuzzi,Francesco,Nuzzi,Berserker,http://www.ufcstats.com/fighter-details/874cfc98877daecd,--,135 lbs.,--,Southpaw,11,2,0
+Francesco Nuzzi,Francesco,Nuzzi,Berserker,http://www.ufcstats.com/fighter-details/874cfc98877daecd,"5' 6""",135 lbs.,"71.0""",Southpaw,11,2,0
 Kennedy Nzechukwu,Kennedy,Nzechukwu,Chosen,http://www.ufcstats.com/fighter-details/8667caa0451d245b,"6' 5""",244 lbs.,"83.0""",Southpaw,14,7,1
 Jake O'Brien,Jake,O'Brien,Irish,http://www.ufcstats.com/fighter-details/20bcc9966affb19c,"6' 3""",205 lbs.,"76.0""",Orthodox,15,4,0
 TJ O'Brien,TJ,O'Brien,The Spider,http://www.ufcstats.com/fighter-details/d25b93992f285953,"6' 2""",155 lbs.,--,Orthodox,20,8,0
@@ -3056,6 +3060,7 @@ Kenji Osawa,Kenji,Osawa,,http://www.ufcstats.com/fighter-details/8eb239a52fc4ec1
 Ode Osbourne,Ode,Osbourne,The Jamaican Sensation,http://www.ufcstats.com/fighter-details/6d68c1afe954f121,"5' 7""",125 lbs.,"73.0""",Southpaw,13,9,0
 Kurt Osiander,Kurt,Osiander,,http://www.ufcstats.com/fighter-details/f84dfc5a8d178403,--,185 lbs.,--,,4,1,0
 Nick Osipczak,Nick,Osipczak,,http://www.ufcstats.com/fighter-details/5b407acfe0ef9b76,"6' 2""",170 lbs.,"76.0""",Orthodox,6,3,0
+Mehemmedeli Osmanli,Mehemmedeli,Osmanli,Ineffable,http://www.ufcstats.com/fighter-details/2bbdbc925f4323ac,--,135 lbs.,--,,12,1,0
 Nissen Osterneck,Nissen,Osterneck,,http://www.ufcstats.com/fighter-details/d632d156c0549e07,"6' 2""",185 lbs.,--,Orthodox,12,4,0
 Rachael Ostovich,Rachael,Ostovich,,http://www.ufcstats.com/fighter-details/01784fbc27c68b14,"5' 3""",125 lbs.,"62.0""",Orthodox,4,6,0
 Pedro Otavio,Pedro,Otavio,Te Pedro,http://www.ufcstats.com/fighter-details/4512e46543b960ad,"6' 3""",245 lbs.,--,Orthodox,19,8,0
@@ -3117,14 +3122,14 @@ Harvey Park,Harvey,Park,Fightbot,http://www.ufcstats.com/fighter-details/b709b53
 HyunSung Park,HyunSung,Park,Peace of Mind,http://www.ufcstats.com/fighter-details/b671bdf981ad527d,"5' 7""",125 lbs.,"66.0""",Orthodox,10,2,0
 JaeHyun Park,JaeHyun,Park,The First Prospect,http://www.ufcstats.com/fighter-details/fe1595732dfb08fc,"5' 8""",155 lbs.,"73.0""",Orthodox,8,4,0
 EoJin Park,EoJin,Park,Young Boss,http://www.ufcstats.com/fighter-details/f79e7f138bf50cc0,"6' 0""",145 lbs.,"71.0""",Orthodox,9,2,1
-BoHyun Park,BoHyun,Park,The Rush,http://www.ufcstats.com/fighter-details/504d3a11e4408253,"5' 2""",115 lbs.,"61.0""",Orthodox,9,3,0
+BoHyun Park,BoHyun,Park,The Rush,http://www.ufcstats.com/fighter-details/504d3a11e4408253,"5' 2""",115 lbs.,"61.0""",Orthodox,10,3,0
 Norman Parke,Norman,Parke,Stormin',http://www.ufcstats.com/fighter-details/14ff46596ad80609,"5' 11""",155 lbs.,"70.0""",Southpaw,23,6,1
 Ryan Parker,Ryan,Parker,,http://www.ufcstats.com/fighter-details/6a0b80a24f22e152,"6' 3""",235 lbs.,--,Southpaw,0,1,0
 Larry Parker,Larry,Parker,,http://www.ufcstats.com/fighter-details/c0231720fe516994,"5' 11""",205 lbs.,--,Orthodox,13,6,1
 Tyra Parker,Tyra,Parker,,http://www.ufcstats.com/fighter-details/64be3dc99eaa42b6,"5' 5""",115 lbs.,--,Orthodox,4,5,0
 Mick Parkin,Mick,Parkin,,http://www.ufcstats.com/fighter-details/0d5cc0170c1a7e71,"6' 4""",265 lbs.,"79.0""",Orthodox,10,1,0
 Willie Parks,Willie,Parks,Slick,http://www.ufcstats.com/fighter-details/86ad0ae839331bd7,"5' 10""",185 lbs.,--,,5,2,0
-Salahdine Parnasse,Salahdine,Parnasse,,http://www.ufcstats.com/fighter-details/b3cb9dfccff3be76,--,155 lbs.,--,,23,2,0
+Salahdine Parnasse,Salahdine,Parnasse,Lion of Atlas,http://www.ufcstats.com/fighter-details/b3cb9dfccff3be76,--,155 lbs.,--,Southpaw,23,2,0
 Jordan Parsons,Jordan,Parsons,Pretty Boy,http://www.ufcstats.com/fighter-details/8b2a18d3c6735083,"5' 9""",145 lbs.,--,,11,2,0
 Preston Parsons,Preston,Parsons,Pressure,http://www.ufcstats.com/fighter-details/9fe7af8b3fbe00a0,"5' 11""",170 lbs.,"71.0""",Orthodox,11,6,0
 Jonny Parsons,Jonny,Parsons,The Sluggernaut,http://www.ufcstats.com/fighter-details/2975297f505e9447,"5' 9""",170 lbs.,"69.0""",Orthodox,9,3,0
@@ -3218,7 +3223,7 @@ Andre Petroski,Andre,Petroski,,http://www.ufcstats.com/fighter-details/5f61780fe
 Armen Petrosyan,Armen,Petrosyan,Superman,http://www.ufcstats.com/fighter-details/369ea36e450ae62a,"6' 3""",185 lbs.,"71.0""",Orthodox,9,5,0
 Ivana Petrovic,Ivana,Petrovic,,http://www.ufcstats.com/fighter-details/38c5817ade8a8014,"5' 8""",125 lbs.,"70.0""",Southpaw,7,3,0
 Seth Petruzelli,Seth,Petruzelli,The Silverback,http://www.ufcstats.com/fighter-details/93b9496275bbbf80,"6' 0""",205 lbs.,"76.0""",Orthodox,14,8,0
-Carlos Petruzzella,Carlos,Petruzzella,El Tito,http://www.ufcstats.com/fighter-details/2e1f3640443272ad,--,185 lbs.,--,Orthodox,15,1,0
+Carlos Petruzzella,Carlos,Petruzzella,El Tito,http://www.ufcstats.com/fighter-details/2e1f3640443272ad,"5' 11""",185 lbs.,"73.0""",Orthodox,15,2,0
 Peter Petties,Peter,Petties,The Joker,http://www.ufcstats.com/fighter-details/7ea5d60d2e6a8ad0,"5' 11""",145 lbs.,"72.0""",Southpaw,5,3,0
 Anthony Pettis,Anthony,Pettis,Showtime,http://www.ufcstats.com/fighter-details/cbb682f5fcc44bfc,"5' 10""",155 lbs.,"72.0""",Orthodox,24,10,0
 Sergio Pettis,Sergio,Pettis,,http://www.ufcstats.com/fighter-details/de75d1c45a39e221,"5' 6""",125 lbs.,"69.0""",Orthodox,18,5,0
@@ -3233,7 +3238,7 @@ Aaron Phillips,Aaron,Phillips,The Dragon,http://www.ufcstats.com/fighter-details
 Elizabeth Phillips,Elizabeth,Phillips,,http://www.ufcstats.com/fighter-details/dcbf01d605681ad1,"5' 6""",135 lbs.,"65.0""",Orthodox,6,6,0
 John Phillips,John,Phillips,The Welsh Wrecking Machine,http://www.ufcstats.com/fighter-details/e9ac7bfb65c25497,"5' 11""",185 lbs.,"75.0""",Southpaw,22,11,0
 Kyler Phillips,Kyler,Phillips,The Matrix,http://www.ufcstats.com/fighter-details/60425d07ef4b91a7,"5' 8""",135 lbs.,"72.0""",Orthodox,12,5,0
-Mario Piazzon,Mario,Piazzon,The Shark,http://www.ufcstats.com/fighter-details/44f234a36324e6c8,"5' 9""",265 lbs.,"73.0""",Orthodox,12,1,0
+Mario Piazzon,Mario,Piazzon,The Shark,http://www.ufcstats.com/fighter-details/44f234a36324e6c8,"5' 9""",238 lbs.,"73.0""",Orthodox,12,2,0
 Nick Pica,Nick,Pica,The Silverback,http://www.ufcstats.com/fighter-details/7922e8269adcc25a,"5' 10""",185 lbs.,--,,5,1,0
 Nick Piccininni,Nick,Piccininni,,http://www.ufcstats.com/fighter-details/a5cb1c29461853ca,"5' 6""",125 lbs.,"66.0""",Orthodox,7,1,0
 Adam Piccolotti,Adam,Piccolotti,,http://www.ufcstats.com/fighter-details/fa399f7f6e17f7f5,"5' 11""",155 lbs.,--,,9,0,0
@@ -3448,7 +3453,7 @@ Jonathan Rivera,Jonathan,Rivera,,http://www.ufcstats.com/fighter-details/145df84
 Jimmie Rivera,Jimmie,Rivera,El Terror,http://www.ufcstats.com/fighter-details/9c907996820d2d69,"5' 4""",135 lbs.,"68.0""",Orthodox,23,5,0
 Irwin Rivera,Irwin,Rivera,The Beast,http://www.ufcstats.com/fighter-details/06a80a685ea98573,"5' 6""",135 lbs.,"67.0""",Southpaw,10,6,0
 Jerome Rivera,Jerome,Rivera,Renegade,http://www.ufcstats.com/fighter-details/c9587d81e1d33925,"5' 10""",125 lbs.,"72.0""",Southpaw,10,6,0
-Patrick Rivera,Patrick,Rivera,,http://www.ufcstats.com/fighter-details/73ab2872b8633322,--,170 lbs.,--,,13,4,0
+Patrick Rivera,Patrick,Rivera,Yah's Rebel,http://www.ufcstats.com/fighter-details/73ab2872b8633322,--,170 lbs.,--,Orthodox,13,4,0
 Nicdali Rivera-Calanoc,Nicdali,Rivera-Calanoc,The Night Queen,http://www.ufcstats.com/fighter-details/60917f79b7271d83,"5' 3""",105 lbs.,--,,9,10,0
 Pedro Rizzo,Pedro,Rizzo,The Rock,http://www.ufcstats.com/fighter-details/b44f39a5c6596953,"6' 1""",241 lbs.,--,Orthodox,20,11,0
 Theo Rlayang,Theo,Rlayang,Jungle King,http://www.ufcstats.com/fighter-details/8aabef76351401d0,"5' 7""",145 lbs.,"65.0""",Orthodox,5,1,0
@@ -3483,7 +3488,7 @@ Kevin Roddy,Kevin,Roddy,K-Rod,http://www.ufcstats.com/fighter-details/1abf785143
 Gregory Rodrigues,Gregory,Rodrigues,Robocop,http://www.ufcstats.com/fighter-details/d1c65d2cf2925ddd,"6' 3""",185 lbs.,"75.0""",Orthodox,20,6,0
 Kleydson Rodrigues,Kleydson,Rodrigues,KR,http://www.ufcstats.com/fighter-details/102a8fdf8cbf7467,"5' 5""",135 lbs.,"67.0""",Orthodox,8,4,0
 Douglas Henrique Rodrigues,Douglas Henrique,Rodrigues,Blade,http://www.ufcstats.com/fighter-details/19388069e19ec6b9,"6' 0""",185 lbs.,"74.0""",Orthodox,7,2,0
-Modestino Rodrigues,Modestino,Rodrigues,The Slenderman,http://www.ufcstats.com/fighter-details/48e43b65f7838878,--,185 lbs.,--,,7,1,0
+Modestino Rodrigues,Modestino,Rodrigues,,http://www.ufcstats.com/fighter-details/48e43b65f7838878,--,185 lbs.,--,Orthodox,7,1,0
 Levi Rodrigues Jr.,Levi,Rodrigues Jr.,Baby Monster,http://www.ufcstats.com/fighter-details/9ac4e43ed56429ed,"6' 0""",205 lbs.,"76.0""",Orthodox,5,1,0
 Paul Rodriguez,Paul,Rodriguez,,http://www.ufcstats.com/fighter-details/26eddcda9d6b2ffe,"5' 7""",155 lbs.,--,Orthodox,10,9,2
 Ricco Rodriguez,Ricco,Rodriguez,Suave,http://www.ufcstats.com/fighter-details/50cc91ce2982785d,"6' 4""",265 lbs.,--,Orthodox,53,25,0
@@ -3506,7 +3511,7 @@ Brett Rogers,Brett,Rogers,The Grim,http://www.ufcstats.com/fighter-details/9141b
 Brian Rogers,Brian,Rogers,The Professional Predator,http://www.ufcstats.com/fighter-details/f304aff405c4a8fa,"5' 11""",185 lbs.,--,,14,9,0
 Pete Rogers Jr.,Pete,Rogers Jr.,The Heat,http://www.ufcstats.com/fighter-details/36f3d235493d35ad,"6' 0""",145 lbs.,--,,2,4,0
 Max Rohskopf,Max,Rohskopf,Rated R,http://www.ufcstats.com/fighter-details/59a27d2e6d0802ac,"6' 1""",155 lbs.,"71.0""",Orthodox,5,1,0
-Nilson Rojas,Nilson,Rojas,El Rayo,http://www.ufcstats.com/fighter-details/bf60dd3256801649,--,125 lbs.,--,Orthodox,9,0,0
+Nilson Rojas,Nilson,Rojas,El Rayo,http://www.ufcstats.com/fighter-details/bf60dd3256801649,"5' 6""",125 lbs.,"63.0""",Orthodox,9,0,0
 Marcelo Rojo,Marcelo,Rojo,Pitbull,http://www.ufcstats.com/fighter-details/2804ce8dadab5770,"5' 8""",145 lbs.,"71.0""",Orthodox,16,10,0
 Shane Roller,Shane,Roller,,http://www.ufcstats.com/fighter-details/75e0d3cc2262b732,"5' 10""",155 lbs.,"72.0""",Orthodox,11,7,0
 Jared Rollins,Jared,Rollins,J-Roc,http://www.ufcstats.com/fighter-details/c4b6099f0d25f75e,"5' 9""",170 lbs.,--,Orthodox,8,4,0
@@ -3626,7 +3631,7 @@ Emmanuel Sanchez,Emmanuel,Sanchez,El Matador,http://www.ufcstats.com/fighter-det
 Erick Sanchez,Erick,Sanchez,,http://www.ufcstats.com/fighter-details/ef3663798164adf0,"5' 10""",145 lbs.,--,,8,3,0
 Andrew Sanchez,Andrew,Sanchez,El Dirte,http://www.ufcstats.com/fighter-details/fccf811c1e8b01c7,"6' 1""",185 lbs.,"74.0""",Orthodox,13,7,0
 Robert Sanchez,Robert,Sanchez,Littlefury,http://www.ufcstats.com/fighter-details/546f8599a63c29da,"5' 6""",125 lbs.,"66.0""",Orthodox,8,2,0
-Silvestre Sanchez,Silvestre,Sanchez,Gorilla,http://www.ufcstats.com/fighter-details/acdefc52a4b6c576,--,155 lbs.,--,,9,1,0
+Silvestre Sanchez,Silvestre,Sanchez,Gorilla,http://www.ufcstats.com/fighter-details/acdefc52a4b6c576,--,155 lbs.,--,Orthodox,9,1,0
 Jesse Sanders,Jesse,Sanders,,http://www.ufcstats.com/fighter-details/59aaf2730b84698a,"6' 0""",170 lbs.,--,Orthodox,23,7,0
 Luke Sanders,Luke,Sanders,Cool Hand,http://www.ufcstats.com/fighter-details/96428b9e9bd048ea,"5' 6""",135 lbs.,"67.0""",Southpaw,13,5,0
 Jerrod Sanders,Jerrod,Sanders,J-Reazie,http://www.ufcstats.com/fighter-details/12f1b140e248bdb9,"5' 8""",135 lbs.,"72.0""",Orthodox,16,3,0
@@ -3648,7 +3653,7 @@ Jorge Santiago,Jorge,Santiago,The Sandman,http://www.ufcstats.com/fighter-detail
 Mike Santiago,Mike,Santiago,,http://www.ufcstats.com/fighter-details/bc656db347f31e19,"5' 10""",145 lbs.,"69.0""",Orthodox,19,12,0
 Will Santiago,Will,Santiago,The Brown Bomber,http://www.ufcstats.com/fighter-details/4920292f5d9b76df,"5' 7""",185 lbs.,--,Orthodox,9,5,0
 Richie Santiago,Richie,Santiago,The Milford Mauler,http://www.ufcstats.com/fighter-details/9f95d6b5b459cc6b,"5' 7""",135 lbs.,"67.0""",Southpaw,7,2,0
-Hector Santiago,Hector,Santiago,,http://www.ufcstats.com/fighter-details/8e4902b4a8045070,--,135 lbs.,--,Orthodox,6,1,0
+Hector Santiago,Hector,Santiago,,http://www.ufcstats.com/fighter-details/8e4902b4a8045070,"5' 5""",135 lbs.,"68.0""",Orthodox,6,1,0
 Jose Santibanez,Jose,Santibanez,,http://www.ufcstats.com/fighter-details/8299206ccebc44a7,--,155 lbs.,--,,10,3,0
 Art Santore,Art,Santore,Pachuco,http://www.ufcstats.com/fighter-details/012fc7cd0779c09a,"6' 2""",185 lbs.,--,,18,8,0
 Adriano Santos,Adriano,Santos,,http://www.ufcstats.com/fighter-details/c6e6926a81adcd00,--,--,--,,0,1,0
@@ -3858,7 +3863,7 @@ Rory Singer,Rory,Singer,Outburst,http://www.ufcstats.com/fighter-details/546015a
 Rana Rudra Pratap Singh,Rana Rudra Pratap,Singh,Ashwathama,http://www.ufcstats.com/fighter-details/254ed71756cfd18c,"5' 10""",135 lbs.,"69.0""",Orthodox,11,2,0
 Kiran Singh,Kiran,Singh,Stubborn,http://www.ufcstats.com/fighter-details/f985ca2370a37078,"5' 1""",115 lbs.,"65.0""",Orthodox,7,4,0
 Elvis Sinosic,Elvis,Sinosic,The King of Rock n' Rumble,http://www.ufcstats.com/fighter-details/817e0bdf08efce2e,"6' 3""",205 lbs.,"77.0""",Orthodox,7,11,2
-Fabia Sintes,Fabia,Sintes,El Potro Menorquin,http://www.ufcstats.com/fighter-details/9911989cf48b195d,--,125 lbs.,--,,11,3,0
+Fabia Sintes,Fabia,Sintes,El Potro Menorquin,http://www.ufcstats.com/fighter-details/9911989cf48b195d,--,125 lbs.,--,Orthodox,11,3,0
 Mitchell Sipe,Mitchell,Sipe,No Dice,http://www.ufcstats.com/fighter-details/71ef1111bf829b82,"6' 2""",245 lbs.,--,Orthodox,4,1,0
 Gian Siqueira,Gian,Siqueira,Pitbull,http://www.ufcstats.com/fighter-details/a46fdda658fee832,"6' 1""",170 lbs.,"74.0""",Orthodox,19,5,0
 Jamie Siraj,Jamie,Siraj,The Gremlin,http://www.ufcstats.com/fighter-details/e6679e38e7fab7a8,"5' 7""",135 lbs.,"66.0""",Orthodox,14,4,0
@@ -3893,7 +3898,7 @@ Nate Smith,Nate,Smith,The Savage,http://www.ufcstats.com/fighter-details/0bbb69f
 Braxton Smith,Braxton,Smith,The Beautiful Monster,http://www.ufcstats.com/fighter-details/eaa9402e5a7990ad,"5' 11""",257 lbs.,"72.0""",Orthodox,5,2,0
 Elijah Smith,Elijah,Smith,Swift,http://www.ufcstats.com/fighter-details/7478b7f959ba61f5,"5' 9""",135 lbs.,"71.0""",Orthodox,10,1,0
 Jacobe Smith,Jacobe,Smith,Cobe,http://www.ufcstats.com/fighter-details/85497ffd934ecf7e,"5' 10""",170 lbs.,"72.0""",Southpaw,12,0,0
-Hunter Smith,Hunter,Smith,Headshot,http://www.ufcstats.com/fighter-details/c3217a727e43b0cd,--,155 lbs.,--,,8,1,0
+Hunter Smith,Hunter,Smith,Headshot,http://www.ufcstats.com/fighter-details/c3217a727e43b0cd,--,155 lbs.,--,Orthodox,8,1,0
 Walter Smith-Cotito,Walter,Smith-Cotito,,http://www.ufcstats.com/fighter-details/625b65b45c1c6888,"5' 8""",135 lbs.,--,,4,5,0
 Justin Smitley,Justin,Smitley,,http://www.ufcstats.com/fighter-details/c5776fa8f4bf77aa,--,145 lbs.,--,,10,7,1
 Dmitrii Smoliakov,Dmitrii,Smoliakov,The Lifeguard,http://www.ufcstats.com/fighter-details/75afb06215a07341,"6' 2""",253 lbs.,"74.0""",Switch,9,3,0
@@ -3915,7 +3920,7 @@ Joe Son,Joe,Son,,http://www.ufcstats.com/fighter-details/83b743fedde154fb,"5' 4"
 Paul Song,Paul,Song,,http://www.ufcstats.com/fighter-details/9775eabcb1be1a00,--,185 lbs.,--,,2,2,0
 Song Kenan,Song,Kenan,The Assassin,http://www.ufcstats.com/fighter-details/32490e80ddab1e5a,"6' 0""",170 lbs.,"71.0""",Orthodox,22,9,0
 Song Yadong,Song,Yadong,Kung Fu Kid,http://www.ufcstats.com/fighter-details/efb96bf3e9ada36f,"5' 8""",135 lbs.,"67.0""",Orthodox,23,9,1
-YoungJae Song,YoungJae,Song,Super Rookie,http://www.ufcstats.com/fighter-details/0efb0d4ebb950fcb,"5' 8""",145 lbs.,"70.0""",Orthodox,10,1,1
+YoungJae Song,YoungJae,Song,Super Rookie,http://www.ufcstats.com/fighter-details/0efb0d4ebb950fcb,"5' 8""",145 lbs.,"70.0""",Orthodox,10,2,1
 Hyeonjong Song,Hyeonjong,Song,,http://www.ufcstats.com/fighter-details/c5dc1bf9b78f262c,--,135 lbs.,--,,8,1,0
 Emrah Sonmez,Emrah,Sonmez,Anatolian Wolf,http://www.ufcstats.com/fighter-details/fe759b24e344d7eb,"5' 10""",145 lbs.,"71.0""",Orthodox,14,5,0
 Chael Sonnen,Chael,Sonnen,,http://www.ufcstats.com/fighter-details/48d1f690b763934c,"6' 1""",205 lbs.,"73.0""",Southpaw,29,15,1
@@ -4049,7 +4054,7 @@ Jason Suttie,Jason,Suttie,Nobunaga,http://www.ufcstats.com/fighter-details/cc583
 Joel Sutton,Joel,Sutton,,http://www.ufcstats.com/fighter-details/a6a9ab5a824e8f66,"5' 11""",205 lbs.,--,Orthodox,2,4,1
 Chad Sutton,Chad,Sutton,,http://www.ufcstats.com/fighter-details/556347e2b0e33979,"6' 1""",185 lbs.,--,,2,2,0
 Danilo Suzart,Danilo,Suzart,,http://www.ufcstats.com/fighter-details/3d99e5aa85d7576a,"6' 0""",260 lbs.,--,Orthodox,9,2,0
-Takaya Suzuki,Takaya,Suzuki,,http://www.ufcstats.com/fighter-details/81d59c1e07478361,"5' 7""",125 lbs.,"68.0""",Southpaw,8,1,0
+Takaya Suzuki,Takaya,Suzuki,,http://www.ufcstats.com/fighter-details/81d59c1e07478361,"5' 7""",125 lbs.,"68.0""",Southpaw,9,1,0
 Martin Svensson,Martin,Svensson,,http://www.ufcstats.com/fighter-details/bcad7223af3c19da,"6' 1""",155 lbs.,--,,15,6,0
 Daniel Swain,Daniel,Swain,,http://www.ufcstats.com/fighter-details/cc39185f2d7d89e4,"5' 9""",145 lbs.,"70.0""",Orthodox,20,10,1
 Cub Swanson,Cub,Swanson,,http://www.ufcstats.com/fighter-details/d247691a6c0e9034,"5' 8""",145 lbs.,"70.0""",Orthodox,31,14,0
@@ -4062,6 +4067,7 @@ Kevin Syler,Kevin,Syler,El Nino Bala,http://www.ufcstats.com/fighter-details/909
 Leo Sylvest,Leo,Sylvest,Lethal,http://www.ufcstats.com/fighter-details/58a36b4ccf5dc30e,"5' 11""",205 lbs.,--,Orthodox,10,16,0
 Tony Sylvester,Tony,Sylvester,,http://www.ufcstats.com/fighter-details/87b7df65c30008c4,"6' 1""",225 lbs.,--,Southpaw,11,3,0
 Tim Sylvia,Tim,Sylvia,The Maine-iac,http://www.ufcstats.com/fighter-details/2a542ee8a8b83559,"6' 8""",265 lbs.,"80.0""",Orthodox,31,10,0
+Lucia Szabova,Lucia,Szabova,Silent Killer,http://www.ufcstats.com/fighter-details/184f6ec4ee712e9f,--,135 lbs.,--,,12,0,0
 Kevin Szaflarski,Kevin,Szaflarski,,http://www.ufcstats.com/fighter-details/d2d05dda5f887f87,"6' 5""",260 lbs.,"77.0""",Orthodox,11,2,0
 Sebastian Szalay,Sebastian,Szalay,Seb,http://www.ufcstats.com/fighter-details/f201f21cf2c79eb2,"5' 6""",145 lbs.,"66.0""",Orthodox,10,2,0
 Bartosz Szewczyk,Bartosz,Szewczyk,,http://www.ufcstats.com/fighter-details/224050896306f00c,"6' 4""",205 lbs.,"73.0""",Orthodox,8,3,1
@@ -4076,7 +4082,7 @@ Joe Taimanglo,Joe,Taimanglo,The Juggernaut,http://www.ufcstats.com/fighter-detai
 Tatsuro Taira,Tatsuro,Taira,The Best,http://www.ufcstats.com/fighter-details/4461d7e47375a895,"5' 7""",125 lbs.,"70.0""",Orthodox,18,2,0
 Mairbek Taisumov,Mairbek,Taisumov,Beckan,http://www.ufcstats.com/fighter-details/8f5c8850b2484173,"5' 9""",155 lbs.,"73.0""",Orthodox,27,6,0
 Taiyilake Nueraji,Taiyilake,Nueraji,Super Saiyan,http://www.ufcstats.com/fighter-details/7498b3ac79a3b948,"6' 2""",155 lbs.,"75.0""",Southpaw,12,1,0
-Ryo Tajima,Ryo,Tajima,,http://www.ufcstats.com/fighter-details/34fbfc3f65b64645,"5' 8""",135 lbs.,"71.0""",Orthodox,11,3,0
+Ryo Tajima,Ryo,Tajima,,http://www.ufcstats.com/fighter-details/34fbfc3f65b64645,"5' 8""",135 lbs.,"71.0""",Orthodox,12,3,0
 Nobuhiko Takada,Nobuhiko,Takada,,http://www.ufcstats.com/fighter-details/a25b71fe5e31fa97,"6' 0""",220 lbs.,--,Southpaw,2,6,2
 Yoshiki Takahashi,Yoshiki,Takahashi,Kazuo,http://www.ufcstats.com/fighter-details/6420efac0578988b,"5' 11""",199 lbs.,--,Southpaw,30,27,3
 Yoko Takahashi,Yoko,Takahashi,,http://www.ufcstats.com/fighter-details/01f86e2d604e2f3c,"5' 8""",150 lbs.,--,,15,12,2
@@ -4248,12 +4254,13 @@ Logan Urban,Logan,Urban,Hulk,http://www.ufcstats.com/fighter-details/5e23f30e9c6
 Hector Urbina,Hector,Urbina,El Toro,http://www.ufcstats.com/fighter-details/4b8fb0453a596b8e,"5' 11""",170 lbs.,"73.0""",Orthodox,17,10,1
 Elias Urbina,Elias,Urbina,,http://www.ufcstats.com/fighter-details/47fcdcaccb58ca80,"6' 3""",185 lbs.,"77.0""",Southpaw,3,1,0
 Gilbert Urbina,Gilbert,Urbina,The RGV Bad Boy,http://www.ufcstats.com/fighter-details/b12fb759e02378de,"6' 3""",185 lbs.,"75.0""",Orthodox,8,5,0
-Guilherme Uriel,Guilherme,Uriel,Urso,http://www.ufcstats.com/fighter-details/4252b09f0c8c4472,"6' 1""",265 lbs.,"74.0""",Orthodox,7,2,0
+Guilherme Uriel,Guilherme,Uriel,Urso,http://www.ufcstats.com/fighter-details/4252b09f0c8c4472,"6' 1""",242 lbs.,"74.0""",Orthodox,8,2,0
 Nick Urso,Nick,Urso,,http://www.ufcstats.com/fighter-details/e78c4c3d329c531b,"5' 6""",125 lbs.,"66.0""",Southpaw,10,3,0
 Yasuhiro Urushitani,Yasuhiro,Urushitani,,http://www.ufcstats.com/fighter-details/c34e5849184b08c3,"5' 5""",125 lbs.,--,Southpaw,21,8,6
 Sho Patrick Usami,Sho Patrick,Usami,Savage,http://www.ufcstats.com/fighter-details/fe30c5f5cc3e028b,"5' 9""",155 lbs.,"70.0""",Orthodox,4,1,0
 Kamaru Usman,Kamaru,Usman,The Nigerian Nightmare,http://www.ufcstats.com/fighter-details/f1b2aa7853d1ed6e,"6' 0""",185 lbs.,"76.0""",Switch,21,5,0
 Mohammed Usman,Mohammed,Usman,The Motor,http://www.ufcstats.com/fighter-details/da7f113b5ea39c43,"6' 2""",239 lbs.,"79.0""",Orthodox,12,4,0
+Ilimbek Akylbek Uulu,Ilimbek Akylbek,Uulu,,http://www.ufcstats.com/fighter-details/130b65b53f30f33c,--,135 lbs.,--,,10,3,0
 Darren Uyenoyama,Darren,Uyenoyama,BC,http://www.ufcstats.com/fighter-details/6546af7ab545b90c,"5' 6""",125 lbs.,"65.0""",Orthodox,10,6,0
 Richie Vaculik,Richie,Vaculik,Vas,http://www.ufcstats.com/fighter-details/54578e5927adea53,"5' 6""",125 lbs.,"69.0""",Orthodox,10,4,0
 Rashid Vagabov,Rashid,Vagabov,Rambo,http://www.ufcstats.com/fighter-details/0d1190beced94f7c,"5' 7""",125 lbs.,"63.0""",Orthodox,14,2,0
@@ -4339,7 +4346,7 @@ Pablo Villaseca,Pablo,Villaseca,El Gallo,http://www.ufcstats.com/fighter-details
 Joey Villasenor,Joey,Villasenor,Smokin' Joe,http://www.ufcstats.com/fighter-details/15515e797aedc137,"6' 0""",185 lbs.,--,Orthodox,29,10,0
 Danillo Villefort,Danillo,Villefort,Indio,http://www.ufcstats.com/fighter-details/fd87b1bbfcde9d5e,"6' 1""",185 lbs.,--,Orthodox,15,5,0
 Yuri Villefort,Yuri,Villefort,,http://www.ufcstats.com/fighter-details/0fb1e2694a39a02f,"6' 0""",170 lbs.,"73.0""",Orthodox,10,5,0
-Treston Vines,Treston,Vines,TV Time,http://www.ufcstats.com/fighter-details/563a1d42bb0e3cef,"6' 1""",185 lbs.,"79.0""",Orthodox,10,4,0
+Tre'ston Vines,Tre'ston,Vines,TV Time,http://www.ufcstats.com/fighter-details/563a1d42bb0e3cef,"6' 0""",185 lbs.,"79.0""",Orthodox,10,4,1
 Marcos Vinicius,Marcos,Vinicius,Vina,http://www.ufcstats.com/fighter-details/e363b21261814830,"5' 9""",125 lbs.,--,Orthodox,23,11,1
 Erick Visconde,Erick,Visconde,,http://www.ufcstats.com/fighter-details/65ff41ab071ab326,--,145 lbs.,--,,17,3,0
 Brandon Visher,Brandon,Visher,The Viper,http://www.ufcstats.com/fighter-details/7c4ec656d8fcb867,"5' 6""",135 lbs.,"68.0""",Orthodox,13,3,0
