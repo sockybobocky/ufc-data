@@ -1,38 +1,61 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-09-01T23:00:00Z,Liam Mccracken,Silvestre Sanchez,-225,+189,-225,+210,2
-2026-09-02T02:15:00Z,Adam Livingston,Hunter Smith,-180,+157,-162,+157,2
-2026-09-02T02:40:00Z,Charlie Cleveland,Gabriel Lourenco,-185,+161,-172,+161,2
-2026-09-02T03:30:00Z,Modestino Rodrigues,Brandon Holmes,+122,-150,+122,-150,1
-2026-09-02T03:55:00Z,Adam Darby,Patrick Rivera,-425,+334,-400,+334,2
-2026-09-05T16:00:00Z,Axel Sola,Fares Ziam,+135,-155,+135,-155,6
-2026-09-05T16:00:00Z,Salahdine Parnasse,Daniel Hooker,-575,+431,-575,+440,5
-2026-09-05T16:00:00Z,Punahele Soriano,Daniil Donchenko,+207,-250,+210,-215,7
-2026-09-05T16:00:00Z,Sofia Montenegro,Delphine Benouaich,+126,-162,+130,-140,7
-2026-09-05T16:00:00Z,Fabia Sintes,Michael Aljarouj,+130,-166,+135,-133,7
-2026-09-05T16:00:00Z,Felipe Lima,Morgan Charriere,-191,+166,-190,+166,7
-2026-09-05T16:00:00Z,Klaudia Syguła,Nora Cornolle,-105,-115,+108,-115,6
-2026-09-05T16:00:00Z,Trevor Peek,Kurtis Campbell,+270,-335,+280,-335,7
-2026-09-05T16:00:00Z,Muhammadjon Naimov,Losene Keita,+289,-360,+289,-345,6
-2026-09-05T16:00:00Z,Luis Felipe Dias,Matthieu Duclos,+100,-120,+105,-115,5
-2026-09-05T16:00:00Z,Matthieu Letho,Luis Felipe Dias,-118,-102,-118,-102,2
-2026-09-05T16:00:00Z,Ryan Spann,Mario Pinto,+222,-270,+225,-235,7
-2026-09-05T16:00:00Z,Nursultan Ruziboev,Michael Page,+161,-185,+161,-175,6
-2026-09-05T16:00:00Z,Modestas Bukauskas,Oumar Sy,+177,-205,+177,-180,7
-2026-09-10T00:00:00Z,Arman Tsarukyan,Mauricio Ruffy,-380,+303,-380,+303,1
-2026-09-10T00:00:00Z,Tai Tuivasa,Robelis Despaigne,+409,-540,+409,-540,1
+2026-09-05T09:00:00Z,Khamzat Chimaev,Tyron Woodley,-5000,+1200,-5000,+1200,1
+2026-09-05T16:00:00Z,Abdo Chahidi,Imran Ben Slama,,,,,0
+2026-09-05T16:00:00Z,Antonio Krajinović,Michael Samperi,,,,,0
+2026-09-05T16:00:00Z,Artiom Livadari,Fikri Sabri,,,,,0
+2026-09-05T16:00:00Z,Dmitry Menshikov,Diaguely Camara,,,,,0
+2026-09-05T16:00:00Z,Don Sno,Jay Overmeer,,,,,0
+2026-09-05T16:00:00Z,Kevin Tariq Osaro,Errol Zimmerman,,,,,0
+2026-09-05T16:00:00Z,Figuereido Landman,Mohammed Boutasaa,,,,,0
+2026-09-05T16:00:00Z,Imad Hadar,Ulrich Tiebe,,,,,0
+2026-09-05T16:00:00Z,Valentin Knau,Mohammed Hamdi,,,,,0
+2026-09-05T16:00:00Z,Vedat Hoduk,Nikola Todorovic,,,,,0
+2026-09-05T16:10:00Z,Sofia Montenegro,Delphine Benouaich,+118,-144,+124,-138,6
+2026-09-05T16:35:00Z,Luis Felipe Dias,Matthieu Duclos,+103,-120,+103,-115,4
+2026-09-05T16:45:00Z,Matthieu Letho,Luis Felipe Dias,-118,-102,-115,-102,2
+2026-09-05T17:00:00Z,Klaudia Syguła,Nora Cornolle,-118,+101,-103,+101,6
+2026-09-05T17:25:00Z,Fabia Sintes,Michael Aljarouj,+108,-130,+108,-120,6
+2026-09-05T17:45:00Z,Pavel Andrusca,Nathaniel Wood,+240,-290,+247,-290,6
+2026-09-05T18:00:00Z,Chico Kwasi,Teodor Hristov,,,,,0
+2026-09-05T18:05:00Z,Modestas Bukauskas,Oumar Sy,+193,-230,+194,-225,6
+2026-09-05T18:25:00Z,Ryan Spann,Mario Pinto,+265,-325,+270,-300,6
+2026-09-05T18:45:00Z,Felipe Lima,Morgan Charriere,-215,+181,-192,+181,6
+2026-09-05T19:15:00Z,Muhammadjon Naimov,Losene Keita,+284,-350,+310,-350,6
+2026-09-05T19:45:00Z,Trevor Peek,Kurtis Campbell,+300,-400,+320,-385,6
+2026-09-05T20:15:00Z,Punahele Soriano,Daniil Donchenko,+193,-230,+195,-230,6
+2026-09-05T20:45:00Z,Nursultan Ruziboev,Michael Page,+145,-170,+145,-163,5
+2026-09-05T21:15:00Z,Axel Sola,Fares Ziam,+128,-150,+130,-150,6
+2026-09-05T21:45:00Z,Salahdine Parnasse,Daniel Hooker,-625,+450,-600,+455,5
 2026-09-12T17:00:00Z,Jon Furuheim,Claudeci Brito de Sousa,,,,,0
 2026-09-12T17:00:00Z,Mustafa Aliesmaiel,Elias Ksia,,,,,0
 2026-09-12T17:00:00Z,William Swärd,Ioseb Amoev,,,,,0
-2026-09-13T04:00:00Z,Jean Silva,Jose Delgado,-425,+355,-395,+355,3
-2026-09-20T00:00:00Z,Gable Steveson,Sean Sharaf,-1500,+600,-1200,+800,4
-2026-09-20T00:00:00Z,Tai Tuivasa,Robelis Despaigne,+425,-575,+425,-530,3
-2026-09-20T03:30:00Z,Arman Tsarukyan,Mauricio Ruffy,-375,+295,-375,+295,3
-2026-09-20T04:00:00Z,Joshua Van,Alexandre Pantoja,-108,-112,-107,-106,4
-2026-09-26T18:00:00Z,Darren Till,Yoel Romero,-180,+140,-180,+140,1
-2026-10-04T01:00:00Z,Deiveson Figueiredo,Payton Talbott,+415,-550,+415,-550,1
-2026-10-04T01:00:00Z,Valentina Shevchenko,Natalia Silva,-155,+135,-155,+135,1
-2026-10-25T03:30:00Z,Petr Yan,Merab Dvalishvili,-162,+136,-162,+174,4
-2026-10-25T04:00:00Z,Alex Volkanovski,Movsar Evloev,-115,-105,-113,-105,4
+2026-09-12T18:45:00Z,Rafa Garcia,Zhu Rong,+140,-160,+140,-160,3
+2026-09-12T19:45:00Z,Yousri Belgaroui,Djorden Santos,-700,+505,-700,+505,3
+2026-09-12T20:15:00Z,Ignacio Bahamondes,Muslim Salikhov,-525,+400,-525,+400,3
+2026-09-12T20:45:00Z,Tim Elliott,Edgar Chairez,+186,-220,+186,-220,3
+2026-09-12T21:15:00Z,David Martinez,Dan Ige,-300,+245,-300,+246,3
+2026-09-12T21:45:00Z,Waldo Cortes-Acosta,Curtis Blaydes,-185,+161,-185,+161,3
+2026-09-12T22:15:00Z,Manon Fiorot,Alexa Grasso,-215,+183,-215,+183,3
+2026-09-12T22:45:00Z,Tommy McMillen,Marwan Rahiki,-155,+135,-155,+135,3
+2026-09-12T23:15:00Z,Brandon Moreno,Joseph Morales,+110,-130,+110,-130,3
+2026-09-12T23:45:00Z,Jean Silva,Jose Delgado,-450,+350,-385,+350,5
+2026-09-13T00:00:00Z,Drakkar Klose,Thomas Gantt,+383,-500,+383,-500,2
+2026-09-13T00:00:00Z,J.J. Aldrich,Regina Tarin,+192,-230,+192,-230,2
+2026-09-19T22:15:00Z,Casey O'Neill,Eduarda Moura,-177,+150,-177,+150,2
+2026-09-19T22:45:00Z,Giga Chikadze,Joanderson Brito,+274,-340,+275,-340,2
+2026-09-19T23:15:00Z,Edmen Shahbazyan,Brunno Ferreira,-155,+132,-155,+132,2
+2026-09-19T23:45:00Z,Tai Tuivasa,Robelis Despaigne,+470,-650,+505,-530,4
+2026-09-20T00:15:00Z,Marlon Vera,Charles Jourdain,+200,-240,+200,-240,2
+2026-09-20T00:45:00Z,Gable Steveson,Sean Sharaf,-1500,+600,-1200,+800,4
+2026-09-20T01:15:00Z,Alonzo Menifield,Iwo Baraniewski,+193,-230,+193,-230,2
+2026-09-20T01:45:00Z,Renato Moicano,Brian Ortega,-200,+169,-200,+170,2
+2026-09-20T02:15:00Z,Patricio Pitbull,Dooho Choi,+186,-220,+186,-220,2
+2026-09-20T02:45:00Z,Arman Tsarukyan,Mauricio Ruffy,-375,+295,-375,+303,4
+2026-09-20T03:15:00Z,Joshua Van,Alexandre Pantoja,-112,-108,-110,-106,4
+2026-09-26T18:00:00Z,Darren Till,Yoel Romero,-180,+157,-180,+157,1
+2026-10-04T01:00:00Z,Deiveson Figueiredo,Payton Talbott,+415,-550,+415,-550,2
+2026-10-25T03:30:00Z,Petr Yan,Merab Dvalishvili,-180,+150,-170,+150,4
+2026-10-25T04:00:00Z,Alex Volkanovski,Movsar Evloev,-112,-108,-108,-107,4
 2026-12-27T03:00:00Z,Manel Kape,Joshua Van,-180,+155,-180,+155,1
 2026-12-31T05:00:00Z,Josh Hokit,Alex Pereira,-160,+140,-160,+140,1
 2026-12-31T05:00:00Z,Justin Gaethje,Arman Tsarukyan,+385,-500,+385,-500,1
