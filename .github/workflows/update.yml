@@ -46,10 +46,12 @@ jobs:
             python scrape_ufc_data.py
           fi
 
-      - name: Retrain ML model
+      - name: Retrain ML models
         run: |
-          echo "Retraining prediction model..."
+          echo "Retraining winner prediction model..."
           python train_model.py
+          echo "Retraining distance prediction model..."
+          python train_distance_model.py
           echo "Model training complete"
 
       - name: Verify CSVs have data before committing
@@ -73,5 +75,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add *.csv *.json
-          git diff --cached --quiet || git commit -m "Update UFC data + ML model $(date +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "Update UFC data + ML models $(date +%Y-%m-%d)"
           git push
