@@ -30,6 +30,14 @@ on:
         required: false
         default: '0'
         type: string
+      repair_batches:
+        description: 'Number of bounded historical batches'
+        required: false
+        default: '1'
+        type: choice
+        options:
+          - '1'
+          - '5'
 
 jobs:
   scrape:
@@ -137,17 +145,19 @@ jobs:
           pip install requests beautifulsoup4 playwright
           python -m playwright install --with-deps chromium
       - name: Test parser and checkpoints
-        run: python -m unittest test_ufcstats_parser test_backfill_history -v
+        run: python -m unittest test_ufcstats_parser test_backfill_history test_backfill_batches -v
       - name: Verify representative historical fights
         env:
           REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
           REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
-        run: python backfill_history.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --output repaired_broad
+          REPAIR_BATCHES: ${{ inputs.repair_batches || '1' }}
+        run: python backfill_batches.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --batches "$REPAIR_BATCHES" --output repaired_broad
       - name: Verify resume uses completed checkpoints
         env:
           REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
           REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
-        run: python backfill_history.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --output repaired_broad --resume
+          REPAIR_BATCHES: ${{ inputs.repair_batches || '1' }}
+        run: python backfill_batches.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --batches "$REPAIR_BATCHES" --output repaired_broad --resume
       - name: Upload isolated verification data and checkpoints
         if: always()
         uses: actions/upload-artifact@v4
