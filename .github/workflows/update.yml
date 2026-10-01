@@ -15,9 +15,34 @@ on:
         options:
           - update
           - full
+          - repair-sample
+          - repair-broad
+          - recent-audit
+      repair_limit:
+        description: 'Historical verification batch size'
+        required: false
+        default: '25'
+        type: choice
+        options:
+          - '25'
+          - '100'
+      repair_offset:
+        description: 'Historical verification offset (nonnegative integer)'
+        required: false
+        default: '0'
+        type: string
+      repair_batches:
+        description: 'Number of bounded historical batches'
+        required: false
+        default: '1'
+        type: choice
+        options:
+          - '1'
+          - '5'
 
 jobs:
   scrape:
+    if: ${{ github.event.inputs.mode != 'repair-sample' && github.event.inputs.mode != 'repair-broad' && github.event.inputs.mode != 'recent-audit' }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -77,3 +102,92 @@ jobs:
           git add *.csv *.json
           git diff --cached --quiet || git commit -m "Update UFC data + ML models $(date +%Y-%m-%d)"
           git push
+
+  verify-repair-sample:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'repair-sample' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Run parser and failure-protection tests
+        run: python -m unittest test_ufcstats_parser -v
+      - name: Verify five existing fights without changing source CSVs
+        run: python repair_history.py --limit 5 --output repaired_sample
+      - name: Upload verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-repair-sample
+          path: repaired_sample/
+          if-no-files-found: warn
+
+  verify-repair-broad:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'repair-broad' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Test parser and checkpoints
+        run: python -m unittest test_ufcstats_parser test_backfill_history test_backfill_batches -v
+      - name: Verify representative historical fights
+        env:
+          REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
+          REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
+          REPAIR_BATCHES: ${{ inputs.repair_batches || '1' }}
+        run: python backfill_batches.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --batches "$REPAIR_BATCHES" --output repaired_broad
+      - name: Verify resume uses completed checkpoints
+        env:
+          REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
+          REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
+          REPAIR_BATCHES: ${{ inputs.repair_batches || '1' }}
+        run: python backfill_batches.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --batches "$REPAIR_BATCHES" --output repaired_broad --resume
+      - name: Upload isolated verification data and checkpoints
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-repair-broad
+          path: repaired_broad/
+          if-no-files-found: warn
+
+  verify-recent-events:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'recent-audit' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install source audit dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Audit recent completed events without publishing
+        run: python audit_recent.py
+      - name: Save checksummed source pages and isolated records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recent-event-audit
+          path: recent_audit/
+          if-no-files-found: warn

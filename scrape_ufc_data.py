@@ -32,7 +32,8 @@ import os
 import re
 import sys
 import json
-from datetime import datetime
+from datetime import datetime, timezone
+from ufcstats_parser import ParseError, RESULT_FIELDS, STAT_FIELDS, parse_detail, parse_stats
 
 # Playwright browser - launched once, reused for all ufcstats.com fetches
 BROWSER = None
@@ -68,7 +69,7 @@ API_SESSION.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
 })
 
-ODDS_API_KEY = "c60ed248ecaef69dc5662723e95b7ce8"
+ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 STATE_FILE = "scraper_state.json"
 
 
@@ -364,228 +365,99 @@ def update_upcoming_fighter_stats():
 # ═══════════════════════════════════════════════════
 def scrape_events_and_fights(state, full=False):
     print("\n[3/8] Scraping events, fight results, and fight stats...")
-    resp = fetch("http://www.ufcstats.com/statistics/events/completed?page=all")
-    if not resp:
-        print("  ERROR: Could not fetch events list")
-        return
-    soup = BeautifulSoup(resp.text, "html.parser")
-    seen = set()
-    all_event_urls = []
-    for a in soup.select('a[href*="event-details"]'):
-        href = a.get("href", "").strip()
-        name = a.get_text(strip=True)
-        if href and name and href not in seen:
-            seen.add(href)
-            all_event_urls.append((href, name))
-    print(f"  {len(all_event_urls)} total completed events found")
-
-    already = set(state.get("scraped_events", []))
-    if full:
-        to_scrape = all_event_urls
-        already = set()
-        state["scraped_events"] = []
-    else:
-        to_scrape = [(h, n) for h, n in all_event_urls if h not in already]
-    print(f"  {len(to_scrape)} events to scrape")
-
-    # Load existing data
-    results = []
-    fight_stats = []
-    if not full and os.path.exists("ufc_fight_results.csv"):
-        with open("ufc_fight_results.csv", "r", encoding="utf-8") as f:
-            results = list(csv.DictReader(f))
-        print(f"  Loaded {len(results)} existing results")
-    if not full and os.path.exists("ufc_fight_stats.csv"):
-        with open("ufc_fight_stats.csv", "r", encoding="utf-8") as f:
-            fight_stats = list(csv.DictReader(f))
-        print(f"  Loaded {len(fight_stats)} existing stats")
-
-    # Build set of fight URLs that already have per-round data (skip re-scraping these)
-    fights_with_rounds = set()
-    for fs in fight_stats:
-        rnd = fs.get("ROUND", "")
-        if rnd and rnd not in ("Total", "total", ""):
-            # Find the matching fight URL from results
-            bout = fs.get("BOUT", "")
-            fights_with_rounds.add(bout)
-    if fights_with_rounds:
-        print(f"  {len(fights_with_rounds)} fights already have per-round data (will skip)")
-
-    for idx, (event_url, event_name) in enumerate(to_scrape):
-        print(f"  [{idx+1}/{len(to_scrape)}] {event_name}...", end=" ", flush=True)
-        resp2 = fetch(event_url)
-        if not resp2:
+    response = fetch("http://www.ufcstats.com/statistics/events/completed?page=all")
+    if response is None:
+        raise RuntimeError("Completed-events page retrieval failed")
+    soup = BeautifulSoup(response.text, "html.parser")
+    event_links = {}
+    for link in soup.select('a[href*="event-details"]'):
+        if link.get("href") and link.get_text(strip=True):
+            event_links[link["href"]] = link.get_text(strip=True)
+    if not event_links:
+        raise RuntimeError("No completed event links; refusing to replace data")
+    already = set() if full else set(state.get("scraped_events", []))
+    results, stats = [], []
+    if not full:
+        for filename, target in (("ufc_fight_results.csv", results), ("ufc_fight_stats.csv", stats)):
+            if os.path.exists(filename):
+                with open(filename, encoding="utf-8-sig", newline="") as handle:
+                    target.extend(csv.DictReader(handle))
+    # Cache entries are trusted only when their published results are complete.
+    # Older scraper versions marked upcoming/incomplete event pages done.
+    retry_names = {r.get("EVENT") for r in results if not r.get("FIGHT_URL") or
+                   not r.get("OUTCOME") or not r.get("METHOD") or not r.get("ROUND") or not r.get("TIME")}
+    verified_names = {r.get("EVENT") for r in results if r.get("FIGHT_URL") and r.get("OUTCOME")}
+    failures = []
+    completed = set(already)
+    for event_url, event_name in event_links.items():
+        if event_url in already and event_name in verified_names and event_name not in retry_names:
             continue
-        soup2 = BeautifulSoup(resp2.text, "html.parser")
+        event_response = fetch(event_url)
+        if event_response is None:
+            failures.append({"url":event_url,"reason":"Event retrieval failed"})
+            continue
+        event_soup = BeautifulSoup(event_response.text,"html.parser")
         event_date = ""
-        event_location = ""
-        for li in soup2.select("li.b-list__box-list-item"):
-            lt = li.get_text(" ", strip=True)
-            if "Date:" in lt: event_date = lt.split("Date:")[-1].strip()
-            elif "Location:" in lt: event_location = lt.split("Location:")[-1].strip()
-
-        fight_rows = soup2.select("tr.b-fight-details__table-row")
-        count = 0
-        for row in fight_rows:
-            fighter_links = row.select('a[href*="fighter-details"]')
-            if len(fighter_links) < 2:
+        for item in event_soup.select("li.b-list__box-list-item"):
+            value = item.get_text(" ",strip=True)
+            if "Date:" in value:
+                event_date = value.split("Date:",1)[1].strip()
+        event_fights = {}
+        for link in event_soup.select('a[href*="fight-details"]'):
+            event_fights[link["href"]] = None
+        if event_date:
+            parsed_date = datetime.strptime(event_date, "%B %d, %Y").date()
+            if parsed_date > datetime.now(timezone.utc).date() or (parsed_date == datetime.now(timezone.utc).date() and not event_fights):
+                completed.discard(event_url)
                 continue
-            fa = fighter_links[0].get_text(strip=True)
-            fb = fighter_links[1].get_text(strip=True)
-            cells = row.select("td")
-            cell_texts = [c.get_text(" ", strip=True) for c in cells]
-
-            # Parse W/L from first cell
-            wl = cell_texts[0].strip() if cell_texts else ""
-            winner = ""
-            outcome = ""
-            wl_lower = wl.lower()
-            if "win" in wl_lower and "loss" in wl_lower:
-                winner = fa
-                outcome = "W/L"
-            elif "loss" in wl_lower and "win" not in wl_lower:
-                # This shouldn't happen on event pages but just in case
-                winner = fb
-                outcome = "L/W"
-            elif "win" in wl_lower:
-                winner = fa
-                outcome = "W/L"
-            elif "draw" in wl_lower or "nc" in wl_lower:
-                outcome = "D/D"
-
-            weight_class = ""
-            method = ""
-            rnd = ""
-            fight_time = ""
-            for ct in cell_texts[1:]:
-                ct_s = ct.strip()
-                if not ct_s or ct_s == "View Matchup":
-                    continue
-                if "weight" in ct_s.lower() or "catch" in ct_s.lower() or "open" in ct_s.lower():
-                    weight_class = ct_s
-                elif ct_s in ["KO/TKO","Submission","Could Not Continue","Overturned"] or "Decision" in ct_s or "DQ" in ct_s:
-                    method = ct_s
-                elif re.match(r'^\d$', ct_s) and not rnd:
-                    rnd = ct_s
-                elif re.match(r'^\d+:\d{2}$', ct_s):
-                    fight_time = ct_s
-
-            fight_link = row.select_one('a[href*="fight-details"]')
-            fight_url = fight_link.get("href", "").strip() if fight_link else ""
-
-            results.append({
-                "EVENT": event_name, "DATE": event_date, "BOUT": f"{fa} vs. {fb}",
-                "FIGHTER_A": fa, "FIGHTER_B": fb, "WINNER": winner, "OUTCOME": outcome,
-                "WEIGHTCLASS": weight_class, "METHOD": method, "ROUND": rnd, "TIME": fight_time,
-                "FIGHT_URL": fight_url,
-            })
-            count += 1
-
-            # Scrape fight detail page for round-by-round stats (skip if already have per-round data)
-            bout_key = f"{fa} vs. {fb}"
-            if fight_url and winner and bout_key not in fights_with_rounds:
-                fstats = scrape_fight_stats(fight_url, event_name, fa, fb)
-                fight_stats.extend(fstats)
-
-        print(f"{count} fights")
-        state["scraped_events"].append(event_url)
-        if (idx + 1) % 25 == 0:
-            save_state(state)
-            write_csv("ufc_fight_results.csv", results, ["EVENT","DATE","BOUT","FIGHTER_A","FIGHTER_B","WINNER","OUTCOME","WEIGHTCLASS","METHOD","ROUND","TIME","FIGHT_URL"])
-            print(f"    checkpoint: {len(results)} results saved")
-        time.sleep(0.3)
-
-    write_csv("ufc_fight_results.csv", results, ["EVENT","DATE","BOUT","FIGHTER_A","FIGHTER_B","WINNER","OUTCOME","WEIGHTCLASS","METHOD","ROUND","TIME","FIGHT_URL"])
-    write_csv("ufc_fight_stats.csv", fight_stats, ["EVENT","BOUT","ROUND","FIGHTER","KD","SIG.STR.","SIG.STR. %","TOTAL STR.","TD","TD %","SUB.ATT","REV.","CTRL","HEAD","BODY","LEG","DISTANCE","CLINCH","GROUND"])
+        if not event_date or not event_fights:
+            failures.append({"url":event_url,"reason":"Missing event date/fights"})
+            continue
+        event_complete = True
+        for fight_url in event_fights:
+            try:
+                detail_response = fetch(fight_url)
+                if detail_response is None:
+                    raise RuntimeError("Fight detail retrieval failed")
+                fight = parse_detail(detail_response.text,fight_url,event_name,event_date)
+                repaired_stats = parse_stats(detail_response.text,fight_url,event_name,fight["FIGHTER_A"],fight["FIGHTER_B"])
+                expected = {(name,str(rnd)) for name in (fight["FIGHTER_A"],fight["FIGHTER_B"]) for rnd in range(1,int(fight["ROUND"])+1)}
+                present = {(row["FIGHTER"],row["ROUND"]) for row in repaired_stats if row.get("KD") is not None}
+                if not expected.issubset(present):
+                    raise ParseError("Explicit main round coverage incomplete")
+                results = [row for row in results if row.get("FIGHT_URL") != fight_url and not
+                           (not row.get("FIGHT_URL") and row.get("EVENT") == event_name and row.get("BOUT") == fight["BOUT"])]
+                results.append(fight)
+                stats = [row for row in stats if not (row.get("FIGHT_URL") == fight_url or
+                         (row.get("EVENT") == event_name and row.get("BOUT") == fight["BOUT"]))]
+                stats.extend(repaired_stats)
+            except (ParseError, ValueError, RuntimeError) as exc:
+                failures.append({"url":fight_url,"reason":str(exc)})
+                event_complete = False
+            time.sleep(0.3)
+        if event_complete:
+            # Keep the authoritative completed card, retaining superseded listings in audit evidence.
+            results = [r for r in results if r.get("EVENT") != event_name or r.get("FIGHT_URL")]
+            completed.add(event_url)
+    # Fetch/parse failures must not publish a partial batch or mark failed events done.
+    with open("scraper_repair_errors.json","w",encoding="utf-8") as handle:
+        json.dump(failures,handle,indent=2)
+    if failures:
+        raise RuntimeError(f"{len(failures)} scrape failures; result/stat files and event state were not updated")
+    write_csv("ufc_fight_results.csv",results,RESULT_FIELDS)
+    write_csv("ufc_fight_stats.csv",stats,STAT_FIELDS)
+    state["scraped_events"] = sorted(completed)
     save_state(state)
-    print(f"  -> {len(results)} results + {len(fight_stats)} stat rows saved")
+    print(f"  -> {len(results)} results + {len(stats)} statistic rows saved")
+
 
 
 def scrape_fight_stats(fight_url, event, fa, fb):
-    """Scrape round-by-round stats from a fight detail page using Playwright."""
-    global PAGE
-    stats = []
-    bout = f"{fa} vs. {fb}"
-    
-    try:
-        PAGE.goto(fight_url, timeout=20000, wait_until="domcontentloaded")
-        time.sleep(0.5)
-        content = PAGE.content()
-        soup = BeautifulSoup(content, "html.parser")
-        
-        # All fight stats tables are on the page. Structure:
-        #   1-row table = Totals
-        #   2+ row table = Per-round (row 0 = round 1, row 1 = round 2, etc.)
-        # Main stats tables have 9+ value columns, sig strike tables have 6
-        
-        all_tables = soup.select("table")
-        
-        for table in all_tables:
-            rows = table.select("tbody tr")
-            if not rows:
-                continue
-            
-            is_per_round = len(rows) > 1
-            
-            for ri, row in enumerate(rows):
-                cells = row.select("td")
-                if len(cells) < 2:
-                    continue
-                
-                # Extract fighter names and values from p tags
-                fighter_a_vals = []
-                fighter_b_vals = []
-                fighter_a_name = ""
-                fighter_b_name = ""
-                
-                for ci, cell in enumerate(cells):
-                    p_tags = cell.select("p")
-                    if len(p_tags) >= 2:
-                        val_a = p_tags[0].get_text(strip=True)
-                        val_b = p_tags[1].get_text(strip=True)
-                    elif len(p_tags) == 1:
-                        val_a = p_tags[0].get_text(strip=True)
-                        val_b = val_a
-                    else:
-                        val_a = cell.get_text(strip=True)
-                        val_b = val_a
-                    
-                    if ci == 0:
-                        links = cell.select('a[href*="fighter-details"]')
-                        if len(links) >= 2:
-                            fighter_a_name = links[0].get_text(strip=True)
-                            fighter_b_name = links[1].get_text(strip=True)
-                        elif len(links) == 1:
-                            fighter_a_name = links[0].get_text(strip=True)
-                    else:
-                        fighter_a_vals.append(val_a)
-                        fighter_b_vals.append(val_b)
-                
-                if not fighter_a_name:
-                    continue
-                
-                round_num = str(ri + 1) if is_per_round else "Total"
-                
-                main_keys = ["KD", "SIG.STR.", "SIG.STR. %", "TOTAL STR.", "TD", "TD %", "SUB.ATT", "REV.", "CTRL"]
-                sig_keys = ["HEAD", "BODY", "LEG", "DISTANCE", "CLINCH", "GROUND"]
-                keys = main_keys if len(fighter_a_vals) >= 9 else sig_keys if len(fighter_a_vals) >= 6 else main_keys
-                
-                stat_a = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_a_name}
-                for ki, key in enumerate(keys):
-                    stat_a[key] = fighter_a_vals[ki] if ki < len(fighter_a_vals) else ""
-                stats.append(stat_a)
-                
-                if fighter_b_name:
-                    stat_b = {"EVENT": event, "BOUT": bout, "ROUND": round_num, "FIGHTER": fighter_b_name}
-                    for ki, key in enumerate(keys):
-                        stat_b[key] = fighter_b_vals[ki] if ki < len(fighter_b_vals) else ""
-                    stats.append(stat_b)
-    
-    except Exception as e:
-        pass
-    
-    time.sleep(0.1)
-    return stats
+    response = fetch(fight_url)
+    if response is None:
+        raise RuntimeError("Fight statistics page retrieval failed: " + fight_url)
+    return parse_stats(response.text, fight_url, event, fa, fb)
+
 
 
 # ═══════════════════════════════════════════════════

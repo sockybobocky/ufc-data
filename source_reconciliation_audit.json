@@ -1,0 +1,1492 @@
+{
+  "status": "candidate only; not published",
+  "source_fights": 8909,
+  "removed_blank_listings": 83,
+  "removed_listing_evidence": [
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Anthony Hernandez vs. Gregory Rodrigues",
+        "FIGHTER_A": "Anthony Hernandez",
+        "FIGHTER_B": "Gregory Rodrigues",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Serghei Spivac vs. Vitor Petrino",
+        "FIGHTER_A": "Serghei Spivac",
+        "FIGHTER_B": "Vitor Petrino",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Reinier de Ridder vs. Roman Dolidze",
+        "FIGHTER_A": "Reinier de Ridder",
+        "FIGHTER_B": "Roman Dolidze",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Carli Judice vs. Jeisla Chaves",
+        "FIGHTER_A": "Carli Judice",
+        "FIGHTER_B": "Jeisla Chaves",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Kennedy Nzechukwu vs. Shamil Gaziev",
+        "FIGHTER_A": "Kennedy Nzechukwu",
+        "FIGHTER_B": "Shamil Gaziev",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Wes Schultz vs. Jackson McVey",
+        "FIGHTER_A": "Wes Schultz",
+        "FIGHTER_B": "Jackson McVey",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Kody Steele vs. Gauge Young",
+        "FIGHTER_A": "Kody Steele",
+        "FIGHTER_B": "Gauge Young",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hernandez vs. Rodrigues",
+        "DATE": "August 22, 2026",
+        "BOUT": "Shanelle Dyer vs. Elise Reed",
+        "FIGHTER_A": "Shanelle Dyer",
+        "FIGHTER_B": "Elise Reed",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Islam Makhachev vs. Ian Machado Garry",
+        "FIGHTER_A": "Islam Makhachev",
+        "FIGHTER_B": "Ian Machado Garry",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Mackenzie Dern vs. Gillian Robertson",
+        "FIGHTER_A": "Mackenzie Dern",
+        "FIGHTER_B": "Gillian Robertson",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Jalin Turner vs. Kaue Fernandes",
+        "FIGHTER_A": "Jalin Turner",
+        "FIGHTER_B": "Kaue Fernandes",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Mansur Abdul-Malik vs. Dustin Stoltzfus",
+        "FIGHTER_A": "Mansur Abdul-Malik",
+        "FIGHTER_B": "Dustin Stoltzfus",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Edson Barboza vs. Esteban Ribovics",
+        "FIGHTER_A": "Edson Barboza",
+        "FIGHTER_B": "Esteban Ribovics",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Chidi Njokuani vs. Joel Alvarez",
+        "FIGHTER_A": "Chidi Njokuani",
+        "FIGHTER_B": "Joel Alvarez",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Charles Johnson vs. Eduardo Chapolin",
+        "FIGHTER_A": "Charles Johnson",
+        "FIGHTER_B": "Eduardo Chapolin",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Catch Weight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Donte Johnson vs. Eric McConico",
+        "FIGHTER_A": "Donte Johnson",
+        "FIGHTER_B": "Eric McConico",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Vicente Luque vs. Tresean Gore",
+        "FIGHTER_A": "Vicente Luque",
+        "FIGHTER_B": "Tresean Gore",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Rafael Tobias vs. Lucas Fernando",
+        "FIGHTER_A": "Rafael Tobias",
+        "FIGHTER_B": "Lucas Fernando",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 330: Makhachev vs. Machado Garry",
+        "DATE": "August 15, 2026",
+        "BOUT": "Neil Magny vs. Ramiz Brahimaj",
+        "FIGHTER_A": "Neil Magny",
+        "FIGHTER_B": "Ramiz Brahimaj",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Umar Nurmagomedov vs. Song Yadong",
+        "FIGHTER_A": "Umar Nurmagomedov",
+        "FIGHTER_B": "Song Yadong",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Yan Xiaonan vs. Denise Gomes",
+        "FIGHTER_A": "Yan Xiaonan",
+        "FIGHTER_B": "Denise Gomes",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Aoriqileng vs. Kai Asakura",
+        "FIGHTER_A": "Aoriqileng",
+        "FIGHTER_B": "Kai Asakura",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Alex Perez vs. Sumudaerji",
+        "FIGHTER_A": "Alex Perez",
+        "FIGHTER_B": "Sumudaerji",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Liu Ce vs. Junior Tafa",
+        "FIGHTER_A": "Liu Ce",
+        "FIGHTER_B": "Junior Tafa",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Bilal Hasan vs. Nilson Rojas",
+        "FIGHTER_A": "Bilal Hasan",
+        "FIGHTER_B": "Nilson Rojas",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Namsrai Batbayar vs. Andre Lima",
+        "FIGHTER_A": "Namsrai Batbayar",
+        "FIGHTER_B": "Andre Lima",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Rei Tsuruya vs. Kevin Borjas",
+        "FIGHTER_A": "Rei Tsuruya",
+        "FIGHTER_B": "Kevin Borjas",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Jack Jenkins vs. Sean Woodson",
+        "FIGHTER_A": "Jack Jenkins",
+        "FIGHTER_B": "Sean Woodson",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Xiao Long vs. Francesco Nuzzi",
+        "FIGHTER_A": "Xiao Long",
+        "FIGHTER_B": "Francesco Nuzzi",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Lawrence Lui vs. Hector Santiago",
+        "FIGHTER_A": "Lawrence Lui",
+        "FIGHTER_B": "Hector Santiago",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Xiong Jingnan vs. Julia Polastri",
+        "FIGHTER_A": "Xiong Jingnan",
+        "FIGHTER_B": "Julia Polastri",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Nurmagomedov vs. Song",
+        "DATE": "August 29, 2026",
+        "BOUT": "Ding Meng vs. Cameron Nelson",
+        "FIGHTER_A": "Ding Meng",
+        "FIGHTER_B": "Cameron Nelson",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Dan Hooker vs. Salahdine Parnasse",
+        "FIGHTER_A": "Dan Hooker",
+        "FIGHTER_B": "Salahdine Parnasse",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Fares Ziam vs. Axel Sola",
+        "FIGHTER_A": "Fares Ziam",
+        "FIGHTER_B": "Axel Sola",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Michael Page vs. Nursulton Ruziboev",
+        "FIGHTER_A": "Michael Page",
+        "FIGHTER_B": "Nursulton Ruziboev",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Daniil Donchenko vs. Punahele Soriano",
+        "FIGHTER_A": "Daniil Donchenko",
+        "FIGHTER_B": "Punahele Soriano",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Morgan Charriere vs. Felipe Lima",
+        "FIGHTER_A": "Morgan Charriere",
+        "FIGHTER_B": "Felipe Lima",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Losene Keita vs. Muhammad Naimov",
+        "FIGHTER_A": "Losene Keita",
+        "FIGHTER_B": "Muhammad Naimov",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Mario Pinto vs. Ryan Spann",
+        "FIGHTER_A": "Mario Pinto",
+        "FIGHTER_B": "Ryan Spann",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Kurtis Campbell vs. Trevor Peek",
+        "FIGHTER_A": "Kurtis Campbell",
+        "FIGHTER_B": "Trevor Peek",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Oumar Sy vs. Modestas Bukauskas",
+        "FIGHTER_A": "Oumar Sy",
+        "FIGHTER_B": "Modestas Bukauskas",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Nathaniel Wood vs. Mairon Santos",
+        "FIGHTER_A": "Nathaniel Wood",
+        "FIGHTER_B": "Mairon Santos",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Michael Aljarouj vs. Fabia Sintes",
+        "FIGHTER_A": "Michael Aljarouj",
+        "FIGHTER_B": "Fabia Sintes",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Nora Cornolle vs. Klaudia Sygula",
+        "FIGHTER_A": "Nora Cornolle",
+        "FIGHTER_B": "Klaudia Sygula",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Matthieu Duclos vs. Luis Felipe Dias",
+        "FIGHTER_A": "Matthieu Duclos",
+        "FIGHTER_B": "Luis Felipe Dias",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Hooker vs. Parnasse",
+        "DATE": "September 05, 2026",
+        "BOUT": "Delphine Benouaich vs. Sofia Montenegro",
+        "FIGHTER_A": "Delphine Benouaich",
+        "FIGHTER_B": "Sofia Montenegro",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Jean Silva vs. Jose Delgado",
+        "FIGHTER_A": "Jean Silva",
+        "FIGHTER_B": "Jose Delgado",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Brandon Moreno vs. Joseph Morales",
+        "FIGHTER_A": "Brandon Moreno",
+        "FIGHTER_B": "Joseph Morales",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Tommy McMillen vs. Marwan Rahiki",
+        "FIGHTER_A": "Tommy McMillen",
+        "FIGHTER_B": "Marwan Rahiki",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Manon Fiorot vs. Alexa Grasso",
+        "FIGHTER_A": "Manon Fiorot",
+        "FIGHTER_B": "Alexa Grasso",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Waldo Cortes Acosta vs. Curtis Blaydes",
+        "FIGHTER_A": "Waldo Cortes Acosta",
+        "FIGHTER_B": "Curtis Blaydes",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "David Martinez vs. Dan Ige",
+        "FIGHTER_A": "David Martinez",
+        "FIGHTER_B": "Dan Ige",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Tim Elliott vs. Edgar Chairez",
+        "FIGHTER_A": "Tim Elliott",
+        "FIGHTER_B": "Edgar Chairez",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Ignacio Bahamondes vs. Muslim Salikhov",
+        "FIGHTER_A": "Ignacio Bahamondes",
+        "FIGHTER_B": "Muslim Salikhov",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Welterweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Yousri Belgaroui vs. Djorden Santos",
+        "FIGHTER_A": "Yousri Belgaroui",
+        "FIGHTER_B": "Djorden Santos",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Drakkar Klose vs. Tommy Gantt",
+        "FIGHTER_A": "Drakkar Klose",
+        "FIGHTER_B": "Tommy Gantt",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Rafa Garcia vs. Rongzhu",
+        "FIGHTER_A": "Rafa Garcia",
+        "FIGHTER_B": "Rongzhu",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "Sean King III vs. Jessie Rosas",
+        "FIGHTER_A": "Sean King III",
+        "FIGHTER_B": "Jessie Rosas",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "Noche UFC: Silva vs. Delgado",
+        "DATE": "September 12, 2026",
+        "BOUT": "JJ Aldrich vs. Regina Tarin",
+        "FIGHTER_A": "JJ Aldrich",
+        "FIGHTER_B": "Regina Tarin",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Joshua Van vs. Alexandre Pantoja",
+        "FIGHTER_A": "Joshua Van",
+        "FIGHTER_B": "Alexandre Pantoja",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Arman Tsarukyan vs. Mauricio Ruffy",
+        "FIGHTER_A": "Arman Tsarukyan",
+        "FIGHTER_B": "Mauricio Ruffy",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Patricio Pitbull vs. Dooho Choi",
+        "FIGHTER_A": "Patricio Pitbull",
+        "FIGHTER_B": "Dooho Choi",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Renato Moicano vs. Brian Ortega",
+        "FIGHTER_A": "Renato Moicano",
+        "FIGHTER_B": "Brian Ortega",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Alonzo Menifield vs. Iwo Baraniewski",
+        "FIGHTER_A": "Alonzo Menifield",
+        "FIGHTER_B": "Iwo Baraniewski",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Gable Steveson vs. Sean Sharaf",
+        "FIGHTER_A": "Gable Steveson",
+        "FIGHTER_B": "Sean Sharaf",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Marlon Vera vs. Charles Jourdain",
+        "FIGHTER_A": "Marlon Vera",
+        "FIGHTER_B": "Charles Jourdain",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Tai Tuivasa vs. Robelis Despaigne",
+        "FIGHTER_A": "Tai Tuivasa",
+        "FIGHTER_B": "Robelis Despaigne",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Michael Aswell Jr. vs. JooSang Yoo",
+        "FIGHTER_A": "Michael Aswell Jr.",
+        "FIGHTER_B": "JooSang Yoo",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Ryan Gandra vs. Ozzy Diaz",
+        "FIGHTER_A": "Ryan Gandra",
+        "FIGHTER_B": "Ozzy Diaz",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Edmen Shahbazyan vs. Brunno Ferreira",
+        "FIGHTER_A": "Edmen Shahbazyan",
+        "FIGHTER_B": "Brunno Ferreira",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Casey O'Neill vs. Eduarda Moura",
+        "FIGHTER_A": "Casey O'Neill",
+        "FIGHTER_B": "Eduarda Moura",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Flyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC 331: Van vs. Pantoja 2",
+        "DATE": "September 19, 2026",
+        "BOUT": "Giga Chikadze vs. Joanderson Brito",
+        "FIGHTER_A": "Giga Chikadze",
+        "FIGHTER_B": "Joanderson Brito",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Featherweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Raul Rosas Jr. vs. Raoni Barcelos",
+        "FIGHTER_A": "Raul Rosas Jr.",
+        "FIGHTER_B": "Raoni Barcelos",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Rodolfo Vieira vs. Robert Bryczek",
+        "FIGHTER_A": "Rodolfo Vieira",
+        "FIGHTER_B": "Robert Bryczek",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Middleweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Mehemmedeli Osmanli vs. Ilimbek Akylbek",
+        "FIGHTER_A": "Mehemmedeli Osmanli",
+        "FIGHTER_B": "Ilimbek Akylbek",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Melissa Amaya vs. Tina Black",
+        "FIGHTER_A": "Melissa Amaya",
+        "FIGHTER_B": "Tina Black",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Brady Hiestand vs. Rinya Nakamura",
+        "FIGHTER_A": "Brady Hiestand",
+        "FIGHTER_B": "Rinya Nakamura",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Rodolfo Bellato vs. Christian Edwards",
+        "FIGHTER_A": "Rodolfo Bellato",
+        "FIGHTER_B": "Christian Edwards",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Light Heavyweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Elves Brener vs. Josiah Harrell",
+        "FIGHTER_A": "Elves Brener",
+        "FIGHTER_B": "Josiah Harrell",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Lightweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Montel Jackson vs. Ricky Simon",
+        "FIGHTER_A": "Montel Jackson",
+        "FIGHTER_B": "Ricky Simon",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Norma Dumont vs. Ailin Perez",
+        "FIGHTER_A": "Norma Dumont",
+        "FIGHTER_B": "Ailin Perez",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "John Castaneda vs. Alatengheili",
+        "FIGHTER_A": "John Castaneda",
+        "FIGHTER_B": "Alatengheili",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Bantamweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    },
+    {
+      "row": {
+        "EVENT": "UFC Fight Night: Rosas Jr. vs. Barcelos",
+        "DATE": "September 26, 2026",
+        "BOUT": "Vanessa Demopoulos vs. Yazmin Jauregui",
+        "FIGHTER_A": "Vanessa Demopoulos",
+        "FIGHTER_B": "Yazmin Jauregui",
+        "WINNER": "",
+        "OUTCOME": "",
+        "WEIGHTCLASS": "Women's Strawweight",
+        "METHOD": "",
+        "ROUND": "",
+        "TIME": "",
+        "FIGHT_URL": ""
+      },
+      "reason": "superseded by checksummed complete event card"
+    }
+  ],
+  "remaining_blank_listings": [
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Natalia Silva vs. Wang Cong"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Deiveson Figueiredo vs. Payton Talbott"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "King Green vs. Esteban Ribovics"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Roberto Soldic vs. Khaos Williams"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Ateba Gautier vs. Roman Kopylov"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Imanol Rodriguez vs. Alden Coria"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Damian Pinas vs. Andrey Pulyaev"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Marcus McGhee vs. Benardo Sopaj"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Anthony Wint vs. Lucas Armand"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Johnny Walker vs. Mick Parkin"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Rafael Dos Anjos vs. Alexander Hernandez"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Marvin Vettori vs. Ismail Naurdiev"
+    },
+    {
+      "EVENT": "UFC 332: Silva vs. Wang",
+      "DATE": "October 03, 2026",
+      "BOUT": "Court McGee vs. Eric Nolan"
+    }
+  ],
+  "source_pages_artifact_sha256": "1738f3dcd6664ae488b06055bd12a05c6dd138c85fb5e431581c9f088fe1f919",
+  "files": {
+    "ufc_fight_results.csv": "97fd41e4c13ecfb8b4b6ee85652886fb659bf3e69c685fd63c9dc69647d1283f",
+    "ufc_fight_stats.csv": "e7bd81835718b10f9ca4c027311c852213ac2f26ef699497c77cf31edfd4669b"
+  },
+  "original_completed_results_preserved": true,
+  "published_main_changed": false
+}
