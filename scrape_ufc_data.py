@@ -32,7 +32,7 @@ import os
 import re
 import sys
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from ufcstats_parser import ParseError, RESULT_FIELDS, STAT_FIELDS, parse_detail, parse_stats
 
 # Playwright browser - launched once, reused for all ufcstats.com fetches
@@ -405,6 +405,11 @@ def scrape_events_and_fights(state, full=False):
         event_fights = {}
         for link in event_soup.select('a[href*="fight-details"]'):
             event_fights[link["href"]] = None
+        if event_date:
+            parsed_date = datetime.strptime(event_date, "%B %d, %Y").date()
+            if parsed_date > datetime.now(timezone.utc).date() or (parsed_date == datetime.now(timezone.utc).date() and not event_fights):
+                completed.discard(event_url)
+                continue
         if not event_date or not event_fights:
             failures.append({"url":event_url,"reason":"Missing event date/fights"})
             continue
@@ -431,6 +436,8 @@ def scrape_events_and_fights(state, full=False):
                 event_complete = False
             time.sleep(0.3)
         if event_complete:
+            # Keep the authoritative completed card, retaining superseded listings in audit evidence.
+            results = [r for r in results if r.get("EVENT") != event_name or r.get("FIGHT_URL")]
             completed.add(event_url)
     # Fetch/parse failures must not publish a partial batch or mark failed events done.
     with open("scraper_repair_errors.json","w",encoding="utf-8") as handle:

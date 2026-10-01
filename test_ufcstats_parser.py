@@ -64,12 +64,16 @@ class ParserTests(unittest.TestCase):
     def test_historical_format_preserved(self):
         result = parse_detail(fixture(time_format='1 Rnd + OT (12-3)'),URL)
         self.assertEqual(result['TIME_FORMAT'],'1 Rnd + OT (12-3)')
-        self.assertEqual(result['SCHEDULED_ROUNDS'],'')
+        self.assertEqual(result['SCHEDULED_ROUNDS'],'2')
     def test_bad_stat_rejected(self):
         with self.assertRaises(ParseError): parse_stats(fixture().replace('1 of 2','50%'),URL,'Test','Red','Blue')
     def test_format(self):
         self.assertEqual(round_format('5 Rnd (5-5-5-5-5)'),('5','300'))
-        self.assertEqual(round_format('1 Rnd (12)'),('',''))
+        self.assertEqual(round_format('1 Rnd (12)'),('1','720'))
+    def test_variable_and_overtime_schedules(self):
+        self.assertEqual(round_format('3 Rnd + OT (5-5-5-5)'),('4','300'))
+        self.assertEqual(round_format('3 Rnd (10-5-5)'),('3',''))
+        self.assertEqual(round_format('3 Rnd (5-5)'),('',''))
     def test_repair_sample(self):
         source = [{'FIGHT_URL':URL,'EVENT':'Test','DATE':'September 01, 2026'}]
         results,stats,errors = repair_records(source,lambda url:fixture(),5)
@@ -122,6 +126,15 @@ class ScraperIntegrationTests(unittest.TestCase):
             finally:
                 os.chdir(old_cwd)
     def test_cached_incomplete_event_retried(self): self.run_scrape(poisoned=True)
+    def test_future_event_not_marked_completed(self):
+        scraper=self.load();url='http://ufcstats.com/event-details/0000000000000005'
+        pages={'http://www.ufcstats.com/statistics/events/completed?page=all':f'<a href="{url}">Future</a>',url:'<li class="b-list__box-list-item">Date: January 01, 2099</li>'}
+        scraper.fetch=lambda u:type('Response',(),{'text':pages[u]})();state={'scraped_events':[]}
+        old=Path.cwd()
+        with tempfile.TemporaryDirectory() as temp:
+            try:
+                os.chdir(temp);scraper.scrape_events_and_fights(state);self.assertEqual(state['scraped_events'],[])
+            finally:os.chdir(old)
     def test_batch_and_repeat(self): self.run_scrape()
     def test_failed_batch_preserves_originals(self): self.run_scrape(True)
 

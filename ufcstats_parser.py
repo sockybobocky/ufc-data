@@ -46,15 +46,12 @@ def labels(soup):
     return result
 
 def round_format(value):
-    # Only explicit modern fixed-length formats are automatically importable.
-    match = re.fullmatch(r'(\d+)\s+Rnd\s*\((\d+(?:-\d+)*)\)',value.strip(),re.I)
-    if not match:
-        return '', ''
-    rounds = int(match[1])
-    lengths = [int(n) for n in match[2].split('-')]
-    if not 1 <= rounds <= 5 or len(lengths) != rounds or len(set(lengths)) != 1 or lengths[0] != 5:
-        return '', ''
-    return str(rounds), str(lengths[0]*60)
+    match = re.fullmatch(r'(\d+) Rnd(?: \+ (?:(\d+)?)OT)? \((\d+(?:-\d+)*)\)',value.strip())
+    if not match:return '', ''
+    base=int(match[1]);overtime=int(match[2] or 1) if ' + ' in value else 0
+    lengths=[int(n)*60 for n in match[3].split('-')]
+    if not 1<=base<=5 or base+overtime>5 or len(lengths)!=base+overtime or any(n<=0 for n in lengths):return '', ''
+    return str(len(lengths)),str(lengths[0]) if len(set(lengths))==1 else ''
 
 def outcome(statuses,names):
     normalized = [s.upper().replace('.','').strip() for s in statuses]
@@ -92,7 +89,8 @@ def parse_detail(html,fight_url,event='',date=''):
     if second >= 60:
         raise ParseError('Invalid finish time seconds')
     rounds,length = round_format(fields['time format'])
-    if rounds and (int(fields['round']) > int(rounds) or minute*60+second > int(length)):
+    lengths = [int(n)*60 for n in re.search(r'\(([^)]+)\)',fields['time format'])[1].split('-')] if rounds else []
+    if rounds and (not 1 <= int(fields['round']) <= int(rounds) or minute*60+second > lengths[int(fields['round'])-1]):
         raise ParseError('Finish exceeds explicit round format')
     title = soup.select_one('.b-fight-details__fight-title')
     if not event:
@@ -175,3 +173,4 @@ def parse_stats(html,fight_url,event,fa,fb):
     if not found_main:
         raise ParseError('No recognized main statistics table')
     return list(records.values())
+

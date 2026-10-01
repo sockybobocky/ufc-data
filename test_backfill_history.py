@@ -41,7 +41,7 @@ class BackfillTests(unittest.TestCase):
     def test_historical_quarantine_preserves_page(self):
         with tempfile.TemporaryDirectory() as root:
             source,output = self.setup_paths(root)
-            report = run(source,output,lambda _:fixture(time_format='1 Rnd + OT (12-3)'))
+            report = run(source,output,lambda _:fixture(time_format='1 Rnd + OT (12-3-3)'))
             self.assertEqual(report['quarantined'],1)
             self.assertEqual(report['failed'],0)
             self.assertEqual(len(list((output/'checkpoints').glob('*.html'))),1)
@@ -60,3 +60,4 @@ class BackfillTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
