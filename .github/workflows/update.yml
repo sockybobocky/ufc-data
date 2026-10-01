@@ -58,6 +58,9 @@ jobs:
           python -m playwright install chromium
           python -m playwright install-deps
 
+      - name: Validate upcoming card parser
+        run: python -m unittest test_upcoming_parser
+
       - name: Run scraper
         run: |
           if [ "${{ github.event.inputs.mode }}" = "full" ]; then

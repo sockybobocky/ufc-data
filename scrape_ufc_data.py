@@ -33,7 +33,7 @@ import re
 import sys
 import json
 from datetime import datetime, timezone
-from ufcstats_parser import ParseError, RESULT_FIELDS, STAT_FIELDS, parse_detail, parse_stats
+from ufcstats_parser import ParseError, RESULT_FIELDS, STAT_FIELDS, parse_detail, parse_stats, parse_upcoming, canonical_url, UPCOMING_FIELDS
 
 # Playwright browser - launched once, reused for all ufcstats.com fetches
 BROWSER = None
@@ -466,41 +466,28 @@ def scrape_fight_stats(fight_url, event, fa, fb):
 def scrape_upcoming_events():
     print("\n[4/8] Scraping upcoming events...")
     fights = []
+    checked_at = datetime.now(timezone.utc).isoformat()
     resp = fetch("http://www.ufcstats.com/statistics/events/upcoming")
-    if not resp: return fights
+    if not resp: raise ParseError("Upcoming index unavailable; prior CSV preserved")
     soup = BeautifulSoup(resp.text, "html.parser")
     event_links = []
     for a in soup.select('a[href*="event-details"]'):
-        href = a.get("href","").strip()
         name = a.get_text(strip=True)
-        if href and name and href not in [e[0] for e in event_links]:
-            event_links.append((href, name))
+        if not name: continue
+        href = canonical_url(a.get("href", ""), "event")
+        if href not in [e[0] for e in event_links]: event_links.append((href, name))
+    if not event_links: raise ParseError("Upcoming index incomplete; prior CSV preserved")
     for event_url, event_name in event_links[:5]:
         print(f"  {event_name}...", end=" ", flush=True)
-        resp2 = fetch(event_url)
-        if not resp2: continue
-        soup2 = BeautifulSoup(resp2.text, "html.parser")
-        ed = el = ""
-        for li in soup2.select("li.b-list__box-list-item"):
-            lt = li.get_text(" ", strip=True)
-            if "Date:" in lt: ed = lt.split("Date:")[-1].strip()
-            elif "Location:" in lt: el = lt.split("Location:")[-1].strip()
-        ct = 0
-        for row in soup2.select("tr.b-fight-details__table-row"):
-            fl = row.select('a[href*="fighter-details"]')
-            if len(fl) < 2: continue
-            wc = ""
-            for cell in row.select("td"):
-                t = cell.get_text(strip=True)
-                if "weight" in t.lower() or "catch" in t.lower(): wc = t; break
-            fights.append({"event_name":event_name,"event_date":ed,"event_location":el,
-                "fighter_a":fl[0].get_text(strip=True),"fighter_b":fl[1].get_text(strip=True),
-                "fighter_a_url":fl[0].get("href","").strip(),"fighter_b_url":fl[1].get("href","").strip(),
-                "weight_class":wc})
-            ct += 1
-        print(f"{ct} fights")
+        response = fetch(event_url)
+        if not response: raise ParseError("Upcoming card unavailable; prior CSV preserved")
+        rows = parse_upcoming(response.text, event_url, event_name, checked_at)
+        fights.extend(rows)
+        print(f"{len(rows)} fights")
         time.sleep(0.3)
-    write_csv("ufc_upcoming_events.csv", fights, ["event_name","event_date","event_location","fighter_a","fighter_b","fighter_a_url","fighter_b_url","weight_class"])
+    if len({row['fight_url'] for row in fights}) != len(fights):
+        raise ParseError("Upcoming fight appears on multiple cards; prior CSV preserved")
+    write_csv("ufc_upcoming_events.csv", fights, UPCOMING_FIELDS)
     print(f"  -> {len(fights)} upcoming fights saved")
     return fights
 
