@@ -89,7 +89,7 @@ class ScraperIntegrationTests(unittest.TestCase):
         with patch.dict('sys.modules',{'requests':MagicMock()}):
             spec.loader.exec_module(module)
         return module
-    def run_scrape(self,bad=False):
+    def run_scrape(self,bad=False,poisoned=False):
         scraper = self.load()
         event_url = 'http://ufcstats.com/event-details/0000000000000005'
         pages = {'http://www.ufcstats.com/statistics/events/completed?page=all':f'<a href="{event_url}">Test</a>',
@@ -109,6 +109,10 @@ class ScraperIntegrationTests(unittest.TestCase):
                     self.assertEqual(state['scraped_events'],[])
                     self.assertEqual(len(json.loads(Path('scraper_repair_errors.json').read_text())),1)
                 else:
+                    if poisoned:
+                        state['scraped_events']=[event_url]
+                        with Path('ufc_fight_results.csv').open('w',newline='') as handle:
+                            writer=csv.DictWriter(handle,['EVENT','BOUT','FIGHT_URL','OUTCOME','METHOD','ROUND','TIME']);writer.writeheader();writer.writerow({'EVENT':'Test','BOUT':'Red vs. Blue'})
                     scraper.scrape_events_and_fights(state)
                     with Path('ufc_fight_results.csv').open() as handle: results = list(csv.DictReader(handle))
                     self.assertEqual(results[0]['METHOD'],'KO/TKO')
@@ -117,6 +121,7 @@ class ScraperIntegrationTests(unittest.TestCase):
                     with Path('ufc_fight_results.csv').open() as handle: self.assertEqual(len(list(csv.DictReader(handle))),1)
             finally:
                 os.chdir(old_cwd)
+    def test_cached_incomplete_event_retried(self): self.run_scrape(poisoned=True)
     def test_batch_and_repeat(self): self.run_scrape()
     def test_failed_batch_preserves_originals(self): self.run_scrape(True)
 

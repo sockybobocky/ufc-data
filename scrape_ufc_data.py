@@ -382,10 +382,15 @@ def scrape_events_and_fights(state, full=False):
             if os.path.exists(filename):
                 with open(filename, encoding="utf-8-sig", newline="") as handle:
                     target.extend(csv.DictReader(handle))
+    # Cache entries are trusted only when their published results are complete.
+    # Older scraper versions marked upcoming/incomplete event pages done.
+    retry_names = {r.get("EVENT") for r in results if not r.get("FIGHT_URL") or
+                   not r.get("OUTCOME") or not r.get("METHOD") or not r.get("ROUND") or not r.get("TIME")}
+    verified_names = {r.get("EVENT") for r in results if r.get("FIGHT_URL") and r.get("OUTCOME")}
     failures = []
     completed = set(already)
     for event_url, event_name in event_links.items():
-        if event_url in already:
+        if event_url in already and event_name in verified_names and event_name not in retry_names:
             continue
         event_response = fetch(event_url)
         if event_response is None:
@@ -415,7 +420,8 @@ def scrape_events_and_fights(state, full=False):
                 present = {(row["FIGHTER"],row["ROUND"]) for row in repaired_stats if row.get("KD") is not None}
                 if not expected.issubset(present):
                     raise ParseError("Explicit main round coverage incomplete")
-                results = [row for row in results if row.get("FIGHT_URL") != fight_url]
+                results = [row for row in results if row.get("FIGHT_URL") != fight_url and not
+                           (not row.get("FIGHT_URL") and row.get("EVENT") == event_name and row.get("BOUT") == fight["BOUT"])]
                 results.append(fight)
                 stats = [row for row in stats if not (row.get("FIGHT_URL") == fight_url or
                          (row.get("EVENT") == event_name and row.get("BOUT") == fight["BOUT"]))]
