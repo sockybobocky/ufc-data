@@ -174,3 +174,47 @@ def parse_stats(html,fight_url,event,fa,fb):
         raise ParseError('No recognized main statistics table')
     return list(records.values())
 
+
+
+UPCOMING_FIELDS = ['event_name','event_date','event_location','fighter_a','fighter_b',
+                   'fighter_a_url','fighter_b_url','weight_class','event_url','fight_url','checked_at']
+
+def canonical_url(value, kind):
+    match = re.fullmatch(r'https?://(?:www\.)?ufcstats\.com/'+kind+r'-details/([0-9a-f]{16})/?', value.strip())
+    if not match:
+        raise ParseError('Invalid canonical '+kind+' identity')
+    return 'http://www.ufcstats.com/'+kind+'-details/'+match[1]
+
+def parse_upcoming(html, event_url, event_name, checked_at):
+    from datetime import datetime
+    event_url = canonical_url(event_url, 'event')
+    checked = datetime.fromisoformat(checked_at.replace('Z', '+00:00'))
+    if checked.tzinfo is None:
+        raise ParseError('Upcoming verification timestamp requires a timezone')
+    soup = soup_for(html)
+    metadata = {}
+    for item in soup.select('li.b-list__box-list-item'):
+        key, separator, value = text(item).partition(':')
+        if separator: metadata[key.lower().strip()] = value.strip()
+    try: datetime.strptime(metadata['date'], '%B %d, %Y')
+    except (KeyError, ValueError): raise ParseError('Upcoming event date is missing or invalid') from None
+    if not event_name.strip() or not metadata.get('location'):
+        raise ParseError('Upcoming event metadata is incomplete')
+    rows=[]; seen=set(); pairs=set()
+    for row in soup.select('tr.b-fight-details__table-row'):
+        links=row.select('a[href*="fighter-details"]')
+        if not links: continue
+        cells=row.select('td')
+        if len(links)!=2 or len(cells)!=10:
+            raise ParseError('Unexpected upcoming bout columns or participants')
+        a,b=[canonical_url(link.get('href',''), 'fighter') for link in links]
+        fight=canonical_url(row.get('data-link',''), 'fight')
+        pair=tuple(sorted((a,b)))
+        if a==b or fight in seen or pair in pairs:
+            raise ParseError('Duplicate or identical upcoming participants')
+        if not all(text(link) for link in links): raise ParseError('Missing upcoming participant name')
+        seen.add(fight);pairs.add(pair)
+        rows.append(dict(zip(UPCOMING_FIELDS,[event_name.strip(),metadata['date'],metadata['location'],
+            text(links[0]),text(links[1]),a,b,text(cells[6]),event_url,fight,checked_at])))
+    if not rows: raise ParseError('Upcoming event has no verified bouts')
+    return rows
