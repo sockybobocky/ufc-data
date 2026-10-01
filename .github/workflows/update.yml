@@ -17,6 +17,19 @@ on:
           - full
           - repair-sample
           - repair-broad
+      repair_limit:
+        description: 'Historical verification batch size'
+        required: false
+        default: '25'
+        type: choice
+        options:
+          - '25'
+          - '100'
+      repair_offset:
+        description: 'Historical verification offset (nonnegative integer)'
+        required: false
+        default: '0'
+        type: string
 
 jobs:
   scrape:
@@ -126,9 +139,15 @@ jobs:
       - name: Test parser and checkpoints
         run: python -m unittest test_ufcstats_parser test_backfill_history -v
       - name: Verify representative historical fights
-        run: python backfill_history.py --limit 25 --output repaired_broad
+        env:
+          REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
+          REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
+        run: python backfill_history.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --output repaired_broad
       - name: Verify resume uses completed checkpoints
-        run: python backfill_history.py --limit 25 --output repaired_broad --resume
+        env:
+          REPAIR_LIMIT: ${{ inputs.repair_limit || '25' }}
+          REPAIR_OFFSET: ${{ inputs.repair_offset || '0' }}
+        run: python backfill_history.py --limit "$REPAIR_LIMIT" --offset "$REPAIR_OFFSET" --output repaired_broad --resume
       - name: Upload isolated verification data and checkpoints
         if: always()
         uses: actions/upload-artifact@v4

@@ -1,10 +1,22 @@
 import tempfile
 import unittest
 from pathlib import Path
-from backfill_history import run
+from backfill_history import run, select
 from test_ufcstats_parser import fixture, URL
 
 class BackfillTests(unittest.TestCase):
+    def test_nonoverlapping_deterministic_batches(self):
+        rows = [{'FIGHT_URL':str(i),'OUTCOME':'W/L','TIME':'1:00'} for i in range(120)]
+        self.assertEqual(select(rows,100),rows[:100])
+        self.assertEqual(select(rows,20,100),rows[100:])
+
+    def test_invalid_bounds_rejected(self):
+        with tempfile.TemporaryDirectory() as root:
+            source,output = self.setup_paths(root)
+            for limit,offset in ((101,0),(0,0),(5,-1),(5,100)):
+                with self.subTest(limit=limit,offset=offset),self.assertRaises(ValueError):
+                    run(source,output,lambda _:fixture(),limit=limit,offset=offset)
+
     def setup_paths(self, root):
         source = Path(root)/'source.csv'
         source.write_text('FIGHT_URL,EVENT,DATE\n'+URL+',Test,2026-01-01\n')

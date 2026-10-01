@@ -14,17 +14,21 @@ def atomic_json(path, value):
     temporary.write_text(json.dumps(value, indent=2), encoding='utf-8')
     temporary.replace(path)
 
-def select(rows, limit):
+def select(rows, limit, offset=0):
     unique = {row['FIGHT_URL']: row for row in rows if row.get('FIGHT_URL')}
     rows = list(unique.values())
     special = [r for r in rows if r.get('OUTCOME') == 'D/D'][:8]
     old = [r for r in rows if r.get('TIME','').split(':')[0].isdigit() and int(r['TIME'].split(':')[0]) > 5][:4]
     chosen = dict((r['FIGHT_URL'],r) for r in rows[:5]+special+old+rows)
-    return list(chosen.values())[:limit]
+    return list(chosen.values())[offset:offset+limit]
 
-def run(source, output, fetch, limit=25, resume=False, retry_failed=False):
+def run(source, output, fetch, limit=25, resume=False, retry_failed=False, offset=0):
     source, output = Path(source), Path(output)
-    selected = select(read_csv(source), limit)
+    if not 1 <= limit <= 100 or offset < 0:
+        raise ValueError('Limit must be 1–100 and offset nonnegative')
+    selected = select(read_csv(source), limit, offset)
+    if not selected:
+        raise ValueError('Selection contains no fights')
     manifest = {'source_sha256':digest(source.read_bytes()),
                 'parser_sha256':digest(Path(__file__).with_name('ufcstats_parser.py').read_bytes()),
                 'backfill_sha256':digest(Path(__file__).read_bytes()),
@@ -87,11 +91,14 @@ def main():
     parser.add_argument('--source',type=Path,default=Path('ufc_fight_results.csv'))
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--limit',type=int,default=25)
+    parser.add_argument('--offset',type=int,default=0)
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--retry-failed',action='store_true')
     args = parser.parse_args()
     if not 1 <= args.limit <= 100:
         parser.error('Limit must be between 1 and 100')
+    if args.offset < 0:
+        parser.error('Offset must be nonnegative')
     import scrape_ufc_data as scraper
     def fetch(url):
         response = scraper.fetch(url)
@@ -100,7 +107,7 @@ def main():
         return response.text
     try:
         scraper.init_browser()
-        report = run(args.source,args.output,fetch,args.limit,args.resume,args.retry_failed)
+        report = run(args.source,args.output,fetch,args.limit,args.resume,args.retry_failed,args.offset)
     finally:
         scraper.close_browser()
     print(json.dumps(report,indent=2))
