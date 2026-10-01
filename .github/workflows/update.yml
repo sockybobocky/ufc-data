@@ -17,6 +17,7 @@ on:
           - full
           - repair-sample
           - repair-broad
+          - recent-audit
       repair_limit:
         description: 'Historical verification batch size'
         required: false
@@ -41,7 +42,7 @@ on:
 
 jobs:
   scrape:
-    if: ${{ github.event.inputs.mode != 'repair-sample' && github.event.inputs.mode != 'repair-broad' }}
+    if: ${{ github.event.inputs.mode != 'repair-sample' && github.event.inputs.mode != 'repair-broad' && github.event.inputs.mode != 'recent-audit' }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -164,4 +165,29 @@ jobs:
         with:
           name: scraper-repair-broad
           path: repaired_broad/
+          if-no-files-found: warn
+
+  verify-recent-events:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'recent-audit' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install source audit dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Audit recent completed events without publishing
+        run: python audit_recent.py
+      - name: Save checksummed source pages and isolated records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recent-event-audit
+          path: recent_audit/
           if-no-files-found: warn
