@@ -16,10 +16,11 @@ on:
           - update
           - full
           - repair-sample
+          - repair-broad
 
 jobs:
   scrape:
-    if: ${{ github.event.inputs.mode != 'repair-sample' }}
+    if: ${{ github.event.inputs.mode != 'repair-sample' && github.event.inputs.mode != 'repair-broad' }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -105,4 +106,33 @@ jobs:
         with:
           name: scraper-repair-sample
           path: repaired_sample/
+          if-no-files-found: warn
+
+  verify-repair-broad:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'repair-broad' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Test parser and checkpoints
+        run: python -m unittest test_ufcstats_parser test_backfill_history -v
+      - name: Verify representative historical fights
+        run: python backfill_history.py --limit 25 --output repaired_broad
+      - name: Verify resume uses completed checkpoints
+        run: python backfill_history.py --limit 25 --output repaired_broad --resume
+      - name: Upload isolated verification data and checkpoints
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-repair-broad
+          path: repaired_broad/
           if-no-files-found: warn
