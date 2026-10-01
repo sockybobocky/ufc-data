@@ -32,7 +32,7 @@ def main():
    if not dates:raise RuntimeError('Missing event date '+url)
    date=datetime.strptime(dates[0],'%B %d, %Y').date()
    item={'url':url,'name':name,'date':str(date)};report['events'].append(item)
-   if date<=cutoff:continue
+   # Compare identities even on/before cutoff: latest date can hide a partial event.
    if date>datetime.now(timezone.utc).date():item['status']='future excluded';continue
    fightlinks=list(dict.fromkeys(a['href'] for a in event.select('a[href*="fight-details"]')))
    item['fight_urls']=fightlinks
@@ -55,3 +55,4 @@ def main():
  print(json.dumps({k:report[k] for k in ('complete','new_validated_fights','new_round_records','issues')}))
  if report['issues']:raise SystemExit(1)
 if __name__=='__main__':main()
+
