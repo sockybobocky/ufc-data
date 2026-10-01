@@ -15,9 +15,11 @@ on:
         options:
           - update
           - full
+          - repair-sample
 
 jobs:
   scrape:
+    if: ${{ github.event.inputs.mode != 'repair-sample' }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -77,3 +79,30 @@ jobs:
           git add *.csv *.json
           git diff --cached --quiet || git commit -m "Update UFC data + ML models $(date +%Y-%m-%d)"
           git push
+
+  verify-repair-sample:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'repair-sample' }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scraper dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Run parser and failure-protection tests
+        run: python -m unittest test_ufcstats_parser -v
+      - name: Verify five existing fights without changing source CSVs
+        run: python repair_history.py --limit 5 --output repaired_sample
+      - name: Upload verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-repair-sample
+          path: repaired_sample/
+          if-no-files-found: warn
