@@ -493,39 +493,14 @@ def scrape_upcoming_events():
 
 
 def fetch_betting_odds():
+    from odds_export import update
     print("\n[5/8] Fetching betting odds...")
-    odds_data = []
-    url = f"https://api.the-odds-api.com/v4/sports/mma_mixed_martial_arts/odds?regions=us&markets=h2h&oddsFormat=american&apiKey={ODDS_API_KEY}"
-    try:
-        resp = API_SESSION.get(url, timeout=15)
-        resp.raise_for_status()
-        fights = resp.json()
-        print(f"  {len(fights)} fights with odds")
-        for fight in fights:
-            fa = fight.get("home_team",""); fb = fight.get("away_team","")
-            if not fa or not fb: continue
-            oa = []; ob = []
-            for book in fight.get("bookmakers",[]):
-                for mkt in book.get("markets",[]):
-                    if mkt.get("key") != "h2h": continue
-                    for o in mkt.get("outcomes",[]):
-                        p = o.get("price",0)
-                        if not p: continue
-                        if o.get("name") == fa: oa.append(p)
-                        elif o.get("name") == fb: ob.append(p)
-            a = str(oa[0]) if oa else ""; b = str(ob[0]) if ob else ""
-            if a and not a.startswith("-"): a = f"+{a}"
-            if b and not b.startswith("-"): b = f"+{b}"
-            ba = str(max(oa)) if oa else ""; bb = str(max(ob)) if ob else ""
-            if ba and not ba.startswith("-"): ba = f"+{ba}"
-            if bb and not bb.startswith("-"): bb = f"+{bb}"
-            odds_data.append({"event":fight.get("commence_time",""),"fighter_a":fa,"fighter_b":fb,"odds_a":a,"odds_b":b,"best_odds_a":ba,"best_odds_b":bb,"num_books":str(len(oa))})
-        remaining = resp.headers.get("x-requests-remaining","?")
-        print(f"  API quota: {remaining} remaining")
-    except Exception as e:
-        print(f"  ERROR: {e}")
-    write_csv("ufc_betting_odds.csv", odds_data, ["event","fighter_a","fighter_b","odds_a","odds_b","best_odds_a","best_odds_b","num_books"])
-    print(f"  -> {len(odds_data)} odds saved")
+    status = update(API_SESSION, ODDS_API_KEY)
+    if status["state"] == "success":
+        print(f"  -> {status['quote_count']} paired sportsbook quotes saved")
+    else:
+        print("  ERROR: Odds update failed; prior prices are not fresh")
+    return status
 
 
 def scrape_upcoming_profiles():

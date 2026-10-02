@@ -1,0 +1,22 @@
+name: Validate odds export
+on:
+  pull_request:
+    paths: ['odds_export.py', 'test_odds_export.py', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
+  push:
+    branches: [main]
+    paths: ['odds_export.py', 'test_odds_export.py', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check syntax
+        run: python -m py_compile odds_export.py scrape_ufc_data.py test_odds_export.py
+      - name: Verify fixture-only odds export
+        run: python -m unittest -v test_odds_export
