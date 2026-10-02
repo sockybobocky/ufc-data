@@ -1,10 +1,10 @@
 name: Validate odds export
 on:
   pull_request:
-    paths: ['odds_export.py', 'test_odds_export.py', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
+    paths: ['odds_export.py', 'test_odds_export.py', 'export_odds.py', 'test_independent_odds.py', '.github/workflows/update.yml', '.github/workflows/update-odds.yml', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
   push:
     branches: [main]
-    paths: ['odds_export.py', 'test_odds_export.py', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
+    paths: ['odds_export.py', 'test_odds_export.py', 'export_odds.py', 'test_independent_odds.py', '.github/workflows/update.yml', '.github/workflows/update-odds.yml', 'scrape_ufc_data.py', '.github/workflows/validate-odds.yml']
 permissions:
   contents: read
 jobs:
@@ -17,6 +17,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check syntax
-        run: python -m py_compile odds_export.py scrape_ufc_data.py test_odds_export.py
+        run: python -m py_compile odds_export.py scrape_ufc_data.py test_odds_export.py export_odds.py test_independent_odds.py
       - name: Verify fixture-only odds export
-        run: python -m unittest -v test_odds_export
+        run: python -m unittest -v test_odds_export test_independent_odds

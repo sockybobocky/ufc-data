@@ -701,8 +701,9 @@ def main():
         close_browser()
         print("  Browser closed.")
 
-    # Odds API doesn't need browser
-    fetch_betting_odds()
+    # Scheduled history jobs leave odds to the independent publisher.
+    if '--skip-odds' not in sys.argv:
+        fetch_betting_odds()
 
     print("\n[7/8] Reserved\n[8/8] Reserved")
 

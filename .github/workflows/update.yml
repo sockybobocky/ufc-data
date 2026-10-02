@@ -68,14 +68,23 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.mode }}" = "full" ]; then
             echo "Running FULL scrape (manual trigger)"
-            python scrape_ufc_data.py --full
+            python scrape_ufc_data.py --full --skip-odds
           elif [ "${{ github.event.schedule }}" = "0 4 1 * *" ]; then
             echo "Running FULL scrape (monthly schedule)"
-            python scrape_ufc_data.py --full
+            python scrape_ufc_data.py --full --skip-odds
           else
             echo "Running UPDATE scrape"
-            python scrape_ufc_data.py
+            python scrape_ufc_data.py --skip-odds
           fi
+
+      - name: Retain historical failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-scrape-failures
+          path: scraper_repair_errors.json
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Retrain ML models
         run: |
@@ -107,7 +116,8 @@ jobs:
           git config user.email "actions@github.com"
           git add *.csv *.json
           git diff --cached --quiet || git commit -m "Update UFC data + ML models $(date +%Y-%m-%d)"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
 
   verify-repair-sample:
     if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'repair-sample' }}
