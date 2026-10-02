@@ -58,6 +58,9 @@ jobs:
           python -m playwright install chromium
           python -m playwright install-deps
 
+      - name: Validate odds export
+        run: python -m unittest test_odds_export
+
       - name: Validate upcoming card parser
         run: python -m unittest test_upcoming_parser
 
