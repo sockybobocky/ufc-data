@@ -20,6 +20,34 @@ class Session:
     def get(self,url,**kwargs): self.calls.append((url,kwargs)); return Response(self.payload)
 
 class OddsTests(unittest.TestCase):
+    def test_malformed_market_fails_closed(self):
+        for value in [None, 'h2h', {}, {'key':None}]:
+            p=fixture(); p[0]['bookmakers'][0]['markets'].append(value)
+            with self.subTest(value=value), self.assertRaises(export.OddsError):
+                export.normalize(p,NOW)
+    def test_missing_key_preserves_without_request(self):
+        with tempfile.TemporaryDirectory() as folder:
+            export.update(Session(fixture()),'key',folder,NOW)
+            path=Path(folder)/'ufc_odds_quotes.json'; before=path.read_bytes()
+            session=Session([])
+            self.assertEqual(export.update(session,'',folder,NOW)['state'],'failed')
+            self.assertEqual(session.calls,[])
+            self.assertEqual(before,path.read_bytes())
+    def test_offsets_and_market_timestamp(self):
+        p=fixture(); book=p[0]['bookmakers'][0]
+        book['last_update']='2026-10-01T23:00:00-04:00'
+        book['markets'][0]['last_update']='2026-10-02T03:15:00Z'
+        quote=export.normalize(p,NOW)['quotes'][0]
+        self.assertEqual(quote['bookmaker_last_update'],'2026-10-02T03:00:00+00:00')
+        self.assertEqual(quote['market_last_update'],'2026-10-02T03:15:00+00:00')
+        book['markets'][0]['last_update']=None
+        with self.assertRaises(export.OddsError): export.normalize(p,NOW)
+    def test_nonbinary_market_is_not_moneyline_pair(self):
+        p=fixture(); p[0]['bookmakers'][0]['markets'][0]['outcomes'].append(dict(name='Draw',price=1000))
+        snapshot=export.normalize(p,NOW)
+        self.assertEqual(snapshot['quotes'],[])
+        self.assertEqual(snapshot['provider_event_count'],1)
+        self.assertEqual(len(snapshot['skipped']),1)
     def test_scraper_wrapper_uses_exporter(self):
         import ast
         import contextlib

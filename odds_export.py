@@ -69,7 +69,9 @@ def normalize(payload, fetched_at):
             markets = book.get('markets')
             if not isinstance(markets, list):
                 raise OddsError('Missing markets')
-            h2h = [m for m in markets if isinstance(m, dict) and m.get('key') == 'h2h']
+            if any(not isinstance(m, dict) or not isinstance(m.get('key'), str) for m in markets):
+                raise OddsError('Invalid market record')
+            h2h = [m for m in markets if m.get('key') == 'h2h']
             if len(h2h) > 1:
                 raise OddsError('Duplicate moneyline market')
             if not h2h:
