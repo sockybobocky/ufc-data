@@ -61,6 +61,9 @@ jobs:
       - name: Validate odds export
         run: python -m unittest test_odds_export
 
+      - name: Validate scraper stage diagnostics
+        run: python -m unittest test_scraper_diagnostics -v
+
       - name: Validate upcoming card parser
         run: python -m unittest test_upcoming_parser
 
@@ -68,13 +71,13 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.mode }}" = "full" ]; then
             echo "Running FULL scrape (manual trigger)"
-            python scrape_ufc_data.py --full --skip-odds
+            python run_scraper_with_diagnostics.py --full --skip-odds
           elif [ "${{ github.event.schedule }}" = "0 4 1 * *" ]; then
             echo "Running FULL scrape (monthly schedule)"
-            python scrape_ufc_data.py --full --skip-odds
+            python run_scraper_with_diagnostics.py --full --skip-odds
           else
             echo "Running UPDATE scrape"
-            python scrape_ufc_data.py --skip-odds
+            python run_scraper_with_diagnostics.py --skip-odds
           fi
 
       - name: Retain historical failure diagnostics
@@ -82,7 +85,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: historical-scrape-failures
-          path: scraper_repair_errors.json
+          path: |
+            scraper_repair_errors.json
+            scraper_run_diagnostics.json
           if-no-files-found: warn
           retention-days: 14
 
