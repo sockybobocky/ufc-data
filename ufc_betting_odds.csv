@@ -1,34 +1,23 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-10-03T21:20:00+00:00,Jacobe Smith,Bruce Whitehead,-1500,+700,-950,+700,5
-2026-10-03T22:15:00+00:00,Lucas Armand,Anthony Wint,+415,-550,+415,-510,5
-2026-10-03T22:45:00+00:00,Marcus McGhee,Anthony Romero,-480,+374,-480,+410,5
-2026-10-04T00:00:00+00:00,Court McGee,Eric Nolan,+189,-225,+205,-225,5
-2026-10-04T00:00:00+00:00,Damian Pinas,Andrey Pulyaev,-600,+425,-575,+475,5
-2026-10-04T00:00:00+00:00,Imanol Rodriguez,Alden Coria,-135,+115,-135,+124,5
-2026-10-04T00:00:00+00:00,Johnny Walker,Michael Parkin,-115,-105,-110,-102,4
-2026-10-04T00:00:00+00:00,Khaos Williams,Roberto Soldic,+184,-216,+215,-216,5
-2026-10-04T00:00:00+00:00,King Green,Esteban Ribovics,+183,-215,+185,-205,5
-2026-10-04T00:00:00+00:00,Marvin Vettori,Ismail Naurdiev,+125,-145,+125,-134,5
-2026-10-04T00:00:00+00:00,Rafael dos Anjos,Alex Hernandez,+222,-270,+225,-260,5
-2026-10-04T00:15:00+00:00,Ateba Gautier,Roman Kopylov,-270,+222,-235,+222,5
-2026-10-04T01:45:00+00:00,Deiveson Figueiredo,Payton Talbott,+600,-900,+600,-715,5
-2026-10-04T02:15:00+00:00,Natalia Silva,Wang Cong,-207,+175,-205,+175,5
-2026-10-11T00:00:00+00:00,Alice Pereira,Darya Zheleznyakova,-130,+110,-130,+110,3
-2026-10-11T00:00:00+00:00,Allen Frye Jr.,RJ Harris,+186,-220,+186,-220,3
-2026-10-11T00:00:00+00:00,Andre Fili,Kai Kamaka,-154,+134,-154,+134,3
-2026-10-11T00:00:00+00:00,Brendan Allen,Christian Leroy Duncan,-142,+122,-142,+122,3
-2026-10-11T00:00:00+00:00,Ernesta Kareckaite,Melissa Gatto,+140,-160,+140,-160,3
-2026-10-11T00:00:00+00:00,Felipe Franco,Brendson Ribeiro,-310,+252,-310,+252,3
-2026-10-11T00:00:00+00:00,Francisco Prado,Ismael Bonfim,+105,-125,+105,-125,3
-2026-10-11T00:00:00+00:00,Julius Walker,Gerald Meerschaert,-250,+207,-250,+207,3
-2026-10-11T00:00:00+00:00,Lupita Godinez,Ketlen Souza,-210,+180,-210,+180,3
-2026-10-11T00:00:00+00:00,Malcolm Wellmaker,Otari Tanzilovi,-205,+177,-205,+177,3
-2026-10-11T00:00:00+00:00,Matheus Camilo,Jai Herbert,-180,+157,-180,+157,3
-2026-10-11T00:00:00+00:00,Niko Price,Leon Shahbazyan,+120,-140,+120,-140,1
-2026-10-25T03:30:00+00:00,Petr Yan,Merab Dvalishvili,-175,+149,-172,+149,4
-2026-10-25T04:00:00+00:00,Alex Volkanovski,Movsar Evloev,-106,-110,-102,-107,4
+2026-10-11T00:00:00+00:00,Alice Pereira,Darya Zheleznyakova,-130,+110,-120,+110,6
+2026-10-11T00:00:00+00:00,Allen Frye Jr.,RJ Harris,+216,-260,+216,-235,5
+2026-10-11T00:00:00+00:00,Andre Fili,Kai Kamaka,-155,+130,-143,+132,6
+2026-10-11T00:00:00+00:00,Brendan Allen,Christian Leroy Duncan,-160,+130,-145,+134,6
+2026-10-11T00:00:00+00:00,Ernesta Kareckaite,Melissa Gatto,+115,-140,+132,-140,6
+2026-10-11T00:00:00+00:00,Felipe Franco,Brendson Ribeiro,-290,+237,-290,+250,5
+2026-10-11T00:00:00+00:00,Francisco Prado,Ismael Bonfim,+110,-130,+110,-128,6
+2026-10-11T00:00:00+00:00,Julius Walker,Gerald Meerschaert,-250,+200,-250,+207,6
+2026-10-11T00:00:00+00:00,Lupita Godinez,Ketlen Souza,-225,+189,-218,+189,4
+2026-10-11T00:00:00+00:00,Malcolm Wellmaker,Otari Tanzilovi,-235,+190,-215,+193,6
+2026-10-11T00:00:00+00:00,Matheus Camilo,Jai Herbert,-175,+145,-175,+157,6
+2026-10-11T00:00:00+00:00,Niko Price,Leon Shahbazyan,+140,-170,+140,-145,5
+2026-10-25T03:30:00+00:00,Petr Yan,Merab Dvalishvili,-180,+153,-172,+153,4
+2026-10-25T04:00:00+00:00,Alex Volkanovski,Movsar Evloev,-101,-115,-101,-108,5
 2026-11-15T05:00:00+00:00,Kayla Harrison,Amanda Nunes,-200,+169,-192,+169,4
-2026-11-15T05:30:00+00:00,Ciryl Gane,Josh Hokit,-255,+212,-255,+215,4
+2026-11-15T05:30:00+00:00,Ciryl Gane,Josh Hokit,-265,+220,-265,+220,4
+2026-12-13T03:00:00+00:00,Bo Nickal,Joseph Pyfer,+116,-135,+116,-135,1
+2026-12-13T03:30:00+00:00,Sergey Pavlovich,Alex Pereira,-164,+140,-164,+140,2
+2026-12-13T04:00:00+00:00,Charles Oliveira,Diego Lopes,-148,+126,-148,+160,2
 2026-12-31T05:00:00+00:00,Justin Gaethje,Ilia Topuria,+210,-250,+210,-250,1
 2026-12-31T17:00:00+00:00,Conor McGregor,Jorge Masvidal,-145,+125,-145,+125,1
 2027-01-01T03:00:00+00:00,Khamzat Chimaev,Paulo Henrique Costa,-500,+375,-500,+375,1

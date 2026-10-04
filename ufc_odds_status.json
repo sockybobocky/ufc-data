@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-02T21:31:13.821515+00:00",
-  "event_count": 44,
+  "checked_at": "2026-10-04T05:52:31.914028+00:00",
+  "event_count": 33,
   "files": {
-    "ufc_betting_odds.csv": "b23fe405f5c4e695903b834e7895ca1a6e2346ef3eea068b0522dd1332c132b6",
-    "ufc_odds_quotes.json": "4922aa3e87100a943e6cbd40022ebff2236006f7f22e294d5249bd9b657197a6"
+    "ufc_betting_odds.csv": "2eb455903a5732224964bb0d4bec1a0f84b7a861d1080c4be5a0f76ad685b416",
+    "ufc_odds_quotes.json": "f97e7670c823d41fff7ec3e5320e332b01a68f9911b480737537d5e010172da9"
   },
   "format": "ufc-odds-status-v1",
-  "quote_count": 133,
+  "quote_count": 103,
   "state": "success"
 }
