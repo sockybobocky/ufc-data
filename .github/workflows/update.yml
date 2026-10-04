@@ -120,6 +120,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add *.csv *.json
+          # These feeds have dedicated publishers; do not overwrite them from a long history checkout.
+          for file in ufc_upcoming_events.csv ufc_upcoming_status.json ufc_odds_status.json ufc_odds_quotes.json ufc_betting_odds.csv; do
+            if git ls-files --error-unmatch "$file" >/dev/null 2>&1; then git restore --staged --worktree -- "$file"; fi
+          done
           git diff --cached --quiet || git commit -m "Update UFC data + ML models $(date +%Y-%m-%d)"
           git pull --rebase origin main
           git push origin HEAD:main

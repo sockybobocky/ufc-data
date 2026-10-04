@@ -6,6 +6,10 @@ on:
       - 'ufcstats_parser.py'
       - 'scrape_ufc_data.py'
       - 'test_upcoming_parser.py'
+      - 'export_upcoming.py'
+      - 'test_independent_upcoming.py'
+      - '.github/workflows/update-upcoming.yml'
+      - '.github/workflows/update.yml'
       - 'tests/fixtures/upcoming-five-cards.json'
       - '.github/workflows/validate-upcoming.yml'
   push:
@@ -14,6 +18,10 @@ on:
       - 'ufcstats_parser.py'
       - 'scrape_ufc_data.py'
       - 'test_upcoming_parser.py'
+      - 'export_upcoming.py'
+      - 'test_independent_upcoming.py'
+      - '.github/workflows/update-upcoming.yml'
+      - '.github/workflows/update.yml'
       - 'tests/fixtures/upcoming-five-cards.json'
       - '.github/workflows/validate-upcoming.yml'
   workflow_dispatch:
@@ -33,6 +41,6 @@ jobs:
       - name: Install parser dependency
         run: python -m pip install beautifulsoup4
       - name: Check source syntax
-        run: python -m py_compile ufcstats_parser.py scrape_ufc_data.py test_upcoming_parser.py
+        run: python -m py_compile ufcstats_parser.py scrape_ufc_data.py test_upcoming_parser.py export_upcoming.py test_independent_upcoming.py
       - name: Verify identities and complete-card publication
-        run: python -m unittest -v test_upcoming_parser
+        run: python -m unittest -v test_upcoming_parser test_independent_upcoming

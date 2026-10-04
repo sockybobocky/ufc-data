@@ -1,8 +1,7 @@
 name: Update published odds
 on:
   schedule:
-    - cron: '0 6 * * 1'
-    - cron: '0 6 * * 5'
+    - cron: '0 12 * * *'  # One US moneyline refresh daily; includes Monday/Tuesday
   workflow_dispatch:
 permissions:
   contents: write
