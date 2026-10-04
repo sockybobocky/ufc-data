@@ -7,8 +7,9 @@ def collect(session,key,root='.'):
 
 def main():
     import requests
+    from odds_budget import collect_daily
     with requests.Session() as session:
-        result=collect(session,os.environ.get('ODDS_API_KEY',''))
+        result=collect_daily(session,os.environ.get('ODDS_API_KEY',''))
     print('Odds collection succeeded.' if result['state']=='success' else 'Odds collection failed; status recorded and prior prices retained.')
     # The workflow publishes the failure status before marking the job failed.
     return 0

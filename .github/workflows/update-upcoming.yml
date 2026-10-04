@@ -1,0 +1,50 @@
+name: Update upcoming UFC cards
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: published-upcoming-main
+  cancel-in-progress: false
+jobs:
+  upcoming:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Validate upcoming collector without live requests
+        run: python -m unittest test_upcoming_parser test_independent_upcoming
+      - name: Collect upcoming cards independently
+        id: collect
+        continue-on-error: true
+        run: python export_upcoming.py
+      - name: Publish cards and explicit collection status
+        if: always()
+        run: |
+          if [ ! -f ufc_upcoming_status.json ]; then exit 1; fi
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -- ufc_upcoming_status.json
+          if [ "${{ steps.collect.outcome }}" = "success" ]; then git add -- ufc_upcoming_events.csv; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update independent upcoming card snapshot"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main || exit 1
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
+          fi
+      - name: Preserve collection failure
+        if: always()
+        run: python -c "import json,sys; sys.exit(0 if json.load(open('ufc_upcoming_status.json'))['state']=='success' else 1)"
