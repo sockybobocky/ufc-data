@@ -17,6 +17,15 @@ class Session:
   return response
 
 class BudgetTests(unittest.TestCase):
+ def test_activation_adopts_existing_success_without_spending_again_today(self):
+  from odds_export import update
+  with tempfile.TemporaryDirectory() as folder:
+   update(Session(),'fake-key',folder,NOW)
+   session=Session()
+   self.assertEqual(collect_daily(session,'fake-key',folder,NOW)['state'],'success')
+   self.assertEqual(session.calls,[])
+   ledger=json.loads((Path(folder)/LEDGER).read_text())
+   self.assertEqual(ledger['monthly_requests'],1)
  def test_reopening_and_manual_repeats_do_not_spend_more_credits_or_retimestamp(self):
   with tempfile.TemporaryDirectory() as folder:
    session=Session();first=collect_daily(session,'fake-key',folder,NOW)
