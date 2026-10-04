@@ -58,7 +58,8 @@ class OddsTests(unittest.TestCase):
         code=compile(ast.Module(body=[function],type_ignores=[]),'<isolated wrapper>','exec')
         namespace={'API_SESSION':object(),'ODDS_API_KEY':'fake-key'}
         exec(code,namespace)
-        with patch.object(export,'update',return_value={'state':'failed'}) as call, contextlib.redirect_stdout(io.StringIO()) as captured:
+        import odds_budget
+        with patch.object(odds_budget,'collect_daily',return_value={'state':'failed'}) as call, contextlib.redirect_stdout(io.StringIO()) as captured:
             status=namespace['fetch_betting_odds']()
         call.assert_called_once_with(namespace['API_SESSION'],'fake-key')
         self.assertEqual(status['state'],'failed')

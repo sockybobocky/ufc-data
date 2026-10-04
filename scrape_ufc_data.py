@@ -493,9 +493,9 @@ def scrape_upcoming_events():
 
 
 def fetch_betting_odds():
-    from odds_export import update
+    from odds_budget import collect_daily
     print("\n[5/8] Fetching betting odds...")
-    status = update(API_SESSION, ODDS_API_KEY)
+    status = collect_daily(API_SESSION, ODDS_API_KEY)
     if status["state"] == "success":
         print(f"  -> {status['quote_count']} paired sportsbook quotes saved")
     else:

@@ -11,7 +11,7 @@ class IndependentOdds(unittest.TestCase):
         source=(Path(__file__).parent/'export_odds.py').read_text(encoding='utf-8')
         tree=ast.parse(source)
         imports=[n.module for n in ast.walk(tree) if isinstance(n,ast.ImportFrom)]
-        self.assertEqual(imports,['odds_export'])
+        self.assertEqual(imports,['odds_export','odds_budget'])
         self.assertNotIn('scrape_ufc_data',source)
     def test_missing_key_records_failure_without_provider_request(self):
         with tempfile.TemporaryDirectory() as folder:

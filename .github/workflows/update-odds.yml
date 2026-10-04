@@ -23,7 +23,7 @@ jobs:
       - name: Install odds HTTP dependency
         run: python -m pip install requests
       - name: Validate fixture-only odds exporter
-        run: python -m unittest -v test_odds_export test_independent_odds
+        run: python -m unittest -v test_odds_export test_independent_odds test_odds_budget
       - name: Collect sportsbook quotes
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
@@ -33,6 +33,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -- ufc_odds_status.json
+          if [ -f ufc_odds_usage.json ]; then git add -- ufc_odds_usage.json; fi
           for file in ufc_odds_quotes.json ufc_betting_odds.csv; do
             if [ -f "$file" ]; then git add -- "$file"; fi
           done
