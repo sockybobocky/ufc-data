@@ -126,6 +126,35 @@ class ScraperIntegrationTests(unittest.TestCase):
             finally:
                 os.chdir(old_cwd)
     def test_cached_incomplete_event_retried(self): self.run_scrape(poisoned=True)
+    def test_cached_method_gap_is_preserved_without_fetching_old_event(self):
+        scraper = self.load()
+        event_url = 'http://ufcstats.com/event-details/0000000000000005'
+        calls = []
+        def fetch(url):
+            calls.append(url)
+            self.assertEqual(url, 'http://www.ufcstats.com/statistics/events/completed?page=all')
+            return type('Response', (), {'text':f'<a href="{event_url}">Old card</a>'})()
+        scraper.fetch = fetch
+        state = {'scraped_events':[event_url]}
+        old_cwd = Path.cwd()
+        with tempfile.TemporaryDirectory() as temp:
+            try:
+                os.chdir(temp)
+                from ufcstats_parser import RESULT_FIELDS
+                with Path('ufc_fight_results.csv').open('w',newline='') as handle:
+                    writer = csv.DictWriter(handle,RESULT_FIELDS); writer.writeheader()
+                    writer.writerow({'EVENT':'Old card','FIGHT_URL':URL,'OUTCOME':'W/L','ROUND':'3','TIME':'5:00','METHOD':''})
+                scraper.scrape_events_and_fights(state)
+                with Path('ufc_fight_results.csv').open() as handle:
+                    records = list(csv.DictReader(handle))
+                self.assertEqual(len(records),1)
+                self.assertEqual(records[0]['METHOD'],'')
+                self.assertEqual(state['scraped_events'],[event_url])
+                self.assertEqual(len(calls),1)
+                backlog = json.loads(Path('historical_repair_backlog.json').read_text())
+                self.assertEqual(backlog['deferred_method_only_events'],['Old card'])
+            finally:
+                os.chdir(old_cwd)
     def test_future_event_not_marked_completed(self):
         scraper=self.load();url='http://ufcstats.com/event-details/0000000000000005'
         pages={'http://www.ufcstats.com/statistics/events/completed?page=all':f'<a href="{url}">Future</a>',url:'<li class="b-list__box-list-item">Date: January 01, 2099</li>'}
