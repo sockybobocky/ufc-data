@@ -64,6 +64,9 @@ jobs:
       - name: Validate scraper stage diagnostics
         run: python -m unittest test_scraper_diagnostics -v
 
+      - name: Validate weekly history selection
+        run: python -m unittest test_history_update_policy test_ufcstats_parser -v
+
       - name: Validate upcoming card parser
         run: python -m unittest test_upcoming_parser
 
@@ -88,6 +91,7 @@ jobs:
           path: |
             scraper_repair_errors.json
             scraper_run_diagnostics.json
+            historical_repair_backlog.json
           if-no-files-found: warn
           retention-days: 14
 

@@ -33,6 +33,7 @@ import re
 import sys
 import json
 from datetime import datetime, timezone
+from history_update_policy import cached_history_policy
 from ufcstats_parser import ParseError, RESULT_FIELDS, STAT_FIELDS, parse_detail, parse_stats, parse_upcoming, canonical_url, UPCOMING_FIELDS
 
 # Playwright browser - launched once, reused for all ufcstats.com fetches
@@ -382,11 +383,14 @@ def scrape_events_and_fights(state, full=False):
             if os.path.exists(filename):
                 with open(filename, encoding="utf-8-sig", newline="") as handle:
                     target.extend(csv.DictReader(handle))
-    # Cache entries are trusted only when their published results are complete.
-    # Older scraper versions marked upcoming/incomplete event pages done.
-    retry_names = {r.get("EVENT") for r in results if not r.get("FIGHT_URL") or
-                   not r.get("OUTCOME") or not r.get("METHOD") or not r.get("ROUND") or not r.get("TIME")}
-    verified_names = {r.get("EVENT") for r in results if r.get("FIGHT_URL") and r.get("OUTCOME")}
+    # Retry incomplete cached cards, but leave method-only legacy gaps to repair.
+    # New/uncached events and full scrapes still run the strict parser below.
+    retry_names, verified_names, deferred_names = cached_history_policy(results)
+    deferred = sorted(deferred_names) if not full else []
+    with open("historical_repair_backlog.json", "w", encoding="utf-8") as handle:
+        json.dump({"deferred_method_only_events": deferred,
+                   "policy": "Existing cached method gaps are not repaired by weekly updates. Result/identity/finish gaps still retry. Use explicit historical repair; missing fields remain missing."}, handle, indent=2)
+    print(f"  -> {len(deferred)} method-only event repairs deferred; existing history retained")
     failures = []
     completed = set(already)
     for event_url, event_name in event_links.items():
