@@ -1,8 +1,8 @@
 {
   "format": "ufc-upcoming-status-v1",
   "state": "success",
-  "checked_at": "2026-10-05T15:06:08.701161+00:00",
+  "checked_at": "2026-10-06T13:29:59.684157+00:00",
   "bout_count": 58,
-  "sha256": "2a92779787e20e9b75597412beb656669fdbdfeba8d7bfc005a324294b0e6e82",
+  "sha256": "27691a7b140caaa0e9b0eff18c822c8b3032ed0d701f1729344ca766a530342e",
   "round_schedule": "Not supplied by event listing; separate source verification required"
 }
