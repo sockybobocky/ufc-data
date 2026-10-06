@@ -1,29 +1,36 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-10-11T00:00:00+00:00,Alice Pereira,Darya Zheleznyakova,-130,+110,-130,+120,6
-2026-10-11T00:00:00+00:00,Allen Frye Jr.,RJ Harris,+216,-260,+225,-260,5
-2026-10-11T00:00:00+00:00,Andre Fili,Kai Kamaka,-155,+130,-143,+130,6
-2026-10-11T00:00:00+00:00,Brendan Allen,Christian Leroy Duncan,-160,+130,-130,+130,6
-2026-10-11T00:00:00+00:00,Ernesta Kareckaite,Melissa Gatto,+115,-140,+115,-125,6
-2026-10-11T00:00:00+00:00,Felipe Franco,Brendson Ribeiro,-340,+276,-335,+285,5
-2026-10-11T00:00:00+00:00,Francisco Prado,Ismael Bonfim,+110,-130,+110,-118,6
-2026-10-11T00:00:00+00:00,Julius Walker,Gerald Meerschaert,-250,+200,-250,+215,6
-2026-10-11T00:00:00+00:00,Lupita Godinez,Ketlen Souza,-225,+189,-225,+190,4
-2026-10-11T00:00:00+00:00,Malcolm Wellmaker,Otari Tanzilovi,-235,+190,-200,+190,6
-2026-10-11T00:00:00+00:00,Matheus Camilo,Jai Herbert,-175,+145,-175,+169,6
-2026-10-11T00:00:00+00:00,Niko Price,Leon Shahbazyan,+140,-170,+140,-155,6
+2026-10-06T22:00:00+00:00,Nell Ariano,Preston Lagrange,-500,+360,-500,+423,3
+2026-10-06T23:40:00+00:00,Mateus Soares,Ryuho Miyaguchi,-400,+310,-350,+319,3
+2026-10-07T00:05:00+00:00,Alexander Chavez,Roque Conceicao,-110,-110,-108,-108,3
+2026-10-07T00:45:00+00:00,Sal Everett,Ozzy Martin,-135,+110,-135,+118,3
+2026-10-07T00:55:00+00:00,Alivia Bierley,Summer Onley,+135,-160,+142,-155,3
+2026-10-11T00:00:00+00:00,Alice Pereira,Darya Zheleznyakova,-145,+124,-145,+133,5
+2026-10-11T00:00:00+00:00,Allen Frye Jr.,RJ Harris,+265,-325,+265,-278,6
+2026-10-11T00:00:00+00:00,Andre Fili,Kai Kamaka,-145,+124,-145,+130,6
+2026-10-11T00:00:00+00:00,Brendan Allen,Christian Leroy Duncan,-140,+120,-137,+124,6
+2026-10-11T00:00:00+00:00,Ernesta Kareckaite,Melissa Gatto,-101,-115,+102,-115,5
+2026-10-11T00:00:00+00:00,Felipe Franco,Brendson Ribeiro,-360,+291,-345,+300,6
+2026-10-11T00:00:00+00:00,Francisco Prado,Ismael Bonfim,-106,-110,-105,-110,6
+2026-10-11T00:00:00+00:00,Julius Walker,Gerald Meerschaert,-265,+220,-265,+230,6
+2026-10-11T00:00:00+00:00,Lupita Godinez,Ketlen Souza,-215,+181,-215,+186,5
+2026-10-11T00:00:00+00:00,Malcolm Wellmaker,Otari Tanzilovi,-205,+173,-205,+190,5
+2026-10-11T00:00:00+00:00,Matheus Camilo,Jai Herbert,-195,+165,-195,+165,6
+2026-10-11T00:00:00+00:00,Niko Price,Leon Shahbazyan,+130,-152,+135,-148,6
 2026-10-25T03:30:00+00:00,Petr Yan,Merab Dvalishvili,-180,+153,-172,+153,4
-2026-10-25T04:00:00+00:00,Alex Volkanovski,Movsar Evloev,+101,-118,+101,-108,5
-2026-11-15T05:00:00+00:00,Kayla Harrison,Amanda Nunes,-200,+169,-192,+169,4
-2026-11-15T05:30:00+00:00,Ciryl Gane,Josh Hokit,-265,+220,-265,+220,4
-2026-12-13T03:00:00+00:00,Bo Nickal,Joseph Pyfer,+132,-155,+132,-155,1
-2026-12-13T03:30:00+00:00,Sergey Pavlovich,Alex Pereira,-165,+140,-165,+140,2
-2026-12-13T04:00:00+00:00,Charles Oliveira,Diego Lopes,-150,+128,-150,+160,3
+2026-10-25T04:00:00+00:00,Alex Volkanovski,Movsar Evloev,-101,-115,-101,-108,5
+2026-11-15T05:00:00+00:00,Kayla Harrison,Amanda Nunes,-200,+169,-192,+169,5
+2026-11-15T05:30:00+00:00,Ciryl Gane,Josh Hokit,-265,+220,-255,+220,5
+2026-12-13T03:00:00+00:00,Bo Nickal,Joseph Pyfer,+153,-180,+153,-180,1
+2026-12-13T03:30:00+00:00,Sergey Pavlovich,Alex Pereira,-180,+153,-166,+153,2
+2026-12-13T04:00:00+00:00,Charles Oliveira,Diego Lopes,-150,+128,-150,+140,3
 2026-12-31T05:00:00+00:00,Justin Gaethje,Ilia Topuria,+210,-250,+210,-250,1
 2026-12-31T17:00:00+00:00,Conor McGregor,Jorge Masvidal,-145,+125,-145,+125,1
 2027-01-01T03:00:00+00:00,Khamzat Chimaev,Paulo Henrique Costa,-500,+375,-500,+375,1
 2027-01-01T03:00:00+00:00,Max Holloway,Paddy Pimblett,-180,+155,-180,+155,1
+2027-01-01T03:00:00+00:00,Natalia Silva,Alexa Grasso,-300,+250,-300,+250,1
 2027-01-01T03:00:00+00:00,Sean Strickland,Khamzat Chimaev,+175,-205,+175,-205,1
-2027-01-01T03:00:00+00:00,Sean Strickland,Nassourdine Imavov,-125,+105,-125,+105,1
+2027-01-01T03:00:00+00:00,Sean Strickland,Nassourdine Imavov,-125,+105,-115,+105,2
+2027-01-01T03:00:00+00:00,Valentina Shevchenko,Natalia Silva,-190,+165,-190,+165,1
 2027-04-25T02:00:00+00:00,Islam Makhachev,Carlos Prates,-250,+207,-250,+207,1
 2027-04-25T02:00:00+00:00,Islam Makhachev,Michael Morales,-200,+174,-200,+174,1
 2027-07-01T02:00:00+00:00,Manel Kape,Joshua Van,-125,+105,-125,+105,1
