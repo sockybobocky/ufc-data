@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "started_at": "2026-10-05T14:23:44.798807+00:00",
+  "started_at": "2026-10-09T12:43:18.273471+00:00",
   "state": "completed",
   "phase": "browser_cleanup",
   "first_failure": null,
   "scope": "Stage diagnostics only; partial file writes are not ruled out.",
-  "finished_at": "2026-10-05T14:27:58.118973+00:00"
+  "finished_at": "2026-10-09T12:47:23.790959+00:00"
 }
