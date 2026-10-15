@@ -1,36 +1,47 @@
 event,fighter_a,fighter_b,odds_a,odds_b,best_odds_a,best_odds_b,num_books
-2026-10-16T22:00:00+00:00,Eliezer Kubanza,Trey Waters,-143,+123,-143,+123,2
-2026-10-16T22:00:00+00:00,Emiliano Sordi,Abraham Bably,+219,-265,+220,-265,2
-2026-10-16T22:00:00+00:00,Gamid Khizriev,Michael Boylan,-2500,+1156,-2500,+1156,2
-2026-10-16T22:00:00+00:00,Liz Carmouche,Jena Bishop,-350,+280,-350,+280,2
-2026-10-16T22:00:00+00:00,Timur Khizriev,Gabriel Alves Braga,-425,+325,-425,+325,2
-2026-10-17T03:00:00+00:00,Sarvarjon Hamidov,Rafael do Nascimento,-340,+250,-340,+250,1
-2026-10-17T16:00:00+00:00,Dario Bellandi,Aldo Pereira,-650,+475,-650,+475,1
-2026-10-17T16:00:00+00:00,Enrico Di Gangi,Tommy Brunning,-200,+174,-200,+174,1
-2026-10-17T16:00:00+00:00,Giuseppe Mastrogiacomo,Alexis Tsarmantidis,-250,+207,-250,+207,1
-2026-10-17T16:00:00+00:00,Salvatore Bellotta,Christian Tosco,-130,+110,-130,+110,1
-2026-10-17T16:00:00+00:00,Simone Patrizi,Dylan Logan,-155,+135,-155,+135,1
-2026-10-17T21:00:00+00:00,Erin Blanchfield,Jasmine Jasudavicius,-350,+275,-320,+275,7
-2026-10-17T21:00:00+00:00,Joaquin Buckley,Mike Malott,+110,-135,+114,-125,7
-2026-10-17T21:00:00+00:00,Joel Faglier,Javad Mahjoub,-110,-110,-106,-108,7
-2026-10-17T21:00:00+00:00,Louis Jourdain,Timothy Cuamba,-185,+157,-185,+170,6
-2026-10-17T21:00:00+00:00,Mackenzie Stiller,Katlyn Chookagian,+224,-270,+240,-270,6
-2026-10-17T21:00:00+00:00,Mandel Nallo,Nate Landwehr,-275,+220,-265,+230,7
-2026-10-17T21:00:00+00:00,Marc-Andre Barriault,Kyle Daukaus,+170,-210,+176,-195,7
-2026-10-17T21:00:00+00:00,Melissa Croden,Chelsea Chandler,-300,+240,-280,+250,7
-2026-10-18T02:00:00+00:00,Chad Anheliger,Steven Koslow,+125,-150,+126,-145,7
-2026-10-18T02:00:00+00:00,Cody Chovancek,Su Young You,-131,+112,-130,+114,5
-2026-10-18T02:00:00+00:00,Julien Leblanc,Nick Galanti,+425,-600,+458,-575,7
-2026-10-18T02:00:00+00:00,Kyle Nelson,Cristian Pérez,+284,-350,+295,-350,6
-2026-10-18T02:00:00+00:00,Tanner Boser,Jhonata Diniz,+200,-250,+208,-245,7
-2026-10-24T14:00:00+00:00,Aaron Pico,Losene Keita,-125,+105,-125,+105,1
-2026-10-24T14:00:00+00:00,Abusupyian Magomedov,Cam Rowston,-111,-105,-111,-105,1
-2026-10-24T14:00:00+00:00,Alexander Volkov,Rizvan Kuniev,-120,+100,-120,+100,1
-2026-10-24T14:00:00+00:00,Azamat Murzakanov,Dominick Reyes,-205,+173,-205,+173,1
-2026-10-24T14:00:00+00:00,Grant Dawson,Nurullo Aliev,-114,-102,-114,-102,1
-2026-10-24T14:00:00+00:00,Lone'er Kavanagh,Ramazonbek Temirov,-117,-103,-117,-103,1
+2026-10-16T22:10:00+00:00,Benita van Rooij,Giulliany Perea,+125,-145,+125,-145,1
+2026-10-16T22:40:00+00:00,Noah Hermosillo,Caden Cox,-165,+145,-165,+145,1
+2026-10-16T23:40:00+00:00,Levan Khabalaev,Brock Hamer,-700,+500,-700,+520,2
+2026-10-17T00:10:00+00:00,Cobey Fehr,Rosario Romero,-450,+350,-450,+360,2
+2026-10-17T00:40:00+00:00,Gamid Khizriev,Michael Boylan,-2500,+1156,-2500,+1260,2
+2026-10-17T01:10:00+00:00,Shannon Clark,Lucero Acosta,-500,+383,-500,+390,2
+2026-10-17T02:10:00+00:00,Emiliano Sordi,Abraham Bably,+195,-235,+198,-235,2
+2026-10-17T02:40:00+00:00,Eliezer Kubanza,Trey Waters,-140,+120,-140,+120,2
+2026-10-17T03:00:00+00:00,Sarvarjon Hamidov,Rafael do Nascimento,-325,+250,-325,+250,1
+2026-10-17T03:10:00+00:00,Oualy Tandia,J.P. Saint Louis,-240,+200,-240,+200,2
+2026-10-17T03:59:00+00:00,Liz Carmouche,Jena Bishop,-410,+324,-340,+324,2
+2026-10-17T03:59:00+00:00,Timur Khizriev,Gabriel Alves Braga,-425,+325,-420,+325,2
+2026-10-17T14:00:00+00:00,Aaron Aby,David Dvorak,+550,-1000,+550,-1000,1
+2026-10-17T14:00:00+00:00,Daniel Hooker,Viktor Cervinsky,+225,-350,+225,-350,1
+2026-10-17T14:00:00+00:00,Dominik Humburger,Patrik Kincl,+170,-250,+170,-250,1
+2026-10-17T14:00:00+00:00,Marco Elpidio,Husein Kadimagomaev,+250,-400,+250,-400,1
+2026-10-17T14:00:00+00:00,Tomasz Narkun,Daniel Skvor,+170,-250,+170,-250,1
+2026-10-17T17:55:00+00:00,Salvatore Bellotta,Christian Tosco,-105,-115,-105,-115,1
+2026-10-17T19:05:00+00:00,Enrico Di Gangi,Tommy Brunning,-200,+174,-200,+174,1
+2026-10-17T19:30:00+00:00,Simone Patrizi,Dylan Logan,-155,+135,-155,+135,1
+2026-10-17T20:20:00+00:00,Giuseppe Mastrogiacomo,Alexis Tsarmantidis,-250,+207,-250,+207,1
+2026-10-17T20:45:00+00:00,Dario Bellandi,Aldo Pereira,-650,+475,-650,+475,1
+2026-10-17T21:00:00+00:00,Melissa Croden,Chelsea Chandler,-325,+260,-286,+265,7
+2026-10-17T21:10:00+00:00,Cody Chovancek,Su Young You,-131,+112,-130,+116,5
+2026-10-17T22:00:00+00:00,Chad Anheliger,Steven Koslow,+135,-165,+138,-155,7
+2026-10-17T22:25:00+00:00,Mackenzie Stiller,Katlyn Chookagian,+227,-274,+230,-265,6
+2026-10-17T22:50:00+00:00,Joel Faglier,Javad Mahjoub,-120,+100,-117,+102,7
+2026-10-17T23:15:00+00:00,Julien Leblanc,Nick Galanti,+475,-650,+500,-625,7
+2026-10-17T23:40:00+00:00,Tanner Boser,Jhonata Diniz,+200,-250,+200,-235,7
+2026-10-18T00:15:00+00:00,Mandel Nallo,Nate Landwehr,-300,+240,-280,+240,7
+2026-10-18T00:45:00+00:00,Louis Jourdain,Timothy Cuamba,-176,+149,-175,+155,6
+2026-10-18T01:15:00+00:00,Marc-Andre Barriault,Kyle Daukaus,+170,-210,+173,-190,7
+2026-10-18T01:45:00+00:00,Kyle Nelson,Cristian Pérez,+276,-340,+285,-340,6
+2026-10-18T02:15:00+00:00,Erin Blanchfield,Jasmine Jasudavicius,-350,+275,-320,+275,7
+2026-10-18T02:45:00+00:00,Joaquin Buckley,Mike Malott,+110,-135,+114,-125,7
+2026-10-24T14:00:00+00:00,Aaron Pico,Losene Keita,+105,-125,+105,-125,1
+2026-10-24T14:00:00+00:00,Abusupyian Magomedov,Cam Rowston,-118,-102,-118,-102,1
+2026-10-24T14:00:00+00:00,Alexander Volkov,Rizvan Kuniev,-135,+115,-135,+115,1
+2026-10-24T14:00:00+00:00,Azamat Murzakanov,Dominick Reyes,-240,+201,-240,+201,1
+2026-10-24T14:00:00+00:00,Grant Dawson,Nurullo Aliev,-125,+105,-125,+105,1
+2026-10-24T14:00:00+00:00,Lone'er Kavanagh,Ramazonbek Temirov,-110,-110,-110,-110,1
 2026-10-24T14:00:00+00:00,Nikita Krylov,Abdulrakhman Yakhyaev,+354,-450,+354,-450,1
-2026-10-25T03:30:00+00:00,Petr Yan,Merab Dvalishvili,-180,+153,-172,+160,4
+2026-10-25T03:30:00+00:00,Petr Yan,Merab Dvalishvili,-180,+153,-176,+160,4
 2026-10-25T04:00:00+00:00,Alex Volkanovski,Movsar Evloev,-108,-108,-105,-108,4
 2026-11-15T05:00:00+00:00,Kayla Harrison,Amanda Nunes,-195,+165,-195,+165,4
 2026-11-15T05:30:00+00:00,Ciryl Gane,Josh Hokit,-260,+216,-260,+216,4
