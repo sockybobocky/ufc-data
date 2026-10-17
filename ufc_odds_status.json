@@ -1,18 +1,18 @@
 {
-  "checked_at": "2026-10-16T16:12:42.544118+00:00",
-  "event_count": 86,
+  "checked_at": "2026-10-17T15:06:15.651514+00:00",
+  "event_count": 72,
   "files": {
-    "ufc_betting_odds.csv": "9c494ed4ca49005d3713d8c5db11e8f4c243cf99a0cdf5f31155a9b781f6982d",
-    "ufc_odds_quotes.json": "1a9bc44b65eff39eb7f62aa11510112ac31319ba5c6b4ce6fc0ab92552b5dbfe"
+    "ufc_betting_odds.csv": "bd90b52eb05e0f46cdf8c60be911d37d079c9577aa07f46928e6eda41c4092f7",
+    "ufc_odds_quotes.json": "16c9c05d2111e2ea1b4cbf82606c70ecce8d36fa3415f556c0e15a5883b8c1b3"
   },
   "format": "ufc-odds-status-v1",
   "monthly_collector_limit": 32,
-  "monthly_collector_requests": 13,
-  "quote_count": 174,
+  "monthly_collector_requests": 14,
+  "quote_count": 143,
   "state": "success",
   "usage": {
     "last_cost": 1,
-    "remaining": 486,
-    "used": 14
+    "remaining": 485,
+    "used": 15
   }
 }

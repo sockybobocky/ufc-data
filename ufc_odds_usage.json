@@ -1,13 +1,13 @@
 {
-  "last_attempt_at": "2026-10-16T16:12:42.095576+00:00",
+  "last_attempt_at": "2026-10-17T15:06:15.410481+00:00",
   "month": "2026-10",
   "monthly_limit": 32,
-  "monthly_requests": 13,
+  "monthly_requests": 14,
   "provider_quota": {
     "last_cost": 1,
-    "remaining": 486,
-    "used": 14
+    "remaining": 485,
+    "used": 15
   },
-  "quota_checked_at": "2026-10-16T16:12:42.095576+00:00",
+  "quota_checked_at": "2026-10-17T15:06:15.410481+00:00",
   "reserve": 25
 }
