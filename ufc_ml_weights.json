@@ -1,21 +1,21 @@
 {
   "version": "2.0",
   "model": "XGBoost",
-  "test_accuracy": 0.6962,
-  "cv_accuracy": 0.703,
+  "test_accuracy": 0.6894,
+  "cv_accuracy": 0.7039,
   "weights": {
     "Win Rate": 5.0,
-    "Strike Differential": 3.82,
-    "Strike Accuracy": 1.42,
-    "Strike Defense": 1.37,
-    "Takedown Game": 1.37,
-    "Submissions": 1.24,
-    "Reach": 3.92,
-    "Height": 1.06,
-    "Experience": 2.39,
-    "SLpM": 1.74,
-    "SApM": 1.22,
-    "TD Accuracy": 1.24,
-    "TD Defense": 1.71
+    "Strike Differential": 3.63,
+    "Strike Accuracy": 1.43,
+    "Strike Defense": 1.25,
+    "Takedown Game": 1.3,
+    "Submissions": 1.14,
+    "Reach": 3.49,
+    "Height": 1.03,
+    "Experience": 2.42,
+    "SLpM": 1.54,
+    "SApM": 1.11,
+    "TD Accuracy": 1.2,
+    "TD Defense": 1.63
   }
 }
